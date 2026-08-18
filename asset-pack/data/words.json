@@ -1,0 +1,1498 @@
+{
+  "schemaVersion": 1,
+  "locale": "he-IL",
+  "title": "100 most frequent lexical word forms in the OpenSubtitles 2018 Hebrew corpus",
+  "methodology": "Ranks and counts follow FrequencyWords OpenSubtitles 2018 Hebrew data. The isolated single-letter token ג at source rank 34 is excluded as a subtitle/abbreviation artifact, so normalized rank 100 corresponds to source rank 101. Distinct pointed pronunciations sharing one unpointed surface form are represented as separate senses. Frequency rank is not teaching order.",
+  "source": {
+    "name": "FrequencyWords / OpenSubtitles 2018 Hebrew frequency list",
+    "url": "https://github.com/hermitdave/FrequencyWords/blob/master/content/2018/he/he_50k.txt",
+    "rawUrl": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/he/he_50k.txt",
+    "license": "CC BY-SA 4.0 for generated frequency content",
+    "sha256": "0069e931eb1ca0aaf638ea806b0d9d5810d787c51ada944da564a2fb213af41d",
+    "localSnapshot": "frequency-2018-top100.tsv"
+  },
+  "editorialStatus": "needs_native_review",
+  "transliterationKey": {
+    "kh": "/χ/",
+    "sh": "/ʃ/",
+    "ts": "/ts/",
+    "apostrophe": "syllable boundary or consonantal onset"
+  },
+  "words": [
+    {
+      "rank": 1,
+      "sourceRank": 1,
+      "sourceCount": 5020713,
+      "unpointed": "לא",
+      "senses": [
+        {
+          "id": "lo_not",
+          "pointed": "לֹא",
+          "latin": "lo",
+          "gloss": "no; not"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "sourceRank": 2,
+      "sourceCount": 4846155,
+      "unpointed": "את",
+      "senses": [
+        {
+          "id": "et_object_marker",
+          "pointed": "אֶת",
+          "latin": "et",
+          "gloss": "definite direct-object marker"
+        },
+        {
+          "id": "at_you_f",
+          "pointed": "אַתְּ",
+          "latin": "at",
+          "gloss": "you (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "sourceRank": 3,
+      "sourceCount": 4542964,
+      "unpointed": "אני",
+      "senses": [
+        {
+          "id": "ani_i",
+          "pointed": "אֲנִי",
+          "latin": "ani",
+          "gloss": "I"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "sourceRank": 4,
+      "sourceCount": 3965637,
+      "unpointed": "זה",
+      "senses": [
+        {
+          "id": "ze_this",
+          "pointed": "זֶה",
+          "latin": "ze",
+          "gloss": "this; it (masculine)"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "sourceRank": 5,
+      "sourceCount": 2209686,
+      "unpointed": "אתה",
+      "senses": [
+        {
+          "id": "ata_you_m",
+          "pointed": "אַתָּה",
+          "latin": "ata",
+          "gloss": "you (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "sourceRank": 6,
+      "sourceCount": 2185556,
+      "unpointed": "מה",
+      "senses": [
+        {
+          "id": "ma_what",
+          "pointed": "מָה",
+          "latin": "ma",
+          "gloss": "what"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "sourceRank": 7,
+      "sourceCount": 1542014,
+      "unpointed": "הוא",
+      "senses": [
+        {
+          "id": "hu_he",
+          "pointed": "הוּא",
+          "latin": "hu",
+          "gloss": "he; it (masculine)"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "sourceRank": 8,
+      "sourceCount": 1433417,
+      "unpointed": "על",
+      "senses": [
+        {
+          "id": "al_on",
+          "pointed": "עַל",
+          "latin": "al",
+          "gloss": "on; about"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "sourceRank": 9,
+      "sourceCount": 1398533,
+      "unpointed": "לי",
+      "senses": [
+        {
+          "id": "li_to_me",
+          "pointed": "לִי",
+          "latin": "li",
+          "gloss": "to me; for me"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "sourceRank": 10,
+      "sourceCount": 1237775,
+      "unpointed": "של",
+      "senses": [
+        {
+          "id": "shel_of",
+          "pointed": "שֶׁל",
+          "latin": "shel",
+          "gloss": "of; belonging to"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "sourceRank": 11,
+      "sourceCount": 1217972,
+      "unpointed": "כן",
+      "senses": [
+        {
+          "id": "ken_yes",
+          "pointed": "כֵּן",
+          "latin": "ken",
+          "gloss": "yes"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "sourceRank": 12,
+      "sourceCount": 1096139,
+      "unpointed": "לך",
+      "senses": [
+        {
+          "id": "lekha_to_you_m",
+          "pointed": "לְךָ",
+          "latin": "lekha",
+          "gloss": "to you; for you (masculine singular)"
+        },
+        {
+          "id": "lakh_to_you_f",
+          "pointed": "לָךְ",
+          "latin": "lakh",
+          "gloss": "to you; for you (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "sourceRank": 13,
+      "sourceCount": 982140,
+      "unpointed": "אבל",
+      "senses": [
+        {
+          "id": "aval_but",
+          "pointed": "אֲבָל",
+          "latin": "aval",
+          "gloss": "but"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "sourceRank": 14,
+      "sourceCount": 894061,
+      "unpointed": "יש",
+      "senses": [
+        {
+          "id": "yesh_there_is",
+          "pointed": "יֵשׁ",
+          "latin": "yesh",
+          "gloss": "there is; have"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "sourceRank": 15,
+      "sourceCount": 866109,
+      "unpointed": "שלי",
+      "senses": [
+        {
+          "id": "sheli_mine",
+          "pointed": "שֶׁלִּי",
+          "latin": "sheli",
+          "gloss": "my; mine"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "sourceRank": 16,
+      "sourceCount": 854228,
+      "unpointed": "כל",
+      "senses": [
+        {
+          "id": "kol_all",
+          "pointed": "כָּל",
+          "latin": "kol",
+          "gloss": "all; every"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "sourceRank": 17,
+      "sourceCount": 837200,
+      "unpointed": "בסדר",
+      "senses": [
+        {
+          "id": "beseder_okay",
+          "pointed": "בְּסֵדֶר",
+          "latin": "beseder",
+          "gloss": "okay; all right"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "sourceRank": 18,
+      "sourceCount": 822686,
+      "unpointed": "עם",
+      "senses": [
+        {
+          "id": "im_with",
+          "pointed": "עִם",
+          "latin": "im",
+          "gloss": "with"
+        },
+        {
+          "id": "am_people",
+          "pointed": "עַם",
+          "latin": "am",
+          "gloss": "people; nation"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "sourceRank": 19,
+      "sourceCount": 819212,
+      "unpointed": "היא",
+      "senses": [
+        {
+          "id": "hi_she",
+          "pointed": "הִיא",
+          "latin": "hi",
+          "gloss": "she; it (feminine)"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "sourceRank": 20,
+      "sourceCount": 794526,
+      "unpointed": "שלך",
+      "senses": [
+        {
+          "id": "shelkha_yours_m",
+          "pointed": "שֶׁלְּךָ",
+          "latin": "shelkha",
+          "gloss": "your; yours (masculine singular)"
+        },
+        {
+          "id": "shelakh_yours_f",
+          "pointed": "שֶׁלָּךְ",
+          "latin": "shelakh",
+          "gloss": "your; yours (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "sourceRank": 21,
+      "sourceCount": 784826,
+      "unpointed": "אם",
+      "senses": [
+        {
+          "id": "im_if",
+          "pointed": "אִם",
+          "latin": "im",
+          "gloss": "if"
+        },
+        {
+          "id": "em_mother",
+          "pointed": "אֵם",
+          "latin": "em",
+          "gloss": "mother"
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "sourceRank": 22,
+      "sourceCount": 756941,
+      "unpointed": "טוב",
+      "senses": [
+        {
+          "id": "tov_good",
+          "pointed": "טוֹב",
+          "latin": "tov",
+          "gloss": "good; well"
+        }
+      ]
+    },
+    {
+      "rank": 23,
+      "sourceRank": 23,
+      "sourceCount": 726660,
+      "unpointed": "היה",
+      "senses": [
+        {
+          "id": "haya_was",
+          "pointed": "הָיָה",
+          "latin": "haya",
+          "gloss": "was (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 24,
+      "sourceRank": 24,
+      "sourceCount": 703852,
+      "unpointed": "אנחנו",
+      "senses": [
+        {
+          "id": "anakhnu_we",
+          "pointed": "אֲנַחְנוּ",
+          "latin": "anakhnu",
+          "gloss": "we"
+        }
+      ]
+    },
+    {
+      "rank": 25,
+      "sourceRank": 25,
+      "sourceCount": 697126,
+      "unpointed": "רוצה",
+      "senses": [
+        {
+          "id": "rotse_wants_m",
+          "pointed": "רוֹצֶה",
+          "latin": "rotse",
+          "gloss": "wants (masculine singular)"
+        },
+        {
+          "id": "rotsa_wants_f",
+          "pointed": "רוֹצָה",
+          "latin": "rotsa",
+          "gloss": "wants (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "sourceRank": 26,
+      "sourceCount": 672967,
+      "unpointed": "אז",
+      "senses": [
+        {
+          "id": "az_then",
+          "pointed": "אָז",
+          "latin": "az",
+          "gloss": "then; so"
+        }
+      ]
+    },
+    {
+      "rank": 27,
+      "sourceRank": 27,
+      "sourceCount": 621357,
+      "unpointed": "יודע",
+      "senses": [
+        {
+          "id": "yodea_knows_m",
+          "pointed": "יוֹדֵעַ",
+          "latin": "yodea",
+          "gloss": "knows (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 28,
+      "sourceRank": 28,
+      "sourceCount": 588280,
+      "unpointed": "רק",
+      "senses": [
+        {
+          "id": "rak_only",
+          "pointed": "רַק",
+          "latin": "rak",
+          "gloss": "only; just"
+        }
+      ]
+    },
+    {
+      "rank": 29,
+      "sourceRank": 29,
+      "sourceCount": 582297,
+      "unpointed": "הם",
+      "senses": [
+        {
+          "id": "hem_they",
+          "pointed": "הֵם",
+          "latin": "hem",
+          "gloss": "they (masculine or mixed)"
+        }
+      ]
+    },
+    {
+      "rank": 30,
+      "sourceRank": 30,
+      "sourceCount": 568603,
+      "unpointed": "יכול",
+      "senses": [
+        {
+          "id": "yakhol_can_m",
+          "pointed": "יָכוֹל",
+          "latin": "yakhol",
+          "gloss": "can; able (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 31,
+      "sourceRank": 31,
+      "sourceCount": 557493,
+      "unpointed": "אותו",
+      "senses": [
+        {
+          "id": "oto_him",
+          "pointed": "אוֹתוֹ",
+          "latin": "oto",
+          "gloss": "him; it; the same (masculine)"
+        }
+      ]
+    },
+    {
+      "rank": 32,
+      "sourceRank": 32,
+      "sourceCount": 552982,
+      "unpointed": "אותך",
+      "senses": [
+        {
+          "id": "otkha_you_object_m",
+          "pointed": "אוֹתְךָ",
+          "latin": "otkha",
+          "gloss": "you as object (masculine singular)"
+        },
+        {
+          "id": "otakh_you_object_f",
+          "pointed": "אוֹתָךְ",
+          "latin": "otakh",
+          "gloss": "you as object (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 33,
+      "sourceRank": 33,
+      "sourceCount": 513104,
+      "unpointed": "יותר",
+      "senses": [
+        {
+          "id": "yoter_more",
+          "pointed": "יוֹתֵר",
+          "latin": "yoter",
+          "gloss": "more"
+        }
+      ]
+    },
+    {
+      "rank": 34,
+      "sourceRank": 35,
+      "sourceCount": 464763,
+      "unpointed": "כאן",
+      "senses": [
+        {
+          "id": "kan_here",
+          "pointed": "כָּאן",
+          "latin": "kan",
+          "gloss": "here"
+        }
+      ]
+    },
+    {
+      "rank": 35,
+      "sourceRank": 36,
+      "sourceCount": 463016,
+      "unpointed": "אותי",
+      "senses": [
+        {
+          "id": "oti_me_object",
+          "pointed": "אוֹתִי",
+          "latin": "oti",
+          "gloss": "me as object"
+        }
+      ]
+    },
+    {
+      "rank": 36,
+      "sourceRank": 37,
+      "sourceCount": 458330,
+      "unpointed": "הזה",
+      "senses": [
+        {
+          "id": "haze_this",
+          "pointed": "הַזֶּה",
+          "latin": "haze",
+          "gloss": "this (masculine)"
+        }
+      ]
+    },
+    {
+      "rank": 37,
+      "sourceRank": 38,
+      "sourceCount": 457238,
+      "unpointed": "שאני",
+      "senses": [
+        {
+          "id": "sheani_that_i",
+          "pointed": "שֶׁאֲנִי",
+          "latin": "she'ani",
+          "gloss": "that I"
+        }
+      ]
+    },
+    {
+      "rank": 38,
+      "sourceRank": 39,
+      "sourceCount": 446960,
+      "unpointed": "למה",
+      "senses": [
+        {
+          "id": "lama_why",
+          "pointed": "לָמָּה",
+          "latin": "lama",
+          "gloss": "why"
+        }
+      ]
+    },
+    {
+      "rank": 39,
+      "sourceRank": 40,
+      "sourceCount": 444663,
+      "unpointed": "להיות",
+      "senses": [
+        {
+          "id": "lihyot_to_be",
+          "pointed": "לִהְיוֹת",
+          "latin": "lihyot",
+          "gloss": "to be"
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "sourceRank": 41,
+      "sourceCount": 427441,
+      "unpointed": "עכשיו",
+      "senses": [
+        {
+          "id": "akhshav_now",
+          "pointed": "עַכְשָׁיו",
+          "latin": "akhshav",
+          "gloss": "now"
+        }
+      ]
+    },
+    {
+      "rank": 41,
+      "sourceRank": 42,
+      "sourceCount": 426276,
+      "unpointed": "או",
+      "senses": [
+        {
+          "id": "o_or",
+          "pointed": "אוֹ",
+          "latin": "o",
+          "gloss": "or"
+        }
+      ]
+    },
+    {
+      "rank": 42,
+      "sourceRank": 43,
+      "sourceCount": 411425,
+      "unpointed": "אחד",
+      "senses": [
+        {
+          "id": "ekhad_one",
+          "pointed": "אֶחָד",
+          "latin": "ekhad",
+          "gloss": "one (masculine)"
+        }
+      ]
+    },
+    {
+      "rank": 43,
+      "sourceRank": 44,
+      "sourceCount": 408759,
+      "unpointed": "משהו",
+      "senses": [
+        {
+          "id": "mashehu_something",
+          "pointed": "מַשֶּׁהוּ",
+          "latin": "mashehu",
+          "gloss": "something"
+        }
+      ]
+    },
+    {
+      "rank": 44,
+      "sourceRank": 45,
+      "sourceCount": 402328,
+      "unpointed": "היי",
+      "senses": [
+        {
+          "id": "hai_hi",
+          "pointed": "הַי",
+          "latin": "hai",
+          "gloss": "hi; hey",
+          "spellingNote": "The frequency source spells this loanword היי; the pointed teaching form follows הַי."
+        }
+      ]
+    },
+    {
+      "rank": 45,
+      "sourceRank": 46,
+      "sourceCount": 385945,
+      "unpointed": "צריך",
+      "senses": [
+        {
+          "id": "tsarikh_needs_m",
+          "pointed": "צָרִיךְ",
+          "latin": "tsarikh",
+          "gloss": "needs; must (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 46,
+      "sourceRank": 47,
+      "sourceCount": 384782,
+      "unpointed": "כמו",
+      "senses": [
+        {
+          "id": "kmo_like",
+          "pointed": "כְּמוֹ",
+          "latin": "kmo",
+          "gloss": "like; as"
+        }
+      ]
+    },
+    {
+      "rank": 47,
+      "sourceRank": 48,
+      "sourceCount": 372777,
+      "unpointed": "אל",
+      "senses": [
+        {
+          "id": "el_to",
+          "pointed": "אֶל",
+          "latin": "el",
+          "gloss": "to; toward"
+        },
+        {
+          "id": "al_do_not",
+          "pointed": "אַל",
+          "latin": "al",
+          "gloss": "do not (negative command)"
+        }
+      ]
+    },
+    {
+      "rank": 48,
+      "sourceRank": 49,
+      "sourceCount": 370516,
+      "unpointed": "כך",
+      "senses": [
+        {
+          "id": "kakh_so",
+          "pointed": "כָּךְ",
+          "latin": "kakh",
+          "gloss": "so; thus; this way"
+        }
+      ]
+    },
+    {
+      "rank": 49,
+      "sourceRank": 50,
+      "sourceCount": 369797,
+      "unpointed": "איך",
+      "senses": [
+        {
+          "id": "eikh_how",
+          "pointed": "אֵיךְ",
+          "latin": "eikh",
+          "gloss": "how"
+        }
+      ]
+    },
+    {
+      "rank": 50,
+      "sourceRank": 51,
+      "sourceCount": 356926,
+      "unpointed": "אין",
+      "senses": [
+        {
+          "id": "ein_there_is_not",
+          "pointed": "אֵין",
+          "latin": "ein",
+          "gloss": "there is not; do not have"
+        }
+      ]
+    },
+    {
+      "rank": 51,
+      "sourceRank": 52,
+      "sourceCount": 356275,
+      "unpointed": "נכון",
+      "senses": [
+        {
+          "id": "nakhon_correct",
+          "pointed": "נָכוֹן",
+          "latin": "nakhon",
+          "gloss": "correct; right; true"
+        }
+      ]
+    },
+    {
+      "rank": 52,
+      "sourceRank": 53,
+      "sourceCount": 356015,
+      "unpointed": "לעשות",
+      "senses": [
+        {
+          "id": "laasot_to_do",
+          "pointed": "לַעֲשׂוֹת",
+          "latin": "la'asot",
+          "gloss": "to do; to make"
+        }
+      ]
+    },
+    {
+      "rank": 53,
+      "sourceRank": 54,
+      "sourceCount": 347886,
+      "unpointed": "תודה",
+      "senses": [
+        {
+          "id": "toda_thanks",
+          "pointed": "תּוֹדָה",
+          "latin": "toda",
+          "gloss": "thanks; thank you"
+        }
+      ]
+    },
+    {
+      "rank": 54,
+      "sourceRank": 55,
+      "sourceCount": 329108,
+      "unpointed": "לו",
+      "senses": [
+        {
+          "id": "lo_to_him",
+          "pointed": "לוֹ",
+          "latin": "lo",
+          "gloss": "to him; for him"
+        }
+      ]
+    },
+    {
+      "rank": 55,
+      "sourceRank": 56,
+      "sourceCount": 326243,
+      "unpointed": "לנו",
+      "senses": [
+        {
+          "id": "lanu_to_us",
+          "pointed": "לָנוּ",
+          "latin": "lanu",
+          "gloss": "to us; for us"
+        }
+      ]
+    },
+    {
+      "rank": 56,
+      "sourceRank": 57,
+      "sourceCount": 323270,
+      "unpointed": "שאתה",
+      "senses": [
+        {
+          "id": "sheata_that_you_m",
+          "pointed": "שֶׁאַתָּה",
+          "latin": "she'ata",
+          "gloss": "that you (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 57,
+      "sourceRank": 58,
+      "sourceCount": 320967,
+      "unpointed": "מי",
+      "senses": [
+        {
+          "id": "mi_who",
+          "pointed": "מִי",
+          "latin": "mi",
+          "gloss": "who"
+        }
+      ]
+    },
+    {
+      "rank": 58,
+      "sourceRank": 59,
+      "sourceCount": 317659,
+      "unpointed": "זאת",
+      "senses": [
+        {
+          "id": "zot_this_f",
+          "pointed": "זֹאת",
+          "latin": "zot",
+          "gloss": "this; it (feminine)"
+        }
+      ]
+    },
+    {
+      "rank": 59,
+      "sourceRank": 60,
+      "sourceCount": 317112,
+      "unpointed": "שם",
+      "senses": [
+        {
+          "id": "sham_there",
+          "pointed": "שָׁם",
+          "latin": "sham",
+          "gloss": "there"
+        },
+        {
+          "id": "shem_name",
+          "pointed": "שֵׁם",
+          "latin": "shem",
+          "gloss": "name"
+        }
+      ]
+    },
+    {
+      "rank": 60,
+      "sourceRank": 61,
+      "sourceCount": 312536,
+      "unpointed": "חושב",
+      "senses": [
+        {
+          "id": "khoshev_thinks_m",
+          "pointed": "חוֹשֵׁב",
+          "latin": "khoshev",
+          "gloss": "thinks (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 61,
+      "sourceRank": 62,
+      "sourceCount": 307004,
+      "unpointed": "כדי",
+      "senses": [
+        {
+          "id": "kdei_in_order_to",
+          "pointed": "כְּדֵי",
+          "latin": "kdei",
+          "gloss": "in order to; so that"
+        }
+      ]
+    },
+    {
+      "rank": 62,
+      "sourceRank": 63,
+      "sourceCount": 306651,
+      "unpointed": "שהוא",
+      "senses": [
+        {
+          "id": "shehu_that_he",
+          "pointed": "שֶׁהוּא",
+          "latin": "shehu",
+          "gloss": "that he; that it"
+        }
+      ]
+    },
+    {
+      "rank": 63,
+      "sourceRank": 64,
+      "sourceCount": 303974,
+      "unpointed": "כמה",
+      "senses": [
+        {
+          "id": "kama_how_many",
+          "pointed": "כַּמָּה",
+          "latin": "kama",
+          "gloss": "how many; how much; several"
+        }
+      ]
+    },
+    {
+      "rank": 64,
+      "sourceRank": 65,
+      "sourceCount": 296462,
+      "unpointed": "פשוט",
+      "senses": [
+        {
+          "id": "pashut_simple",
+          "pointed": "פָּשׁוּט",
+          "latin": "pashut",
+          "gloss": "simple; simply; just"
+        }
+      ]
+    },
+    {
+      "rank": 65,
+      "sourceRank": 66,
+      "sourceCount": 294931,
+      "unpointed": "יודעת",
+      "senses": [
+        {
+          "id": "yodaat_knows_f",
+          "pointed": "יוֹדַעַת",
+          "latin": "yoda'at",
+          "gloss": "knows (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 66,
+      "sourceRank": 67,
+      "sourceCount": 290629,
+      "unpointed": "אותה",
+      "senses": [
+        {
+          "id": "otah_her",
+          "pointed": "אוֹתָהּ",
+          "latin": "otah",
+          "gloss": "her; it; the same (feminine)"
+        }
+      ]
+    },
+    {
+      "rank": 67,
+      "sourceRank": 68,
+      "sourceCount": 289547,
+      "unpointed": "אולי",
+      "senses": [
+        {
+          "id": "ulai_maybe",
+          "pointed": "אוּלַי",
+          "latin": "ulai",
+          "gloss": "maybe; perhaps"
+        }
+      ]
+    },
+    {
+      "rank": 68,
+      "sourceRank": 69,
+      "sourceCount": 288509,
+      "unpointed": "באמת",
+      "senses": [
+        {
+          "id": "beemet_really",
+          "pointed": "בֶּאֱמֶת",
+          "latin": "be'emet",
+          "gloss": "really; truly"
+        }
+      ]
+    },
+    {
+      "rank": 69,
+      "sourceRank": 70,
+      "sourceCount": 284625,
+      "unpointed": "כי",
+      "senses": [
+        {
+          "id": "ki_because",
+          "pointed": "כִּי",
+          "latin": "ki",
+          "gloss": "because; that"
+        }
+      ]
+    },
+    {
+      "rank": 70,
+      "sourceRank": 71,
+      "sourceCount": 284462,
+      "unpointed": "הייתי",
+      "senses": [
+        {
+          "id": "hayiti_i_was",
+          "pointed": "הָיִיתִי",
+          "latin": "hayiti",
+          "gloss": "I was"
+        }
+      ]
+    },
+    {
+      "rank": 71,
+      "sourceRank": 72,
+      "sourceCount": 279818,
+      "unpointed": "שזה",
+      "senses": [
+        {
+          "id": "sheze_that_this",
+          "pointed": "שֶׁזֶּה",
+          "latin": "sheze",
+          "gloss": "that this; that it"
+        }
+      ]
+    },
+    {
+      "rank": 72,
+      "sourceRank": 73,
+      "sourceCount": 278375,
+      "unpointed": "גם",
+      "senses": [
+        {
+          "id": "gam_also",
+          "pointed": "גַּם",
+          "latin": "gam",
+          "gloss": "also; too"
+        }
+      ]
+    },
+    {
+      "rank": 73,
+      "sourceRank": 74,
+      "sourceCount": 269029,
+      "unpointed": "זו",
+      "senses": [
+        {
+          "id": "zo_this_f",
+          "pointed": "זוֹ",
+          "latin": "zo",
+          "gloss": "this (feminine)"
+        }
+      ]
+    },
+    {
+      "rank": 74,
+      "sourceRank": 75,
+      "sourceCount": 259254,
+      "unpointed": "עושה",
+      "senses": [
+        {
+          "id": "ose_does_m",
+          "pointed": "עוֹשֶׂה",
+          "latin": "ose",
+          "gloss": "does; makes (masculine singular)"
+        },
+        {
+          "id": "osa_does_f",
+          "pointed": "עוֹשָׂה",
+          "latin": "osa",
+          "gloss": "does; makes (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 75,
+      "sourceRank": 76,
+      "sourceCount": 253962,
+      "unpointed": "האם",
+      "senses": [
+        {
+          "id": "haim_question",
+          "pointed": "הַאִם",
+          "latin": "ha'im",
+          "gloss": "whether; formal yes/no question marker"
+        }
+      ]
+    },
+    {
+      "rank": 76,
+      "sourceRank": 77,
+      "sourceCount": 251631,
+      "unpointed": "ואני",
+      "senses": [
+        {
+          "id": "vaani_and_i",
+          "pointed": "וַאֲנִי",
+          "latin": "va'ani",
+          "gloss": "and I"
+        }
+      ]
+    },
+    {
+      "rank": 77,
+      "sourceRank": 78,
+      "sourceCount": 250435,
+      "unpointed": "דבר",
+      "senses": [
+        {
+          "id": "davar_thing",
+          "pointed": "דָּבָר",
+          "latin": "davar",
+          "gloss": "thing; matter; word"
+        },
+        {
+          "id": "daber_speak",
+          "pointed": "דַּבֵּר",
+          "latin": "daber",
+          "gloss": "speak! (masculine singular command)"
+        }
+      ]
+    },
+    {
+      "rank": 78,
+      "sourceRank": 79,
+      "sourceCount": 249809,
+      "unpointed": "שלו",
+      "senses": [
+        {
+          "id": "shelo_his",
+          "pointed": "שֶׁלּוֹ",
+          "latin": "shelo",
+          "gloss": "his"
+        }
+      ]
+    },
+    {
+      "rank": 79,
+      "sourceRank": 80,
+      "sourceCount": 242627,
+      "unpointed": "עוד",
+      "senses": [
+        {
+          "id": "od_more",
+          "pointed": "עוֹד",
+          "latin": "od",
+          "gloss": "more; another; still"
+        }
+      ]
+    },
+    {
+      "rank": 80,
+      "sourceRank": 81,
+      "sourceCount": 240024,
+      "unpointed": "כבר",
+      "senses": [
+        {
+          "id": "kvar_already",
+          "pointed": "כְּבָר",
+          "latin": "kvar",
+          "gloss": "already"
+        }
+      ]
+    },
+    {
+      "rank": 81,
+      "sourceRank": 82,
+      "sourceCount": 237818,
+      "unpointed": "שלא",
+      "senses": [
+        {
+          "id": "shelo_that_not",
+          "pointed": "שֶׁלֹּא",
+          "latin": "shelo",
+          "gloss": "that not; who does not"
+        }
+      ]
+    },
+    {
+      "rank": 82,
+      "sourceRank": 83,
+      "sourceCount": 233617,
+      "unpointed": "נראה",
+      "senses": [
+        {
+          "id": "nire_seems",
+          "pointed": "נִרְאֶה",
+          "latin": "nir'e",
+          "gloss": "seems; appears; is seen (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 83,
+      "sourceRank": 84,
+      "sourceCount": 232906,
+      "unpointed": "שלנו",
+      "senses": [
+        {
+          "id": "shelanu_ours",
+          "pointed": "שֶׁלָּנוּ",
+          "latin": "shelanu",
+          "gloss": "our; ours"
+        }
+      ]
+    },
+    {
+      "rank": 84,
+      "sourceRank": 85,
+      "sourceCount": 219780,
+      "unpointed": "מאוד",
+      "senses": [
+        {
+          "id": "meod_very",
+          "pointed": "מְאוֹד",
+          "latin": "me'od",
+          "gloss": "very; very much"
+        }
+      ]
+    },
+    {
+      "rank": 85,
+      "sourceRank": 86,
+      "sourceCount": 213831,
+      "unpointed": "לפני",
+      "senses": [
+        {
+          "id": "lifnei_before",
+          "pointed": "לִפְנֵי",
+          "latin": "lifnei",
+          "gloss": "before; in front of"
+        }
+      ]
+    },
+    {
+      "rank": 86,
+      "sourceRank": 87,
+      "sourceCount": 212974,
+      "unpointed": "הרבה",
+      "senses": [
+        {
+          "id": "harbe_a_lot",
+          "pointed": "הַרְבֵּה",
+          "latin": "harbe",
+          "gloss": "a lot; many; much"
+        }
+      ]
+    },
+    {
+      "rank": 87,
+      "sourceRank": 88,
+      "sourceCount": 210405,
+      "unpointed": "בבקשה",
+      "senses": [
+        {
+          "id": "bevakasha_please",
+          "pointed": "בְּבַקָּשָׁה",
+          "latin": "bevakasha",
+          "gloss": "please; you're welcome"
+        }
+      ]
+    },
+    {
+      "rank": 88,
+      "sourceRank": 89,
+      "sourceCount": 209279,
+      "unpointed": "הולך",
+      "senses": [
+        {
+          "id": "holekh_goes_m",
+          "pointed": "הוֹלֵךְ",
+          "latin": "holekh",
+          "gloss": "goes; walks (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 89,
+      "sourceRank": 90,
+      "sourceCount": 206030,
+      "unpointed": "קדימה",
+      "senses": [
+        {
+          "id": "kadima_come_on",
+          "pointed": "קָדִימָה",
+          "latin": "kadima",
+          "gloss": "forward; come on; let's go"
+        }
+      ]
+    },
+    {
+      "rank": 90,
+      "sourceRank": 91,
+      "sourceCount": 205303,
+      "unpointed": "אומר",
+      "senses": [
+        {
+          "id": "omer_says_m",
+          "pointed": "אוֹמֵר",
+          "latin": "omer",
+          "gloss": "says (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 91,
+      "sourceRank": 92,
+      "sourceCount": 202862,
+      "unpointed": "יהיה",
+      "senses": [
+        {
+          "id": "yihye_will_be",
+          "pointed": "יִהְיֶה",
+          "latin": "yihye",
+          "gloss": "will be (masculine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 92,
+      "sourceRank": 93,
+      "sourceCount": 201187,
+      "unpointed": "יכולה",
+      "senses": [
+        {
+          "id": "yekhola_can_f",
+          "pointed": "יְכוֹלָה",
+          "latin": "yekhola",
+          "gloss": "can; able (feminine singular)"
+        }
+      ]
+    },
+    {
+      "rank": 93,
+      "sourceRank": 94,
+      "sourceCount": 201053,
+      "unpointed": "פעם",
+      "senses": [
+        {
+          "id": "paam_time",
+          "pointed": "פַּעַם",
+          "latin": "pa'am",
+          "gloss": "time; once"
+        }
+      ]
+    },
+    {
+      "rank": 94,
+      "sourceRank": 95,
+      "sourceCount": 199628,
+      "unpointed": "זמן",
+      "senses": [
+        {
+          "id": "zman_time",
+          "pointed": "זְמַן",
+          "latin": "zman",
+          "gloss": "time"
+        }
+      ]
+    },
+    {
+      "rank": 95,
+      "sourceRank": 96,
+      "sourceCount": 198732,
+      "unpointed": "אתם",
+      "senses": [
+        {
+          "id": "atem_you_plural",
+          "pointed": "אַתֶּם",
+          "latin": "atem",
+          "gloss": "you (masculine or mixed plural)"
+        }
+      ]
+    },
+    {
+      "rank": 96,
+      "sourceRank": 97,
+      "sourceCount": 198438,
+      "unpointed": "עדיין",
+      "senses": [
+        {
+          "id": "adayin_still",
+          "pointed": "עֲדַיִן",
+          "latin": "adayin",
+          "gloss": "still; yet",
+          "spellingNote": "The pointed form uses one yod; ordinary unpointed spelling uses the plene form עדיין with two."
+        }
+      ]
+    },
+    {
+      "rank": 97,
+      "sourceRank": 98,
+      "sourceCount": 197041,
+      "unpointed": "עד",
+      "senses": [
+        {
+          "id": "ad_until",
+          "pointed": "עַד",
+          "latin": "ad",
+          "gloss": "until; up to"
+        },
+        {
+          "id": "ed_witness",
+          "pointed": "עֵד",
+          "latin": "ed",
+          "gloss": "witness"
+        }
+      ]
+    },
+    {
+      "rank": 98,
+      "sourceRank": 99,
+      "sourceCount": 193609,
+      "unpointed": "ממש",
+      "senses": [
+        {
+          "id": "mamash_really",
+          "pointed": "מַמָּשׁ",
+          "latin": "mamash",
+          "gloss": "really; actually"
+        }
+      ]
+    },
+    {
+      "rank": 99,
+      "sourceRank": 100,
+      "sourceCount": 193433,
+      "unpointed": "אלוהים",
+      "senses": [
+        {
+          "id": "elohim_god",
+          "pointed": "אֱלֹהִים",
+          "latin": "elohim",
+          "gloss": "God; gods",
+          "spellingNote": "The traditional pointed form uses holam without the vav that appears in ordinary unpointed spelling."
+        }
+      ]
+    },
+    {
+      "rank": 100,
+      "sourceRank": 101,
+      "sourceCount": 192081,
+      "unpointed": "ובכן",
+      "senses": [
+        {
+          "id": "uvkhen_well",
+          "pointed": "וּבְכֵן",
+          "latin": "uvkhen",
+          "gloss": "well; then; so"
+        }
+      ]
+    }
+  ]
+}

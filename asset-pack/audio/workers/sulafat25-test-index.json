@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "alphabet.alef.sound.a": {
+      "path": "generated/sulafat/alphabet/alef/sound-a.mp3",
+      "transcript": "אָ",
+      "profile": "sound",
+      "voice": "Sulafat",
+      "model": "gemini-2.5-flash-preview-tts",
+      "generatedAt": "2026-08-15T04:29:58.125513+00:00",
+      "codec": "mp3",
+      "sampleRateHz": 24000,
+      "channels": 1,
+      "durationSeconds": 0.971,
+      "bytes": 8492,
+      "sha256": "b4075fad24de741f89efb0eb5ed94e5c4ef82655e5db0372d42821769005228d"
+    }
+  }
+}

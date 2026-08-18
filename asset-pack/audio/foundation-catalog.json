@@ -1,0 +1,1773 @@
+{
+  "schemaVersion": 1,
+  "model": "gemini-3.1-flash-tts-preview",
+  "language": "he-IL",
+  "primaryVoice": "Sulafat",
+  "secondaryVoice": "Iapetus",
+  "voices": {
+    "female": "Sulafat",
+    "male": "Iapetus"
+  },
+  "items": [
+    {
+      "id": "sulafat.alphabet.alef.name",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "letter_name",
+      "transcript": "אָלֶף",
+      "path": "generated/sulafat/alphabet/alef/name.mp3",
+      "semanticId": "alphabet.alef.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "path": "generated/sulafat/alphabet/alef/sound-a.mp3",
+      "semanticId": "alphabet.alef.sound.a",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.bet.name",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "letter_name",
+      "transcript": "בֵּית",
+      "path": "generated/sulafat/alphabet/bet/name.mp3",
+      "semanticId": "alphabet.bet.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.bet.sound.b",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/sulafat/alphabet/bet/sound-b.mp3",
+      "semanticId": "alphabet.bet.sound.b",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.bet.sound.v",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָ",
+      "path": "generated/sulafat/alphabet/bet/sound-v.mp3",
+      "semanticId": "alphabet.bet.sound.v",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.gimel.name",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "letter_name",
+      "transcript": "גִּימֶל",
+      "path": "generated/sulafat/alphabet/gimel/name.mp3",
+      "semanticId": "alphabet.gimel.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.gimel.sound.g",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "sound",
+      "transcript": "גָּ",
+      "path": "generated/sulafat/alphabet/gimel/sound-g.mp3",
+      "semanticId": "alphabet.gimel.sound.g",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.dalet.name",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "letter_name",
+      "transcript": "דָּלֶת",
+      "path": "generated/sulafat/alphabet/dalet/name.mp3",
+      "semanticId": "alphabet.dalet.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.dalet.sound.d",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "sound",
+      "transcript": "דָּ",
+      "path": "generated/sulafat/alphabet/dalet/sound-d.mp3",
+      "semanticId": "alphabet.dalet.sound.d",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.he.name",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "letter_name",
+      "transcript": "הֵא",
+      "path": "generated/sulafat/alphabet/he/name.mp3",
+      "semanticId": "alphabet.he.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.he.sound.h",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "sound",
+      "transcript": "הָ",
+      "path": "generated/sulafat/alphabet/he/sound-h.mp3",
+      "semanticId": "alphabet.he.sound.h",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.vav.name",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "letter_name",
+      "transcript": "וָו",
+      "path": "generated/sulafat/alphabet/vav/name.mp3",
+      "semanticId": "alphabet.vav.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.vav.sound.v",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "וָ",
+      "path": "generated/sulafat/alphabet/vav/sound-v.mp3",
+      "semanticId": "alphabet.vav.sound.v",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.vav.sound.o",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוֹ",
+      "path": "generated/sulafat/alphabet/vav/sound-o.mp3",
+      "semanticId": "alphabet.vav.sound.o",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.vav.sound.u",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוּ",
+      "path": "generated/sulafat/alphabet/vav/sound-u.mp3",
+      "semanticId": "alphabet.vav.sound.u",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.zayin.name",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "letter_name",
+      "transcript": "זַיִן",
+      "path": "generated/sulafat/alphabet/zayin/name.mp3",
+      "semanticId": "alphabet.zayin.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.zayin.sound.z",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "sound",
+      "transcript": "זָ",
+      "path": "generated/sulafat/alphabet/zayin/sound-z.mp3",
+      "semanticId": "alphabet.zayin.sound.z",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.het.name",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "letter_name",
+      "transcript": "חֵית",
+      "path": "generated/sulafat/alphabet/het/name.mp3",
+      "semanticId": "alphabet.het.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.het.sound.kh",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "sound",
+      "transcript": "חָ",
+      "path": "generated/sulafat/alphabet/het/sound-kh.mp3",
+      "semanticId": "alphabet.het.sound.kh",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.tet.name",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "letter_name",
+      "transcript": "טֵית",
+      "path": "generated/sulafat/alphabet/tet/name.mp3",
+      "semanticId": "alphabet.tet.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.tet.sound.t",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "sound",
+      "transcript": "טָ",
+      "path": "generated/sulafat/alphabet/tet/sound-t.mp3",
+      "semanticId": "alphabet.tet.sound.t",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.yod.name",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "letter_name",
+      "transcript": "יוֹד",
+      "path": "generated/sulafat/alphabet/yod/name.mp3",
+      "semanticId": "alphabet.yod.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.yod.sound.y",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "יָ",
+      "path": "generated/sulafat/alphabet/yod/sound-y.mp3",
+      "semanticId": "alphabet.yod.sound.y",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.yod.sound.i",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "אִי",
+      "path": "generated/sulafat/alphabet/yod/sound-i.mp3",
+      "semanticId": "alphabet.yod.sound.i",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.kaf.name",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף",
+      "path": "generated/sulafat/alphabet/kaf/name.mp3",
+      "semanticId": "alphabet.kaf.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.kaf.sound.k",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָּ",
+      "path": "generated/sulafat/alphabet/kaf/sound-k.mp3",
+      "semanticId": "alphabet.kaf.sound.k",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.kaf.sound.kh",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָ",
+      "path": "generated/sulafat/alphabet/kaf/sound-kh.mp3",
+      "semanticId": "alphabet.kaf.sound.kh",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.final_kaf.name",
+      "category": "alphabet",
+      "itemId": "final_kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_kaf/name.mp3",
+      "semanticId": "alphabet.final_kaf.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.lamed.name",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "letter_name",
+      "transcript": "לָמֶד",
+      "path": "generated/sulafat/alphabet/lamed/name.mp3",
+      "semanticId": "alphabet.lamed.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.lamed.sound.l",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "sound",
+      "transcript": "לָ",
+      "path": "generated/sulafat/alphabet/lamed/sound-l.mp3",
+      "semanticId": "alphabet.lamed.sound.l",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.mem.name",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "letter_name",
+      "transcript": "מֵם",
+      "path": "generated/sulafat/alphabet/mem/name.mp3",
+      "semanticId": "alphabet.mem.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.mem.sound.m",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "sound",
+      "transcript": "מָ",
+      "path": "generated/sulafat/alphabet/mem/sound-m.mp3",
+      "semanticId": "alphabet.mem.sound.m",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.final_mem.name",
+      "category": "alphabet",
+      "itemId": "final_mem",
+      "profile": "letter_name",
+      "transcript": "מֵם סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_mem/name.mp3",
+      "semanticId": "alphabet.final_mem.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.nun.name",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "letter_name",
+      "transcript": "נוּן",
+      "path": "generated/sulafat/alphabet/nun/name.mp3",
+      "semanticId": "alphabet.nun.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.nun.sound.n",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "sound",
+      "transcript": "נָ",
+      "path": "generated/sulafat/alphabet/nun/sound-n.mp3",
+      "semanticId": "alphabet.nun.sound.n",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.final_nun.name",
+      "category": "alphabet",
+      "itemId": "final_nun",
+      "profile": "letter_name",
+      "transcript": "נוּן סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_nun/name.mp3",
+      "semanticId": "alphabet.final_nun.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.samekh.name",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "letter_name",
+      "transcript": "סָמֶךְ",
+      "path": "generated/sulafat/alphabet/samekh/name.mp3",
+      "semanticId": "alphabet.samekh.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.samekh.sound.s",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "sound",
+      "transcript": "סָ",
+      "path": "generated/sulafat/alphabet/samekh/sound-s.mp3",
+      "semanticId": "alphabet.samekh.sound.s",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.ayin.name",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "letter_name",
+      "transcript": "עַיִן",
+      "path": "generated/sulafat/alphabet/ayin/name.mp3",
+      "semanticId": "alphabet.ayin.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.ayin.sound.a",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "sound",
+      "transcript": "עָ",
+      "path": "generated/sulafat/alphabet/ayin/sound-a.mp3",
+      "semanticId": "alphabet.ayin.sound.a",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.pe.name",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא",
+      "path": "generated/sulafat/alphabet/pe/name.mp3",
+      "semanticId": "alphabet.pe.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.pe.sound.p",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָּ",
+      "path": "generated/sulafat/alphabet/pe/sound-p.mp3",
+      "semanticId": "alphabet.pe.sound.p",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.pe.sound.f",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָ",
+      "path": "generated/sulafat/alphabet/pe/sound-f.mp3",
+      "semanticId": "alphabet.pe.sound.f",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.final_pe.name",
+      "category": "alphabet",
+      "itemId": "final_pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_pe/name.mp3",
+      "semanticId": "alphabet.final_pe.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.tsadi.name",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי",
+      "path": "generated/sulafat/alphabet/tsadi/name.mp3",
+      "semanticId": "alphabet.tsadi.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.tsadi.sound.ts",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "sound",
+      "transcript": "צָ",
+      "path": "generated/sulafat/alphabet/tsadi/sound-ts.mp3",
+      "semanticId": "alphabet.tsadi.sound.ts",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.final_tsadi.name",
+      "category": "alphabet",
+      "itemId": "final_tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_tsadi/name.mp3",
+      "semanticId": "alphabet.final_tsadi.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.qof.name",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "letter_name",
+      "transcript": "קוֹף",
+      "path": "generated/sulafat/alphabet/qof/name.mp3",
+      "semanticId": "alphabet.qof.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.qof.sound.k",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "sound",
+      "transcript": "קָ",
+      "path": "generated/sulafat/alphabet/qof/sound-k.mp3",
+      "semanticId": "alphabet.qof.sound.k",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.resh.name",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "letter_name",
+      "transcript": "רֵישׁ",
+      "path": "generated/sulafat/alphabet/resh/name.mp3",
+      "semanticId": "alphabet.resh.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.resh.sound.r",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "sound",
+      "transcript": "רָ",
+      "path": "generated/sulafat/alphabet/resh/sound-r.mp3",
+      "semanticId": "alphabet.resh.sound.r",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.shin.name",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "letter_name",
+      "transcript": "שִׁין",
+      "path": "generated/sulafat/alphabet/shin/name.mp3",
+      "semanticId": "alphabet.shin.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.shin.sound.sh",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/sulafat/alphabet/shin/sound-sh.mp3",
+      "semanticId": "alphabet.shin.sound.sh",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.shin.sound.s",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/sulafat/alphabet/shin/sound-s.mp3",
+      "semanticId": "alphabet.shin.sound.s",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.tav.name",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "letter_name",
+      "transcript": "תָּו",
+      "path": "generated/sulafat/alphabet/tav/name.mp3",
+      "semanticId": "alphabet.tav.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.alphabet.tav.sound.t",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "sound",
+      "transcript": "תָּ",
+      "path": "generated/sulafat/alphabet/tav/sound-t.mp3",
+      "semanticId": "alphabet.tav.sound.t",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "path": "generated/sulafat/niqqud/sheva/name.mp3",
+      "semanticId": "niqqud.sheva.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.sheva.sound",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "sound",
+      "transcript": "בְּ",
+      "path": "generated/sulafat/niqqud/sheva/sound.mp3",
+      "semanticId": "niqqud.sheva.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_segol.name",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "mark_name",
+      "transcript": "חֲטַף סֶגּוֹל",
+      "path": "generated/sulafat/niqqud/hataf_segol/name.mp3",
+      "semanticId": "niqqud.hataf_segol.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_segol.sound",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "sound",
+      "transcript": "אֱ",
+      "path": "generated/sulafat/niqqud/hataf_segol/sound.mp3",
+      "semanticId": "niqqud.hataf_segol.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_patah.name",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "mark_name",
+      "transcript": "חֲטַף פַּתָּח",
+      "path": "generated/sulafat/niqqud/hataf_patah/name.mp3",
+      "semanticId": "niqqud.hataf_patah.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_patah.sound",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "sound",
+      "transcript": "אֲ",
+      "path": "generated/sulafat/niqqud/hataf_patah/sound.mp3",
+      "semanticId": "niqqud.hataf_patah.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_qamats.name",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "mark_name",
+      "transcript": "חֲטַף קָמָץ",
+      "path": "generated/sulafat/niqqud/hataf_qamats/name.mp3",
+      "semanticId": "niqqud.hataf_qamats.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_qamats.sound",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "sound",
+      "transcript": "אֳ",
+      "path": "generated/sulafat/niqqud/hataf_qamats/sound.mp3",
+      "semanticId": "niqqud.hataf_qamats.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hiriq.name",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "mark_name",
+      "transcript": "חִירִיק",
+      "path": "generated/sulafat/niqqud/hiriq/name.mp3",
+      "semanticId": "niqqud.hiriq.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.hiriq.sound",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "sound",
+      "transcript": "בִּי",
+      "path": "generated/sulafat/niqqud/hiriq/sound.mp3",
+      "semanticId": "niqqud.hiriq.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.tsere.name",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "mark_name",
+      "transcript": "צֵירֵי",
+      "path": "generated/sulafat/niqqud/tsere/name.mp3",
+      "semanticId": "niqqud.tsere.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.tsere.sound",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "sound",
+      "transcript": "בֵּ",
+      "path": "generated/sulafat/niqqud/tsere/sound.mp3",
+      "semanticId": "niqqud.tsere.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.segol.name",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "mark_name",
+      "transcript": "סֶגּוֹל",
+      "path": "generated/sulafat/niqqud/segol/name.mp3",
+      "semanticId": "niqqud.segol.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.segol.sound",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "sound",
+      "transcript": "בֶּ",
+      "path": "generated/sulafat/niqqud/segol/sound.mp3",
+      "semanticId": "niqqud.segol.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.patah.name",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "mark_name",
+      "transcript": "פַּתָּח",
+      "path": "generated/sulafat/niqqud/patah/name.mp3",
+      "semanticId": "niqqud.patah.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.patah.sound",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "sound",
+      "transcript": "בַּ",
+      "path": "generated/sulafat/niqqud/patah/sound.mp3",
+      "semanticId": "niqqud.patah.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.qamats.name",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "mark_name",
+      "transcript": "קָמָץ",
+      "path": "generated/sulafat/niqqud/qamats/name.mp3",
+      "semanticId": "niqqud.qamats.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.qamats.sound",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/sulafat/niqqud/qamats/sound.mp3",
+      "semanticId": "niqqud.qamats.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.qamats_qatan.name",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "mark_name",
+      "transcript": "קָמָץ קָטָן",
+      "path": "generated/sulafat/niqqud/qamats_qatan/name.mp3",
+      "semanticId": "niqqud.qamats_qatan.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.qamats_qatan.sound",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "sound",
+      "transcript": "כׇּל",
+      "path": "generated/sulafat/niqqud/qamats_qatan/sound.mp3",
+      "semanticId": "niqqud.qamats_qatan.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.holam.name",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "mark_name",
+      "transcript": "חוֹלָם",
+      "path": "generated/sulafat/niqqud/holam/name.mp3",
+      "semanticId": "niqqud.holam.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.holam.sound",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "sound",
+      "transcript": "בּוֹ",
+      "path": "generated/sulafat/niqqud/holam/sound.mp3",
+      "semanticId": "niqqud.holam.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.qubuts.name",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "mark_name",
+      "transcript": "קֻבּוּץ",
+      "path": "generated/sulafat/niqqud/qubuts/name.mp3",
+      "semanticId": "niqqud.qubuts.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.qubuts.sound",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "sound",
+      "transcript": "בֻּ",
+      "path": "generated/sulafat/niqqud/qubuts/sound.mp3",
+      "semanticId": "niqqud.qubuts.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.shuruk.name",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "mark_name",
+      "transcript": "שׁוּרוּק",
+      "path": "generated/sulafat/niqqud/shuruk/name.mp3",
+      "semanticId": "niqqud.shuruk.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.shuruk.sound",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "sound",
+      "transcript": "בּוּ",
+      "path": "generated/sulafat/niqqud/shuruk/sound.mp3",
+      "semanticId": "niqqud.shuruk.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.dagesh.name",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "mark_name",
+      "transcript": "דָּגֵשׁ",
+      "path": "generated/sulafat/niqqud/dagesh/name.mp3",
+      "semanticId": "niqqud.dagesh.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.dagesh.sound",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "sound",
+      "transcript": "בָּ. כָּ. פָּ.",
+      "path": "generated/sulafat/niqqud/dagesh/sound.mp3",
+      "semanticId": "niqqud.dagesh.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.shin_dot.name",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׁין",
+      "path": "generated/sulafat/niqqud/shin_dot/name.mp3",
+      "semanticId": "niqqud.shin_dot.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.shin_dot.sound",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/sulafat/niqqud/shin_dot/sound.mp3",
+      "semanticId": "niqqud.shin_dot.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.sin_dot.name",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׂין",
+      "path": "generated/sulafat/niqqud/sin_dot/name.mp3",
+      "semanticId": "niqqud.sin_dot.name",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "sulafat.niqqud.sin_dot.sound",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/sulafat/niqqud/sin_dot/sound.mp3",
+      "semanticId": "niqqud.sin_dot.sound",
+      "voice": "Sulafat"
+    },
+    {
+      "id": "iapetus.alphabet.alef.name",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "letter_name",
+      "transcript": "אָלֶף",
+      "path": "generated/iapetus/alphabet/alef/name.mp3",
+      "semanticId": "alphabet.alef.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "path": "generated/iapetus/alphabet/alef/sound-a.mp3",
+      "semanticId": "alphabet.alef.sound.a",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.bet.name",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "letter_name",
+      "transcript": "בֵּית",
+      "path": "generated/iapetus/alphabet/bet/name.mp3",
+      "semanticId": "alphabet.bet.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.bet.sound.b",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/iapetus/alphabet/bet/sound-b.mp3",
+      "semanticId": "alphabet.bet.sound.b",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.bet.sound.v",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָ",
+      "path": "generated/iapetus/alphabet/bet/sound-v.mp3",
+      "semanticId": "alphabet.bet.sound.v",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.gimel.name",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "letter_name",
+      "transcript": "גִּימֶל",
+      "path": "generated/iapetus/alphabet/gimel/name.mp3",
+      "semanticId": "alphabet.gimel.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.gimel.sound.g",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "sound",
+      "transcript": "גָּ",
+      "path": "generated/iapetus/alphabet/gimel/sound-g.mp3",
+      "semanticId": "alphabet.gimel.sound.g",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.dalet.name",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "letter_name",
+      "transcript": "דָּלֶת",
+      "path": "generated/iapetus/alphabet/dalet/name.mp3",
+      "semanticId": "alphabet.dalet.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.dalet.sound.d",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "sound",
+      "transcript": "דָּ",
+      "path": "generated/iapetus/alphabet/dalet/sound-d.mp3",
+      "semanticId": "alphabet.dalet.sound.d",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.he.name",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "letter_name",
+      "transcript": "הֵא",
+      "path": "generated/iapetus/alphabet/he/name.mp3",
+      "semanticId": "alphabet.he.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.he.sound.h",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "sound",
+      "transcript": "הָ",
+      "path": "generated/iapetus/alphabet/he/sound-h.mp3",
+      "semanticId": "alphabet.he.sound.h",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.vav.name",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "letter_name",
+      "transcript": "וָו",
+      "path": "generated/iapetus/alphabet/vav/name.mp3",
+      "semanticId": "alphabet.vav.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.vav.sound.v",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "וָ",
+      "path": "generated/iapetus/alphabet/vav/sound-v.mp3",
+      "semanticId": "alphabet.vav.sound.v",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.vav.sound.o",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוֹ",
+      "path": "generated/iapetus/alphabet/vav/sound-o.mp3",
+      "semanticId": "alphabet.vav.sound.o",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.vav.sound.u",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוּ",
+      "path": "generated/iapetus/alphabet/vav/sound-u.mp3",
+      "semanticId": "alphabet.vav.sound.u",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.zayin.name",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "letter_name",
+      "transcript": "זַיִן",
+      "path": "generated/iapetus/alphabet/zayin/name.mp3",
+      "semanticId": "alphabet.zayin.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.zayin.sound.z",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "sound",
+      "transcript": "זָ",
+      "path": "generated/iapetus/alphabet/zayin/sound-z.mp3",
+      "semanticId": "alphabet.zayin.sound.z",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.het.name",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "letter_name",
+      "transcript": "חֵית",
+      "path": "generated/iapetus/alphabet/het/name.mp3",
+      "semanticId": "alphabet.het.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.het.sound.kh",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "sound",
+      "transcript": "חָ",
+      "path": "generated/iapetus/alphabet/het/sound-kh.mp3",
+      "semanticId": "alphabet.het.sound.kh",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.tet.name",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "letter_name",
+      "transcript": "טֵית",
+      "path": "generated/iapetus/alphabet/tet/name.mp3",
+      "semanticId": "alphabet.tet.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.tet.sound.t",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "sound",
+      "transcript": "טָ",
+      "path": "generated/iapetus/alphabet/tet/sound-t.mp3",
+      "semanticId": "alphabet.tet.sound.t",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.yod.name",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "letter_name",
+      "transcript": "יוֹד",
+      "path": "generated/iapetus/alphabet/yod/name.mp3",
+      "semanticId": "alphabet.yod.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.yod.sound.y",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "יָ",
+      "path": "generated/iapetus/alphabet/yod/sound-y.mp3",
+      "semanticId": "alphabet.yod.sound.y",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.yod.sound.i",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "אִי",
+      "path": "generated/iapetus/alphabet/yod/sound-i.mp3",
+      "semanticId": "alphabet.yod.sound.i",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.kaf.name",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף",
+      "path": "generated/iapetus/alphabet/kaf/name.mp3",
+      "semanticId": "alphabet.kaf.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.kaf.sound.k",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָּ",
+      "path": "generated/iapetus/alphabet/kaf/sound-k.mp3",
+      "semanticId": "alphabet.kaf.sound.k",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.kaf.sound.kh",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָ",
+      "path": "generated/iapetus/alphabet/kaf/sound-kh.mp3",
+      "semanticId": "alphabet.kaf.sound.kh",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.final_kaf.name",
+      "category": "alphabet",
+      "itemId": "final_kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_kaf/name.mp3",
+      "semanticId": "alphabet.final_kaf.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.lamed.name",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "letter_name",
+      "transcript": "לָמֶד",
+      "path": "generated/iapetus/alphabet/lamed/name.mp3",
+      "semanticId": "alphabet.lamed.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.lamed.sound.l",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "sound",
+      "transcript": "לָ",
+      "path": "generated/iapetus/alphabet/lamed/sound-l.mp3",
+      "semanticId": "alphabet.lamed.sound.l",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.mem.name",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "letter_name",
+      "transcript": "מֵם",
+      "path": "generated/iapetus/alphabet/mem/name.mp3",
+      "semanticId": "alphabet.mem.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.mem.sound.m",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "sound",
+      "transcript": "מָ",
+      "path": "generated/iapetus/alphabet/mem/sound-m.mp3",
+      "semanticId": "alphabet.mem.sound.m",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.final_mem.name",
+      "category": "alphabet",
+      "itemId": "final_mem",
+      "profile": "letter_name",
+      "transcript": "מֵם סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_mem/name.mp3",
+      "semanticId": "alphabet.final_mem.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.nun.name",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "letter_name",
+      "transcript": "נוּן",
+      "path": "generated/iapetus/alphabet/nun/name.mp3",
+      "semanticId": "alphabet.nun.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.nun.sound.n",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "sound",
+      "transcript": "נָ",
+      "path": "generated/iapetus/alphabet/nun/sound-n.mp3",
+      "semanticId": "alphabet.nun.sound.n",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.final_nun.name",
+      "category": "alphabet",
+      "itemId": "final_nun",
+      "profile": "letter_name",
+      "transcript": "נוּן סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_nun/name.mp3",
+      "semanticId": "alphabet.final_nun.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.samekh.name",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "letter_name",
+      "transcript": "סָמֶךְ",
+      "path": "generated/iapetus/alphabet/samekh/name.mp3",
+      "semanticId": "alphabet.samekh.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.samekh.sound.s",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "sound",
+      "transcript": "סָ",
+      "path": "generated/iapetus/alphabet/samekh/sound-s.mp3",
+      "semanticId": "alphabet.samekh.sound.s",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.ayin.name",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "letter_name",
+      "transcript": "עַיִן",
+      "path": "generated/iapetus/alphabet/ayin/name.mp3",
+      "semanticId": "alphabet.ayin.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.ayin.sound.a",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "sound",
+      "transcript": "עָ",
+      "path": "generated/iapetus/alphabet/ayin/sound-a.mp3",
+      "semanticId": "alphabet.ayin.sound.a",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.pe.name",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא",
+      "path": "generated/iapetus/alphabet/pe/name.mp3",
+      "semanticId": "alphabet.pe.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.pe.sound.p",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָּ",
+      "path": "generated/iapetus/alphabet/pe/sound-p.mp3",
+      "semanticId": "alphabet.pe.sound.p",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.pe.sound.f",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָ",
+      "path": "generated/iapetus/alphabet/pe/sound-f.mp3",
+      "semanticId": "alphabet.pe.sound.f",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.final_pe.name",
+      "category": "alphabet",
+      "itemId": "final_pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_pe/name.mp3",
+      "semanticId": "alphabet.final_pe.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.tsadi.name",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי",
+      "path": "generated/iapetus/alphabet/tsadi/name.mp3",
+      "semanticId": "alphabet.tsadi.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.tsadi.sound.ts",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "sound",
+      "transcript": "צָ",
+      "path": "generated/iapetus/alphabet/tsadi/sound-ts.mp3",
+      "semanticId": "alphabet.tsadi.sound.ts",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.final_tsadi.name",
+      "category": "alphabet",
+      "itemId": "final_tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_tsadi/name.mp3",
+      "semanticId": "alphabet.final_tsadi.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.qof.name",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "letter_name",
+      "transcript": "קוֹף",
+      "path": "generated/iapetus/alphabet/qof/name.mp3",
+      "semanticId": "alphabet.qof.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.qof.sound.k",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "sound",
+      "transcript": "קָ",
+      "path": "generated/iapetus/alphabet/qof/sound-k.mp3",
+      "semanticId": "alphabet.qof.sound.k",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.resh.name",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "letter_name",
+      "transcript": "רֵישׁ",
+      "path": "generated/iapetus/alphabet/resh/name.mp3",
+      "semanticId": "alphabet.resh.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.resh.sound.r",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "sound",
+      "transcript": "רָ",
+      "path": "generated/iapetus/alphabet/resh/sound-r.mp3",
+      "semanticId": "alphabet.resh.sound.r",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.shin.name",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "letter_name",
+      "transcript": "שִׁין",
+      "path": "generated/iapetus/alphabet/shin/name.mp3",
+      "semanticId": "alphabet.shin.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.shin.sound.sh",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/iapetus/alphabet/shin/sound-sh.mp3",
+      "semanticId": "alphabet.shin.sound.sh",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.shin.sound.s",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/iapetus/alphabet/shin/sound-s.mp3",
+      "semanticId": "alphabet.shin.sound.s",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.tav.name",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "letter_name",
+      "transcript": "תָּו",
+      "path": "generated/iapetus/alphabet/tav/name.mp3",
+      "semanticId": "alphabet.tav.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.alphabet.tav.sound.t",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "sound",
+      "transcript": "תָּ",
+      "path": "generated/iapetus/alphabet/tav/sound-t.mp3",
+      "semanticId": "alphabet.tav.sound.t",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "path": "generated/iapetus/niqqud/sheva/name.mp3",
+      "semanticId": "niqqud.sheva.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.sheva.sound",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "sound",
+      "transcript": "בְּ",
+      "path": "generated/iapetus/niqqud/sheva/sound.mp3",
+      "semanticId": "niqqud.sheva.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_segol.name",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "mark_name",
+      "transcript": "חֲטַף סֶגּוֹל",
+      "path": "generated/iapetus/niqqud/hataf_segol/name.mp3",
+      "semanticId": "niqqud.hataf_segol.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_segol.sound",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "sound",
+      "transcript": "אֱ",
+      "path": "generated/iapetus/niqqud/hataf_segol/sound.mp3",
+      "semanticId": "niqqud.hataf_segol.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_patah.name",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "mark_name",
+      "transcript": "חֲטַף פַּתָּח",
+      "path": "generated/iapetus/niqqud/hataf_patah/name.mp3",
+      "semanticId": "niqqud.hataf_patah.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_patah.sound",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "sound",
+      "transcript": "אֲ",
+      "path": "generated/iapetus/niqqud/hataf_patah/sound.mp3",
+      "semanticId": "niqqud.hataf_patah.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_qamats.name",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "mark_name",
+      "transcript": "חֲטַף קָמָץ",
+      "path": "generated/iapetus/niqqud/hataf_qamats/name.mp3",
+      "semanticId": "niqqud.hataf_qamats.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_qamats.sound",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "sound",
+      "transcript": "אֳ",
+      "path": "generated/iapetus/niqqud/hataf_qamats/sound.mp3",
+      "semanticId": "niqqud.hataf_qamats.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hiriq.name",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "mark_name",
+      "transcript": "חִירִיק",
+      "path": "generated/iapetus/niqqud/hiriq/name.mp3",
+      "semanticId": "niqqud.hiriq.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.hiriq.sound",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "sound",
+      "transcript": "בִּי",
+      "path": "generated/iapetus/niqqud/hiriq/sound.mp3",
+      "semanticId": "niqqud.hiriq.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.tsere.name",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "mark_name",
+      "transcript": "צֵירֵי",
+      "path": "generated/iapetus/niqqud/tsere/name.mp3",
+      "semanticId": "niqqud.tsere.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.tsere.sound",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "sound",
+      "transcript": "בֵּ",
+      "path": "generated/iapetus/niqqud/tsere/sound.mp3",
+      "semanticId": "niqqud.tsere.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.segol.name",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "mark_name",
+      "transcript": "סֶגּוֹל",
+      "path": "generated/iapetus/niqqud/segol/name.mp3",
+      "semanticId": "niqqud.segol.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.segol.sound",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "sound",
+      "transcript": "בֶּ",
+      "path": "generated/iapetus/niqqud/segol/sound.mp3",
+      "semanticId": "niqqud.segol.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.patah.name",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "mark_name",
+      "transcript": "פַּתָּח",
+      "path": "generated/iapetus/niqqud/patah/name.mp3",
+      "semanticId": "niqqud.patah.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.patah.sound",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "sound",
+      "transcript": "בַּ",
+      "path": "generated/iapetus/niqqud/patah/sound.mp3",
+      "semanticId": "niqqud.patah.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.qamats.name",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "mark_name",
+      "transcript": "קָמָץ",
+      "path": "generated/iapetus/niqqud/qamats/name.mp3",
+      "semanticId": "niqqud.qamats.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.qamats.sound",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/iapetus/niqqud/qamats/sound.mp3",
+      "semanticId": "niqqud.qamats.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.qamats_qatan.name",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "mark_name",
+      "transcript": "קָמָץ קָטָן",
+      "path": "generated/iapetus/niqqud/qamats_qatan/name.mp3",
+      "semanticId": "niqqud.qamats_qatan.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.qamats_qatan.sound",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "sound",
+      "transcript": "כׇּל",
+      "path": "generated/iapetus/niqqud/qamats_qatan/sound.mp3",
+      "semanticId": "niqqud.qamats_qatan.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.holam.name",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "mark_name",
+      "transcript": "חוֹלָם",
+      "path": "generated/iapetus/niqqud/holam/name.mp3",
+      "semanticId": "niqqud.holam.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.holam.sound",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "sound",
+      "transcript": "בּוֹ",
+      "path": "generated/iapetus/niqqud/holam/sound.mp3",
+      "semanticId": "niqqud.holam.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.qubuts.name",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "mark_name",
+      "transcript": "קֻבּוּץ",
+      "path": "generated/iapetus/niqqud/qubuts/name.mp3",
+      "semanticId": "niqqud.qubuts.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.qubuts.sound",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "sound",
+      "transcript": "בֻּ",
+      "path": "generated/iapetus/niqqud/qubuts/sound.mp3",
+      "semanticId": "niqqud.qubuts.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.shuruk.name",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "mark_name",
+      "transcript": "שׁוּרוּק",
+      "path": "generated/iapetus/niqqud/shuruk/name.mp3",
+      "semanticId": "niqqud.shuruk.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.shuruk.sound",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "sound",
+      "transcript": "בּוּ",
+      "path": "generated/iapetus/niqqud/shuruk/sound.mp3",
+      "semanticId": "niqqud.shuruk.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.dagesh.name",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "mark_name",
+      "transcript": "דָּגֵשׁ",
+      "path": "generated/iapetus/niqqud/dagesh/name.mp3",
+      "semanticId": "niqqud.dagesh.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.dagesh.sound",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "sound",
+      "transcript": "בָּ. כָּ. פָּ.",
+      "path": "generated/iapetus/niqqud/dagesh/sound.mp3",
+      "semanticId": "niqqud.dagesh.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.shin_dot.name",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׁין",
+      "path": "generated/iapetus/niqqud/shin_dot/name.mp3",
+      "semanticId": "niqqud.shin_dot.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.shin_dot.sound",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/iapetus/niqqud/shin_dot/sound.mp3",
+      "semanticId": "niqqud.shin_dot.sound",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.sin_dot.name",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׂין",
+      "path": "generated/iapetus/niqqud/sin_dot/name.mp3",
+      "semanticId": "niqqud.sin_dot.name",
+      "voice": "Iapetus"
+    },
+    {
+      "id": "iapetus.niqqud.sin_dot.sound",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/iapetus/niqqud/sin_dot/sound.mp3",
+      "semanticId": "niqqud.sin_dot.sound",
+      "voice": "Iapetus"
+    }
+  ]
+}

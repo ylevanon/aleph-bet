@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "provider": "gemini-developer-api",
+  "api": "interactions-v1beta",
+  "model": "gemini-3.1-flash-tts-preview",
+  "language": "he-IL",
+  "defaultVoice": "Sulafat",
+  "voices": {
+    "female": "Sulafat",
+    "male": "Iapetus"
+  },
+  "auditionVoices": ["Sulafat", "Aoede", "Kore", "Iapetus"],
+  "audio": {
+    "sourceSampleRateHz": 24000,
+    "sourceChannels": 1,
+    "sourceSampleWidthBytes": 2,
+    "appFormat": "mp3",
+    "appBitrate": "64k"
+  },
+  "profiles": {
+    "natural": "Record one clean vocabulary item for an adult beginner. Use a native contemporary Israeli Hebrew accent, a warm neutral teaching voice, natural citation-form rhythm, crisp articulation, and no theatrical delivery. Pronounce exactly the transcript once, add nothing, then stop.",
+    "teaching": "Record one clean vocabulary item for an adult beginner. Use a native contemporary Israeli Hebrew accent and a warm neutral teaching voice. Speak slightly slower than natural while keeping the item connected and fluent; do not break it into syllables. Pronounce exactly the transcript once, add nothing, then stop.",
+    "letter_name": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.",
+    "sound": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.",
+    "mark_name": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop."
+  },
+  "auditionTranscript": "שָׁלוֹם. אֶת. אַתְּ. עִם. עַם. חֵית. רֵישׁ. קָמָץ. תּוֹדָה. בְּבַקָּשָׁה.",
+  "editorialPolicy": "No generated clip is approved for shipping until a native Modern Israeli Hebrew speaker marks it approved in review.json."
+}

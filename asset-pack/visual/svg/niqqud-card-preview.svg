@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+  <title id="title">Modern qamats learning card</title>
+  <desc id="desc">A calm card showing bet with qamats and the a vowel sound.</desc>
+  <rect width="720" height="960" rx="52" fill="#F7F3EA"/>
+  <rect x="38" y="38" width="644" height="884" rx="40" fill="#FFFCF7" stroke="#D9DED8" stroke-width="2"/>
+  <rect x="76" y="78" width="126" height="44" rx="22" fill="#F9DED5"/>
+  <text x="139" y="108" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#C85640">VOWEL</text>
+  <circle cx="360" cy="393" r="222" fill="#F9DED5"/>
+  <circle cx="360" cy="393" r="182" fill="#FFFCF7" stroke="#EDBBAE" stroke-width="2"/>
+  <text x="360" y="505" text-anchor="middle" font-family="Noto Sans Hebrew, Arial Hebrew, sans-serif" font-size="278" font-weight="680" fill="#18221F" direction="rtl">בָּ</text>
+  <text x="360" y="694" text-anchor="middle" font-family="Noto Sans Hebrew, Arial Hebrew, sans-serif" font-size="68" font-weight="590" fill="#18221F" direction="rtl">קָמָץ</text>
+  <text x="360" y="742" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="560" letter-spacing="1.4" fill="#65706C">QAMATS · “A”</text>
+  <rect x="110" y="806" width="500" height="82" rx="25" fill="#18221F"/>
+  <text x="158" y="857" font-family="system-ui, sans-serif" font-size="22" font-weight="650" fill="#F5F1E8">SOUND</text>
+  <path d="M288 847h8m12-12v24m12-28v32m12-14v-4m12-10v24m12-31v38m12-25v12m12-6h8" stroke="#6BC4B7" stroke-width="6" stroke-linecap="round"/>
+  <text x="555" y="860" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="720" fill="#F5F1E8">ba</text>
+</svg>

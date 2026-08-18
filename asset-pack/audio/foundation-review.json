@@ -1,0 +1,1061 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "sulafat.alphabet.pe.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.zayin.sound.z": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.shin.sound.s": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.ayin.sound.a": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.final_pe.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.shin_dot.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.lamed.sound.l": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.vav.sound.o": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.patah.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.alef.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.he.sound.h": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.shin.sound.sh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.lamed.sound.l": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.ayin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.he.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.qamats_qatan.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hataf_qamats.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.yod.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.het.sound.kh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.qof.sound.k": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.yod.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.dalet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.sheva.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.holam.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.yod.sound.y": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.nun.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.segol.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.qof.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.sheva.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.yod.sound.i": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.shin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.tsadi.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.sheva.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.tsere.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.tav.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.tsadi.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.sheva.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.nun.sound.n": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.zayin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.tsadi.sound.ts": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.ayin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hataf_patah.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.segol.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.shuruk.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.het.sound.kh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.sin_dot.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.dalet.sound.d": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.holam.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.het.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hataf_segol.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.kaf.sound.kh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.vav.sound.v": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.patah.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.holam.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.vav.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.het.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.alef.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.shuruk.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.final_mem.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.alef.sound.a": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.bet.sound.b": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.tav.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hataf_qamats.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.pe.sound.f": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.shin_dot.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.he.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hataf_segol.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.shin.sound.s": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.sin_dot.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.lamed.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hiriq.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hataf_patah.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.resh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.shin_dot.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.tsere.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.final_nun.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.qamats.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.zayin.sound.z": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hiriq.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.qubuts.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.segol.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hataf_qamats.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.mem.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.bet.sound.v": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.shin.sound.sh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.nun.sound.n": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.pe.sound.f": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.tsere.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.pe.sound.p": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.mem.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.yod.sound.i": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.kaf.sound.k": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.patah.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.qamats_qatan.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.final_pe.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hataf_patah.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.vav.sound.u": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.qof.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.alef.sound.a": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.kaf.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.kaf.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hataf_qamats.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.qamats.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.sin_dot.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.dagesh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.final_kaf.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.samekh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hiriq.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.samekh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.mem.sound.m": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.tet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.kaf.sound.kh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.dalet.sound.d": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.gimel.sound.g": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.gimel.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hataf_patah.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.yod.sound.y": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hiriq.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.nun.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.gimel.sound.g": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.mem.sound.m": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.pe.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.sin_dot.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.final_tsadi.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.tav.sound.t": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.vav.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.dagesh.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.ayin.sound.a": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.dalet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.resh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.he.sound.h": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.final_mem.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.tsere.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.hataf_segol.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.qubuts.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.shin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.vav.sound.u": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.qamats.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.shuruk.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.qamats_qatan.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.dagesh.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.tet.sound.t": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.tsadi.sound.ts": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.patah.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.holam.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.final_kaf.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.resh.sound.r": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.shuruk.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.vav.sound.o": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.tet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.final_nun.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.qof.sound.k": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.segol.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.qamats.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.shin_dot.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.tav.sound.t": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.lamed.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.dagesh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.qubuts.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.samekh.sound.s": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.bet.sound.v": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.qamats_qatan.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.niqqud.hataf_segol.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.tet.sound.t": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.vav.sound.v": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.resh.sound.r": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.bet.sound.b": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.pe.sound.p": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.final_tsadi.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.zayin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.samekh.sound.s": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.bet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.bet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.alphabet.kaf.sound.k": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "sulafat.niqqud.qubuts.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "iapetus.alphabet.gimel.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    }
+  }
+}

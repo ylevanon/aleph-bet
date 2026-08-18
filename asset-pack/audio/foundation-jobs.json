@@ -1,0 +1,4411 @@
+{
+  "schemaVersion": 1,
+  "model": "gemini-3.1-flash-tts-preview",
+  "voices": [
+    "Sulafat",
+    "Iapetus"
+  ],
+  "jobCount": 176,
+  "jobs": [
+    {
+      "id": "sulafat.alphabet.alef.name",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "letter_name",
+      "transcript": "אָלֶף",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/alef/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nאָלֶף",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.alef.name"
+    },
+    {
+      "id": "sulafat.alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/alef/sound-a.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.alef.sound.a"
+    },
+    {
+      "id": "sulafat.alphabet.bet.name",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "letter_name",
+      "transcript": "בֵּית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/bet/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nבֵּית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.bet.name"
+    },
+    {
+      "id": "sulafat.alphabet.bet.sound.b",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/bet/sound-b.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.bet.sound.b"
+    },
+    {
+      "id": "sulafat.alphabet.bet.sound.v",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/bet/sound-v.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.bet.sound.v"
+    },
+    {
+      "id": "sulafat.alphabet.gimel.name",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "letter_name",
+      "transcript": "גִּימֶל",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/gimel/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nגִּימֶל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.gimel.name"
+    },
+    {
+      "id": "sulafat.alphabet.gimel.sound.g",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "sound",
+      "transcript": "גָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/gimel/sound-g.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nגָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.gimel.sound.g"
+    },
+    {
+      "id": "sulafat.alphabet.dalet.name",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "letter_name",
+      "transcript": "דָּלֶת",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/dalet/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nדָּלֶת",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.dalet.name"
+    },
+    {
+      "id": "sulafat.alphabet.dalet.sound.d",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "sound",
+      "transcript": "דָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/dalet/sound-d.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nדָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.dalet.sound.d"
+    },
+    {
+      "id": "sulafat.alphabet.he.name",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "letter_name",
+      "transcript": "הֵא",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/he/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nהֵא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.he.name"
+    },
+    {
+      "id": "sulafat.alphabet.he.sound.h",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "sound",
+      "transcript": "הָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/he/sound-h.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nהָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.he.sound.h"
+    },
+    {
+      "id": "sulafat.alphabet.vav.name",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "letter_name",
+      "transcript": "וָו",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/vav/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nוָו",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.name"
+    },
+    {
+      "id": "sulafat.alphabet.vav.sound.v",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "וָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/vav/sound-v.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nוָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.sound.v"
+    },
+    {
+      "id": "sulafat.alphabet.vav.sound.o",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוֹ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/vav/sound-o.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאוֹ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.sound.o"
+    },
+    {
+      "id": "sulafat.alphabet.vav.sound.u",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/vav/sound-u.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאוּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.sound.u"
+    },
+    {
+      "id": "sulafat.alphabet.zayin.name",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "letter_name",
+      "transcript": "זַיִן",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/zayin/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nזַיִן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.zayin.name"
+    },
+    {
+      "id": "sulafat.alphabet.zayin.sound.z",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "sound",
+      "transcript": "זָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/zayin/sound-z.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nזָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.zayin.sound.z"
+    },
+    {
+      "id": "sulafat.alphabet.het.name",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "letter_name",
+      "transcript": "חֵית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/het/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֵית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.het.name"
+    },
+    {
+      "id": "sulafat.alphabet.het.sound.kh",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "sound",
+      "transcript": "חָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/het/sound-kh.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nחָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.het.sound.kh"
+    },
+    {
+      "id": "sulafat.alphabet.tet.name",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "letter_name",
+      "transcript": "טֵית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/tet/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nטֵית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tet.name"
+    },
+    {
+      "id": "sulafat.alphabet.tet.sound.t",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "sound",
+      "transcript": "טָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/tet/sound-t.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nטָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tet.sound.t"
+    },
+    {
+      "id": "sulafat.alphabet.yod.name",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "letter_name",
+      "transcript": "יוֹד",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/yod/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nיוֹד",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.yod.name"
+    },
+    {
+      "id": "sulafat.alphabet.yod.sound.y",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "יָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/yod/sound-y.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nיָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.yod.sound.y"
+    },
+    {
+      "id": "sulafat.alphabet.yod.sound.i",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "אִי",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/yod/sound-i.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאִי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.yod.sound.i"
+    },
+    {
+      "id": "sulafat.alphabet.kaf.name",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/kaf/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nכַּף",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.kaf.name"
+    },
+    {
+      "id": "sulafat.alphabet.kaf.sound.k",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/kaf/sound-k.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nכָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.kaf.sound.k"
+    },
+    {
+      "id": "sulafat.alphabet.kaf.sound.kh",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/kaf/sound-kh.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nכָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.kaf.sound.kh"
+    },
+    {
+      "id": "sulafat.alphabet.final_kaf.name",
+      "category": "alphabet",
+      "itemId": "final_kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף סוֹפִית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/final_kaf/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nכַּף סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_kaf.name"
+    },
+    {
+      "id": "sulafat.alphabet.lamed.name",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "letter_name",
+      "transcript": "לָמֶד",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/lamed/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nלָמֶד",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.lamed.name"
+    },
+    {
+      "id": "sulafat.alphabet.lamed.sound.l",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "sound",
+      "transcript": "לָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/lamed/sound-l.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nלָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.lamed.sound.l"
+    },
+    {
+      "id": "sulafat.alphabet.mem.name",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "letter_name",
+      "transcript": "מֵם",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/mem/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nמֵם",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.mem.name"
+    },
+    {
+      "id": "sulafat.alphabet.mem.sound.m",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "sound",
+      "transcript": "מָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/mem/sound-m.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nמָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.mem.sound.m"
+    },
+    {
+      "id": "sulafat.alphabet.final_mem.name",
+      "category": "alphabet",
+      "itemId": "final_mem",
+      "profile": "letter_name",
+      "transcript": "מֵם סוֹפִית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/final_mem/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nמֵם סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_mem.name"
+    },
+    {
+      "id": "sulafat.alphabet.nun.name",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "letter_name",
+      "transcript": "נוּן",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/nun/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנוּן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.nun.name"
+    },
+    {
+      "id": "sulafat.alphabet.nun.sound.n",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "sound",
+      "transcript": "נָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/nun/sound-n.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nנָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.nun.sound.n"
+    },
+    {
+      "id": "sulafat.alphabet.final_nun.name",
+      "category": "alphabet",
+      "itemId": "final_nun",
+      "profile": "letter_name",
+      "transcript": "נוּן סוֹפִית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/final_nun/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנוּן סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_nun.name"
+    },
+    {
+      "id": "sulafat.alphabet.samekh.name",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "letter_name",
+      "transcript": "סָמֶךְ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/samekh/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nסָמֶךְ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.samekh.name"
+    },
+    {
+      "id": "sulafat.alphabet.samekh.sound.s",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "sound",
+      "transcript": "סָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/samekh/sound-s.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nסָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.samekh.sound.s"
+    },
+    {
+      "id": "sulafat.alphabet.ayin.name",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "letter_name",
+      "transcript": "עַיִן",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/ayin/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nעַיִן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.ayin.name"
+    },
+    {
+      "id": "sulafat.alphabet.ayin.sound.a",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "sound",
+      "transcript": "עָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/ayin/sound-a.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nעָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.ayin.sound.a"
+    },
+    {
+      "id": "sulafat.alphabet.pe.name",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/pe/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nפֵּא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.pe.name"
+    },
+    {
+      "id": "sulafat.alphabet.pe.sound.p",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/pe/sound-p.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nפָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.pe.sound.p"
+    },
+    {
+      "id": "sulafat.alphabet.pe.sound.f",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/pe/sound-f.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nפָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.pe.sound.f"
+    },
+    {
+      "id": "sulafat.alphabet.final_pe.name",
+      "category": "alphabet",
+      "itemId": "final_pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא סוֹפִית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/final_pe/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nפֵּא סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_pe.name"
+    },
+    {
+      "id": "sulafat.alphabet.tsadi.name",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/tsadi/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nצָדִי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tsadi.name"
+    },
+    {
+      "id": "sulafat.alphabet.tsadi.sound.ts",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "sound",
+      "transcript": "צָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/tsadi/sound-ts.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nצָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tsadi.sound.ts"
+    },
+    {
+      "id": "sulafat.alphabet.final_tsadi.name",
+      "category": "alphabet",
+      "itemId": "final_tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי סוֹפִית",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/final_tsadi/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nצָדִי סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_tsadi.name"
+    },
+    {
+      "id": "sulafat.alphabet.qof.name",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "letter_name",
+      "transcript": "קוֹף",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/qof/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקוֹף",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.qof.name"
+    },
+    {
+      "id": "sulafat.alphabet.qof.sound.k",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "sound",
+      "transcript": "קָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/qof/sound-k.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nקָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.qof.sound.k"
+    },
+    {
+      "id": "sulafat.alphabet.resh.name",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "letter_name",
+      "transcript": "רֵישׁ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/resh/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nרֵישׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.resh.name"
+    },
+    {
+      "id": "sulafat.alphabet.resh.sound.r",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "sound",
+      "transcript": "רָ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/resh/sound-r.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nרָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.resh.sound.r"
+    },
+    {
+      "id": "sulafat.alphabet.shin.name",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "letter_name",
+      "transcript": "שִׁין",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/shin/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשִׁין",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.shin.name"
+    },
+    {
+      "id": "sulafat.alphabet.shin.sound.sh",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/shin/sound-sh.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.shin.sound.sh"
+    },
+    {
+      "id": "sulafat.alphabet.shin.sound.s",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/shin/sound-s.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׂ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.shin.sound.s"
+    },
+    {
+      "id": "sulafat.alphabet.tav.name",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "letter_name",
+      "transcript": "תָּו",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/tav/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nתָּו",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tav.name"
+    },
+    {
+      "id": "sulafat.alphabet.tav.sound.t",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "sound",
+      "transcript": "תָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/alphabet/tav/sound-t.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nתָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tav.sound.t"
+    },
+    {
+      "id": "sulafat.niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/sheva/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשְׁוָא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sheva.name"
+    },
+    {
+      "id": "sulafat.niqqud.sheva.sound",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "sound",
+      "transcript": "בְּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/sheva/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבְּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sheva.sound"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_segol.name",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "mark_name",
+      "transcript": "חֲטַף סֶגּוֹל",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hataf_segol/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֲטַף סֶגּוֹל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_segol.name"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_segol.sound",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "sound",
+      "transcript": "אֱ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hataf_segol/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאֱ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_segol.sound"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_patah.name",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "mark_name",
+      "transcript": "חֲטַף פַּתָּח",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hataf_patah/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֲטַף פַּתָּח",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_patah.name"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_patah.sound",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "sound",
+      "transcript": "אֲ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hataf_patah/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאֲ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_patah.sound"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_qamats.name",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "mark_name",
+      "transcript": "חֲטַף קָמָץ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hataf_qamats/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֲטַף קָמָץ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_qamats.name"
+    },
+    {
+      "id": "sulafat.niqqud.hataf_qamats.sound",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "sound",
+      "transcript": "אֳ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hataf_qamats/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאֳ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_qamats.sound"
+    },
+    {
+      "id": "sulafat.niqqud.hiriq.name",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "mark_name",
+      "transcript": "חִירִיק",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hiriq/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחִירִיק",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hiriq.name"
+    },
+    {
+      "id": "sulafat.niqqud.hiriq.sound",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "sound",
+      "transcript": "בִּי",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/hiriq/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבִּי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hiriq.sound"
+    },
+    {
+      "id": "sulafat.niqqud.tsere.name",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "mark_name",
+      "transcript": "צֵירֵי",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/tsere/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nצֵירֵי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.tsere.name"
+    },
+    {
+      "id": "sulafat.niqqud.tsere.sound",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "sound",
+      "transcript": "בֵּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/tsere/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבֵּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.tsere.sound"
+    },
+    {
+      "id": "sulafat.niqqud.segol.name",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "mark_name",
+      "transcript": "סֶגּוֹל",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/segol/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nסֶגּוֹל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.segol.name"
+    },
+    {
+      "id": "sulafat.niqqud.segol.sound",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "sound",
+      "transcript": "בֶּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/segol/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבֶּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.segol.sound"
+    },
+    {
+      "id": "sulafat.niqqud.patah.name",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "mark_name",
+      "transcript": "פַּתָּח",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/patah/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nפַּתָּח",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.patah.name"
+    },
+    {
+      "id": "sulafat.niqqud.patah.sound",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "sound",
+      "transcript": "בַּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/patah/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבַּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.patah.sound"
+    },
+    {
+      "id": "sulafat.niqqud.qamats.name",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "mark_name",
+      "transcript": "קָמָץ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/qamats/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקָמָץ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats.name"
+    },
+    {
+      "id": "sulafat.niqqud.qamats.sound",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/qamats/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats.sound"
+    },
+    {
+      "id": "sulafat.niqqud.qamats_qatan.name",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "mark_name",
+      "transcript": "קָמָץ קָטָן",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/qamats_qatan/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקָמָץ קָטָן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats_qatan.name"
+    },
+    {
+      "id": "sulafat.niqqud.qamats_qatan.sound",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "sound",
+      "transcript": "כׇּל",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/qamats_qatan/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nכׇּל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats_qatan.sound"
+    },
+    {
+      "id": "sulafat.niqqud.holam.name",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "mark_name",
+      "transcript": "חוֹלָם",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/holam/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחוֹלָם",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.holam.name"
+    },
+    {
+      "id": "sulafat.niqqud.holam.sound",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "sound",
+      "transcript": "בּוֹ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/holam/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבּוֹ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.holam.sound"
+    },
+    {
+      "id": "sulafat.niqqud.qubuts.name",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "mark_name",
+      "transcript": "קֻבּוּץ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/qubuts/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקֻבּוּץ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qubuts.name"
+    },
+    {
+      "id": "sulafat.niqqud.qubuts.sound",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "sound",
+      "transcript": "בֻּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/qubuts/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבֻּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qubuts.sound"
+    },
+    {
+      "id": "sulafat.niqqud.shuruk.name",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "mark_name",
+      "transcript": "שׁוּרוּק",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/shuruk/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשׁוּרוּק",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shuruk.name"
+    },
+    {
+      "id": "sulafat.niqqud.shuruk.sound",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "sound",
+      "transcript": "בּוּ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/shuruk/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבּוּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shuruk.sound"
+    },
+    {
+      "id": "sulafat.niqqud.dagesh.name",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "mark_name",
+      "transcript": "דָּגֵשׁ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/dagesh/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nדָּגֵשׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.dagesh.name"
+    },
+    {
+      "id": "sulafat.niqqud.dagesh.sound",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "sound",
+      "transcript": "בָּ. כָּ. פָּ.",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/dagesh/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָּ. כָּ. פָּ.",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.dagesh.sound"
+    },
+    {
+      "id": "sulafat.niqqud.shin_dot.name",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׁין",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/shin_dot/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנְקֻדַּת שִׁין",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shin_dot.name"
+    },
+    {
+      "id": "sulafat.niqqud.shin_dot.sound",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/shin_dot/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shin_dot.sound"
+    },
+    {
+      "id": "sulafat.niqqud.sin_dot.name",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׂין",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/sin_dot/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנְקֻדַּת שִׂין",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sin_dot.name"
+    },
+    {
+      "id": "sulafat.niqqud.sin_dot.sound",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "voice": "Sulafat",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/sulafat/niqqud/sin_dot/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׂ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Sulafat"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sin_dot.sound"
+    },
+    {
+      "id": "iapetus.alphabet.alef.name",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "letter_name",
+      "transcript": "אָלֶף",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/alef/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nאָלֶף",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.alef.name"
+    },
+    {
+      "id": "iapetus.alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/alef/sound-a.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.alef.sound.a"
+    },
+    {
+      "id": "iapetus.alphabet.bet.name",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "letter_name",
+      "transcript": "בֵּית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/bet/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nבֵּית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.bet.name"
+    },
+    {
+      "id": "iapetus.alphabet.bet.sound.b",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/bet/sound-b.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.bet.sound.b"
+    },
+    {
+      "id": "iapetus.alphabet.bet.sound.v",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/bet/sound-v.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.bet.sound.v"
+    },
+    {
+      "id": "iapetus.alphabet.gimel.name",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "letter_name",
+      "transcript": "גִּימֶל",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/gimel/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nגִּימֶל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.gimel.name"
+    },
+    {
+      "id": "iapetus.alphabet.gimel.sound.g",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "sound",
+      "transcript": "גָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/gimel/sound-g.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nגָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.gimel.sound.g"
+    },
+    {
+      "id": "iapetus.alphabet.dalet.name",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "letter_name",
+      "transcript": "דָּלֶת",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/dalet/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nדָּלֶת",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.dalet.name"
+    },
+    {
+      "id": "iapetus.alphabet.dalet.sound.d",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "sound",
+      "transcript": "דָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/dalet/sound-d.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nדָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.dalet.sound.d"
+    },
+    {
+      "id": "iapetus.alphabet.he.name",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "letter_name",
+      "transcript": "הֵא",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/he/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nהֵא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.he.name"
+    },
+    {
+      "id": "iapetus.alphabet.he.sound.h",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "sound",
+      "transcript": "הָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/he/sound-h.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nהָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.he.sound.h"
+    },
+    {
+      "id": "iapetus.alphabet.vav.name",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "letter_name",
+      "transcript": "וָו",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/vav/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nוָו",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.name"
+    },
+    {
+      "id": "iapetus.alphabet.vav.sound.v",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "וָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/vav/sound-v.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nוָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.sound.v"
+    },
+    {
+      "id": "iapetus.alphabet.vav.sound.o",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוֹ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/vav/sound-o.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאוֹ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.sound.o"
+    },
+    {
+      "id": "iapetus.alphabet.vav.sound.u",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/vav/sound-u.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאוּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.vav.sound.u"
+    },
+    {
+      "id": "iapetus.alphabet.zayin.name",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "letter_name",
+      "transcript": "זַיִן",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/zayin/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nזַיִן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.zayin.name"
+    },
+    {
+      "id": "iapetus.alphabet.zayin.sound.z",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "sound",
+      "transcript": "זָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/zayin/sound-z.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nזָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.zayin.sound.z"
+    },
+    {
+      "id": "iapetus.alphabet.het.name",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "letter_name",
+      "transcript": "חֵית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/het/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֵית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.het.name"
+    },
+    {
+      "id": "iapetus.alphabet.het.sound.kh",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "sound",
+      "transcript": "חָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/het/sound-kh.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nחָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.het.sound.kh"
+    },
+    {
+      "id": "iapetus.alphabet.tet.name",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "letter_name",
+      "transcript": "טֵית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/tet/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nטֵית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tet.name"
+    },
+    {
+      "id": "iapetus.alphabet.tet.sound.t",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "sound",
+      "transcript": "טָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/tet/sound-t.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nטָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tet.sound.t"
+    },
+    {
+      "id": "iapetus.alphabet.yod.name",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "letter_name",
+      "transcript": "יוֹד",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/yod/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nיוֹד",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.yod.name"
+    },
+    {
+      "id": "iapetus.alphabet.yod.sound.y",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "יָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/yod/sound-y.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nיָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.yod.sound.y"
+    },
+    {
+      "id": "iapetus.alphabet.yod.sound.i",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "אִי",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/yod/sound-i.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאִי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.yod.sound.i"
+    },
+    {
+      "id": "iapetus.alphabet.kaf.name",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/kaf/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nכַּף",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.kaf.name"
+    },
+    {
+      "id": "iapetus.alphabet.kaf.sound.k",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/kaf/sound-k.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nכָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.kaf.sound.k"
+    },
+    {
+      "id": "iapetus.alphabet.kaf.sound.kh",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/kaf/sound-kh.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nכָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.kaf.sound.kh"
+    },
+    {
+      "id": "iapetus.alphabet.final_kaf.name",
+      "category": "alphabet",
+      "itemId": "final_kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף סוֹפִית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/final_kaf/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nכַּף סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_kaf.name"
+    },
+    {
+      "id": "iapetus.alphabet.lamed.name",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "letter_name",
+      "transcript": "לָמֶד",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/lamed/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nלָמֶד",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.lamed.name"
+    },
+    {
+      "id": "iapetus.alphabet.lamed.sound.l",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "sound",
+      "transcript": "לָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/lamed/sound-l.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nלָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.lamed.sound.l"
+    },
+    {
+      "id": "iapetus.alphabet.mem.name",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "letter_name",
+      "transcript": "מֵם",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/mem/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nמֵם",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.mem.name"
+    },
+    {
+      "id": "iapetus.alphabet.mem.sound.m",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "sound",
+      "transcript": "מָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/mem/sound-m.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nמָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.mem.sound.m"
+    },
+    {
+      "id": "iapetus.alphabet.final_mem.name",
+      "category": "alphabet",
+      "itemId": "final_mem",
+      "profile": "letter_name",
+      "transcript": "מֵם סוֹפִית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/final_mem/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nמֵם סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_mem.name"
+    },
+    {
+      "id": "iapetus.alphabet.nun.name",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "letter_name",
+      "transcript": "נוּן",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/nun/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנוּן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.nun.name"
+    },
+    {
+      "id": "iapetus.alphabet.nun.sound.n",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "sound",
+      "transcript": "נָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/nun/sound-n.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nנָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.nun.sound.n"
+    },
+    {
+      "id": "iapetus.alphabet.final_nun.name",
+      "category": "alphabet",
+      "itemId": "final_nun",
+      "profile": "letter_name",
+      "transcript": "נוּן סוֹפִית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/final_nun/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנוּן סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_nun.name"
+    },
+    {
+      "id": "iapetus.alphabet.samekh.name",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "letter_name",
+      "transcript": "סָמֶךְ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/samekh/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nסָמֶךְ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.samekh.name"
+    },
+    {
+      "id": "iapetus.alphabet.samekh.sound.s",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "sound",
+      "transcript": "סָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/samekh/sound-s.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nסָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.samekh.sound.s"
+    },
+    {
+      "id": "iapetus.alphabet.ayin.name",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "letter_name",
+      "transcript": "עַיִן",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/ayin/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nעַיִן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.ayin.name"
+    },
+    {
+      "id": "iapetus.alphabet.ayin.sound.a",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "sound",
+      "transcript": "עָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/ayin/sound-a.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nעָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.ayin.sound.a"
+    },
+    {
+      "id": "iapetus.alphabet.pe.name",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/pe/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nפֵּא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.pe.name"
+    },
+    {
+      "id": "iapetus.alphabet.pe.sound.p",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/pe/sound-p.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nפָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.pe.sound.p"
+    },
+    {
+      "id": "iapetus.alphabet.pe.sound.f",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/pe/sound-f.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nפָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.pe.sound.f"
+    },
+    {
+      "id": "iapetus.alphabet.final_pe.name",
+      "category": "alphabet",
+      "itemId": "final_pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא סוֹפִית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/final_pe/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nפֵּא סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_pe.name"
+    },
+    {
+      "id": "iapetus.alphabet.tsadi.name",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/tsadi/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nצָדִי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tsadi.name"
+    },
+    {
+      "id": "iapetus.alphabet.tsadi.sound.ts",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "sound",
+      "transcript": "צָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/tsadi/sound-ts.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nצָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tsadi.sound.ts"
+    },
+    {
+      "id": "iapetus.alphabet.final_tsadi.name",
+      "category": "alphabet",
+      "itemId": "final_tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי סוֹפִית",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/final_tsadi/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nצָדִי סוֹפִית",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.final_tsadi.name"
+    },
+    {
+      "id": "iapetus.alphabet.qof.name",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "letter_name",
+      "transcript": "קוֹף",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/qof/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקוֹף",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.qof.name"
+    },
+    {
+      "id": "iapetus.alphabet.qof.sound.k",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "sound",
+      "transcript": "קָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/qof/sound-k.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nקָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.qof.sound.k"
+    },
+    {
+      "id": "iapetus.alphabet.resh.name",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "letter_name",
+      "transcript": "רֵישׁ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/resh/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nרֵישׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.resh.name"
+    },
+    {
+      "id": "iapetus.alphabet.resh.sound.r",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "sound",
+      "transcript": "רָ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/resh/sound-r.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nרָ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.resh.sound.r"
+    },
+    {
+      "id": "iapetus.alphabet.shin.name",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "letter_name",
+      "transcript": "שִׁין",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/shin/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשִׁין",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.shin.name"
+    },
+    {
+      "id": "iapetus.alphabet.shin.sound.sh",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/shin/sound-sh.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.shin.sound.sh"
+    },
+    {
+      "id": "iapetus.alphabet.shin.sound.s",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/shin/sound-s.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׂ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.shin.sound.s"
+    },
+    {
+      "id": "iapetus.alphabet.tav.name",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "letter_name",
+      "transcript": "תָּו",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/tav/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew letter for an adult beginner. Use a native contemporary Israeli Hebrew accent, warm neutral tone, and clear natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nתָּו",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tav.name"
+    },
+    {
+      "id": "iapetus.alphabet.tav.sound.t",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "sound",
+      "transcript": "תָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/alphabet/tav/sound-t.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nתָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "alphabet.tav.sound.t"
+    },
+    {
+      "id": "iapetus.niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/sheva/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשְׁוָא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sheva.name"
+    },
+    {
+      "id": "iapetus.niqqud.sheva.sound",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "sound",
+      "transcript": "בְּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/sheva/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבְּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sheva.sound"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_segol.name",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "mark_name",
+      "transcript": "חֲטַף סֶגּוֹל",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hataf_segol/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֲטַף סֶגּוֹל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_segol.name"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_segol.sound",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "sound",
+      "transcript": "אֱ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hataf_segol/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאֱ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_segol.sound"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_patah.name",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "mark_name",
+      "transcript": "חֲטַף פַּתָּח",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hataf_patah/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֲטַף פַּתָּח",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_patah.name"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_patah.sound",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "sound",
+      "transcript": "אֲ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hataf_patah/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאֲ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_patah.sound"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_qamats.name",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "mark_name",
+      "transcript": "חֲטַף קָמָץ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hataf_qamats/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחֲטַף קָמָץ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_qamats.name"
+    },
+    {
+      "id": "iapetus.niqqud.hataf_qamats.sound",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "sound",
+      "transcript": "אֳ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hataf_qamats/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאֳ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hataf_qamats.sound"
+    },
+    {
+      "id": "iapetus.niqqud.hiriq.name",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "mark_name",
+      "transcript": "חִירִיק",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hiriq/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחִירִיק",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hiriq.name"
+    },
+    {
+      "id": "iapetus.niqqud.hiriq.sound",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "sound",
+      "transcript": "בִּי",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/hiriq/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבִּי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.hiriq.sound"
+    },
+    {
+      "id": "iapetus.niqqud.tsere.name",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "mark_name",
+      "transcript": "צֵירֵי",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/tsere/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nצֵירֵי",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.tsere.name"
+    },
+    {
+      "id": "iapetus.niqqud.tsere.sound",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "sound",
+      "transcript": "בֵּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/tsere/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבֵּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.tsere.sound"
+    },
+    {
+      "id": "iapetus.niqqud.segol.name",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "mark_name",
+      "transcript": "סֶגּוֹל",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/segol/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nסֶגּוֹל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.segol.name"
+    },
+    {
+      "id": "iapetus.niqqud.segol.sound",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "sound",
+      "transcript": "בֶּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/segol/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבֶּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.segol.sound"
+    },
+    {
+      "id": "iapetus.niqqud.patah.name",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "mark_name",
+      "transcript": "פַּתָּח",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/patah/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nפַּתָּח",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.patah.name"
+    },
+    {
+      "id": "iapetus.niqqud.patah.sound",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "sound",
+      "transcript": "בַּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/patah/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבַּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.patah.sound"
+    },
+    {
+      "id": "iapetus.niqqud.qamats.name",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "mark_name",
+      "transcript": "קָמָץ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/qamats/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקָמָץ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats.name"
+    },
+    {
+      "id": "iapetus.niqqud.qamats.sound",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/qamats/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats.sound"
+    },
+    {
+      "id": "iapetus.niqqud.qamats_qatan.name",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "mark_name",
+      "transcript": "קָמָץ קָטָן",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/qamats_qatan/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקָמָץ קָטָן",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats_qatan.name"
+    },
+    {
+      "id": "iapetus.niqqud.qamats_qatan.sound",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "sound",
+      "transcript": "כׇּל",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/qamats_qatan/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nכׇּל",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qamats_qatan.sound"
+    },
+    {
+      "id": "iapetus.niqqud.holam.name",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "mark_name",
+      "transcript": "חוֹלָם",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/holam/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nחוֹלָם",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.holam.name"
+    },
+    {
+      "id": "iapetus.niqqud.holam.sound",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "sound",
+      "transcript": "בּוֹ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/holam/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבּוֹ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.holam.sound"
+    },
+    {
+      "id": "iapetus.niqqud.qubuts.name",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "mark_name",
+      "transcript": "קֻבּוּץ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/qubuts/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nקֻבּוּץ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qubuts.name"
+    },
+    {
+      "id": "iapetus.niqqud.qubuts.sound",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "sound",
+      "transcript": "בֻּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/qubuts/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבֻּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.qubuts.sound"
+    },
+    {
+      "id": "iapetus.niqqud.shuruk.name",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "mark_name",
+      "transcript": "שׁוּרוּק",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/shuruk/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשׁוּרוּק",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shuruk.name"
+    },
+    {
+      "id": "iapetus.niqqud.shuruk.sound",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "sound",
+      "transcript": "בּוּ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/shuruk/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבּוּ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shuruk.sound"
+    },
+    {
+      "id": "iapetus.niqqud.dagesh.name",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "mark_name",
+      "transcript": "דָּגֵשׁ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/dagesh/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nדָּגֵשׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.dagesh.name"
+    },
+    {
+      "id": "iapetus.niqqud.dagesh.sound",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "sound",
+      "transcript": "בָּ. כָּ. פָּ.",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/dagesh/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nבָּ. כָּ. פָּ.",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.dagesh.sound"
+    },
+    {
+      "id": "iapetus.niqqud.shin_dot.name",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׁין",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/shin_dot/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנְקֻדַּת שִׁין",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shin_dot.name"
+    },
+    {
+      "id": "iapetus.niqqud.shin_dot.sound",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/shin_dot/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׁ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.shin_dot.sound"
+    },
+    {
+      "id": "iapetus.niqqud.sin_dot.name",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׂין",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/sin_dot/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nנְקֻדַּת שִׂין",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sin_dot.name"
+    },
+    {
+      "id": "iapetus.niqqud.sin_dot.sound",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/sin_dot/sound.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nשָׂ",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      },
+      "semanticId": "niqqud.sin_dot.sound"
+    }
+  ]
+}

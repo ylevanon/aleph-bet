@@ -1,0 +1,711 @@
+{
+  "schemaVersion": 1,
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": "Iapetus",
+  "items": [
+    {
+      "id": "alphabet.alef.name",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "letter_name",
+      "transcript": "אָלֶף",
+      "path": "generated/iapetus/alphabet/alef/name.mp3"
+    },
+    {
+      "id": "alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "path": "generated/iapetus/alphabet/alef/sound-a.mp3"
+    },
+    {
+      "id": "alphabet.bet.name",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "letter_name",
+      "transcript": "בֵּית",
+      "path": "generated/iapetus/alphabet/bet/name.mp3"
+    },
+    {
+      "id": "alphabet.bet.sound.b",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/iapetus/alphabet/bet/sound-b.mp3"
+    },
+    {
+      "id": "alphabet.bet.sound.v",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָ",
+      "path": "generated/iapetus/alphabet/bet/sound-v.mp3"
+    },
+    {
+      "id": "alphabet.gimel.name",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "letter_name",
+      "transcript": "גִּימֶל",
+      "path": "generated/iapetus/alphabet/gimel/name.mp3"
+    },
+    {
+      "id": "alphabet.gimel.sound.g",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "sound",
+      "transcript": "גָּ",
+      "path": "generated/iapetus/alphabet/gimel/sound-g.mp3"
+    },
+    {
+      "id": "alphabet.dalet.name",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "letter_name",
+      "transcript": "דָּלֶת",
+      "path": "generated/iapetus/alphabet/dalet/name.mp3"
+    },
+    {
+      "id": "alphabet.dalet.sound.d",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "sound",
+      "transcript": "דָּ",
+      "path": "generated/iapetus/alphabet/dalet/sound-d.mp3"
+    },
+    {
+      "id": "alphabet.he.name",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "letter_name",
+      "transcript": "הֵא",
+      "path": "generated/iapetus/alphabet/he/name.mp3"
+    },
+    {
+      "id": "alphabet.he.sound.h",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "sound",
+      "transcript": "הָ",
+      "path": "generated/iapetus/alphabet/he/sound-h.mp3"
+    },
+    {
+      "id": "alphabet.vav.name",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "letter_name",
+      "transcript": "וָו",
+      "path": "generated/iapetus/alphabet/vav/name.mp3"
+    },
+    {
+      "id": "alphabet.vav.sound.v",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "וָ",
+      "path": "generated/iapetus/alphabet/vav/sound-v.mp3"
+    },
+    {
+      "id": "alphabet.vav.sound.o",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוֹ",
+      "path": "generated/iapetus/alphabet/vav/sound-o.mp3"
+    },
+    {
+      "id": "alphabet.vav.sound.u",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוּ",
+      "path": "generated/iapetus/alphabet/vav/sound-u.mp3"
+    },
+    {
+      "id": "alphabet.zayin.name",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "letter_name",
+      "transcript": "זַיִן",
+      "path": "generated/iapetus/alphabet/zayin/name.mp3"
+    },
+    {
+      "id": "alphabet.zayin.sound.z",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "sound",
+      "transcript": "זָ",
+      "path": "generated/iapetus/alphabet/zayin/sound-z.mp3"
+    },
+    {
+      "id": "alphabet.het.name",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "letter_name",
+      "transcript": "חֵית",
+      "path": "generated/iapetus/alphabet/het/name.mp3"
+    },
+    {
+      "id": "alphabet.het.sound.kh",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "sound",
+      "transcript": "חָ",
+      "path": "generated/iapetus/alphabet/het/sound-kh.mp3"
+    },
+    {
+      "id": "alphabet.tet.name",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "letter_name",
+      "transcript": "טֵית",
+      "path": "generated/iapetus/alphabet/tet/name.mp3"
+    },
+    {
+      "id": "alphabet.tet.sound.t",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "sound",
+      "transcript": "טָ",
+      "path": "generated/iapetus/alphabet/tet/sound-t.mp3"
+    },
+    {
+      "id": "alphabet.yod.name",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "letter_name",
+      "transcript": "יוֹד",
+      "path": "generated/iapetus/alphabet/yod/name.mp3"
+    },
+    {
+      "id": "alphabet.yod.sound.y",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "יָ",
+      "path": "generated/iapetus/alphabet/yod/sound-y.mp3"
+    },
+    {
+      "id": "alphabet.yod.sound.i",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "אִי",
+      "path": "generated/iapetus/alphabet/yod/sound-i.mp3"
+    },
+    {
+      "id": "alphabet.kaf.name",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף",
+      "path": "generated/iapetus/alphabet/kaf/name.mp3"
+    },
+    {
+      "id": "alphabet.kaf.sound.k",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָּ",
+      "path": "generated/iapetus/alphabet/kaf/sound-k.mp3"
+    },
+    {
+      "id": "alphabet.kaf.sound.kh",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָ",
+      "path": "generated/iapetus/alphabet/kaf/sound-kh.mp3"
+    },
+    {
+      "id": "alphabet.final_kaf.name",
+      "category": "alphabet",
+      "itemId": "final_kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_kaf/name.mp3"
+    },
+    {
+      "id": "alphabet.lamed.name",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "letter_name",
+      "transcript": "לָמֶד",
+      "path": "generated/iapetus/alphabet/lamed/name.mp3"
+    },
+    {
+      "id": "alphabet.lamed.sound.l",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "sound",
+      "transcript": "לָ",
+      "path": "generated/iapetus/alphabet/lamed/sound-l.mp3"
+    },
+    {
+      "id": "alphabet.mem.name",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "letter_name",
+      "transcript": "מֵם",
+      "path": "generated/iapetus/alphabet/mem/name.mp3"
+    },
+    {
+      "id": "alphabet.mem.sound.m",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "sound",
+      "transcript": "מָ",
+      "path": "generated/iapetus/alphabet/mem/sound-m.mp3"
+    },
+    {
+      "id": "alphabet.final_mem.name",
+      "category": "alphabet",
+      "itemId": "final_mem",
+      "profile": "letter_name",
+      "transcript": "מֵם סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_mem/name.mp3"
+    },
+    {
+      "id": "alphabet.nun.name",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "letter_name",
+      "transcript": "נוּן",
+      "path": "generated/iapetus/alphabet/nun/name.mp3"
+    },
+    {
+      "id": "alphabet.nun.sound.n",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "sound",
+      "transcript": "נָ",
+      "path": "generated/iapetus/alphabet/nun/sound-n.mp3"
+    },
+    {
+      "id": "alphabet.final_nun.name",
+      "category": "alphabet",
+      "itemId": "final_nun",
+      "profile": "letter_name",
+      "transcript": "נוּן סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_nun/name.mp3"
+    },
+    {
+      "id": "alphabet.samekh.name",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "letter_name",
+      "transcript": "סָמֶךְ",
+      "path": "generated/iapetus/alphabet/samekh/name.mp3"
+    },
+    {
+      "id": "alphabet.samekh.sound.s",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "sound",
+      "transcript": "סָ",
+      "path": "generated/iapetus/alphabet/samekh/sound-s.mp3"
+    },
+    {
+      "id": "alphabet.ayin.name",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "letter_name",
+      "transcript": "עַיִן",
+      "path": "generated/iapetus/alphabet/ayin/name.mp3"
+    },
+    {
+      "id": "alphabet.ayin.sound.a",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "sound",
+      "transcript": "עָ",
+      "path": "generated/iapetus/alphabet/ayin/sound-a.mp3"
+    },
+    {
+      "id": "alphabet.pe.name",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא",
+      "path": "generated/iapetus/alphabet/pe/name.mp3"
+    },
+    {
+      "id": "alphabet.pe.sound.p",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָּ",
+      "path": "generated/iapetus/alphabet/pe/sound-p.mp3"
+    },
+    {
+      "id": "alphabet.pe.sound.f",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָ",
+      "path": "generated/iapetus/alphabet/pe/sound-f.mp3"
+    },
+    {
+      "id": "alphabet.final_pe.name",
+      "category": "alphabet",
+      "itemId": "final_pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_pe/name.mp3"
+    },
+    {
+      "id": "alphabet.tsadi.name",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי",
+      "path": "generated/iapetus/alphabet/tsadi/name.mp3"
+    },
+    {
+      "id": "alphabet.tsadi.sound.ts",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "sound",
+      "transcript": "צָ",
+      "path": "generated/iapetus/alphabet/tsadi/sound-ts.mp3"
+    },
+    {
+      "id": "alphabet.final_tsadi.name",
+      "category": "alphabet",
+      "itemId": "final_tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי סוֹפִית",
+      "path": "generated/iapetus/alphabet/final_tsadi/name.mp3"
+    },
+    {
+      "id": "alphabet.qof.name",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "letter_name",
+      "transcript": "קוֹף",
+      "path": "generated/iapetus/alphabet/qof/name.mp3"
+    },
+    {
+      "id": "alphabet.qof.sound.k",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "sound",
+      "transcript": "קָ",
+      "path": "generated/iapetus/alphabet/qof/sound-k.mp3"
+    },
+    {
+      "id": "alphabet.resh.name",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "letter_name",
+      "transcript": "רֵישׁ",
+      "path": "generated/iapetus/alphabet/resh/name.mp3"
+    },
+    {
+      "id": "alphabet.resh.sound.r",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "sound",
+      "transcript": "רָ",
+      "path": "generated/iapetus/alphabet/resh/sound-r.mp3"
+    },
+    {
+      "id": "alphabet.shin.name",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "letter_name",
+      "transcript": "שִׁין",
+      "path": "generated/iapetus/alphabet/shin/name.mp3"
+    },
+    {
+      "id": "alphabet.shin.sound.sh",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/iapetus/alphabet/shin/sound-sh.mp3"
+    },
+    {
+      "id": "alphabet.shin.sound.s",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/iapetus/alphabet/shin/sound-s.mp3"
+    },
+    {
+      "id": "alphabet.tav.name",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "letter_name",
+      "transcript": "תָּו",
+      "path": "generated/iapetus/alphabet/tav/name.mp3"
+    },
+    {
+      "id": "alphabet.tav.sound.t",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "sound",
+      "transcript": "תָּ",
+      "path": "generated/iapetus/alphabet/tav/sound-t.mp3"
+    },
+    {
+      "id": "niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "path": "generated/iapetus/niqqud/sheva/name.mp3"
+    },
+    {
+      "id": "niqqud.sheva.sound",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "sound",
+      "transcript": "בְּ",
+      "path": "generated/iapetus/niqqud/sheva/sound.mp3"
+    },
+    {
+      "id": "niqqud.hataf_segol.name",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "mark_name",
+      "transcript": "חֲטַף סֶגּוֹל",
+      "path": "generated/iapetus/niqqud/hataf_segol/name.mp3"
+    },
+    {
+      "id": "niqqud.hataf_segol.sound",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "sound",
+      "transcript": "אֱ",
+      "path": "generated/iapetus/niqqud/hataf_segol/sound.mp3"
+    },
+    {
+      "id": "niqqud.hataf_patah.name",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "mark_name",
+      "transcript": "חֲטַף פַּתָּח",
+      "path": "generated/iapetus/niqqud/hataf_patah/name.mp3"
+    },
+    {
+      "id": "niqqud.hataf_patah.sound",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "sound",
+      "transcript": "אֲ",
+      "path": "generated/iapetus/niqqud/hataf_patah/sound.mp3"
+    },
+    {
+      "id": "niqqud.hataf_qamats.name",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "mark_name",
+      "transcript": "חֲטַף קָמָץ",
+      "path": "generated/iapetus/niqqud/hataf_qamats/name.mp3"
+    },
+    {
+      "id": "niqqud.hataf_qamats.sound",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "sound",
+      "transcript": "אֳ",
+      "path": "generated/iapetus/niqqud/hataf_qamats/sound.mp3"
+    },
+    {
+      "id": "niqqud.hiriq.name",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "mark_name",
+      "transcript": "חִירִיק",
+      "path": "generated/iapetus/niqqud/hiriq/name.mp3"
+    },
+    {
+      "id": "niqqud.hiriq.sound",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "sound",
+      "transcript": "בִּי",
+      "path": "generated/iapetus/niqqud/hiriq/sound.mp3"
+    },
+    {
+      "id": "niqqud.tsere.name",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "mark_name",
+      "transcript": "צֵירֵי",
+      "path": "generated/iapetus/niqqud/tsere/name.mp3"
+    },
+    {
+      "id": "niqqud.tsere.sound",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "sound",
+      "transcript": "בֵּ",
+      "path": "generated/iapetus/niqqud/tsere/sound.mp3"
+    },
+    {
+      "id": "niqqud.segol.name",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "mark_name",
+      "transcript": "סֶגּוֹל",
+      "path": "generated/iapetus/niqqud/segol/name.mp3"
+    },
+    {
+      "id": "niqqud.segol.sound",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "sound",
+      "transcript": "בֶּ",
+      "path": "generated/iapetus/niqqud/segol/sound.mp3"
+    },
+    {
+      "id": "niqqud.patah.name",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "mark_name",
+      "transcript": "פַּתָּח",
+      "path": "generated/iapetus/niqqud/patah/name.mp3"
+    },
+    {
+      "id": "niqqud.patah.sound",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "sound",
+      "transcript": "בַּ",
+      "path": "generated/iapetus/niqqud/patah/sound.mp3"
+    },
+    {
+      "id": "niqqud.qamats.name",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "mark_name",
+      "transcript": "קָמָץ",
+      "path": "generated/iapetus/niqqud/qamats/name.mp3"
+    },
+    {
+      "id": "niqqud.qamats.sound",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/iapetus/niqqud/qamats/sound.mp3"
+    },
+    {
+      "id": "niqqud.qamats_qatan.name",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "mark_name",
+      "transcript": "קָמָץ קָטָן",
+      "path": "generated/iapetus/niqqud/qamats_qatan/name.mp3"
+    },
+    {
+      "id": "niqqud.qamats_qatan.sound",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "sound",
+      "transcript": "כׇּל",
+      "path": "generated/iapetus/niqqud/qamats_qatan/sound.mp3"
+    },
+    {
+      "id": "niqqud.holam.name",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "mark_name",
+      "transcript": "חוֹלָם",
+      "path": "generated/iapetus/niqqud/holam/name.mp3"
+    },
+    {
+      "id": "niqqud.holam.sound",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "sound",
+      "transcript": "בּוֹ",
+      "path": "generated/iapetus/niqqud/holam/sound.mp3"
+    },
+    {
+      "id": "niqqud.qubuts.name",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "mark_name",
+      "transcript": "קֻבּוּץ",
+      "path": "generated/iapetus/niqqud/qubuts/name.mp3"
+    },
+    {
+      "id": "niqqud.qubuts.sound",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "sound",
+      "transcript": "בֻּ",
+      "path": "generated/iapetus/niqqud/qubuts/sound.mp3"
+    },
+    {
+      "id": "niqqud.shuruk.name",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "mark_name",
+      "transcript": "שׁוּרוּק",
+      "path": "generated/iapetus/niqqud/shuruk/name.mp3"
+    },
+    {
+      "id": "niqqud.shuruk.sound",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "sound",
+      "transcript": "בּוּ",
+      "path": "generated/iapetus/niqqud/shuruk/sound.mp3"
+    },
+    {
+      "id": "niqqud.dagesh.name",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "mark_name",
+      "transcript": "דָּגֵשׁ",
+      "path": "generated/iapetus/niqqud/dagesh/name.mp3"
+    },
+    {
+      "id": "niqqud.dagesh.sound",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "sound",
+      "transcript": "בָּ. כָּ. פָּ.",
+      "path": "generated/iapetus/niqqud/dagesh/sound.mp3"
+    },
+    {
+      "id": "niqqud.shin_dot.name",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׁין",
+      "path": "generated/iapetus/niqqud/shin_dot/name.mp3"
+    },
+    {
+      "id": "niqqud.shin_dot.sound",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/iapetus/niqqud/shin_dot/sound.mp3"
+    },
+    {
+      "id": "niqqud.sin_dot.name",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׂין",
+      "path": "generated/iapetus/niqqud/sin_dot/name.mp3"
+    },
+    {
+      "id": "niqqud.sin_dot.sound",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/iapetus/niqqud/sin_dot/sound.mp3"
+    }
+  ]
+}

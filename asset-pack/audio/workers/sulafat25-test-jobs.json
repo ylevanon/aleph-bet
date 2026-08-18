@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-15T04:29:56.657887+00:00",
+  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Sulafat",
+  "jobCount": 1,
+  "jobs": [
+    {
+      "id": "alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "voice": "Sulafat",
+      "model": "gemini-2.5-flash-preview-tts",
+      "output": "generated/sulafat/alphabet/alef/sound-a.mp3",
+      "request": {
+        "contents": [
+          {
+            "parts": [
+              {
+                "text": "Record one very short Hebrew sound example for an adult beginner. Use a native contemporary Israeli Hebrew accent. Pronounce exactly the pointed Hebrew transcript once as a single sound or syllable, without naming its letters and without adding words, then stop.\n\nTRANSCRIPT:\nאָ"
+              }
+            ]
+          }
+        ],
+        "generationConfig": {
+          "responseModalities": [
+            "AUDIO"
+          ],
+          "speechConfig": {
+            "voiceConfig": {
+              "prebuiltVoiceConfig": {
+                "voiceName": "Sulafat"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

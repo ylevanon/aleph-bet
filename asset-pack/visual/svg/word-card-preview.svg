@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Modern Hebrew word card</title>
+  <desc id="desc">A warm word card for shalom with pointed and unpointed forms.</desc>
+  <rect width="960" height="640" rx="52" fill="#101715"/>
+  <rect x="38" y="38" width="884" height="564" rx="40" fill="#17211E" stroke="#33413C" stroke-width="2"/>
+  <rect x="76" y="76" width="144" height="44" rx="22" fill="#203D37"/>
+  <text x="148" y="106" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="700" letter-spacing="2" fill="#6BC4B7">WORD 001</text>
+  <text x="480" y="304" text-anchor="middle" font-family="Noto Sans Hebrew, Arial Hebrew, sans-serif" font-size="146" font-weight="650" fill="#F5F1E8" direction="rtl">שָׁלוֹם</text>
+  <text x="480" y="388" text-anchor="middle" font-family="Noto Sans Hebrew, Arial Hebrew, sans-serif" font-size="58" font-weight="500" fill="#A8B2AE" direction="rtl">שלום</text>
+  <text x="480" y="453" text-anchor="middle" font-family="system-ui, sans-serif" font-size="30" font-weight="620" letter-spacing="1.6" fill="#F0957E">SHALOM · HELLO / PEACE</text>
+  <circle cx="480" cy="528" r="34" fill="#6BC4B7"/>
+  <path d="M469 510l29 18-29 18z" fill="#101715"/>
+  <path d="M348 528h20m24-12v24m28-36v48m28-17v-14m164 7h-20m-24-12v24m-28-36v48m-28-17v-14" stroke="#6BC4B7" stroke-width="7" stroke-linecap="round"/>
+</svg>

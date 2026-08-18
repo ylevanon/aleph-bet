@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+  <title id="title">Modern Alef letter card</title>
+  <desc id="desc">A calm cream learning card showing Alef, its name, and an audio control.</desc>
+  <rect width="720" height="960" rx="52" fill="#F7F3EA"/>
+  <rect x="38" y="38" width="644" height="884" rx="40" fill="#FFFCF7" stroke="#D9DED8" stroke-width="2"/>
+  <rect x="76" y="78" width="118" height="44" rx="22" fill="#DCEBE6"/>
+  <text x="135" y="108" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#177B72">LETTER 01</text>
+  <circle cx="360" cy="400" r="222" fill="#DCEBE6"/>
+  <circle cx="360" cy="400" r="182" fill="#FFFCF7" stroke="#B8D6CE" stroke-width="2"/>
+  <text x="360" y="515" text-anchor="middle" font-family="Noto Sans Hebrew, Arial Hebrew, sans-serif" font-size="300" font-weight="680" fill="#18221F" direction="rtl">א</text>
+  <text x="360" y="700" text-anchor="middle" font-family="Noto Sans Hebrew, Arial Hebrew, sans-serif" font-size="74" font-weight="590" fill="#18221F" direction="rtl">אָלֶף</text>
+  <text x="360" y="746" text-anchor="middle" font-family="system-ui, sans-serif" font-size="25" font-weight="560" letter-spacing="1.4" fill="#65706C">ALEF</text>
+  <rect x="190" y="808" width="340" height="76" rx="38" fill="#177B72"/>
+  <circle cx="238" cy="846" r="18" fill="#FFFCF7"/>
+  <path d="M232 836l17 10-17 10z" fill="#177B72"/>
+  <path d="M286 846h8m12-12v24m12-34v44m12-24v4m12-13v26m12-37v44m12-31v18m12-9h8" stroke="#FFFCF7" stroke-width="6" stroke-linecap="round"/>
+  <text x="456" y="854" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="650" fill="#FFFCF7">LISTEN</text>
+</svg>

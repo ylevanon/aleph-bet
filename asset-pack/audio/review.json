@@ -1,0 +1,1883 @@
+{
+  "schemaVersion": 1,
+  "items": {
+    "alphabet.alef.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.alef.sound.a": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.bet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.bet.sound.b": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.bet.sound.v": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.gimel.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.gimel.sound.g": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.dalet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.dalet.sound.d": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.he.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.he.sound.h": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.vav.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.vav.sound.v": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.vav.sound.o": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.vav.sound.u": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.zayin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.zayin.sound.z": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.het.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.het.sound.kh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.tet.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.tet.sound.t": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.yod.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.yod.sound.y": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.yod.sound.i": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.kaf.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.kaf.sound.k": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.kaf.sound.kh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.final_kaf.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.lamed.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.lamed.sound.l": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.mem.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.mem.sound.m": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.final_mem.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.nun.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.nun.sound.n": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.final_nun.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.samekh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.samekh.sound.s": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.ayin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.ayin.sound.a": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.pe.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.pe.sound.p": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.pe.sound.f": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.final_pe.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.tsadi.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.tsadi.sound.ts": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.final_tsadi.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.qof.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.qof.sound.k": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.resh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.resh.sound.r": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.shin.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.shin.sound.sh": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.shin.sound.s": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.tav.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "alphabet.tav.sound.t": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.sheva.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.sheva.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hataf_segol.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hataf_segol.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hataf_patah.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hataf_patah.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hataf_qamats.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hataf_qamats.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hiriq.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.hiriq.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.tsere.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.tsere.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.segol.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.segol.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.patah.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.patah.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.qamats.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.qamats.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.qamats_qatan.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.qamats_qatan.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.holam.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.holam.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.qubuts.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.qubuts.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.shuruk.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.shuruk.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.dagesh.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.dagesh.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.shin_dot.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.shin_dot.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.sin_dot.name": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "niqqud.sin_dot.sound": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lo_not.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lo_not.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.et_object_marker.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.et_object_marker.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.at_you_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.at_you_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ani_i.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ani_i.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ze_this.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ze_this.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ata_you_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ata_you_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ma_what.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ma_what.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hu_he.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hu_he.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.li_to_me.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.li_to_me.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.al_on.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.al_on.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ken_yes.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ken_yes.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lekha_to_you_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lekha_to_you_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lakh_to_you_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lakh_to_you_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shel_of.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shel_of.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yesh_there_is.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yesh_there_is.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.beseder_okay.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.beseder_okay.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.aval_but.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.aval_but.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kol_all.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kol_all.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheli_mine.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheli_mine.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.tov_good.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.tov_good.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.im_with.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.im_with.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.am_people.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.am_people.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hi_she.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hi_she.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.im_if.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.im_if.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.em_mother.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.em_mother.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.rotse_wants_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.rotse_wants_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.rotsa_wants_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.rotsa_wants_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelkha_yours_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelkha_yours_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelakh_yours_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelakh_yours_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.haya_was.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.haya_was.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.anakhnu_we.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.anakhnu_we.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hem_they.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hem_they.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.otkha_you_object_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.otkha_you_object_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.otakh_you_object_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.otakh_you_object_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yodea_knows_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yodea_knows_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.az_then.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.az_then.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.rak_only.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.rak_only.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.oto_him.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.oto_him.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yakhol_can_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yakhol_can_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.oti_me_object.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.oti_me_object.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yoter_more.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yoter_more.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.haze_this.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.haze_this.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.el_to.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.el_to.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.al_do_not.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.al_do_not.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kan_here.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kan_here.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.o_or.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.o_or.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lama_why.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lama_why.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheani_that_i.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheani_that_i.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kakh_so.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kakh_so.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ekhad_one.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ekhad_one.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.akhshav_now.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.akhshav_now.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.mashehu_something.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.mashehu_something.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lihyot_to_be.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lihyot_to_be.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hai_hi.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hai_hi.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.toda_thanks.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.toda_thanks.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kmo_like.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kmo_like.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ein_there_is_not.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ein_there_is_not.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.eikh_how.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.eikh_how.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.zot_this_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.zot_this_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.nakhon_correct.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.nakhon_correct.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.mi_who.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.mi_who.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lo_to_him.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lo_to_him.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sham_there.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sham_there.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shem_name.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shem_name.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.tsarikh_needs_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.tsarikh_needs_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.laasot_to_do.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.laasot_to_do.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kadima_come_on.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kadima_come_on.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lanu_to_us.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lanu_to_us.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.khoshev_thinks_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.khoshev_thinks_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kama_how_many.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kama_how_many.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheata_that_you_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheata_that_you_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.zo_this_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.zo_this_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.gam_also.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.gam_also.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yodaat_knows_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yodaat_knows_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.otah_her.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.otah_her.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.od_more.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.od_more.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.beemet_really.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.beemet_really.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hayiti_i_was.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.hayiti_i_was.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shehu_that_he.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shehu_that_he.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ulai_maybe.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ulai_maybe.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ose_does_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ose_does_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.osa_does_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.osa_does_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.bevakasha_please.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.bevakasha_please.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.pashut_simple.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.pashut_simple.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheze_that_this.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.sheze_that_this.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.davar_thing.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.davar_thing.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.daber_speak.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.daber_speak.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.meod_very.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.meod_very.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kvar_already.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kvar_already.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelo_that_not.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelo_that_not.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.nire_seems.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.nire_seems.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kdei_in_order_to.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.kdei_in_order_to.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.atem_you_plural.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.atem_you_plural.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.elohim_god.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.elohim_god.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.vaani_and_i.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.vaani_and_i.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.paam_time.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.paam_time.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.haim_question.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.haim_question.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelo_his.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelo_his.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.harbe_a_lot.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.harbe_a_lot.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelanu_ours.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.shelanu_ours.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yekhola_can_f.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yekhola_can_f.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ki_because.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ki_because.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.omer_says_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.omer_says_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yihye_will_be.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.yihye_will_be.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ad_until.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ad_until.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ed_witness.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.ed_witness.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lifnei_before.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.lifnei_before.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.holekh_goes_m.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.holekh_goes_m.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.zman_time.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.zman_time.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.adayin_still.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.adayin_still.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.mamash_really.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.mamash_really.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.uvkhen_well.natural": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "word.uvkhen_well.teaching": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    },
+    "audition.Iapetus": {
+      "status": "pending",
+      "reviewer": null,
+      "reviewedAt": null,
+      "notes": ""
+    }
+  }
+}

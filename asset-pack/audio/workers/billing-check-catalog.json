@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": "Iapetus",
+  "items": [
+    {
+      "id": "niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "path": "generated/iapetus/niqqud/sheva/name.mp3"
+    }
+  ]
+}

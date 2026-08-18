@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "model": "gemini-2.5-flash-preview-tts",
+  "voice": "Sulafat",
+  "items": [
+    {
+      "id": "alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "path": "generated/sulafat/alphabet/alef/sound-a.mp3"
+    }
+  ]
+}

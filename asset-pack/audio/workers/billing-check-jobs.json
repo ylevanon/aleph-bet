@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-17T17:54:46.993713+00:00",
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": "Iapetus",
+  "jobCount": 1,
+  "jobs": [
+    {
+      "id": "niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "generated/iapetus/niqqud/sheva/name.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record the name of one Hebrew niqqud or consonant mark for an adult beginner. Use a native contemporary Israeli Hebrew accent and careful natural articulation. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשְׁוָא",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

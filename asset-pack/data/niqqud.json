@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "locale": "he-IL",
+  "scope": "Practical Modern Israeli Hebrew vowel points and essential consonant dots; cantillation excluded.",
+  "editorialStatus": "needs_native_review",
+  "marks": [
+    {"id": "sheva", "mark": "ְ", "namePointed": "שְׁוָא", "nameLatin": "shva", "sound": "silent or a very short e depending on the word", "soundLatin": "∅ / e", "samplePointed": "בְּ", "sampleLatin": "b(e)"},
+    {"id": "hataf_segol", "mark": "ֱ", "namePointed": "חֲטַף סֶגּוֹל", "nameLatin": "hataf segol", "sound": "very short e", "soundLatin": "e", "samplePointed": "אֱ", "sampleLatin": "e"},
+    {"id": "hataf_patah", "mark": "ֲ", "namePointed": "חֲטַף פַּתָּח", "nameLatin": "hataf patah", "sound": "very short a", "soundLatin": "a", "samplePointed": "אֲ", "sampleLatin": "a"},
+    {"id": "hataf_qamats", "mark": "ֳ", "namePointed": "חֲטַף קָמָץ", "nameLatin": "hataf qamats", "sound": "very short o", "soundLatin": "o", "samplePointed": "אֳ", "sampleLatin": "o"},
+    {"id": "hiriq", "mark": "ִ", "namePointed": "חִירִיק", "nameLatin": "hiriq", "sound": "i as in machine", "soundLatin": "i", "samplePointed": "בִּי", "sampleLatin": "bi"},
+    {"id": "tsere", "mark": "ֵ", "namePointed": "צֵירֵי", "nameLatin": "tsere", "sound": "e", "soundLatin": "e", "samplePointed": "בֵּ", "sampleLatin": "be"},
+    {"id": "segol", "mark": "ֶ", "namePointed": "סֶגּוֹל", "nameLatin": "segol", "sound": "e", "soundLatin": "e", "samplePointed": "בֶּ", "sampleLatin": "be"},
+    {"id": "patah", "mark": "ַ", "namePointed": "פַּתָּח", "nameLatin": "patah", "sound": "a", "soundLatin": "a", "samplePointed": "בַּ", "sampleLatin": "ba"},
+    {"id": "qamats", "mark": "ָ", "namePointed": "קָמָץ", "nameLatin": "qamats", "sound": "usually a in Modern Hebrew", "soundLatin": "a", "samplePointed": "בָּ", "sampleLatin": "ba"},
+    {"id": "qamats_qatan", "mark": "ׇ", "namePointed": "קָמָץ קָטָן", "nameLatin": "qamats qatan", "sound": "o in specific lexical contexts", "soundLatin": "o", "samplePointed": "כׇּל", "sampleLatin": "kol", "contextual": true, "unicode": "U+05C7"},
+    {"id": "holam", "mark": "ֹ", "namePointed": "חוֹלָם", "nameLatin": "holam", "sound": "o", "soundLatin": "o", "samplePointed": "בּוֹ", "sampleLatin": "bo"},
+    {"id": "qubuts", "mark": "ֻ", "namePointed": "קֻבּוּץ", "nameLatin": "qubuts", "sound": "u", "soundLatin": "u", "samplePointed": "בֻּ", "sampleLatin": "bu"},
+    {"id": "shuruk", "mark": "וּ", "namePointed": "שׁוּרוּק", "nameLatin": "shuruk", "sound": "u", "soundLatin": "u", "samplePointed": "בּוּ", "sampleLatin": "bu"},
+    {"id": "dagesh", "mark": "ּ", "namePointed": "דָּגֵשׁ", "nameLatin": "dagesh", "sound": "changes ב כ פ from v/kh/f to b/k/p; may also mark historical doubling", "soundLatin": "b / k / p contrast", "samplePointed": "בָּ. כָּ. פָּ.", "sampleLatin": "ba, ka, pa", "consonantMark": true},
+    {"id": "shin_dot", "mark": "ׁ", "namePointed": "נְקֻדַּת שִׁין", "nameLatin": "shin dot", "sound": "sh", "soundLatin": "sh", "samplePointed": "שָׁ", "sampleLatin": "sha", "consonantMark": true},
+    {"id": "sin_dot", "mark": "ׂ", "namePointed": "נְקֻדַּת שִׂין", "nameLatin": "sin dot", "sound": "s", "soundLatin": "s", "samplePointed": "שָׂ", "sampleLatin": "sa", "consonantMark": true}
+  ]
+}

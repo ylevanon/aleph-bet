@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "direction": "adult, warm, modern, calm, premium, typographically precise",
+  "font": {
+    "hebrewFamily": "Noto Sans Hebrew",
+    "hebrewAsset": "../fonts/noto_sans_hebrew.ttf",
+    "latinFallback": "system sans-serif",
+    "displayWeight": 680,
+    "bodyWeight": 450,
+    "niqqudMinimumRenderedSizeSp": 28
+  },
+  "light": {
+    "canvas": "#F7F3EA",
+    "surface": "#FFFCF7",
+    "surfaceRaised": "#FFFFFF",
+    "ink": "#18221F",
+    "inkMuted": "#65706C",
+    "line": "#D9DED8",
+    "primary": "#177B72",
+    "primarySoft": "#DCEBE6",
+    "accent": "#E7735A",
+    "accentSoft": "#F9DED5",
+    "gold": "#D99A32",
+    "focus": "#6558C8"
+  },
+  "dark": {
+    "canvas": "#101715",
+    "surface": "#17211E",
+    "surfaceRaised": "#1F2B27",
+    "ink": "#F5F1E8",
+    "inkMuted": "#A8B2AE",
+    "line": "#33413C",
+    "primary": "#6BC4B7",
+    "primarySoft": "#203D37",
+    "accent": "#F0957E",
+    "accentSoft": "#4A2D28",
+    "gold": "#F0BD63",
+    "focus": "#AAA0F4"
+  },
+  "shape": {"smallDp": 12, "mediumDp": 20, "largeDp": 28, "pillDp": 999},
+  "space": {"xsDp": 4, "smDp": 8, "mdDp": 16, "lgDp": 24, "xlDp": 32, "xxlDp": 48},
+  "motion": {"quickMs": 140, "standardMs": 240, "celebrationMs": 520},
+  "rules": [
+    "Render Hebrew glyphs as text with the bundled font; do not rasterize letters or niqqud.",
+    "Use explicit RTL layout for Hebrew strings and LTR layout for transliteration and English.",
+    "Never crop a glyph box tightly: reserve at least 0.32em above and 0.42em below for niqqud.",
+    "Color is instructional support, not the only carrier of meaning.",
+    "Use accent color sparingly for the currently heard sound or active mark."
+  ]
+}

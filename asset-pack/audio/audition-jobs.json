@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-14T03:51:40.187181+00:00",
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": null,
+  "jobCount": 1,
+  "jobs": [
+    {
+      "id": "audition.Iapetus",
+      "category": "audition",
+      "itemId": "Iapetus",
+      "profile": "natural",
+      "transcript": "שָׁלוֹם. אֶת. אַתְּ. עִם. עַם. חֵית. רֵישׁ. קָמָץ. תּוֹדָה. בְּבַקָּשָׁה.",
+      "voice": "Iapetus",
+      "model": "gemini-3.1-flash-tts-preview",
+      "output": "auditions/iapetus.mp3",
+      "request": {
+        "model": "gemini-3.1-flash-tts-preview",
+        "input": "Record one clean vocabulary item for an adult beginner. Use a native contemporary Israeli Hebrew accent, a warm neutral teaching voice, natural citation-form rhythm, crisp articulation, and no theatrical delivery. Pronounce exactly the transcript once, add nothing, then stop.\n\nTRANSCRIPT:\nשָׁלוֹם. אֶת. אַתְּ. עִם. עַם. חֵית. רֵישׁ. קָמָץ. תּוֹדָה. בְּבַקָּשָׁה.",
+        "response_format": {
+          "type": "audio"
+        },
+        "generation_config": {
+          "speech_config": [
+            {
+              "voice": "Iapetus"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

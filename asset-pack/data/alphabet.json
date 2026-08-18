@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "locale": "he-IL",
+  "scriptStyle": "block",
+  "editorialStatus": "needs_native_review",
+  "transliterationKey": {
+    "kh": "Modern Israeli Hebrew /χ/",
+    "ts": "Modern Israeli Hebrew /ts/",
+    "sh": "Modern Israeli Hebrew /ʃ/"
+  },
+  "letters": [
+    {"order": 1, "id": "alef", "glyph": "א", "namePointed": "אָלֶף", "nameLatin": "alef", "sounds": ["silent or glottal onset"], "soundSamples": [{"id": "a", "pointed": "אָ"}], "finalForm": false},
+    {"order": 2, "id": "bet", "glyph": "ב", "namePointed": "בֵּית", "nameLatin": "bet", "sounds": ["b with dagesh", "v without dagesh"], "forms": ["בּ", "ב"], "soundSamples": [{"id": "b", "pointed": "בָּ"}, {"id": "v", "pointed": "בָ"}], "finalForm": false},
+    {"order": 3, "id": "gimel", "glyph": "ג", "namePointed": "גִּימֶל", "nameLatin": "gimel", "sounds": ["g"], "soundSamples": [{"id": "g", "pointed": "גָּ"}], "finalForm": false},
+    {"order": 4, "id": "dalet", "glyph": "ד", "namePointed": "דָּלֶת", "nameLatin": "dalet", "sounds": ["d"], "soundSamples": [{"id": "d", "pointed": "דָּ"}], "finalForm": false},
+    {"order": 5, "id": "he", "glyph": "ה", "namePointed": "הֵא", "nameLatin": "he", "sounds": ["h; often silent word-finally"], "soundSamples": [{"id": "h", "pointed": "הָ"}], "finalForm": false},
+    {"order": 6, "id": "vav", "glyph": "ו", "namePointed": "וָו", "nameLatin": "vav", "sounds": ["v", "o in holam male", "u in shuruk"], "forms": ["ו", "וֹ", "וּ"], "soundSamples": [{"id": "v", "pointed": "וָ"}, {"id": "o", "pointed": "אוֹ"}, {"id": "u", "pointed": "אוּ"}], "finalForm": false},
+    {"order": 7, "id": "zayin", "glyph": "ז", "namePointed": "זַיִן", "nameLatin": "zayin", "sounds": ["z"], "soundSamples": [{"id": "z", "pointed": "זָ"}], "finalForm": false},
+    {"order": 8, "id": "het", "glyph": "ח", "namePointed": "חֵית", "nameLatin": "het", "sounds": ["kh"], "soundSamples": [{"id": "kh", "pointed": "חָ"}], "finalForm": false},
+    {"order": 9, "id": "tet", "glyph": "ט", "namePointed": "טֵית", "nameLatin": "tet", "sounds": ["t"], "soundSamples": [{"id": "t", "pointed": "טָ"}], "finalForm": false},
+    {"order": 10, "id": "yod", "glyph": "י", "namePointed": "יוֹד", "nameLatin": "yod", "sounds": ["y", "i vowel carrier"], "soundSamples": [{"id": "y", "pointed": "יָ"}, {"id": "i", "pointed": "אִי"}], "finalForm": false},
+    {"order": 11, "id": "kaf", "glyph": "כ", "namePointed": "כַּף", "nameLatin": "kaf", "sounds": ["k with dagesh", "kh without dagesh"], "forms": ["כּ", "כ"], "soundSamples": [{"id": "k", "pointed": "כָּ"}, {"id": "kh", "pointed": "כָ"}], "finalForm": false},
+    {"order": 11, "id": "final_kaf", "glyph": "ך", "namePointed": "כַּף סוֹפִית", "nameLatin": "final kaf", "sounds": ["kh; k when marked with dagesh"], "finalForm": true, "baseLetterId": "kaf"},
+    {"order": 12, "id": "lamed", "glyph": "ל", "namePointed": "לָמֶד", "nameLatin": "lamed", "sounds": ["l"], "soundSamples": [{"id": "l", "pointed": "לָ"}], "finalForm": false},
+    {"order": 13, "id": "mem", "glyph": "מ", "namePointed": "מֵם", "nameLatin": "mem", "sounds": ["m"], "soundSamples": [{"id": "m", "pointed": "מָ"}], "finalForm": false},
+    {"order": 13, "id": "final_mem", "glyph": "ם", "namePointed": "מֵם סוֹפִית", "nameLatin": "final mem", "sounds": ["m"], "finalForm": true, "baseLetterId": "mem"},
+    {"order": 14, "id": "nun", "glyph": "נ", "namePointed": "נוּן", "nameLatin": "nun", "sounds": ["n"], "soundSamples": [{"id": "n", "pointed": "נָ"}], "finalForm": false},
+    {"order": 14, "id": "final_nun", "glyph": "ן", "namePointed": "נוּן סוֹפִית", "nameLatin": "final nun", "sounds": ["n"], "finalForm": true, "baseLetterId": "nun"},
+    {"order": 15, "id": "samekh", "glyph": "ס", "namePointed": "סָמֶךְ", "nameLatin": "samekh", "sounds": ["s"], "soundSamples": [{"id": "s", "pointed": "סָ"}], "finalForm": false},
+    {"order": 16, "id": "ayin", "glyph": "ע", "namePointed": "עַיִן", "nameLatin": "ayin", "sounds": ["usually silent or glottal onset in mainstream Modern Israeli Hebrew"], "soundSamples": [{"id": "a", "pointed": "עָ"}], "finalForm": false},
+    {"order": 17, "id": "pe", "glyph": "פ", "namePointed": "פֵּא", "nameLatin": "pe", "sounds": ["p with dagesh", "f without dagesh"], "forms": ["פּ", "פ"], "soundSamples": [{"id": "p", "pointed": "פָּ"}, {"id": "f", "pointed": "פָ"}], "finalForm": false},
+    {"order": 17, "id": "final_pe", "glyph": "ף", "namePointed": "פֵּא סוֹפִית", "nameLatin": "final pe", "sounds": ["f; p when marked with dagesh"], "finalForm": true, "baseLetterId": "pe"},
+    {"order": 18, "id": "tsadi", "glyph": "צ", "namePointed": "צָדִי", "nameLatin": "tsadi", "sounds": ["ts"], "soundSamples": [{"id": "ts", "pointed": "צָ"}], "finalForm": false},
+    {"order": 18, "id": "final_tsadi", "glyph": "ץ", "namePointed": "צָדִי סוֹפִית", "nameLatin": "final tsadi", "sounds": ["ts"], "finalForm": true, "baseLetterId": "tsadi"},
+    {"order": 19, "id": "qof", "glyph": "ק", "namePointed": "קוֹף", "nameLatin": "qof", "sounds": ["k"], "soundSamples": [{"id": "k", "pointed": "קָ"}], "finalForm": false},
+    {"order": 20, "id": "resh", "glyph": "ר", "namePointed": "רֵישׁ", "nameLatin": "resh", "sounds": ["Modern Israeli r"], "soundSamples": [{"id": "r", "pointed": "רָ"}], "finalForm": false},
+    {"order": 21, "id": "shin", "glyph": "ש", "namePointed": "שִׁין", "nameLatin": "shin", "sounds": ["sh with right dot", "s with left dot"], "forms": ["שׁ", "שׂ"], "soundSamples": [{"id": "sh", "pointed": "שָׁ"}, {"id": "s", "pointed": "שָׂ"}], "finalForm": false},
+    {"order": 22, "id": "tav", "glyph": "ת", "namePointed": "תָּו", "nameLatin": "tav", "sounds": ["t"], "soundSamples": [{"id": "t", "pointed": "תָּ"}], "finalForm": false}
+  ]
+}

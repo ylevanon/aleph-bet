@@ -1,0 +1,2503 @@
+{
+  "schemaVersion": 1,
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": "Sulafat",
+  "items": [
+    {
+      "id": "alphabet.alef.name",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "letter_name",
+      "transcript": "אָלֶף",
+      "path": "generated/sulafat/alphabet/alef/name.mp3"
+    },
+    {
+      "id": "alphabet.alef.sound.a",
+      "category": "alphabet",
+      "itemId": "alef",
+      "profile": "sound",
+      "transcript": "אָ",
+      "path": "generated/sulafat/alphabet/alef/sound-a.mp3"
+    },
+    {
+      "id": "alphabet.bet.name",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "letter_name",
+      "transcript": "בֵּית",
+      "path": "generated/sulafat/alphabet/bet/name.mp3"
+    },
+    {
+      "id": "alphabet.bet.sound.b",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/sulafat/alphabet/bet/sound-b.mp3"
+    },
+    {
+      "id": "alphabet.bet.sound.v",
+      "category": "alphabet",
+      "itemId": "bet",
+      "profile": "sound",
+      "transcript": "בָ",
+      "path": "generated/sulafat/alphabet/bet/sound-v.mp3"
+    },
+    {
+      "id": "alphabet.gimel.name",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "letter_name",
+      "transcript": "גִּימֶל",
+      "path": "generated/sulafat/alphabet/gimel/name.mp3"
+    },
+    {
+      "id": "alphabet.gimel.sound.g",
+      "category": "alphabet",
+      "itemId": "gimel",
+      "profile": "sound",
+      "transcript": "גָּ",
+      "path": "generated/sulafat/alphabet/gimel/sound-g.mp3"
+    },
+    {
+      "id": "alphabet.dalet.name",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "letter_name",
+      "transcript": "דָּלֶת",
+      "path": "generated/sulafat/alphabet/dalet/name.mp3"
+    },
+    {
+      "id": "alphabet.dalet.sound.d",
+      "category": "alphabet",
+      "itemId": "dalet",
+      "profile": "sound",
+      "transcript": "דָּ",
+      "path": "generated/sulafat/alphabet/dalet/sound-d.mp3"
+    },
+    {
+      "id": "alphabet.he.name",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "letter_name",
+      "transcript": "הֵא",
+      "path": "generated/sulafat/alphabet/he/name.mp3"
+    },
+    {
+      "id": "alphabet.he.sound.h",
+      "category": "alphabet",
+      "itemId": "he",
+      "profile": "sound",
+      "transcript": "הָ",
+      "path": "generated/sulafat/alphabet/he/sound-h.mp3"
+    },
+    {
+      "id": "alphabet.vav.name",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "letter_name",
+      "transcript": "וָו",
+      "path": "generated/sulafat/alphabet/vav/name.mp3"
+    },
+    {
+      "id": "alphabet.vav.sound.v",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "וָ",
+      "path": "generated/sulafat/alphabet/vav/sound-v.mp3"
+    },
+    {
+      "id": "alphabet.vav.sound.o",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוֹ",
+      "path": "generated/sulafat/alphabet/vav/sound-o.mp3"
+    },
+    {
+      "id": "alphabet.vav.sound.u",
+      "category": "alphabet",
+      "itemId": "vav",
+      "profile": "sound",
+      "transcript": "אוּ",
+      "path": "generated/sulafat/alphabet/vav/sound-u.mp3"
+    },
+    {
+      "id": "alphabet.zayin.name",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "letter_name",
+      "transcript": "זַיִן",
+      "path": "generated/sulafat/alphabet/zayin/name.mp3"
+    },
+    {
+      "id": "alphabet.zayin.sound.z",
+      "category": "alphabet",
+      "itemId": "zayin",
+      "profile": "sound",
+      "transcript": "זָ",
+      "path": "generated/sulafat/alphabet/zayin/sound-z.mp3"
+    },
+    {
+      "id": "alphabet.het.name",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "letter_name",
+      "transcript": "חֵית",
+      "path": "generated/sulafat/alphabet/het/name.mp3"
+    },
+    {
+      "id": "alphabet.het.sound.kh",
+      "category": "alphabet",
+      "itemId": "het",
+      "profile": "sound",
+      "transcript": "חָ",
+      "path": "generated/sulafat/alphabet/het/sound-kh.mp3"
+    },
+    {
+      "id": "alphabet.tet.name",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "letter_name",
+      "transcript": "טֵית",
+      "path": "generated/sulafat/alphabet/tet/name.mp3"
+    },
+    {
+      "id": "alphabet.tet.sound.t",
+      "category": "alphabet",
+      "itemId": "tet",
+      "profile": "sound",
+      "transcript": "טָ",
+      "path": "generated/sulafat/alphabet/tet/sound-t.mp3"
+    },
+    {
+      "id": "alphabet.yod.name",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "letter_name",
+      "transcript": "יוֹד",
+      "path": "generated/sulafat/alphabet/yod/name.mp3"
+    },
+    {
+      "id": "alphabet.yod.sound.y",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "יָ",
+      "path": "generated/sulafat/alphabet/yod/sound-y.mp3"
+    },
+    {
+      "id": "alphabet.yod.sound.i",
+      "category": "alphabet",
+      "itemId": "yod",
+      "profile": "sound",
+      "transcript": "אִי",
+      "path": "generated/sulafat/alphabet/yod/sound-i.mp3"
+    },
+    {
+      "id": "alphabet.kaf.name",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף",
+      "path": "generated/sulafat/alphabet/kaf/name.mp3"
+    },
+    {
+      "id": "alphabet.kaf.sound.k",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָּ",
+      "path": "generated/sulafat/alphabet/kaf/sound-k.mp3"
+    },
+    {
+      "id": "alphabet.kaf.sound.kh",
+      "category": "alphabet",
+      "itemId": "kaf",
+      "profile": "sound",
+      "transcript": "כָ",
+      "path": "generated/sulafat/alphabet/kaf/sound-kh.mp3"
+    },
+    {
+      "id": "alphabet.final_kaf.name",
+      "category": "alphabet",
+      "itemId": "final_kaf",
+      "profile": "letter_name",
+      "transcript": "כַּף סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_kaf/name.mp3"
+    },
+    {
+      "id": "alphabet.lamed.name",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "letter_name",
+      "transcript": "לָמֶד",
+      "path": "generated/sulafat/alphabet/lamed/name.mp3"
+    },
+    {
+      "id": "alphabet.lamed.sound.l",
+      "category": "alphabet",
+      "itemId": "lamed",
+      "profile": "sound",
+      "transcript": "לָ",
+      "path": "generated/sulafat/alphabet/lamed/sound-l.mp3"
+    },
+    {
+      "id": "alphabet.mem.name",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "letter_name",
+      "transcript": "מֵם",
+      "path": "generated/sulafat/alphabet/mem/name.mp3"
+    },
+    {
+      "id": "alphabet.mem.sound.m",
+      "category": "alphabet",
+      "itemId": "mem",
+      "profile": "sound",
+      "transcript": "מָ",
+      "path": "generated/sulafat/alphabet/mem/sound-m.mp3"
+    },
+    {
+      "id": "alphabet.final_mem.name",
+      "category": "alphabet",
+      "itemId": "final_mem",
+      "profile": "letter_name",
+      "transcript": "מֵם סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_mem/name.mp3"
+    },
+    {
+      "id": "alphabet.nun.name",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "letter_name",
+      "transcript": "נוּן",
+      "path": "generated/sulafat/alphabet/nun/name.mp3"
+    },
+    {
+      "id": "alphabet.nun.sound.n",
+      "category": "alphabet",
+      "itemId": "nun",
+      "profile": "sound",
+      "transcript": "נָ",
+      "path": "generated/sulafat/alphabet/nun/sound-n.mp3"
+    },
+    {
+      "id": "alphabet.final_nun.name",
+      "category": "alphabet",
+      "itemId": "final_nun",
+      "profile": "letter_name",
+      "transcript": "נוּן סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_nun/name.mp3"
+    },
+    {
+      "id": "alphabet.samekh.name",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "letter_name",
+      "transcript": "סָמֶךְ",
+      "path": "generated/sulafat/alphabet/samekh/name.mp3"
+    },
+    {
+      "id": "alphabet.samekh.sound.s",
+      "category": "alphabet",
+      "itemId": "samekh",
+      "profile": "sound",
+      "transcript": "סָ",
+      "path": "generated/sulafat/alphabet/samekh/sound-s.mp3"
+    },
+    {
+      "id": "alphabet.ayin.name",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "letter_name",
+      "transcript": "עַיִן",
+      "path": "generated/sulafat/alphabet/ayin/name.mp3"
+    },
+    {
+      "id": "alphabet.ayin.sound.a",
+      "category": "alphabet",
+      "itemId": "ayin",
+      "profile": "sound",
+      "transcript": "עָ",
+      "path": "generated/sulafat/alphabet/ayin/sound-a.mp3"
+    },
+    {
+      "id": "alphabet.pe.name",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא",
+      "path": "generated/sulafat/alphabet/pe/name.mp3"
+    },
+    {
+      "id": "alphabet.pe.sound.p",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָּ",
+      "path": "generated/sulafat/alphabet/pe/sound-p.mp3"
+    },
+    {
+      "id": "alphabet.pe.sound.f",
+      "category": "alphabet",
+      "itemId": "pe",
+      "profile": "sound",
+      "transcript": "פָ",
+      "path": "generated/sulafat/alphabet/pe/sound-f.mp3"
+    },
+    {
+      "id": "alphabet.final_pe.name",
+      "category": "alphabet",
+      "itemId": "final_pe",
+      "profile": "letter_name",
+      "transcript": "פֵּא סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_pe/name.mp3"
+    },
+    {
+      "id": "alphabet.tsadi.name",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי",
+      "path": "generated/sulafat/alphabet/tsadi/name.mp3"
+    },
+    {
+      "id": "alphabet.tsadi.sound.ts",
+      "category": "alphabet",
+      "itemId": "tsadi",
+      "profile": "sound",
+      "transcript": "צָ",
+      "path": "generated/sulafat/alphabet/tsadi/sound-ts.mp3"
+    },
+    {
+      "id": "alphabet.final_tsadi.name",
+      "category": "alphabet",
+      "itemId": "final_tsadi",
+      "profile": "letter_name",
+      "transcript": "צָדִי סוֹפִית",
+      "path": "generated/sulafat/alphabet/final_tsadi/name.mp3"
+    },
+    {
+      "id": "alphabet.qof.name",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "letter_name",
+      "transcript": "קוֹף",
+      "path": "generated/sulafat/alphabet/qof/name.mp3"
+    },
+    {
+      "id": "alphabet.qof.sound.k",
+      "category": "alphabet",
+      "itemId": "qof",
+      "profile": "sound",
+      "transcript": "קָ",
+      "path": "generated/sulafat/alphabet/qof/sound-k.mp3"
+    },
+    {
+      "id": "alphabet.resh.name",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "letter_name",
+      "transcript": "רֵישׁ",
+      "path": "generated/sulafat/alphabet/resh/name.mp3"
+    },
+    {
+      "id": "alphabet.resh.sound.r",
+      "category": "alphabet",
+      "itemId": "resh",
+      "profile": "sound",
+      "transcript": "רָ",
+      "path": "generated/sulafat/alphabet/resh/sound-r.mp3"
+    },
+    {
+      "id": "alphabet.shin.name",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "letter_name",
+      "transcript": "שִׁין",
+      "path": "generated/sulafat/alphabet/shin/name.mp3"
+    },
+    {
+      "id": "alphabet.shin.sound.sh",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/sulafat/alphabet/shin/sound-sh.mp3"
+    },
+    {
+      "id": "alphabet.shin.sound.s",
+      "category": "alphabet",
+      "itemId": "shin",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/sulafat/alphabet/shin/sound-s.mp3"
+    },
+    {
+      "id": "alphabet.tav.name",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "letter_name",
+      "transcript": "תָּו",
+      "path": "generated/sulafat/alphabet/tav/name.mp3"
+    },
+    {
+      "id": "alphabet.tav.sound.t",
+      "category": "alphabet",
+      "itemId": "tav",
+      "profile": "sound",
+      "transcript": "תָּ",
+      "path": "generated/sulafat/alphabet/tav/sound-t.mp3"
+    },
+    {
+      "id": "niqqud.sheva.name",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "mark_name",
+      "transcript": "שְׁוָא",
+      "path": "generated/sulafat/niqqud/sheva/name.mp3"
+    },
+    {
+      "id": "niqqud.sheva.sound",
+      "category": "niqqud",
+      "itemId": "sheva",
+      "profile": "sound",
+      "transcript": "בְּ",
+      "path": "generated/sulafat/niqqud/sheva/sound.mp3"
+    },
+    {
+      "id": "niqqud.hataf_segol.name",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "mark_name",
+      "transcript": "חֲטַף סֶגּוֹל",
+      "path": "generated/sulafat/niqqud/hataf_segol/name.mp3"
+    },
+    {
+      "id": "niqqud.hataf_segol.sound",
+      "category": "niqqud",
+      "itemId": "hataf_segol",
+      "profile": "sound",
+      "transcript": "אֱ",
+      "path": "generated/sulafat/niqqud/hataf_segol/sound.mp3"
+    },
+    {
+      "id": "niqqud.hataf_patah.name",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "mark_name",
+      "transcript": "חֲטַף פַּתָּח",
+      "path": "generated/sulafat/niqqud/hataf_patah/name.mp3"
+    },
+    {
+      "id": "niqqud.hataf_patah.sound",
+      "category": "niqqud",
+      "itemId": "hataf_patah",
+      "profile": "sound",
+      "transcript": "אֲ",
+      "path": "generated/sulafat/niqqud/hataf_patah/sound.mp3"
+    },
+    {
+      "id": "niqqud.hataf_qamats.name",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "mark_name",
+      "transcript": "חֲטַף קָמָץ",
+      "path": "generated/sulafat/niqqud/hataf_qamats/name.mp3"
+    },
+    {
+      "id": "niqqud.hataf_qamats.sound",
+      "category": "niqqud",
+      "itemId": "hataf_qamats",
+      "profile": "sound",
+      "transcript": "אֳ",
+      "path": "generated/sulafat/niqqud/hataf_qamats/sound.mp3"
+    },
+    {
+      "id": "niqqud.hiriq.name",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "mark_name",
+      "transcript": "חִירִיק",
+      "path": "generated/sulafat/niqqud/hiriq/name.mp3"
+    },
+    {
+      "id": "niqqud.hiriq.sound",
+      "category": "niqqud",
+      "itemId": "hiriq",
+      "profile": "sound",
+      "transcript": "בִּי",
+      "path": "generated/sulafat/niqqud/hiriq/sound.mp3"
+    },
+    {
+      "id": "niqqud.tsere.name",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "mark_name",
+      "transcript": "צֵירֵי",
+      "path": "generated/sulafat/niqqud/tsere/name.mp3"
+    },
+    {
+      "id": "niqqud.tsere.sound",
+      "category": "niqqud",
+      "itemId": "tsere",
+      "profile": "sound",
+      "transcript": "בֵּ",
+      "path": "generated/sulafat/niqqud/tsere/sound.mp3"
+    },
+    {
+      "id": "niqqud.segol.name",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "mark_name",
+      "transcript": "סֶגּוֹל",
+      "path": "generated/sulafat/niqqud/segol/name.mp3"
+    },
+    {
+      "id": "niqqud.segol.sound",
+      "category": "niqqud",
+      "itemId": "segol",
+      "profile": "sound",
+      "transcript": "בֶּ",
+      "path": "generated/sulafat/niqqud/segol/sound.mp3"
+    },
+    {
+      "id": "niqqud.patah.name",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "mark_name",
+      "transcript": "פַּתָּח",
+      "path": "generated/sulafat/niqqud/patah/name.mp3"
+    },
+    {
+      "id": "niqqud.patah.sound",
+      "category": "niqqud",
+      "itemId": "patah",
+      "profile": "sound",
+      "transcript": "בַּ",
+      "path": "generated/sulafat/niqqud/patah/sound.mp3"
+    },
+    {
+      "id": "niqqud.qamats.name",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "mark_name",
+      "transcript": "קָמָץ",
+      "path": "generated/sulafat/niqqud/qamats/name.mp3"
+    },
+    {
+      "id": "niqqud.qamats.sound",
+      "category": "niqqud",
+      "itemId": "qamats",
+      "profile": "sound",
+      "transcript": "בָּ",
+      "path": "generated/sulafat/niqqud/qamats/sound.mp3"
+    },
+    {
+      "id": "niqqud.qamats_qatan.name",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "mark_name",
+      "transcript": "קָמָץ קָטָן",
+      "path": "generated/sulafat/niqqud/qamats_qatan/name.mp3"
+    },
+    {
+      "id": "niqqud.qamats_qatan.sound",
+      "category": "niqqud",
+      "itemId": "qamats_qatan",
+      "profile": "sound",
+      "transcript": "כׇּל",
+      "path": "generated/sulafat/niqqud/qamats_qatan/sound.mp3"
+    },
+    {
+      "id": "niqqud.holam.name",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "mark_name",
+      "transcript": "חוֹלָם",
+      "path": "generated/sulafat/niqqud/holam/name.mp3"
+    },
+    {
+      "id": "niqqud.holam.sound",
+      "category": "niqqud",
+      "itemId": "holam",
+      "profile": "sound",
+      "transcript": "בּוֹ",
+      "path": "generated/sulafat/niqqud/holam/sound.mp3"
+    },
+    {
+      "id": "niqqud.qubuts.name",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "mark_name",
+      "transcript": "קֻבּוּץ",
+      "path": "generated/sulafat/niqqud/qubuts/name.mp3"
+    },
+    {
+      "id": "niqqud.qubuts.sound",
+      "category": "niqqud",
+      "itemId": "qubuts",
+      "profile": "sound",
+      "transcript": "בֻּ",
+      "path": "generated/sulafat/niqqud/qubuts/sound.mp3"
+    },
+    {
+      "id": "niqqud.shuruk.name",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "mark_name",
+      "transcript": "שׁוּרוּק",
+      "path": "generated/sulafat/niqqud/shuruk/name.mp3"
+    },
+    {
+      "id": "niqqud.shuruk.sound",
+      "category": "niqqud",
+      "itemId": "shuruk",
+      "profile": "sound",
+      "transcript": "בּוּ",
+      "path": "generated/sulafat/niqqud/shuruk/sound.mp3"
+    },
+    {
+      "id": "niqqud.dagesh.name",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "mark_name",
+      "transcript": "דָּגֵשׁ",
+      "path": "generated/sulafat/niqqud/dagesh/name.mp3"
+    },
+    {
+      "id": "niqqud.dagesh.sound",
+      "category": "niqqud",
+      "itemId": "dagesh",
+      "profile": "sound",
+      "transcript": "בָּ. כָּ. פָּ.",
+      "path": "generated/sulafat/niqqud/dagesh/sound.mp3"
+    },
+    {
+      "id": "niqqud.shin_dot.name",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׁין",
+      "path": "generated/sulafat/niqqud/shin_dot/name.mp3"
+    },
+    {
+      "id": "niqqud.shin_dot.sound",
+      "category": "niqqud",
+      "itemId": "shin_dot",
+      "profile": "sound",
+      "transcript": "שָׁ",
+      "path": "generated/sulafat/niqqud/shin_dot/sound.mp3"
+    },
+    {
+      "id": "niqqud.sin_dot.name",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "mark_name",
+      "transcript": "נְקֻדַּת שִׂין",
+      "path": "generated/sulafat/niqqud/sin_dot/name.mp3"
+    },
+    {
+      "id": "niqqud.sin_dot.sound",
+      "category": "niqqud",
+      "itemId": "sin_dot",
+      "profile": "sound",
+      "transcript": "שָׂ",
+      "path": "generated/sulafat/niqqud/sin_dot/sound.mp3"
+    },
+    {
+      "id": "word.lo_not.natural",
+      "category": "words",
+      "itemId": "lo_not",
+      "profile": "natural",
+      "transcript": "לֹא",
+      "path": "generated/sulafat/words/lo_not/natural.mp3"
+    },
+    {
+      "id": "word.lo_not.teaching",
+      "category": "words",
+      "itemId": "lo_not",
+      "profile": "teaching",
+      "transcript": "לֹא",
+      "path": "generated/sulafat/words/lo_not/teaching.mp3"
+    },
+    {
+      "id": "word.et_object_marker.natural",
+      "category": "words",
+      "itemId": "et_object_marker",
+      "profile": "natural",
+      "transcript": "אֶת",
+      "path": "generated/sulafat/words/et_object_marker/natural.mp3"
+    },
+    {
+      "id": "word.et_object_marker.teaching",
+      "category": "words",
+      "itemId": "et_object_marker",
+      "profile": "teaching",
+      "transcript": "אֶת",
+      "path": "generated/sulafat/words/et_object_marker/teaching.mp3"
+    },
+    {
+      "id": "word.at_you_f.natural",
+      "category": "words",
+      "itemId": "at_you_f",
+      "profile": "natural",
+      "transcript": "אַתְּ",
+      "path": "generated/sulafat/words/at_you_f/natural.mp3"
+    },
+    {
+      "id": "word.at_you_f.teaching",
+      "category": "words",
+      "itemId": "at_you_f",
+      "profile": "teaching",
+      "transcript": "אַתְּ",
+      "path": "generated/sulafat/words/at_you_f/teaching.mp3"
+    },
+    {
+      "id": "word.ani_i.natural",
+      "category": "words",
+      "itemId": "ani_i",
+      "profile": "natural",
+      "transcript": "אֲנִי",
+      "path": "generated/sulafat/words/ani_i/natural.mp3"
+    },
+    {
+      "id": "word.ani_i.teaching",
+      "category": "words",
+      "itemId": "ani_i",
+      "profile": "teaching",
+      "transcript": "אֲנִי",
+      "path": "generated/sulafat/words/ani_i/teaching.mp3"
+    },
+    {
+      "id": "word.ze_this.natural",
+      "category": "words",
+      "itemId": "ze_this",
+      "profile": "natural",
+      "transcript": "זֶה",
+      "path": "generated/sulafat/words/ze_this/natural.mp3"
+    },
+    {
+      "id": "word.ze_this.teaching",
+      "category": "words",
+      "itemId": "ze_this",
+      "profile": "teaching",
+      "transcript": "זֶה",
+      "path": "generated/sulafat/words/ze_this/teaching.mp3"
+    },
+    {
+      "id": "word.ata_you_m.natural",
+      "category": "words",
+      "itemId": "ata_you_m",
+      "profile": "natural",
+      "transcript": "אַתָּה",
+      "path": "generated/sulafat/words/ata_you_m/natural.mp3"
+    },
+    {
+      "id": "word.ata_you_m.teaching",
+      "category": "words",
+      "itemId": "ata_you_m",
+      "profile": "teaching",
+      "transcript": "אַתָּה",
+      "path": "generated/sulafat/words/ata_you_m/teaching.mp3"
+    },
+    {
+      "id": "word.ma_what.natural",
+      "category": "words",
+      "itemId": "ma_what",
+      "profile": "natural",
+      "transcript": "מָה",
+      "path": "generated/sulafat/words/ma_what/natural.mp3"
+    },
+    {
+      "id": "word.ma_what.teaching",
+      "category": "words",
+      "itemId": "ma_what",
+      "profile": "teaching",
+      "transcript": "מָה",
+      "path": "generated/sulafat/words/ma_what/teaching.mp3"
+    },
+    {
+      "id": "word.hu_he.natural",
+      "category": "words",
+      "itemId": "hu_he",
+      "profile": "natural",
+      "transcript": "הוּא",
+      "path": "generated/sulafat/words/hu_he/natural.mp3"
+    },
+    {
+      "id": "word.hu_he.teaching",
+      "category": "words",
+      "itemId": "hu_he",
+      "profile": "teaching",
+      "transcript": "הוּא",
+      "path": "generated/sulafat/words/hu_he/teaching.mp3"
+    },
+    {
+      "id": "word.al_on.natural",
+      "category": "words",
+      "itemId": "al_on",
+      "profile": "natural",
+      "transcript": "עַל",
+      "path": "generated/sulafat/words/al_on/natural.mp3"
+    },
+    {
+      "id": "word.al_on.teaching",
+      "category": "words",
+      "itemId": "al_on",
+      "profile": "teaching",
+      "transcript": "עַל",
+      "path": "generated/sulafat/words/al_on/teaching.mp3"
+    },
+    {
+      "id": "word.li_to_me.natural",
+      "category": "words",
+      "itemId": "li_to_me",
+      "profile": "natural",
+      "transcript": "לִי",
+      "path": "generated/sulafat/words/li_to_me/natural.mp3"
+    },
+    {
+      "id": "word.li_to_me.teaching",
+      "category": "words",
+      "itemId": "li_to_me",
+      "profile": "teaching",
+      "transcript": "לִי",
+      "path": "generated/sulafat/words/li_to_me/teaching.mp3"
+    },
+    {
+      "id": "word.shel_of.natural",
+      "category": "words",
+      "itemId": "shel_of",
+      "profile": "natural",
+      "transcript": "שֶׁל",
+      "path": "generated/sulafat/words/shel_of/natural.mp3"
+    },
+    {
+      "id": "word.shel_of.teaching",
+      "category": "words",
+      "itemId": "shel_of",
+      "profile": "teaching",
+      "transcript": "שֶׁל",
+      "path": "generated/sulafat/words/shel_of/teaching.mp3"
+    },
+    {
+      "id": "word.ken_yes.natural",
+      "category": "words",
+      "itemId": "ken_yes",
+      "profile": "natural",
+      "transcript": "כֵּן",
+      "path": "generated/sulafat/words/ken_yes/natural.mp3"
+    },
+    {
+      "id": "word.ken_yes.teaching",
+      "category": "words",
+      "itemId": "ken_yes",
+      "profile": "teaching",
+      "transcript": "כֵּן",
+      "path": "generated/sulafat/words/ken_yes/teaching.mp3"
+    },
+    {
+      "id": "word.lekha_to_you_m.natural",
+      "category": "words",
+      "itemId": "lekha_to_you_m",
+      "profile": "natural",
+      "transcript": "לְךָ",
+      "path": "generated/sulafat/words/lekha_to_you_m/natural.mp3"
+    },
+    {
+      "id": "word.lekha_to_you_m.teaching",
+      "category": "words",
+      "itemId": "lekha_to_you_m",
+      "profile": "teaching",
+      "transcript": "לְךָ",
+      "path": "generated/sulafat/words/lekha_to_you_m/teaching.mp3"
+    },
+    {
+      "id": "word.lakh_to_you_f.natural",
+      "category": "words",
+      "itemId": "lakh_to_you_f",
+      "profile": "natural",
+      "transcript": "לָךְ",
+      "path": "generated/sulafat/words/lakh_to_you_f/natural.mp3"
+    },
+    {
+      "id": "word.lakh_to_you_f.teaching",
+      "category": "words",
+      "itemId": "lakh_to_you_f",
+      "profile": "teaching",
+      "transcript": "לָךְ",
+      "path": "generated/sulafat/words/lakh_to_you_f/teaching.mp3"
+    },
+    {
+      "id": "word.aval_but.natural",
+      "category": "words",
+      "itemId": "aval_but",
+      "profile": "natural",
+      "transcript": "אֲבָל",
+      "path": "generated/sulafat/words/aval_but/natural.mp3"
+    },
+    {
+      "id": "word.aval_but.teaching",
+      "category": "words",
+      "itemId": "aval_but",
+      "profile": "teaching",
+      "transcript": "אֲבָל",
+      "path": "generated/sulafat/words/aval_but/teaching.mp3"
+    },
+    {
+      "id": "word.yesh_there_is.natural",
+      "category": "words",
+      "itemId": "yesh_there_is",
+      "profile": "natural",
+      "transcript": "יֵשׁ",
+      "path": "generated/sulafat/words/yesh_there_is/natural.mp3"
+    },
+    {
+      "id": "word.yesh_there_is.teaching",
+      "category": "words",
+      "itemId": "yesh_there_is",
+      "profile": "teaching",
+      "transcript": "יֵשׁ",
+      "path": "generated/sulafat/words/yesh_there_is/teaching.mp3"
+    },
+    {
+      "id": "word.sheli_mine.natural",
+      "category": "words",
+      "itemId": "sheli_mine",
+      "profile": "natural",
+      "transcript": "שֶׁלִּי",
+      "path": "generated/sulafat/words/sheli_mine/natural.mp3"
+    },
+    {
+      "id": "word.sheli_mine.teaching",
+      "category": "words",
+      "itemId": "sheli_mine",
+      "profile": "teaching",
+      "transcript": "שֶׁלִּי",
+      "path": "generated/sulafat/words/sheli_mine/teaching.mp3"
+    },
+    {
+      "id": "word.kol_all.natural",
+      "category": "words",
+      "itemId": "kol_all",
+      "profile": "natural",
+      "transcript": "כָּל",
+      "path": "generated/sulafat/words/kol_all/natural.mp3"
+    },
+    {
+      "id": "word.kol_all.teaching",
+      "category": "words",
+      "itemId": "kol_all",
+      "profile": "teaching",
+      "transcript": "כָּל",
+      "path": "generated/sulafat/words/kol_all/teaching.mp3"
+    },
+    {
+      "id": "word.beseder_okay.natural",
+      "category": "words",
+      "itemId": "beseder_okay",
+      "profile": "natural",
+      "transcript": "בְּסֵדֶר",
+      "path": "generated/sulafat/words/beseder_okay/natural.mp3"
+    },
+    {
+      "id": "word.beseder_okay.teaching",
+      "category": "words",
+      "itemId": "beseder_okay",
+      "profile": "teaching",
+      "transcript": "בְּסֵדֶר",
+      "path": "generated/sulafat/words/beseder_okay/teaching.mp3"
+    },
+    {
+      "id": "word.im_with.natural",
+      "category": "words",
+      "itemId": "im_with",
+      "profile": "natural",
+      "transcript": "עִם",
+      "path": "generated/sulafat/words/im_with/natural.mp3"
+    },
+    {
+      "id": "word.im_with.teaching",
+      "category": "words",
+      "itemId": "im_with",
+      "profile": "teaching",
+      "transcript": "עִם",
+      "path": "generated/sulafat/words/im_with/teaching.mp3"
+    },
+    {
+      "id": "word.am_people.natural",
+      "category": "words",
+      "itemId": "am_people",
+      "profile": "natural",
+      "transcript": "עַם",
+      "path": "generated/sulafat/words/am_people/natural.mp3"
+    },
+    {
+      "id": "word.am_people.teaching",
+      "category": "words",
+      "itemId": "am_people",
+      "profile": "teaching",
+      "transcript": "עַם",
+      "path": "generated/sulafat/words/am_people/teaching.mp3"
+    },
+    {
+      "id": "word.hi_she.natural",
+      "category": "words",
+      "itemId": "hi_she",
+      "profile": "natural",
+      "transcript": "הִיא",
+      "path": "generated/sulafat/words/hi_she/natural.mp3"
+    },
+    {
+      "id": "word.hi_she.teaching",
+      "category": "words",
+      "itemId": "hi_she",
+      "profile": "teaching",
+      "transcript": "הִיא",
+      "path": "generated/sulafat/words/hi_she/teaching.mp3"
+    },
+    {
+      "id": "word.shelkha_yours_m.natural",
+      "category": "words",
+      "itemId": "shelkha_yours_m",
+      "profile": "natural",
+      "transcript": "שֶׁלְּךָ",
+      "path": "generated/sulafat/words/shelkha_yours_m/natural.mp3"
+    },
+    {
+      "id": "word.shelkha_yours_m.teaching",
+      "category": "words",
+      "itemId": "shelkha_yours_m",
+      "profile": "teaching",
+      "transcript": "שֶׁלְּךָ",
+      "path": "generated/sulafat/words/shelkha_yours_m/teaching.mp3"
+    },
+    {
+      "id": "word.shelakh_yours_f.natural",
+      "category": "words",
+      "itemId": "shelakh_yours_f",
+      "profile": "natural",
+      "transcript": "שֶׁלָּךְ",
+      "path": "generated/sulafat/words/shelakh_yours_f/natural.mp3"
+    },
+    {
+      "id": "word.shelakh_yours_f.teaching",
+      "category": "words",
+      "itemId": "shelakh_yours_f",
+      "profile": "teaching",
+      "transcript": "שֶׁלָּךְ",
+      "path": "generated/sulafat/words/shelakh_yours_f/teaching.mp3"
+    },
+    {
+      "id": "word.im_if.natural",
+      "category": "words",
+      "itemId": "im_if",
+      "profile": "natural",
+      "transcript": "אִם",
+      "path": "generated/sulafat/words/im_if/natural.mp3"
+    },
+    {
+      "id": "word.im_if.teaching",
+      "category": "words",
+      "itemId": "im_if",
+      "profile": "teaching",
+      "transcript": "אִם",
+      "path": "generated/sulafat/words/im_if/teaching.mp3"
+    },
+    {
+      "id": "word.em_mother.natural",
+      "category": "words",
+      "itemId": "em_mother",
+      "profile": "natural",
+      "transcript": "אֵם",
+      "path": "generated/sulafat/words/em_mother/natural.mp3"
+    },
+    {
+      "id": "word.em_mother.teaching",
+      "category": "words",
+      "itemId": "em_mother",
+      "profile": "teaching",
+      "transcript": "אֵם",
+      "path": "generated/sulafat/words/em_mother/teaching.mp3"
+    },
+    {
+      "id": "word.tov_good.natural",
+      "category": "words",
+      "itemId": "tov_good",
+      "profile": "natural",
+      "transcript": "טוֹב",
+      "path": "generated/sulafat/words/tov_good/natural.mp3"
+    },
+    {
+      "id": "word.tov_good.teaching",
+      "category": "words",
+      "itemId": "tov_good",
+      "profile": "teaching",
+      "transcript": "טוֹב",
+      "path": "generated/sulafat/words/tov_good/teaching.mp3"
+    },
+    {
+      "id": "word.haya_was.natural",
+      "category": "words",
+      "itemId": "haya_was",
+      "profile": "natural",
+      "transcript": "הָיָה",
+      "path": "generated/sulafat/words/haya_was/natural.mp3"
+    },
+    {
+      "id": "word.haya_was.teaching",
+      "category": "words",
+      "itemId": "haya_was",
+      "profile": "teaching",
+      "transcript": "הָיָה",
+      "path": "generated/sulafat/words/haya_was/teaching.mp3"
+    },
+    {
+      "id": "word.anakhnu_we.natural",
+      "category": "words",
+      "itemId": "anakhnu_we",
+      "profile": "natural",
+      "transcript": "אֲנַחְנוּ",
+      "path": "generated/sulafat/words/anakhnu_we/natural.mp3"
+    },
+    {
+      "id": "word.anakhnu_we.teaching",
+      "category": "words",
+      "itemId": "anakhnu_we",
+      "profile": "teaching",
+      "transcript": "אֲנַחְנוּ",
+      "path": "generated/sulafat/words/anakhnu_we/teaching.mp3"
+    },
+    {
+      "id": "word.rotse_wants_m.natural",
+      "category": "words",
+      "itemId": "rotse_wants_m",
+      "profile": "natural",
+      "transcript": "רוֹצֶה",
+      "path": "generated/sulafat/words/rotse_wants_m/natural.mp3"
+    },
+    {
+      "id": "word.rotse_wants_m.teaching",
+      "category": "words",
+      "itemId": "rotse_wants_m",
+      "profile": "teaching",
+      "transcript": "רוֹצֶה",
+      "path": "generated/sulafat/words/rotse_wants_m/teaching.mp3"
+    },
+    {
+      "id": "word.rotsa_wants_f.natural",
+      "category": "words",
+      "itemId": "rotsa_wants_f",
+      "profile": "natural",
+      "transcript": "רוֹצָה",
+      "path": "generated/sulafat/words/rotsa_wants_f/natural.mp3"
+    },
+    {
+      "id": "word.rotsa_wants_f.teaching",
+      "category": "words",
+      "itemId": "rotsa_wants_f",
+      "profile": "teaching",
+      "transcript": "רוֹצָה",
+      "path": "generated/sulafat/words/rotsa_wants_f/teaching.mp3"
+    },
+    {
+      "id": "word.az_then.natural",
+      "category": "words",
+      "itemId": "az_then",
+      "profile": "natural",
+      "transcript": "אָז",
+      "path": "generated/sulafat/words/az_then/natural.mp3"
+    },
+    {
+      "id": "word.az_then.teaching",
+      "category": "words",
+      "itemId": "az_then",
+      "profile": "teaching",
+      "transcript": "אָז",
+      "path": "generated/sulafat/words/az_then/teaching.mp3"
+    },
+    {
+      "id": "word.yodea_knows_m.natural",
+      "category": "words",
+      "itemId": "yodea_knows_m",
+      "profile": "natural",
+      "transcript": "יוֹדֵעַ",
+      "path": "generated/sulafat/words/yodea_knows_m/natural.mp3"
+    },
+    {
+      "id": "word.yodea_knows_m.teaching",
+      "category": "words",
+      "itemId": "yodea_knows_m",
+      "profile": "teaching",
+      "transcript": "יוֹדֵעַ",
+      "path": "generated/sulafat/words/yodea_knows_m/teaching.mp3"
+    },
+    {
+      "id": "word.rak_only.natural",
+      "category": "words",
+      "itemId": "rak_only",
+      "profile": "natural",
+      "transcript": "רַק",
+      "path": "generated/sulafat/words/rak_only/natural.mp3"
+    },
+    {
+      "id": "word.rak_only.teaching",
+      "category": "words",
+      "itemId": "rak_only",
+      "profile": "teaching",
+      "transcript": "רַק",
+      "path": "generated/sulafat/words/rak_only/teaching.mp3"
+    },
+    {
+      "id": "word.hem_they.natural",
+      "category": "words",
+      "itemId": "hem_they",
+      "profile": "natural",
+      "transcript": "הֵם",
+      "path": "generated/sulafat/words/hem_they/natural.mp3"
+    },
+    {
+      "id": "word.hem_they.teaching",
+      "category": "words",
+      "itemId": "hem_they",
+      "profile": "teaching",
+      "transcript": "הֵם",
+      "path": "generated/sulafat/words/hem_they/teaching.mp3"
+    },
+    {
+      "id": "word.yakhol_can_m.natural",
+      "category": "words",
+      "itemId": "yakhol_can_m",
+      "profile": "natural",
+      "transcript": "יָכוֹל",
+      "path": "generated/sulafat/words/yakhol_can_m/natural.mp3"
+    },
+    {
+      "id": "word.yakhol_can_m.teaching",
+      "category": "words",
+      "itemId": "yakhol_can_m",
+      "profile": "teaching",
+      "transcript": "יָכוֹל",
+      "path": "generated/sulafat/words/yakhol_can_m/teaching.mp3"
+    },
+    {
+      "id": "word.oto_him.natural",
+      "category": "words",
+      "itemId": "oto_him",
+      "profile": "natural",
+      "transcript": "אוֹתוֹ",
+      "path": "generated/sulafat/words/oto_him/natural.mp3"
+    },
+    {
+      "id": "word.oto_him.teaching",
+      "category": "words",
+      "itemId": "oto_him",
+      "profile": "teaching",
+      "transcript": "אוֹתוֹ",
+      "path": "generated/sulafat/words/oto_him/teaching.mp3"
+    },
+    {
+      "id": "word.otkha_you_object_m.natural",
+      "category": "words",
+      "itemId": "otkha_you_object_m",
+      "profile": "natural",
+      "transcript": "אוֹתְךָ",
+      "path": "generated/sulafat/words/otkha_you_object_m/natural.mp3"
+    },
+    {
+      "id": "word.otkha_you_object_m.teaching",
+      "category": "words",
+      "itemId": "otkha_you_object_m",
+      "profile": "teaching",
+      "transcript": "אוֹתְךָ",
+      "path": "generated/sulafat/words/otkha_you_object_m/teaching.mp3"
+    },
+    {
+      "id": "word.otakh_you_object_f.natural",
+      "category": "words",
+      "itemId": "otakh_you_object_f",
+      "profile": "natural",
+      "transcript": "אוֹתָךְ",
+      "path": "generated/sulafat/words/otakh_you_object_f/natural.mp3"
+    },
+    {
+      "id": "word.otakh_you_object_f.teaching",
+      "category": "words",
+      "itemId": "otakh_you_object_f",
+      "profile": "teaching",
+      "transcript": "אוֹתָךְ",
+      "path": "generated/sulafat/words/otakh_you_object_f/teaching.mp3"
+    },
+    {
+      "id": "word.yoter_more.natural",
+      "category": "words",
+      "itemId": "yoter_more",
+      "profile": "natural",
+      "transcript": "יוֹתֵר",
+      "path": "generated/sulafat/words/yoter_more/natural.mp3"
+    },
+    {
+      "id": "word.yoter_more.teaching",
+      "category": "words",
+      "itemId": "yoter_more",
+      "profile": "teaching",
+      "transcript": "יוֹתֵר",
+      "path": "generated/sulafat/words/yoter_more/teaching.mp3"
+    },
+    {
+      "id": "word.kan_here.natural",
+      "category": "words",
+      "itemId": "kan_here",
+      "profile": "natural",
+      "transcript": "כָּאן",
+      "path": "generated/sulafat/words/kan_here/natural.mp3"
+    },
+    {
+      "id": "word.kan_here.teaching",
+      "category": "words",
+      "itemId": "kan_here",
+      "profile": "teaching",
+      "transcript": "כָּאן",
+      "path": "generated/sulafat/words/kan_here/teaching.mp3"
+    },
+    {
+      "id": "word.oti_me_object.natural",
+      "category": "words",
+      "itemId": "oti_me_object",
+      "profile": "natural",
+      "transcript": "אוֹתִי",
+      "path": "generated/sulafat/words/oti_me_object/natural.mp3"
+    },
+    {
+      "id": "word.oti_me_object.teaching",
+      "category": "words",
+      "itemId": "oti_me_object",
+      "profile": "teaching",
+      "transcript": "אוֹתִי",
+      "path": "generated/sulafat/words/oti_me_object/teaching.mp3"
+    },
+    {
+      "id": "word.haze_this.natural",
+      "category": "words",
+      "itemId": "haze_this",
+      "profile": "natural",
+      "transcript": "הַזֶּה",
+      "path": "generated/sulafat/words/haze_this/natural.mp3"
+    },
+    {
+      "id": "word.haze_this.teaching",
+      "category": "words",
+      "itemId": "haze_this",
+      "profile": "teaching",
+      "transcript": "הַזֶּה",
+      "path": "generated/sulafat/words/haze_this/teaching.mp3"
+    },
+    {
+      "id": "word.sheani_that_i.natural",
+      "category": "words",
+      "itemId": "sheani_that_i",
+      "profile": "natural",
+      "transcript": "שֶׁאֲנִי",
+      "path": "generated/sulafat/words/sheani_that_i/natural.mp3"
+    },
+    {
+      "id": "word.sheani_that_i.teaching",
+      "category": "words",
+      "itemId": "sheani_that_i",
+      "profile": "teaching",
+      "transcript": "שֶׁאֲנִי",
+      "path": "generated/sulafat/words/sheani_that_i/teaching.mp3"
+    },
+    {
+      "id": "word.lama_why.natural",
+      "category": "words",
+      "itemId": "lama_why",
+      "profile": "natural",
+      "transcript": "לָמָּה",
+      "path": "generated/sulafat/words/lama_why/natural.mp3"
+    },
+    {
+      "id": "word.lama_why.teaching",
+      "category": "words",
+      "itemId": "lama_why",
+      "profile": "teaching",
+      "transcript": "לָמָּה",
+      "path": "generated/sulafat/words/lama_why/teaching.mp3"
+    },
+    {
+      "id": "word.lihyot_to_be.natural",
+      "category": "words",
+      "itemId": "lihyot_to_be",
+      "profile": "natural",
+      "transcript": "לִהְיוֹת",
+      "path": "generated/sulafat/words/lihyot_to_be/natural.mp3"
+    },
+    {
+      "id": "word.lihyot_to_be.teaching",
+      "category": "words",
+      "itemId": "lihyot_to_be",
+      "profile": "teaching",
+      "transcript": "לִהְיוֹת",
+      "path": "generated/sulafat/words/lihyot_to_be/teaching.mp3"
+    },
+    {
+      "id": "word.akhshav_now.natural",
+      "category": "words",
+      "itemId": "akhshav_now",
+      "profile": "natural",
+      "transcript": "עַכְשָׁיו",
+      "path": "generated/sulafat/words/akhshav_now/natural.mp3"
+    },
+    {
+      "id": "word.akhshav_now.teaching",
+      "category": "words",
+      "itemId": "akhshav_now",
+      "profile": "teaching",
+      "transcript": "עַכְשָׁיו",
+      "path": "generated/sulafat/words/akhshav_now/teaching.mp3"
+    },
+    {
+      "id": "word.o_or.natural",
+      "category": "words",
+      "itemId": "o_or",
+      "profile": "natural",
+      "transcript": "אוֹ",
+      "path": "generated/sulafat/words/o_or/natural.mp3"
+    },
+    {
+      "id": "word.o_or.teaching",
+      "category": "words",
+      "itemId": "o_or",
+      "profile": "teaching",
+      "transcript": "אוֹ",
+      "path": "generated/sulafat/words/o_or/teaching.mp3"
+    },
+    {
+      "id": "word.ekhad_one.natural",
+      "category": "words",
+      "itemId": "ekhad_one",
+      "profile": "natural",
+      "transcript": "אֶחָד",
+      "path": "generated/sulafat/words/ekhad_one/natural.mp3"
+    },
+    {
+      "id": "word.ekhad_one.teaching",
+      "category": "words",
+      "itemId": "ekhad_one",
+      "profile": "teaching",
+      "transcript": "אֶחָד",
+      "path": "generated/sulafat/words/ekhad_one/teaching.mp3"
+    },
+    {
+      "id": "word.mashehu_something.natural",
+      "category": "words",
+      "itemId": "mashehu_something",
+      "profile": "natural",
+      "transcript": "מַשֶּׁהוּ",
+      "path": "generated/sulafat/words/mashehu_something/natural.mp3"
+    },
+    {
+      "id": "word.mashehu_something.teaching",
+      "category": "words",
+      "itemId": "mashehu_something",
+      "profile": "teaching",
+      "transcript": "מַשֶּׁהוּ",
+      "path": "generated/sulafat/words/mashehu_something/teaching.mp3"
+    },
+    {
+      "id": "word.hai_hi.natural",
+      "category": "words",
+      "itemId": "hai_hi",
+      "profile": "natural",
+      "transcript": "הַי",
+      "path": "generated/sulafat/words/hai_hi/natural.mp3"
+    },
+    {
+      "id": "word.hai_hi.teaching",
+      "category": "words",
+      "itemId": "hai_hi",
+      "profile": "teaching",
+      "transcript": "הַי",
+      "path": "generated/sulafat/words/hai_hi/teaching.mp3"
+    },
+    {
+      "id": "word.tsarikh_needs_m.natural",
+      "category": "words",
+      "itemId": "tsarikh_needs_m",
+      "profile": "natural",
+      "transcript": "צָרִיךְ",
+      "path": "generated/sulafat/words/tsarikh_needs_m/natural.mp3"
+    },
+    {
+      "id": "word.tsarikh_needs_m.teaching",
+      "category": "words",
+      "itemId": "tsarikh_needs_m",
+      "profile": "teaching",
+      "transcript": "צָרִיךְ",
+      "path": "generated/sulafat/words/tsarikh_needs_m/teaching.mp3"
+    },
+    {
+      "id": "word.kmo_like.natural",
+      "category": "words",
+      "itemId": "kmo_like",
+      "profile": "natural",
+      "transcript": "כְּמוֹ",
+      "path": "generated/sulafat/words/kmo_like/natural.mp3"
+    },
+    {
+      "id": "word.kmo_like.teaching",
+      "category": "words",
+      "itemId": "kmo_like",
+      "profile": "teaching",
+      "transcript": "כְּמוֹ",
+      "path": "generated/sulafat/words/kmo_like/teaching.mp3"
+    },
+    {
+      "id": "word.el_to.natural",
+      "category": "words",
+      "itemId": "el_to",
+      "profile": "natural",
+      "transcript": "אֶל",
+      "path": "generated/sulafat/words/el_to/natural.mp3"
+    },
+    {
+      "id": "word.el_to.teaching",
+      "category": "words",
+      "itemId": "el_to",
+      "profile": "teaching",
+      "transcript": "אֶל",
+      "path": "generated/sulafat/words/el_to/teaching.mp3"
+    },
+    {
+      "id": "word.al_do_not.natural",
+      "category": "words",
+      "itemId": "al_do_not",
+      "profile": "natural",
+      "transcript": "אַל",
+      "path": "generated/sulafat/words/al_do_not/natural.mp3"
+    },
+    {
+      "id": "word.al_do_not.teaching",
+      "category": "words",
+      "itemId": "al_do_not",
+      "profile": "teaching",
+      "transcript": "אַל",
+      "path": "generated/sulafat/words/al_do_not/teaching.mp3"
+    },
+    {
+      "id": "word.kakh_so.natural",
+      "category": "words",
+      "itemId": "kakh_so",
+      "profile": "natural",
+      "transcript": "כָּךְ",
+      "path": "generated/sulafat/words/kakh_so/natural.mp3"
+    },
+    {
+      "id": "word.kakh_so.teaching",
+      "category": "words",
+      "itemId": "kakh_so",
+      "profile": "teaching",
+      "transcript": "כָּךְ",
+      "path": "generated/sulafat/words/kakh_so/teaching.mp3"
+    },
+    {
+      "id": "word.eikh_how.natural",
+      "category": "words",
+      "itemId": "eikh_how",
+      "profile": "natural",
+      "transcript": "אֵיךְ",
+      "path": "generated/sulafat/words/eikh_how/natural.mp3"
+    },
+    {
+      "id": "word.eikh_how.teaching",
+      "category": "words",
+      "itemId": "eikh_how",
+      "profile": "teaching",
+      "transcript": "אֵיךְ",
+      "path": "generated/sulafat/words/eikh_how/teaching.mp3"
+    },
+    {
+      "id": "word.ein_there_is_not.natural",
+      "category": "words",
+      "itemId": "ein_there_is_not",
+      "profile": "natural",
+      "transcript": "אֵין",
+      "path": "generated/sulafat/words/ein_there_is_not/natural.mp3"
+    },
+    {
+      "id": "word.ein_there_is_not.teaching",
+      "category": "words",
+      "itemId": "ein_there_is_not",
+      "profile": "teaching",
+      "transcript": "אֵין",
+      "path": "generated/sulafat/words/ein_there_is_not/teaching.mp3"
+    },
+    {
+      "id": "word.nakhon_correct.natural",
+      "category": "words",
+      "itemId": "nakhon_correct",
+      "profile": "natural",
+      "transcript": "נָכוֹן",
+      "path": "generated/sulafat/words/nakhon_correct/natural.mp3"
+    },
+    {
+      "id": "word.nakhon_correct.teaching",
+      "category": "words",
+      "itemId": "nakhon_correct",
+      "profile": "teaching",
+      "transcript": "נָכוֹן",
+      "path": "generated/sulafat/words/nakhon_correct/teaching.mp3"
+    },
+    {
+      "id": "word.laasot_to_do.natural",
+      "category": "words",
+      "itemId": "laasot_to_do",
+      "profile": "natural",
+      "transcript": "לַעֲשׂוֹת",
+      "path": "generated/sulafat/words/laasot_to_do/natural.mp3"
+    },
+    {
+      "id": "word.laasot_to_do.teaching",
+      "category": "words",
+      "itemId": "laasot_to_do",
+      "profile": "teaching",
+      "transcript": "לַעֲשׂוֹת",
+      "path": "generated/sulafat/words/laasot_to_do/teaching.mp3"
+    },
+    {
+      "id": "word.toda_thanks.natural",
+      "category": "words",
+      "itemId": "toda_thanks",
+      "profile": "natural",
+      "transcript": "תּוֹדָה",
+      "path": "generated/sulafat/words/toda_thanks/natural.mp3"
+    },
+    {
+      "id": "word.toda_thanks.teaching",
+      "category": "words",
+      "itemId": "toda_thanks",
+      "profile": "teaching",
+      "transcript": "תּוֹדָה",
+      "path": "generated/sulafat/words/toda_thanks/teaching.mp3"
+    },
+    {
+      "id": "word.lo_to_him.natural",
+      "category": "words",
+      "itemId": "lo_to_him",
+      "profile": "natural",
+      "transcript": "לוֹ",
+      "path": "generated/sulafat/words/lo_to_him/natural.mp3"
+    },
+    {
+      "id": "word.lo_to_him.teaching",
+      "category": "words",
+      "itemId": "lo_to_him",
+      "profile": "teaching",
+      "transcript": "לוֹ",
+      "path": "generated/sulafat/words/lo_to_him/teaching.mp3"
+    },
+    {
+      "id": "word.lanu_to_us.natural",
+      "category": "words",
+      "itemId": "lanu_to_us",
+      "profile": "natural",
+      "transcript": "לָנוּ",
+      "path": "generated/sulafat/words/lanu_to_us/natural.mp3"
+    },
+    {
+      "id": "word.lanu_to_us.teaching",
+      "category": "words",
+      "itemId": "lanu_to_us",
+      "profile": "teaching",
+      "transcript": "לָנוּ",
+      "path": "generated/sulafat/words/lanu_to_us/teaching.mp3"
+    },
+    {
+      "id": "word.sheata_that_you_m.natural",
+      "category": "words",
+      "itemId": "sheata_that_you_m",
+      "profile": "natural",
+      "transcript": "שֶׁאַתָּה",
+      "path": "generated/sulafat/words/sheata_that_you_m/natural.mp3"
+    },
+    {
+      "id": "word.sheata_that_you_m.teaching",
+      "category": "words",
+      "itemId": "sheata_that_you_m",
+      "profile": "teaching",
+      "transcript": "שֶׁאַתָּה",
+      "path": "generated/sulafat/words/sheata_that_you_m/teaching.mp3"
+    },
+    {
+      "id": "word.mi_who.natural",
+      "category": "words",
+      "itemId": "mi_who",
+      "profile": "natural",
+      "transcript": "מִי",
+      "path": "generated/sulafat/words/mi_who/natural.mp3"
+    },
+    {
+      "id": "word.mi_who.teaching",
+      "category": "words",
+      "itemId": "mi_who",
+      "profile": "teaching",
+      "transcript": "מִי",
+      "path": "generated/sulafat/words/mi_who/teaching.mp3"
+    },
+    {
+      "id": "word.zot_this_f.natural",
+      "category": "words",
+      "itemId": "zot_this_f",
+      "profile": "natural",
+      "transcript": "זֹאת",
+      "path": "generated/sulafat/words/zot_this_f/natural.mp3"
+    },
+    {
+      "id": "word.zot_this_f.teaching",
+      "category": "words",
+      "itemId": "zot_this_f",
+      "profile": "teaching",
+      "transcript": "זֹאת",
+      "path": "generated/sulafat/words/zot_this_f/teaching.mp3"
+    },
+    {
+      "id": "word.sham_there.natural",
+      "category": "words",
+      "itemId": "sham_there",
+      "profile": "natural",
+      "transcript": "שָׁם",
+      "path": "generated/sulafat/words/sham_there/natural.mp3"
+    },
+    {
+      "id": "word.sham_there.teaching",
+      "category": "words",
+      "itemId": "sham_there",
+      "profile": "teaching",
+      "transcript": "שָׁם",
+      "path": "generated/sulafat/words/sham_there/teaching.mp3"
+    },
+    {
+      "id": "word.shem_name.natural",
+      "category": "words",
+      "itemId": "shem_name",
+      "profile": "natural",
+      "transcript": "שֵׁם",
+      "path": "generated/sulafat/words/shem_name/natural.mp3"
+    },
+    {
+      "id": "word.shem_name.teaching",
+      "category": "words",
+      "itemId": "shem_name",
+      "profile": "teaching",
+      "transcript": "שֵׁם",
+      "path": "generated/sulafat/words/shem_name/teaching.mp3"
+    },
+    {
+      "id": "word.khoshev_thinks_m.natural",
+      "category": "words",
+      "itemId": "khoshev_thinks_m",
+      "profile": "natural",
+      "transcript": "חוֹשֵׁב",
+      "path": "generated/sulafat/words/khoshev_thinks_m/natural.mp3"
+    },
+    {
+      "id": "word.khoshev_thinks_m.teaching",
+      "category": "words",
+      "itemId": "khoshev_thinks_m",
+      "profile": "teaching",
+      "transcript": "חוֹשֵׁב",
+      "path": "generated/sulafat/words/khoshev_thinks_m/teaching.mp3"
+    },
+    {
+      "id": "word.kdei_in_order_to.natural",
+      "category": "words",
+      "itemId": "kdei_in_order_to",
+      "profile": "natural",
+      "transcript": "כְּדֵי",
+      "path": "generated/sulafat/words/kdei_in_order_to/natural.mp3"
+    },
+    {
+      "id": "word.kdei_in_order_to.teaching",
+      "category": "words",
+      "itemId": "kdei_in_order_to",
+      "profile": "teaching",
+      "transcript": "כְּדֵי",
+      "path": "generated/sulafat/words/kdei_in_order_to/teaching.mp3"
+    },
+    {
+      "id": "word.shehu_that_he.natural",
+      "category": "words",
+      "itemId": "shehu_that_he",
+      "profile": "natural",
+      "transcript": "שֶׁהוּא",
+      "path": "generated/sulafat/words/shehu_that_he/natural.mp3"
+    },
+    {
+      "id": "word.shehu_that_he.teaching",
+      "category": "words",
+      "itemId": "shehu_that_he",
+      "profile": "teaching",
+      "transcript": "שֶׁהוּא",
+      "path": "generated/sulafat/words/shehu_that_he/teaching.mp3"
+    },
+    {
+      "id": "word.kama_how_many.natural",
+      "category": "words",
+      "itemId": "kama_how_many",
+      "profile": "natural",
+      "transcript": "כַּמָּה",
+      "path": "generated/sulafat/words/kama_how_many/natural.mp3"
+    },
+    {
+      "id": "word.kama_how_many.teaching",
+      "category": "words",
+      "itemId": "kama_how_many",
+      "profile": "teaching",
+      "transcript": "כַּמָּה",
+      "path": "generated/sulafat/words/kama_how_many/teaching.mp3"
+    },
+    {
+      "id": "word.pashut_simple.natural",
+      "category": "words",
+      "itemId": "pashut_simple",
+      "profile": "natural",
+      "transcript": "פָּשׁוּט",
+      "path": "generated/sulafat/words/pashut_simple/natural.mp3"
+    },
+    {
+      "id": "word.pashut_simple.teaching",
+      "category": "words",
+      "itemId": "pashut_simple",
+      "profile": "teaching",
+      "transcript": "פָּשׁוּט",
+      "path": "generated/sulafat/words/pashut_simple/teaching.mp3"
+    },
+    {
+      "id": "word.yodaat_knows_f.natural",
+      "category": "words",
+      "itemId": "yodaat_knows_f",
+      "profile": "natural",
+      "transcript": "יוֹדַעַת",
+      "path": "generated/sulafat/words/yodaat_knows_f/natural.mp3"
+    },
+    {
+      "id": "word.yodaat_knows_f.teaching",
+      "category": "words",
+      "itemId": "yodaat_knows_f",
+      "profile": "teaching",
+      "transcript": "יוֹדַעַת",
+      "path": "generated/sulafat/words/yodaat_knows_f/teaching.mp3"
+    },
+    {
+      "id": "word.otah_her.natural",
+      "category": "words",
+      "itemId": "otah_her",
+      "profile": "natural",
+      "transcript": "אוֹתָהּ",
+      "path": "generated/sulafat/words/otah_her/natural.mp3"
+    },
+    {
+      "id": "word.otah_her.teaching",
+      "category": "words",
+      "itemId": "otah_her",
+      "profile": "teaching",
+      "transcript": "אוֹתָהּ",
+      "path": "generated/sulafat/words/otah_her/teaching.mp3"
+    },
+    {
+      "id": "word.ulai_maybe.natural",
+      "category": "words",
+      "itemId": "ulai_maybe",
+      "profile": "natural",
+      "transcript": "אוּלַי",
+      "path": "generated/sulafat/words/ulai_maybe/natural.mp3"
+    },
+    {
+      "id": "word.ulai_maybe.teaching",
+      "category": "words",
+      "itemId": "ulai_maybe",
+      "profile": "teaching",
+      "transcript": "אוּלַי",
+      "path": "generated/sulafat/words/ulai_maybe/teaching.mp3"
+    },
+    {
+      "id": "word.beemet_really.natural",
+      "category": "words",
+      "itemId": "beemet_really",
+      "profile": "natural",
+      "transcript": "בֶּאֱמֶת",
+      "path": "generated/sulafat/words/beemet_really/natural.mp3"
+    },
+    {
+      "id": "word.beemet_really.teaching",
+      "category": "words",
+      "itemId": "beemet_really",
+      "profile": "teaching",
+      "transcript": "בֶּאֱמֶת",
+      "path": "generated/sulafat/words/beemet_really/teaching.mp3"
+    },
+    {
+      "id": "word.ki_because.natural",
+      "category": "words",
+      "itemId": "ki_because",
+      "profile": "natural",
+      "transcript": "כִּי",
+      "path": "generated/sulafat/words/ki_because/natural.mp3"
+    },
+    {
+      "id": "word.ki_because.teaching",
+      "category": "words",
+      "itemId": "ki_because",
+      "profile": "teaching",
+      "transcript": "כִּי",
+      "path": "generated/sulafat/words/ki_because/teaching.mp3"
+    },
+    {
+      "id": "word.hayiti_i_was.natural",
+      "category": "words",
+      "itemId": "hayiti_i_was",
+      "profile": "natural",
+      "transcript": "הָיִיתִי",
+      "path": "generated/sulafat/words/hayiti_i_was/natural.mp3"
+    },
+    {
+      "id": "word.hayiti_i_was.teaching",
+      "category": "words",
+      "itemId": "hayiti_i_was",
+      "profile": "teaching",
+      "transcript": "הָיִיתִי",
+      "path": "generated/sulafat/words/hayiti_i_was/teaching.mp3"
+    },
+    {
+      "id": "word.sheze_that_this.natural",
+      "category": "words",
+      "itemId": "sheze_that_this",
+      "profile": "natural",
+      "transcript": "שֶׁזֶּה",
+      "path": "generated/sulafat/words/sheze_that_this/natural.mp3"
+    },
+    {
+      "id": "word.sheze_that_this.teaching",
+      "category": "words",
+      "itemId": "sheze_that_this",
+      "profile": "teaching",
+      "transcript": "שֶׁזֶּה",
+      "path": "generated/sulafat/words/sheze_that_this/teaching.mp3"
+    },
+    {
+      "id": "word.gam_also.natural",
+      "category": "words",
+      "itemId": "gam_also",
+      "profile": "natural",
+      "transcript": "גַּם",
+      "path": "generated/sulafat/words/gam_also/natural.mp3"
+    },
+    {
+      "id": "word.gam_also.teaching",
+      "category": "words",
+      "itemId": "gam_also",
+      "profile": "teaching",
+      "transcript": "גַּם",
+      "path": "generated/sulafat/words/gam_also/teaching.mp3"
+    },
+    {
+      "id": "word.zo_this_f.natural",
+      "category": "words",
+      "itemId": "zo_this_f",
+      "profile": "natural",
+      "transcript": "זוֹ",
+      "path": "generated/sulafat/words/zo_this_f/natural.mp3"
+    },
+    {
+      "id": "word.zo_this_f.teaching",
+      "category": "words",
+      "itemId": "zo_this_f",
+      "profile": "teaching",
+      "transcript": "זוֹ",
+      "path": "generated/sulafat/words/zo_this_f/teaching.mp3"
+    },
+    {
+      "id": "word.ose_does_m.natural",
+      "category": "words",
+      "itemId": "ose_does_m",
+      "profile": "natural",
+      "transcript": "עוֹשֶׂה",
+      "path": "generated/sulafat/words/ose_does_m/natural.mp3"
+    },
+    {
+      "id": "word.ose_does_m.teaching",
+      "category": "words",
+      "itemId": "ose_does_m",
+      "profile": "teaching",
+      "transcript": "עוֹשֶׂה",
+      "path": "generated/sulafat/words/ose_does_m/teaching.mp3"
+    },
+    {
+      "id": "word.osa_does_f.natural",
+      "category": "words",
+      "itemId": "osa_does_f",
+      "profile": "natural",
+      "transcript": "עוֹשָׂה",
+      "path": "generated/sulafat/words/osa_does_f/natural.mp3"
+    },
+    {
+      "id": "word.osa_does_f.teaching",
+      "category": "words",
+      "itemId": "osa_does_f",
+      "profile": "teaching",
+      "transcript": "עוֹשָׂה",
+      "path": "generated/sulafat/words/osa_does_f/teaching.mp3"
+    },
+    {
+      "id": "word.haim_question.natural",
+      "category": "words",
+      "itemId": "haim_question",
+      "profile": "natural",
+      "transcript": "הַאִם",
+      "path": "generated/sulafat/words/haim_question/natural.mp3"
+    },
+    {
+      "id": "word.haim_question.teaching",
+      "category": "words",
+      "itemId": "haim_question",
+      "profile": "teaching",
+      "transcript": "הַאִם",
+      "path": "generated/sulafat/words/haim_question/teaching.mp3"
+    },
+    {
+      "id": "word.vaani_and_i.natural",
+      "category": "words",
+      "itemId": "vaani_and_i",
+      "profile": "natural",
+      "transcript": "וַאֲנִי",
+      "path": "generated/sulafat/words/vaani_and_i/natural.mp3"
+    },
+    {
+      "id": "word.vaani_and_i.teaching",
+      "category": "words",
+      "itemId": "vaani_and_i",
+      "profile": "teaching",
+      "transcript": "וַאֲנִי",
+      "path": "generated/sulafat/words/vaani_and_i/teaching.mp3"
+    },
+    {
+      "id": "word.davar_thing.natural",
+      "category": "words",
+      "itemId": "davar_thing",
+      "profile": "natural",
+      "transcript": "דָּבָר",
+      "path": "generated/sulafat/words/davar_thing/natural.mp3"
+    },
+    {
+      "id": "word.davar_thing.teaching",
+      "category": "words",
+      "itemId": "davar_thing",
+      "profile": "teaching",
+      "transcript": "דָּבָר",
+      "path": "generated/sulafat/words/davar_thing/teaching.mp3"
+    },
+    {
+      "id": "word.daber_speak.natural",
+      "category": "words",
+      "itemId": "daber_speak",
+      "profile": "natural",
+      "transcript": "דַּבֵּר",
+      "path": "generated/sulafat/words/daber_speak/natural.mp3"
+    },
+    {
+      "id": "word.daber_speak.teaching",
+      "category": "words",
+      "itemId": "daber_speak",
+      "profile": "teaching",
+      "transcript": "דַּבֵּר",
+      "path": "generated/sulafat/words/daber_speak/teaching.mp3"
+    },
+    {
+      "id": "word.shelo_his.natural",
+      "category": "words",
+      "itemId": "shelo_his",
+      "profile": "natural",
+      "transcript": "שֶׁלּוֹ",
+      "path": "generated/sulafat/words/shelo_his/natural.mp3"
+    },
+    {
+      "id": "word.shelo_his.teaching",
+      "category": "words",
+      "itemId": "shelo_his",
+      "profile": "teaching",
+      "transcript": "שֶׁלּוֹ",
+      "path": "generated/sulafat/words/shelo_his/teaching.mp3"
+    },
+    {
+      "id": "word.od_more.natural",
+      "category": "words",
+      "itemId": "od_more",
+      "profile": "natural",
+      "transcript": "עוֹד",
+      "path": "generated/sulafat/words/od_more/natural.mp3"
+    },
+    {
+      "id": "word.od_more.teaching",
+      "category": "words",
+      "itemId": "od_more",
+      "profile": "teaching",
+      "transcript": "עוֹד",
+      "path": "generated/sulafat/words/od_more/teaching.mp3"
+    },
+    {
+      "id": "word.kvar_already.natural",
+      "category": "words",
+      "itemId": "kvar_already",
+      "profile": "natural",
+      "transcript": "כְּבָר",
+      "path": "generated/sulafat/words/kvar_already/natural.mp3"
+    },
+    {
+      "id": "word.kvar_already.teaching",
+      "category": "words",
+      "itemId": "kvar_already",
+      "profile": "teaching",
+      "transcript": "כְּבָר",
+      "path": "generated/sulafat/words/kvar_already/teaching.mp3"
+    },
+    {
+      "id": "word.shelo_that_not.natural",
+      "category": "words",
+      "itemId": "shelo_that_not",
+      "profile": "natural",
+      "transcript": "שֶׁלֹּא",
+      "path": "generated/sulafat/words/shelo_that_not/natural.mp3"
+    },
+    {
+      "id": "word.shelo_that_not.teaching",
+      "category": "words",
+      "itemId": "shelo_that_not",
+      "profile": "teaching",
+      "transcript": "שֶׁלֹּא",
+      "path": "generated/sulafat/words/shelo_that_not/teaching.mp3"
+    },
+    {
+      "id": "word.nire_seems.natural",
+      "category": "words",
+      "itemId": "nire_seems",
+      "profile": "natural",
+      "transcript": "נִרְאֶה",
+      "path": "generated/sulafat/words/nire_seems/natural.mp3"
+    },
+    {
+      "id": "word.nire_seems.teaching",
+      "category": "words",
+      "itemId": "nire_seems",
+      "profile": "teaching",
+      "transcript": "נִרְאֶה",
+      "path": "generated/sulafat/words/nire_seems/teaching.mp3"
+    },
+    {
+      "id": "word.shelanu_ours.natural",
+      "category": "words",
+      "itemId": "shelanu_ours",
+      "profile": "natural",
+      "transcript": "שֶׁלָּנוּ",
+      "path": "generated/sulafat/words/shelanu_ours/natural.mp3"
+    },
+    {
+      "id": "word.shelanu_ours.teaching",
+      "category": "words",
+      "itemId": "shelanu_ours",
+      "profile": "teaching",
+      "transcript": "שֶׁלָּנוּ",
+      "path": "generated/sulafat/words/shelanu_ours/teaching.mp3"
+    },
+    {
+      "id": "word.meod_very.natural",
+      "category": "words",
+      "itemId": "meod_very",
+      "profile": "natural",
+      "transcript": "מְאוֹד",
+      "path": "generated/sulafat/words/meod_very/natural.mp3"
+    },
+    {
+      "id": "word.meod_very.teaching",
+      "category": "words",
+      "itemId": "meod_very",
+      "profile": "teaching",
+      "transcript": "מְאוֹד",
+      "path": "generated/sulafat/words/meod_very/teaching.mp3"
+    },
+    {
+      "id": "word.lifnei_before.natural",
+      "category": "words",
+      "itemId": "lifnei_before",
+      "profile": "natural",
+      "transcript": "לִפְנֵי",
+      "path": "generated/sulafat/words/lifnei_before/natural.mp3"
+    },
+    {
+      "id": "word.lifnei_before.teaching",
+      "category": "words",
+      "itemId": "lifnei_before",
+      "profile": "teaching",
+      "transcript": "לִפְנֵי",
+      "path": "generated/sulafat/words/lifnei_before/teaching.mp3"
+    },
+    {
+      "id": "word.harbe_a_lot.natural",
+      "category": "words",
+      "itemId": "harbe_a_lot",
+      "profile": "natural",
+      "transcript": "הַרְבֵּה",
+      "path": "generated/sulafat/words/harbe_a_lot/natural.mp3"
+    },
+    {
+      "id": "word.harbe_a_lot.teaching",
+      "category": "words",
+      "itemId": "harbe_a_lot",
+      "profile": "teaching",
+      "transcript": "הַרְבֵּה",
+      "path": "generated/sulafat/words/harbe_a_lot/teaching.mp3"
+    },
+    {
+      "id": "word.bevakasha_please.natural",
+      "category": "words",
+      "itemId": "bevakasha_please",
+      "profile": "natural",
+      "transcript": "בְּבַקָּשָׁה",
+      "path": "generated/sulafat/words/bevakasha_please/natural.mp3"
+    },
+    {
+      "id": "word.bevakasha_please.teaching",
+      "category": "words",
+      "itemId": "bevakasha_please",
+      "profile": "teaching",
+      "transcript": "בְּבַקָּשָׁה",
+      "path": "generated/sulafat/words/bevakasha_please/teaching.mp3"
+    },
+    {
+      "id": "word.holekh_goes_m.natural",
+      "category": "words",
+      "itemId": "holekh_goes_m",
+      "profile": "natural",
+      "transcript": "הוֹלֵךְ",
+      "path": "generated/sulafat/words/holekh_goes_m/natural.mp3"
+    },
+    {
+      "id": "word.holekh_goes_m.teaching",
+      "category": "words",
+      "itemId": "holekh_goes_m",
+      "profile": "teaching",
+      "transcript": "הוֹלֵךְ",
+      "path": "generated/sulafat/words/holekh_goes_m/teaching.mp3"
+    },
+    {
+      "id": "word.kadima_come_on.natural",
+      "category": "words",
+      "itemId": "kadima_come_on",
+      "profile": "natural",
+      "transcript": "קָדִימָה",
+      "path": "generated/sulafat/words/kadima_come_on/natural.mp3"
+    },
+    {
+      "id": "word.kadima_come_on.teaching",
+      "category": "words",
+      "itemId": "kadima_come_on",
+      "profile": "teaching",
+      "transcript": "קָדִימָה",
+      "path": "generated/sulafat/words/kadima_come_on/teaching.mp3"
+    },
+    {
+      "id": "word.omer_says_m.natural",
+      "category": "words",
+      "itemId": "omer_says_m",
+      "profile": "natural",
+      "transcript": "אוֹמֵר",
+      "path": "generated/sulafat/words/omer_says_m/natural.mp3"
+    },
+    {
+      "id": "word.omer_says_m.teaching",
+      "category": "words",
+      "itemId": "omer_says_m",
+      "profile": "teaching",
+      "transcript": "אוֹמֵר",
+      "path": "generated/sulafat/words/omer_says_m/teaching.mp3"
+    },
+    {
+      "id": "word.yihye_will_be.natural",
+      "category": "words",
+      "itemId": "yihye_will_be",
+      "profile": "natural",
+      "transcript": "יִהְיֶה",
+      "path": "generated/sulafat/words/yihye_will_be/natural.mp3"
+    },
+    {
+      "id": "word.yihye_will_be.teaching",
+      "category": "words",
+      "itemId": "yihye_will_be",
+      "profile": "teaching",
+      "transcript": "יִהְיֶה",
+      "path": "generated/sulafat/words/yihye_will_be/teaching.mp3"
+    },
+    {
+      "id": "word.yekhola_can_f.natural",
+      "category": "words",
+      "itemId": "yekhola_can_f",
+      "profile": "natural",
+      "transcript": "יְכוֹלָה",
+      "path": "generated/sulafat/words/yekhola_can_f/natural.mp3"
+    },
+    {
+      "id": "word.yekhola_can_f.teaching",
+      "category": "words",
+      "itemId": "yekhola_can_f",
+      "profile": "teaching",
+      "transcript": "יְכוֹלָה",
+      "path": "generated/sulafat/words/yekhola_can_f/teaching.mp3"
+    },
+    {
+      "id": "word.paam_time.natural",
+      "category": "words",
+      "itemId": "paam_time",
+      "profile": "natural",
+      "transcript": "פַּעַם",
+      "path": "generated/sulafat/words/paam_time/natural.mp3"
+    },
+    {
+      "id": "word.paam_time.teaching",
+      "category": "words",
+      "itemId": "paam_time",
+      "profile": "teaching",
+      "transcript": "פַּעַם",
+      "path": "generated/sulafat/words/paam_time/teaching.mp3"
+    },
+    {
+      "id": "word.zman_time.natural",
+      "category": "words",
+      "itemId": "zman_time",
+      "profile": "natural",
+      "transcript": "זְמַן",
+      "path": "generated/sulafat/words/zman_time/natural.mp3"
+    },
+    {
+      "id": "word.zman_time.teaching",
+      "category": "words",
+      "itemId": "zman_time",
+      "profile": "teaching",
+      "transcript": "זְמַן",
+      "path": "generated/sulafat/words/zman_time/teaching.mp3"
+    },
+    {
+      "id": "word.atem_you_plural.natural",
+      "category": "words",
+      "itemId": "atem_you_plural",
+      "profile": "natural",
+      "transcript": "אַתֶּם",
+      "path": "generated/sulafat/words/atem_you_plural/natural.mp3"
+    },
+    {
+      "id": "word.atem_you_plural.teaching",
+      "category": "words",
+      "itemId": "atem_you_plural",
+      "profile": "teaching",
+      "transcript": "אַתֶּם",
+      "path": "generated/sulafat/words/atem_you_plural/teaching.mp3"
+    },
+    {
+      "id": "word.adayin_still.natural",
+      "category": "words",
+      "itemId": "adayin_still",
+      "profile": "natural",
+      "transcript": "עֲדַיִן",
+      "path": "generated/sulafat/words/adayin_still/natural.mp3"
+    },
+    {
+      "id": "word.adayin_still.teaching",
+      "category": "words",
+      "itemId": "adayin_still",
+      "profile": "teaching",
+      "transcript": "עֲדַיִן",
+      "path": "generated/sulafat/words/adayin_still/teaching.mp3"
+    },
+    {
+      "id": "word.ad_until.natural",
+      "category": "words",
+      "itemId": "ad_until",
+      "profile": "natural",
+      "transcript": "עַד",
+      "path": "generated/sulafat/words/ad_until/natural.mp3"
+    },
+    {
+      "id": "word.ad_until.teaching",
+      "category": "words",
+      "itemId": "ad_until",
+      "profile": "teaching",
+      "transcript": "עַד",
+      "path": "generated/sulafat/words/ad_until/teaching.mp3"
+    },
+    {
+      "id": "word.ed_witness.natural",
+      "category": "words",
+      "itemId": "ed_witness",
+      "profile": "natural",
+      "transcript": "עֵד",
+      "path": "generated/sulafat/words/ed_witness/natural.mp3"
+    },
+    {
+      "id": "word.ed_witness.teaching",
+      "category": "words",
+      "itemId": "ed_witness",
+      "profile": "teaching",
+      "transcript": "עֵד",
+      "path": "generated/sulafat/words/ed_witness/teaching.mp3"
+    },
+    {
+      "id": "word.mamash_really.natural",
+      "category": "words",
+      "itemId": "mamash_really",
+      "profile": "natural",
+      "transcript": "מַמָּשׁ",
+      "path": "generated/sulafat/words/mamash_really/natural.mp3"
+    },
+    {
+      "id": "word.mamash_really.teaching",
+      "category": "words",
+      "itemId": "mamash_really",
+      "profile": "teaching",
+      "transcript": "מַמָּשׁ",
+      "path": "generated/sulafat/words/mamash_really/teaching.mp3"
+    },
+    {
+      "id": "word.elohim_god.natural",
+      "category": "words",
+      "itemId": "elohim_god",
+      "profile": "natural",
+      "transcript": "אֱלֹהִים",
+      "path": "generated/sulafat/words/elohim_god/natural.mp3"
+    },
+    {
+      "id": "word.elohim_god.teaching",
+      "category": "words",
+      "itemId": "elohim_god",
+      "profile": "teaching",
+      "transcript": "אֱלֹהִים",
+      "path": "generated/sulafat/words/elohim_god/teaching.mp3"
+    },
+    {
+      "id": "word.uvkhen_well.natural",
+      "category": "words",
+      "itemId": "uvkhen_well",
+      "profile": "natural",
+      "transcript": "וּבְכֵן",
+      "path": "generated/sulafat/words/uvkhen_well/natural.mp3"
+    },
+    {
+      "id": "word.uvkhen_well.teaching",
+      "category": "words",
+      "itemId": "uvkhen_well",
+      "profile": "teaching",
+      "transcript": "וּבְכֵן",
+      "path": "generated/sulafat/words/uvkhen_well/teaching.mp3"
+    }
+  ]
+}
