@@ -5,7 +5,7 @@ This repository currently contains the product research, V1 specification, and a
 ## Product and architecture roadmap
 
 - [Alphabet V1 roadmap](docs/product/alphabet-v1-roadmap.md)
-- [Recommended Kotlin Multiplatform project structure](docs/architecture/kmp-project-structure.md)
+- [Aleph Bet Kotlin Multiplatform architecture](docs/architecture/kmp-project-structure.md)
 - [Documentation index](docs/README.md)
 
 ## What is ready

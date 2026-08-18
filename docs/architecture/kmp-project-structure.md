@@ -1,314 +1,460 @@
-# Kotlin Multiplatform project structure
+# Aleph Bet Kotlin Multiplatform architecture
 
-Status: Recommended starting structure  
+Status: Working architecture decision
+
 Last updated: 2026-08-18
 
-## Short answer
+## Purpose
 
-[`philipplackner/CMPMemeCreator`](https://github.com/philipplackner/CMPMemeCreator) is a useful reference for the outer Kotlin and Compose Multiplatform shell and for simple presentation conventions. It is not a complete architecture template for Aleph Bet.
+This document describes the future structure of the Aleph Bet app and the order in which we will learn and build it.
 
-The reviewed source was commit [`9c020a2`](https://github.com/philipplackner/CMPMemeCreator/commit/9c020a2687b508204c8a7084826dc7d3f3a07a18). At that revision the repository had two commits, one main shared application module, no database, no repository-backed curriculum, and no substantive common tests. Its simplicity is appropriate for a meme editor but leaves several boundaries Aleph Bet needs undefined.
+The architecture should support an offline alphabet-learning release while staying small enough to understand as a first serious Kotlin Multiplatform project. It should create clean extension points for niqqud, words, and a future one-time purchase without implementing those features now.
 
-Use the sample as scaffolding, not doctrine.
+## Product constraints that shape the code
 
-## What to follow
+- Android and iOS are first-class targets.
+- The UI is shared with Compose Multiplatform.
+- Curriculum content and reviewed audio ship inside the app.
+- Learner progress is local and offline.
+- V1 has no account, backend, analytics SDK, or cloud sync.
+- The first release teaches letters; later content should reuse the learning machinery.
+- The project is also a Kotlin/KMP learning vehicle, so important boundaries should be visible and explainable.
 
-### `composeApp` and `iosApp`
-
-The sample uses:
-
-```text
-composeApp/
-    src/commonMain/
-    src/androidMain/
-    src/iosMain/
-iosApp/
-```
-
-That is the correct outer shape for this project:
-
-- `commonMain` contains shared Compose UI, navigation, domain logic, content loading, Room declarations, and most ViewModels;
-- `androidMain` contains Android entry points and implementations that require Android APIs;
-- `iosMain` contains iOS implementations and exposes the shared Compose root;
-- `iosApp` remains the native Xcode application wrapper.
-
-Aleph Bet does not need multiple Gradle feature modules on day one. A single shared application module with disciplined packages is easier to learn and build. Gradle modules can be extracted later when compilation time, ownership, reuse, or dependency enforcement creates a real need.
-
-### Feature-first packages
-
-The sample groups most code under `meme_editor` and `meme_gallery`, rather than placing every screen in a global `screens` package. Aleph Bet should also organize code primarily around product areas.
-
-### Unidirectional presentation flow
-
-The meme editor has a separate immutable state, sealed action type, and ViewModel. That maps well to Compose:
+## Architecture at a glance
 
 ```text
-UiState -> Composable
-UiAction -> ViewModel
-ViewModel -> new UiState
+Compose screen
+    renders immutable UiState
+    sends user actions
+            |
+            v
+ViewModel
+    coordinates one screen/session
+            |
+            v
+Use cases and plain Kotlin learning logic
+            |
+            v
+Repository interfaces
+        /           \
+       v             v
+Bundled content     Room learner state
+JSON + audio        progress + resume
 ```
 
-Use this convention for behavior-rich destinations such as Lesson and Practice. Do not create ceremonial action files for tiny stateless views where ordinary callbacks are clearer.
+Platform-specific services such as audio playback and database construction sit behind small common interfaces.
 
-### Typed navigation routes
+The central dependency rule is:
 
-The sample's serializable sealed routes are a good starting convention. Routes should carry stable identifiers such as `lessonId` or `letterId`, not entire domain objects.
+```text
+presentation -> domain <- data
+```
 
-### `expect`/`actual` only at platform boundaries
+- Presentation depends on domain concepts and operations.
+- Data implements domain repository contracts.
+- Domain code does not import Compose, Room, Android, or iOS APIs.
+- Platform code implements only the behavior that genuinely differs by operating system.
 
-The sample uses common contracts with Android and iOS implementations for storage, sharing, and platform utilities. Aleph Bet will need similar boundaries for concerns such as Room database construction and possibly audio playback.
+## Gradle modules and source sets
 
-Prefer a platform-independent interface when ordinary dependency injection is sufficient. Use `expect`/`actual` when the declaration itself genuinely differs by target; do not use it merely because KMP supports it.
-
-### Shared Compose resources
-
-The sample places fonts and images in `commonMain/composeResources`. Aleph Bet should stage its bundled Hebrew JSON, font, and reviewed audio into this resource system.
-
-## What not to copy blindly
-
-### Do not keep template leftovers
-
-Files such as `Greeting.kt` and generic platform-name demonstrations are starter-template examples, not architecture. Remove them when the real application shell exists.
-
-### Do not put data models under presentation
-
-The sample's `MemeTemplate` lives under `core/presentation`, which is acceptable for a tiny UI-only asset model. Aleph Bet's `Letter`, `Lesson`, progress, and exercise models have meaning outside the UI and belong in domain or data boundaries.
-
-### Do not let ViewModels absorb the learning engine
-
-The sample's editor behavior fits in one ViewModel. Aleph Bet's queue generation, answer evaluation, progress transitions, and review scheduling should be plain Kotlin domain logic or use cases that can be tested without Compose or a platform runtime.
-
-### Do not infer a database architecture from this sample
-
-It has no Room database, migrations, DAOs, repository abstraction, or persisted session model. Those must be designed for Aleph Bet rather than invented by analogy.
-
-### Do not infer a testing strategy from this sample
-
-An empty or nearly empty `commonTest` is not the target. The lesson engine and progress rules are ideal deterministic Kotlin tests and should be treated as first-class work.
-
-### Do not add dependencies only because the sample uses them
-
-The sample includes Koin, Coil, adaptive Material libraries, and sharing/export dependencies for its own needs. Each Aleph Bet dependency should justify its cost and supported targets. Koin is a reasonable option, not a requirement; constructor injection can carry the vertical slice surprisingly far.
-
-## Recommended starting tree
-
-The exact package prefix is omitted here. This is a package-responsibility map, not code that must be generated all at once.
+Start with one shared application module and the native iOS wrapper:
 
 ```text
 composeApp/
   src/
     commonMain/
-      composeResources/
-        files/hebrew/
-        files/audio/he/
-        font/
-        values/
-      kotlin/.../
-        App.kt
-
-        core/
-          audio/
-          database/
-          designsystem/
-          navigation/
-          time/
-
-        alphabet/
-          data/
-            content/
-            repository/
-          domain/
-            model/
-            repository/
-          presentation/
-            explorer/
-            detail/
-
-        lessons/
-          data/
-            content/
-          domain/
-            model/
-            engine/
-            usecase/
-          presentation/
-            home/
-            session/
-            completion/
-
-        practice/
-          domain/
-          presentation/
-
-        progress/
-          data/
-            local/
-            repository/
-          domain/
-            model/
-            repository/
-
-        settings/
-          presentation/
-
     commonTest/
-      kotlin/.../
-        lessons/domain/engine/
-        progress/domain/
-        alphabet/data/content/
-
     androidMain/
-      kotlin/.../
-        core/audio/
-        core/database/
-
+    androidUnitTest/
     iosMain/
-      kotlin/.../
-        core/audio/
-        core/database/
+    iosTest/
 
 iosApp/
 ```
 
-This is intentionally a hybrid:
+### `commonMain`
 
-- top-level product areas are feature-first;
-- packages inside a feature separate `data`, `domain`, and `presentation` only when all three exist;
-- shared technical capabilities live in a small `core`;
-- `core` must not become a dumping ground for anything used twice.
+This is where most of Aleph Bet belongs:
 
-## Dependency direction
+- shared Compose UI and navigation;
+- ViewModels and UI state;
+- letter and lesson models;
+- the lesson/session engine;
+- progress rules;
+- repository interfaces and shared implementations;
+- Room entities, DAOs, and database declarations supported by Room KMP;
+- bundled resource loading;
+- Koin annotations and common DI configuration.
 
-The important rule is more valuable than the exact folder names:
+### `androidMain`
+
+Keep only Android-specific work here:
+
+- Android application and activity entry points;
+- Android database path/builder details;
+- Android audio implementation;
+- permissions or lifecycle integrations that cannot be shared.
+
+### `iosMain`
+
+Keep only iOS-specific work here:
+
+- the Compose root exposed to Swift;
+- iOS database path/builder details;
+- AVFoundation-backed audio implementation;
+- iOS lifecycle or system integrations that cannot be shared.
+
+### `iosApp`
+
+This remains the Xcode application wrapper: app entry point, bundle configuration, signing, icons, and any small amount of Swift required to host the shared Compose UI.
+
+### Why one Gradle module first
+
+Multiple Gradle feature modules would enforce dependency boundaries, but they would also add build configuration and KMP source-set complexity before the app has working behavior.
+
+Begin with package boundaries inside `composeApp`. Extract Gradle modules only when there is a measured reason, such as:
+
+- compiler-enforced isolation is preventing real mistakes;
+- build times have become painful;
+- a component needs independent reuse;
+- the feature set or team has grown enough to need stronger ownership.
+
+## Future package map
+
+This is a destination map, not a request to create every empty directory on day one.
 
 ```text
-presentation -> domain <- data
-                     ^
-                     |
-              platform implementations
+composeApp/src/commonMain/kotlin/.../
+  app/
+    App.kt
+    di/
+    navigation/
+
+  design/
+    theme/
+    components/
+
+  alphabet/
+    domain/
+      model/
+      repository/
+    data/
+      content/
+      repository/
+    presentation/
+      explorer/
+      detail/
+
+  learning/
+    domain/
+      model/
+      engine/
+      usecase/
+    data/
+      content/
+      repository/
+    presentation/
+      home/
+      lesson/
+      completion/
+
+  practice/
+    domain/
+    presentation/
+
+  progress/
+    domain/
+      model/
+      repository/
+    data/
+      local/
+      repository/
+
+  audio/
+    domain/
+
+  settings/
+    data/
+    presentation/
 ```
 
-- Presentation knows domain models and use cases.
-- Domain defines behavior and repository contracts without Compose, Room, Android, or iOS types.
-- Data implements domain repository contracts using bundled content and local persistence.
-- Platform source sets provide implementations where a shared library cannot hide target differences.
+The corresponding platform implementations live under the same package names in `androidMain` and `iosMain` where practical. That makes the common contract and its platform implementations easy to find together.
 
-In a single Gradle module these are conventions rather than compiler-enforced walls. Tests and code review enforce them initially. Separate modules can enforce them later if needed.
+## Feature responsibilities
 
-## Where the core models belong
+### Alphabet
 
-### Alphabet content
+Owns factual letter content and the browsable reference experience.
 
-- `Letter`, `LetterForm`, and `LetterSound`: alphabet domain models.
-- JSON serialization DTOs: alphabet data/content.
-- Mapping from DTO to domain model: alphabet data/content.
-- `AlphabetRepository` contract: alphabet domain/repository.
-- Bundled implementation: alphabet data/repository.
+Core concepts:
 
-### Lesson content and behavior
+- `Letter`
+- `LetterForm`
+- `LetterSound`
+- `AlphabetRepository`
 
-- `Lesson`, `LessonStep`, and exercise definitions: lessons domain/model.
-- Authored lesson DTOs and resource loader: lessons data/content.
-- Queue generation and answer evaluation: lessons domain/engine.
-- Screen-specific `LessonUiState`: lessons presentation/session.
+Its data layer loads and maps bundled `alphabet.json`. Its presentation layer owns the alphabet explorer and letter detail UI.
+
+Alphabet does not decide lesson order or learner mastery. Those belong to Learning and Progress.
+
+### Learning
+
+Owns authored lessons and the reusable session machinery that presents content, asks questions, evaluates answers, and advances through a session.
+
+Core concepts:
+
+- `Lesson`
+- `LessonStep`
+- `Exercise`
+- `LessonSession`
+- `LessonSessionEngine`
+
+The engine should be plain Kotlin. Given a session and an action, it produces the next session state. That lets us test learning behavior without Compose, Room, Koin, or a device.
+
+### Practice
+
+Owns selection of previously introduced concepts for review.
+
+It should reuse the same exercise and session engine as guided lessons. The difference is queue construction:
+
+- Guided learning follows an authored lesson sequence.
+- Practice builds a queue from progress and review rules.
+
+Practice should not become a second, parallel lesson engine.
 
 ### Progress
 
-- Learning stage and progress rules: progress domain.
-- Room entities and DAOs: progress data/local or core/database when database-wide.
-- Entity/domain mappings: progress data.
-- Repository contract: progress domain/repository.
-- Room-backed implementation: progress data/repository.
+Owns the meaning of learner progress and its durable storage.
 
-Do not expose Room entities directly to Composables. Database shape, domain meaning, and screen rendering evolve for different reasons.
+Core concepts:
 
-## Room and bundled content
+- `ConceptId`
+- `ConceptType`
+- `LearningStage`
+- `ConceptProgress`
+- `LessonProgress`
+- `ProgressRepository`
 
-The app has two data sources with different purposes:
+Its data layer owns Room entities, DAOs, mappings, migrations, and the Room-backed repository.
+
+Progress rules must distinguish factual records from claims. For example, `correctCount = 4` is factual; deciding that four answers make a letter `SOLID` is a product rule in the domain layer.
+
+### Audio
+
+Owns the shared playback contract and playback state needed by the learning experience.
+
+The common layer should know operations such as play, stop, and observe playback state. It should not know AVFoundation or Android media-player types. Platform source sets supply those details.
+
+### Settings
+
+Owns small learner preferences such as audio behavior and completed onboarding. These values fit DataStore rather than Room unless relational queries become necessary.
+
+## Data ownership
+
+| Information | Source of truth | Why |
+|---|---|---|
+| Letter glyph, name, sounds, explanation | Bundled JSON/resources | Authored, immutable curriculum shipped with the app |
+| Lesson sequence and steps | Bundled JSON/resources | Editorial content versioned with releases |
+| Audio files | Compose resources | Reviewed offline media |
+| Lesson completion | Room | Durable relational learner state |
+| Per-letter progress | Room | Queried and updated across learning and practice |
+| Practice attempts | Room, if retained | Durable evidence used by review rules and debugging |
+| Audio preference and onboarding flag | DataStore | Small key-value preferences |
+| Selected answer and current animation | ViewModel/Compose state | Temporary interaction state |
+| Recoverable in-progress lesson checkpoint | Saved state and/or Room | Must survive the amount of interruption promised by the product |
+
+Do not copy the full bundled curriculum into Room. A repository or use case joins immutable content with learner progress when a screen needs both.
+
+## Model boundaries
+
+Several objects can describe the same letter for different purposes. They should not collapse into one universal model.
+
+### Content DTO
+
+Matches the JSON schema and serialization needs. It may contain nullable or version-specific fields that are inconvenient elsewhere.
+
+### Domain model
+
+Represents a valid letter, lesson, exercise, or progress concept in business logic. Domain models should make invalid states difficult to construct.
+
+### Room entity
+
+Matches durable database storage and indexing needs. It changes when persistence changes.
+
+### UI state
+
+Contains exactly what a screen needs to render, already formatted or grouped for presentation. It can combine content and progress without exposing database entities to Compose.
+
+Explicit mappings between these boundaries add a little code, but they prevent changes in JSON, Room, or UI layout from leaking through the entire app.
+
+## Presentation pattern
+
+Use unidirectional data flow for behavior-rich destinations:
 
 ```text
-Compose resources / JSON
-    immutable authored curriculum
-            |
-            v
-      content repository
-            |
-            +------> domain/use cases ------> ViewModel ------> UI
-            |
-Room <------+
-    mutable learner progress
+UiState -> Screen -> UiAction -> ViewModel -> new UiState
 ```
 
-Room should contain learner state, not copies of every bundled letter and explanation. A repository or use case joins content and progress when a screen needs both.
+A typical screen area owns:
 
-For KMP, common code can declare the database, entities, DAOs, and repositories. Database construction may require small Android and iOS source-set implementations because the platform supplies the database path and driver configuration.
+- an immutable `UiState`;
+- a sealed `UiAction` when the action set is meaningful;
+- a ViewModel exposing `StateFlow<UiState>`;
+- a route-level Composable that obtains the ViewModel;
+- a stateless screen Composable that receives state and callbacks.
+
+Do not turn this into ceremony:
+
+- A small reusable component usually needs parameters and callbacks, not its own ViewModel.
+- A screen with two simple callbacks may not need a sealed action type.
+- One-time effects should be modeled only when navigation, permission prompts, or messages genuinely need them.
+- Navigation routes pass stable IDs such as `letterId` or `lessonId`, not whole domain objects.
+
+The lesson ViewModel coordinates a session. It should not contain the lesson engine's rules. The engine remains a separately testable Kotlin object.
+
+## Dependency injection: Koin Annotations
+
+Use Koin Annotations rather than hand-written Koin module DSL.
+
+Working conventions:
+
+- Constructor injection is the default.
+- `@Single` is for app-lifetime repositories, database objects, and stable services.
+- `@Factory` is for inexpensive objects that should be created on demand.
+- `@KoinViewModel` declares screen ViewModels.
+- `@Module` creates explicit DI boundaries.
+- `@ComponentScan` is limited to intentional packages rather than scanning the entire application indiscriminately.
+- Annotated provider functions create external types such as the Room database that cannot be annotated directly.
+
+Use the current Koin Compiler Plugin with `koin-annotations`. Do not adopt the deprecated `koin-ksp-compiler` setup from older tutorials.
+
+Annotations remove binding boilerplate; they do not remove DI decisions. For every dependency we should still be able to explain:
+
+- its lifetime;
+- its interface and implementation;
+- whether it is common or platform-specific;
+- who owns cleanup;
+- how a test supplies a fake.
+
+Tests should normally construct the subject directly with fake dependencies. They should not start Koin merely to test domain behavior.
+
+## Platform boundaries
+
+Prefer an ordinary common interface with injected Android and iOS implementations. Use `expect`/`actual` only when the declaration itself truly must vary by target.
+
+Likely platform boundaries in the alphabet release:
+
+- database builder/path creation;
+- audio playback;
+- app lifecycle and audio interruption handling;
+- platform-specific file or resource access not covered by a multiplatform library.
+
+Do not create a generic `Platform` object containing unrelated operating-system services.
+
+## Testing strategy
+
+### `commonTest`
+
+This should contain most high-value behavior tests:
+
+- all bundled letters map into valid domain models;
+- lesson definitions reference existing letters and audio;
+- a lesson engine advances correctly after right and wrong answers;
+- answer choices contain one correct answer and no duplicate concepts;
+- final forms resolve to their base letters;
+- progress rules produce the agreed learning stages;
+- a practice queue favors the items required by the review policy;
+- resuming a checkpoint produces a valid session.
+
+### Database tests
+
+Test DAO behavior, repository mappings, transactions, and every migration. A migration test matters more than a repository interface test that only repeats mock expectations.
+
+### UI tests
+
+Use focused Compose tests for behavior that is easiest to verify through semantics: correct RTL ordering, content descriptions, enabled states, answer feedback, and navigation entry points.
+
+### Platform tests
+
+Keep a small number of integration tests for database creation, audio playback/lifecycle behavior, and resource availability on both Android and iOS.
 
 ## React Native to KMP mental map
 
-| React Native concept | KMP/Compose counterpart | Important difference |
-|---|---|---|
-| React component | `@Composable` function | Recomposition is driven by observed state; avoid performing work during rendering. |
-| Props | Function parameters | Keep screens stateless where practical and pass events upward. |
-| `useState` | `remember` / `rememberSaveable` | Appropriate for UI-local state, not durable learning progress. |
-| Redux/Zustand screen store | ViewModel plus `StateFlow<UiState>` | ViewModel lifetime is usually tied to a navigation destination. |
-| Action/reducer flow | Sealed `UiAction` and ViewModel/domain transitions | Reducers are optional; immutable state remains useful. |
-| React Navigation | Navigation Compose | Pass stable IDs through routes and load content at the destination. |
-| AsyncStorage | DataStore | Best for small preferences, not relational progress queries. |
-| SQLite library/ORM | Room KMP | Entities and DAOs are compile-time Kotlin APIs with explicit migrations. |
-| Bundled JS/JSON assets | Compose Multiplatform resources | Resource access is shared, but platform audio behavior may still need an abstraction. |
-| Native module | Platform interface or `expect`/`actual` | Keep the platform boundary narrow and inject it into shared code. |
-| Jest logic tests | `commonTest` with `kotlin.test` | Pure domain tests run without Compose UI or a device. |
+| React Native | Aleph Bet KMP equivalent |
+|---|---|
+| React component | `@Composable` function |
+| Props | Function parameters |
+| `useState` | `remember` / `rememberSaveable` for local UI state |
+| Zustand/Redux screen store | ViewModel plus `StateFlow<UiState>` |
+| Action/reducer | `UiAction` plus ViewModel or pure session transition |
+| React Navigation | Typed Navigation Compose routes |
+| AsyncStorage | DataStore for small preferences |
+| SQLite ORM | Room KMP for durable relational progress |
+| Bundled assets | Compose Multiplatform resources |
+| Native module | Common interface with platform implementation |
+| Jest unit test | `commonTest` with `kotlin.test` |
 
-## Suggested implementation order
+The most important difference is state lifetime. We will repeatedly classify state as Composable-local, ViewModel/session, saved state, Room, DataStore, or immutable bundled content.
 
-The structure should grow with the vertical slice instead of being scaffolded empty in advance.
+## Build and learning sequence
 
-1. Create the standard `composeApp` and `iosApp` shell.
-2. Add theme, resources, and typed navigation.
-3. Load three letters from bundled content through an alphabet repository.
-4. Add one lesson definition and a pure Kotlin session engine.
-5. Render it through `LessonUiState`, actions, and a ViewModel.
-6. Add Room only when the slice first needs durable progress.
-7. Add Android and iOS audio implementations behind one shared contract.
-8. Test session transitions and progress rules in `commonTest`.
-9. Expand to all letters only after the slice survives process recreation and offline use.
+The architecture grows through one three-letter vertical slice.
 
-## Tests that define the architecture
+1. Create the KMP/Compose shell and run the same shared screen on Android and iOS.
+2. Render one hard-coded letter to learn Composables, parameters, previews, and local state.
+3. Load three letters from a bundled JSON resource and map DTOs into domain models.
+4. Add the alphabet repository when the UI needs content without knowing where it came from.
+5. Build and test a pure Kotlin lesson session before connecting it to Compose.
+6. Expose the session through immutable UI state, actions, and a ViewModel.
+7. Add Koin Annotations to assemble the real objects while tests keep using constructors.
+8. Add Room when the slice first needs durable progress and resume behavior.
+9. Add the common audio contract and Android/iOS implementations.
+10. Verify process recreation, offline behavior, RTL, and accessibility.
+11. Only then expand the same system to all 22 letters and five final forms.
 
-The first high-value tests are not screenshot tests. They are behavior tests:
+At each step, we should be able to draw the data flow, identify the owner of every state value, and explain why each new abstraction exists.
 
-- a lesson queue introduces each intended letter;
-- answer choices never omit the correct answer;
-- choices contain no duplicate concept IDs;
-- an incorrect answer updates progress once;
-- resuming a lesson returns to a valid step;
-- a final form is associated with its base letter;
-- bundled JSON maps all 27 forms successfully;
-- a curriculum cannot reference a nonexistent letter or audio asset;
-- changing a letter to `SOLID` follows the agreed product rule;
-- database migrations preserve lesson and concept progress.
+## Decisions for the alphabet release
 
-These tests keep the learning behavior independent from Compose and Room details.
+Chosen for now:
 
-## Decision
+- shared Compose Multiplatform UI;
+- one `composeApp` Gradle module plus `iosApp`;
+- packages organized primarily by product feature;
+- plain Kotlin lesson and progress logic;
+- immutable UI state with unidirectional actions;
+- Koin Annotations and the Koin Compiler Plugin;
+- bundled JSON/audio as curriculum source of truth;
+- Room for learner progress;
+- DataStore for small preferences;
+- narrow platform service boundaries.
 
-Follow `CMPMemeCreator` for:
+Explicitly deferred:
 
-- the `composeApp`/`iosApp` shell;
-- shared and platform source sets;
-- typed navigation;
-- immutable presentation state and sealed actions;
-- shared Compose resources;
-- narrow platform-specific implementations.
+- multiple Gradle feature modules;
+- a generic framework for every future content type;
+- backend and sync architecture;
+- analytics architecture;
+- purchase SDK and entitlement implementation;
+- automatic pronunciation analysis;
+- dependency abstractions without a current consumer.
 
-Extend or replace its approach for:
+## Open architecture questions
 
-- domain and data boundaries;
-- Room and DataStore;
-- bundled curriculum repositories;
-- the lesson/session engine;
-- progress rules;
-- common tests;
-- feature ownership beyond a two-screen app.
+These should be answered by product decisions or the vertical slice:
 
-The recommended starting point is one Gradle application module organized by feature, with plain Kotlin domain logic and explicit repository contracts. It is large enough to teach sound KMP habits and small enough to remain understandable while learning Kotlin.
+1. How much of an interrupted lesson must survive process death?
+2. Do we retain individual practice attempts or only progress aggregates?
+3. Which audio library gives us reliable shared behavior, and what remains platform-specific?
+4. Does the lesson engine need one general step model or a small sealed set of explicit step types?
+5. When words arrive, do they fit the existing learning domain or justify a separate content module?
+6. At what measured size or build cost would splitting Gradle modules help?
+
+## Primary references
+
+- [Kotlin Multiplatform project structure](https://kotlinlang.org/docs/multiplatform/multiplatform-discover-project.html)
+- [Compose Multiplatform platform-specific behavior](https://kotlinlang.org/docs/multiplatform/compose-platform-specifics.html)
+- [Android architecture and unidirectional data flow](https://developer.android.com/topic/architecture/ui-layer)
+- [Koin Annotations for Kotlin Multiplatform](https://insert-koin.io/docs/reference/koin-annotations/kmp/)
+- [Koin annotation definitions](https://insert-koin.io/docs/reference/koin-annotations/definitions/)
+- [Koin modules and component scanning](https://insert-koin.io/docs/reference/koin-annotations/modules/)
