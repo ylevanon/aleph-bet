@@ -62,6 +62,8 @@ The Xcode wrapper owns the native app entry point, bundle configuration, signing
 
 ## Package map
 
+For a detailed comparison with the reference project, see [Package map: Aleph Bet and CMPMemeCreator](package-map-comparison.md).
+
 This is the expected destination, not a request to scaffold empty packages before they have responsibilities.
 
 ```text
