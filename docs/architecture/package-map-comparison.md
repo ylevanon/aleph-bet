@@ -13,7 +13,7 @@ Both projects start well with:
 - one `composeApp` Gradle module;
 - shared Compose UI in `commonMain`;
 - small Android and iOS source sets;
-- packages grouped primarily by product feature;
+- packages grouped by clear ownership, with product features as the default;
 - ViewModels exposing observable screen state;
 - common interfaces around platform-specific operations.
 
@@ -58,12 +58,56 @@ alphabet/presentation
 
 This is similar to organizing a React Native app by feature and then keeping that feature's API, state, and UI close together. It is not the equivalent of publishing a separate npm package for every feature.
 
+Unlike Expo Router, a Kotlin package does not create navigation. Unlike a Gradle module, it does not create a separately compiled artifact. A Kotlin file declares its package at the top and other files import declarations by that qualified name:
+
+```kotlin
+package com.alephbet.alphabet.domain
+
+data class LetterId(val value: String)
+```
+
+```kotlin
+import com.alephbet.alphabet.domain.LetterId
+```
+
+The directory should match the package because tools and humans expect it, although the Kotlin compiler primarily follows the `package` declaration. Matching packages may also exist in `commonMain`, `androidMain`, and `iosMain`; the source set determines the target, while the package keeps related contracts and implementations discoverable.
+
+Packages inside one Gradle module are not hard security walls. Kotlin has no Java-style package-private visibility, and `internal` means visible throughout the whole Gradle module. Until we extract modules, dependency direction is maintained by naming, code review, tests, and restraint. That is another reason to keep the map simple enough to understand.
+
+## Reading the map through Bearywell
+
+Bearywell uses a pragmatic React Native organization:
+
+```text
+app/          Expo Router destinations and layouts
+components/   reusable UI plus some feature-sized UI
+lib/          pure product rules, hooks, adapters, and integrations
+context/      application-level providers
+utils/        small technical helpers
+```
+
+That structure makes route ownership extremely visible, but `components` and especially `lib` contain code with several different reasons to change. This is normal in a React Native app and is productive while the ownership remains understandable.
+
+The Kotlin map makes some of those ownership boundaries explicit because ViewModels, Room, source sets, and dependency injection create more architectural roles than a typical route file exposes.
+
+| Bearywell example | Responsibility | Approximate Aleph Bet home |
+|---|---|---|
+| `app/(tabs)/index.tsx` | Route-level screen and data coordination | `home/presentation` or the relevant feature's `presentation` package |
+| `components/screen.tsx`, `components/button.tsx` | Reusable visual primitives | `design/components` |
+| `components/day-ring.tsx` | UI strongly tied to monitoring concepts | The owning feature's `presentation/components`, not automatically `design` |
+| `lib/person-status.ts` | Pure product decision logic used by multiple surfaces | The owning feature's `domain` package |
+| `lib/onboarding-flow.ts` | Flow rules and route progress | `onboarding/domain` or `onboarding/presentation`, depending on whether the rule is product or navigation state |
+| `lib/use-device-monitoring.ts` | State coordination plus native/backend integration | A ViewModel/use case plus common contracts and platform implementations |
+| `context/revenuecat-provider.tsx` | Application service wiring and lifetime | `app/di` plus a specifically named purchase capability if the app needs one |
+
+The intended improvement is not “Kotlin requires more folders.” It is that code currently grouped under a broad RN name such as `lib` gets an owner based on what it means. `derivePersonStatus`, for example, is not a generic utility; it is monitoring domain logic. Aleph Bet's answer evaluation is similarly learning domain logic, not a helper and not UI code.
+
 ## Side-by-side comparison
 
 | Concern | CMPMemeCreator | Aleph Bet | Why Aleph Bet differs |
 |---|---|---|---|
 | Gradle modules | One `composeApp` | One `composeApp` | We agree with the sample: extra modules would be premature. |
-| Top-level features | `meme_editor`, `meme_gallery` | `alphabet`, `learning`, `practice`, `progress`, `settings` | Our product has several durable responsibilities rather than one dominant editor. |
+| Top-level features and capabilities | `meme_editor`, `meme_gallery` | `home`, `onboarding`, `alphabet`, `learning`, `practice`, `progress`, `settings` | Our product has several durable responsibilities rather than one dominant editor. |
 | Shared application code | `core/presentation`, `di`, root files | `app/navigation`, `app/di`, `design` | We name the reason for sharing and avoid an unrestricted `core` bucket. |
 | Domain layer | Export and storage contracts under `meme_editor/domain` | Letter models, session engine, progress rules, and repository contracts under their owning features | Learning behavior must remain independent of UI and persistence. |
 | Data layer | Platform meme exporter and cache strategy | Bundled curriculum repositories, Room progress repositories, DataStore settings | Aleph Bet joins immutable app content with durable learner state. |
@@ -117,6 +161,12 @@ composeApp/src/commonMain/kotlin/.../
     theme/
     components/
 
+  home/
+    presentation/
+
+  onboarding/
+    presentation/
+
   alphabet/
     domain/
     data/
@@ -144,6 +194,121 @@ composeApp/src/commonMain/kotlin/.../
 ```
 
 This is a destination map, not a command to create empty directories. A package appears when it has a real class or function to own.
+
+## The top-level packages are not all the same kind
+
+The map is **ownership-first**, not perfectly feature-only or perfectly layer-only. It intentionally contains three kinds of top-level package:
+
+| Kind | Packages | Meaning |
+|---|---|---|
+| Application composition | `app` | Knows which destinations and dependencies make up the application. |
+| Vertical product areas | `home`, `onboarding`, `alphabet`, `learning`, `practice`, `settings` | Own a user capability and whichever of domain, data, and presentation it actually needs. |
+| Shared named capabilities | `design`, `audio`, `progress` | Serve several product areas but still have one narrow, explicit responsibility. |
+
+“Shared” does not mean “put miscellaneous reusable code here.” A shared package must answer a stable question:
+
+- `design`: how should reusable Aleph Bet UI look and behave?
+- `audio`: how does common code request and observe playback?
+- `progress`: what learning history exists and what does it mean?
+
+This is why there is no generic `shared`, `common`, or `utils` package in the proposed map. Kotlin's `commonMain` already means cross-platform; it does not mean conceptually ownerless.
+
+`home` and `onboarding` initially need only `presentation` because they coordinate and display concepts owned elsewhere. We should not invent `home/domain` merely to make its tree match Alphabet. If Home later gains a real product policy of its own, that policy can earn a domain package then.
+
+## Is `alphabet` the alphabet grid screen?
+
+No. The grid is one presentation owned by the broader Alphabet product area.
+
+```text
+alphabet/
+  domain/
+    Letter.kt
+    LetterId.kt
+    LetterForm.kt
+    LetterSound.kt
+    AlphabetRepository.kt
+
+  data/
+    AlphabetContentDto.kt
+    BundledAlphabetRepository.kt
+    AlphabetContentMapper.kt
+
+  presentation/
+    explorer/
+      AlphabetScreen.kt
+      AlphabetUiState.kt
+      AlphabetViewModel.kt
+    detail/
+      LetterDetailScreen.kt
+      LetterDetailUiState.kt
+      LetterDetailViewModel.kt
+```
+
+The package owns two related things:
+
+1. the app's canonical knowledge about Hebrew letters;
+2. the learner-facing reference experience for browsing that knowledge.
+
+It does **not** own lesson ordering, practice selection, or the meaning of `SOLID`. Those belong to Learning, Practice, and Progress respectively.
+
+This is analogous to a Bearywell product area owning its pure status model and the screens that present that model, even if Expo Router requires its route entry files to live under the global `app/` directory.
+
+## Will Practice use Alphabet?
+
+Yes. Cross-package use is expected; the boundary controls **what** Practice may use.
+
+```text
+PracticeScreen
+    -> PracticeViewModel
+        -> BuildPracticePlan
+            -> AlphabetRepository     letter facts and available choices
+            -> ProgressRepository     what this learner needs to review
+        -> LessonSessionEngine        run the resulting exercise queue
+        -> AudioPlayer                play the selected prompt
+```
+
+Practice may depend on Alphabet's public domain concepts, such as `LetterId`, `Letter`, and `AlphabetRepository`. It must not depend on:
+
+- `AlphabetScreen` or `AlphabetViewModel`;
+- JSON DTOs or `BundledAlphabetRepository`;
+- private UI state from the explorer;
+- knowledge of how Koin constructs the repository.
+
+Koin injects the `AlphabetRepository` implementation into the practice use case or ViewModel. Practice asks for letter facts through the contract; it neither reads `alphabet.json` nor constructs the repository itself.
+
+In React Native terms, this is closer to importing a typed feature service or pure domain function than importing another route component. The fact that two screens show a glyph does not mean one screen reuses the other screen.
+
+## How shared capabilities participate
+
+The same practice flow uses several packages without making them one feature:
+
+| Capability | What Practice uses | What remains hidden |
+|---|---|---|
+| `alphabet` | Letter IDs, glyph/name/sound facts, repository contract | JSON DTOs, content mapping, explorer UI |
+| `learning` | Exercise and session types, queue execution, answer evaluation | Guided-lesson authoring details and lesson UI |
+| `progress` | Progress snapshots and recording contracts | Room entities, DAOs, transactions, migrations |
+| `audio` | Playback commands and observable playback state | AVFoundation and Android media-player types |
+| `design` | Buttons, cards, typography, spacing | No product rules or learner state |
+
+`progress` is shared in usage but it is not merely technical infrastructure. It is a business capability: it defines what `INTRODUCED`, `PRACTICING`, and `SOLID` mean. That is why it has a domain package as well as Room-backed data code.
+
+`audio` is a technical capability. It knows how to play an asset and report playback state, but it does not know whether the audio represents alef, an exercise prompt, or a future word.
+
+`design` is a UI capability. A generic `PrimaryButton` can live there; an `AlphabetProgressCard` stays in its owning feature even if it is visually card-shaped.
+
+## One naming caveat: `learning`
+
+In the current map, Learning owns guided lesson definitions and the session machinery reused by Practice. That creates a deliberate dependency from `practice/domain` to the public parts of `learning/domain`.
+
+If implementation shows that the reusable session engine is a stable capability independent of authored lessons, we can extract a specifically named `session/domain` package:
+
+```text
+learning  -> creates an authored SessionPlan
+practice  -> creates a review SessionPlan
+session   -> runs either plan
+```
+
+We should make that extraction when the concrete classes reveal the shared API, rather than inventing a generic engine framework before the three-letter slice. Until then, `learning/domain` is the first owner and Practice may reuse its public session types.
 
 ## Why each Aleph Bet package exists
 
@@ -226,7 +391,7 @@ data implementations ------> domain contracts
 platform implementations --> common platform contracts
 ```
 
-This drawing is directional, not a demand for a separate interface around every class. The important rules are:
+This drawing is directional, not a ban on cross-feature dependencies and not a demand for a separate interface around every class. The important rules are:
 
 - domain code does not import Compose, Room, Koin, Android, or iOS;
 - presentation does not receive Room entities or content DTOs;

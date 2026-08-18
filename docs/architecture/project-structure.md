@@ -77,6 +77,12 @@ composeApp/src/commonMain/kotlin/.../
     theme/
     components/
 
+  home/
+    presentation/
+
+  onboarding/
+    presentation/
+
   alphabet/
     domain/
     data/
