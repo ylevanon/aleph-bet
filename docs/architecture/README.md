@@ -12,10 +12,11 @@ Build a small, understandable Kotlin Multiplatform app that teaches the Hebrew a
 
 1. [Project structure and platform boundaries](project-structure.md)
 2. [Package map: Aleph Bet and CMPMemeCreator](package-map-comparison.md)
-3. [Feature, model, and data boundaries](features-and-data.md)
-4. [Presentation and dependency injection](presentation-and-di.md)
-5. [Testing, delivery, and learning sequence](testing-and-delivery.md)
-6. [Architecture answers and decision queue](answers.md)
+3. [Bearywell to Aleph Bet: React Native and KMP architecture](react-native-to-kmp-architecture.md)
+4. [Feature, model, and data boundaries](features-and-data.md)
+5. [Presentation and dependency injection](presentation-and-di.md)
+6. [Testing, delivery, and learning sequence](testing-and-delivery.md)
+7. [Architecture answers and decision queue](answers.md)
 
 The product behavior that drives these decisions is documented in the [Alphabet V1 roadmap](../product/alphabet-v1-roadmap.md).
 
