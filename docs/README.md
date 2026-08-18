@@ -5,7 +5,7 @@ This directory contains the product, research, content-production, and architect
 ## Start here
 
 - [Alphabet V1 roadmap](product/alphabet-v1-roadmap.md) — the minimum learning product, screen map, state model, persistence model, and delivery milestones.
-- [Aleph Bet Kotlin Multiplatform architecture](architecture/kmp-project-structure.md) — the app's future package map, dependency rules, state and data ownership, Koin Annotations, testing strategy, and learning sequence.
+- [Aleph Bet architecture index](architecture/README.md) — focused documents covering project structure, feature and data boundaries, presentation and Koin, testing, delivery, and the learning sequence.
 - [Original broader V1 product spec](product/v1-product-spec.md) — the earlier alphabet, niqqud, and vocabulary scope. This remains useful background, but the alphabet roadmap is the current first-release proposal.
 
 ## Supporting material
