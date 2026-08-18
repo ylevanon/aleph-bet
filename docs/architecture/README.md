@@ -14,6 +14,7 @@ Build a small, understandable Kotlin Multiplatform app that teaches the Hebrew a
 2. [Feature, model, and data boundaries](features-and-data.md)
 3. [Presentation and dependency injection](presentation-and-di.md)
 4. [Testing, delivery, and learning sequence](testing-and-delivery.md)
+5. [Architecture answers and decision queue](answers.md)
 
 The product behavior that drives these decisions is documented in the [Alphabet V1 roadmap](../product/alphabet-v1-roadmap.md).
 
@@ -66,3 +67,5 @@ presentation -> domain <- data
 - Platform code implements only the behavior that cannot be shared safely.
 
 These are working decisions. The vertical slice is allowed to prove one wrong, but a change should be recorded with the reason and consequence.
+
+Open questions, proposed answers, and the state-lifetime exercise answer key are maintained in [Architecture answers and decision queue](answers.md).

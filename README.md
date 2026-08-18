@@ -6,6 +6,7 @@ This repository currently contains the product research, V1 specification, and a
 
 - [Alphabet V1 roadmap](docs/product/alphabet-v1-roadmap.md)
 - [Aleph Bet Kotlin Multiplatform architecture](docs/architecture/README.md)
+- [Architecture answers and decision queue](docs/architecture/answers.md)
 - [Documentation index](docs/README.md)
 
 ## What is ready

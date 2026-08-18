@@ -97,6 +97,8 @@ The vertical slice is architecturally ready to scale when:
 
 ## Open questions for the vertical slice
 
+Proposed answers and their current decision status are tracked in [Architecture answers and decision queue](answers.md).
+
 1. How much of an interrupted lesson must survive process death?
 2. Do we retain individual attempts or only progress aggregates?
 3. Which audio library provides reliable shared behavior?

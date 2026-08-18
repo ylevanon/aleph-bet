@@ -381,6 +381,8 @@ This milestone validates the complete user and data flow; it does not optimize f
 
 ## Architecture exercise
 
+Work through these before checking the [answer key](../architecture/answers.md#state-lifetime-exercise-answer-key).
+
 Classify each value as composition-local state, ViewModel/session state, Room-persisted state, or bundled curriculum content:
 
 - the current letter's glyph;
