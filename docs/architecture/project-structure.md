@@ -1,8 +1,8 @@
 # Project structure and platform boundaries
 
-Status: Working architecture decision
+Status: Confirmed initial scaffold
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 ## Initial module structure
 
@@ -14,7 +14,9 @@ shared/
     commonMain/
     commonTest/
     androidMain/
+    androidHostTest/
     iosMain/
+    iosTest/
 
 androidApp/
 iosApp/
@@ -22,7 +24,7 @@ iosApp/
 
 `shared` contains common code/UI plus Kotlin platform implementations. `androidApp` contains the Android application entry point. `iosApp` is the native Xcode host. This current separation also avoids tying the project to the older layout where Android entry points lived inside a single `composeApp` module.
 
-The generator's actual names and source sets are authoritative. Lesson 00.02 records them before feature code begins; if the current compatible wizard produces a different valid name, the responsibility map survives and the docs are reconciled.
+The generated project confirmed these names on 2026-08-19. The Kotlin package root is `com.ylevanon.alephbet`, `settings.gradle.kts` includes `:shared` and `:androidApp`, and the Xcode host consumes a static framework named `Shared`.
 
 ## Source-set responsibilities
 
@@ -59,6 +61,12 @@ Keep only iOS-specific work here:
 - iOS database path and builder details;
 - AVFoundation-backed audio implementation;
 - iOS lifecycle integrations that cannot be shared.
+
+### Test source sets
+
+- `commonTest` contains platform-independent tests written against common APIs and `kotlin.test`.
+- `androidHostTest` contains Android-target host tests that run locally without installing the application on a device.
+- `iosTest` contains tests compiled in the iOS target context.
 
 ### `iosApp`
 

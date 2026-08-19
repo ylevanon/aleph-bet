@@ -69,13 +69,13 @@ This is similar to organizing a React Native app by feature and then keeping tha
 Unlike Expo Router, a Kotlin package does not create navigation. Unlike a Gradle module, it does not create a separately compiled artifact. A Kotlin file declares its package at the top and other files import declarations by that qualified name:
 
 ```kotlin
-package com.alephbet.alphabet.domain
+package com.ylevanon.alephbet.alphabet.domain
 
 data class LetterId(val value: String)
 ```
 
 ```kotlin
-import com.alephbet.alphabet.domain.LetterId
+import com.ylevanon.alephbet.alphabet.domain.LetterId
 ```
 
 The directory should match the package because tools and humans expect it, although the Kotlin compiler primarily follows the `package` declaration. Matching packages may also exist in `commonMain`, `androidMain`, and `iosMain`; the source set determines the target, while the package keeps related contracts and implementations discoverable.

@@ -47,7 +47,7 @@ Android and iOS implementations sit behind small common interfaces when the oper
 ## Current decisions
 
 - Shared UI with Compose Multiplatform.
-- One `shared` KMP code/UI module, a thin `androidApp` entry module, and the native `iosApp` wrapper, subject to confirmation against the generated starter in Lesson 00.02.
+- One confirmed `shared` KMP code/UI module, a thin `androidApp` entry module, and the native `iosApp` wrapper.
 - Packages organized primarily by product feature.
 - Plain Kotlin lesson and progress rules.
 - Unidirectional screen state through ViewModels.

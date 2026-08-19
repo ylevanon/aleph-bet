@@ -1,8 +1,8 @@
 # Assessment and progress
 
-Status: Baseline complete; lesson 00.02 next
+Status: Lesson 00.02 in progress
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 ## Why the course tracks evidence
 
@@ -70,7 +70,7 @@ Baseline levels are not assigned from language trivia or self-reported framework
 
 | Module | Status | Passed lessons | Notes |
 |---|---|---:|---|
-| 00 Orientation and toolchain | In progress | 1/3 | Lesson 00.02 next |
+| 00 Orientation and toolchain | In progress | 1/3 | KMP scaffold integrated; project-map work continues |
 | 01 Kotlin through the domain | Not started | 0/6 | — |
 | 02 Compose foundations | Not started | 0/6 | — |
 | 03 KMP boundaries and resources | Not started | 0/4 | — |
@@ -90,15 +90,22 @@ Published inventory: 9/59 full lesson pages. The remainder of Module 00 and all 
 ### Current lesson record
 
 ```text
-Lesson ID: 00.01
-Status: Passed
-Date started: 2026-08-18
-Date passed: 2026-08-18
-Evidence: Learning workflow, architecture ownership, state lifetimes, persistence boundaries, and coaching contract reviewed
+Lesson ID: 00.02
+Status: In progress
+Date started: 2026-08-19
+Product artifact: Current KMP scaffold plus evidence-backed module/source-set map
+Checks run: Gradle sync succeeded; ./gradlew projects --stacktrace succeeded from the permanent repository
+Evidence: Correctly classified common, Android-only, Swift-host, and shared-test placement; distinguished iosApp from iosMain; generated the official starter
+Debugging evidence: Used Gradle output to disprove false IntelliJ unresolved-libs errors caused by the /tmp and /private/tmp path alias
+Private checkpoint commit: 6ec123a
 ```
+
+Most recent passed lesson: `00.01 — Baseline and course map` on 2026-08-18.
 
 Current task-based evidence:
 
+- KMP source sets and boundaries: level 2 — distinguishes packages, modules, source sets, and native hosts; correctly places common domain, Android implementation, Swift entry-point, and shared-test code.
+- Build/debugging: level 2 — separates an IDE analysis diagnostic from Gradle configuration evidence and uses the wrapper to identify the actual build result.
 - ViewModels and unidirectional flow: level 2 — explains UI rendering/events and a longer-lived state coordinator.
 - Architecture and ownership: level 2 — separates ephemeral UI, durable learner state, and UI-independent learning decisions.
 - Room and relational modeling: level 2 — identifies individual attempts as durable facts and a future practice queue as a derived decision.

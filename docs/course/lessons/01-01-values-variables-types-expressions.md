@@ -15,7 +15,7 @@ A shared Kotlin test lab represents basic facts about Alef, Bet, and Gimel and d
 Use the authoritative map from Lesson 00.02:
 
 - `<shared-module>` means the generated shared Kotlin module;
-- `<package-root>` means the actual root package, expected to be `com.alephbet`;
+- `<package-root>` means the confirmed root package `com.ylevanon.alephbet`;
 - learning labs live under `<shared-module>/src/commonTest/kotlin/<package-root>/learning/kotlin/`;
 - production domain declarations introduced at the checkpoint live under `<shared-module>/src/commonMain/kotlin/<package-root>/alphabet/domain/`.
 

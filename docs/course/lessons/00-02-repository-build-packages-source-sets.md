@@ -1,6 +1,6 @@
 # Lesson 00.02 — Repository, Gradle, packages, and source sets
 
-Status: Ready
+Status: In progress
 
 Module: 00 — Orientation and toolchain
 
@@ -39,7 +39,7 @@ Answer without notes:
 
 ## Why the app needs this now
 
-The repository currently contains product documents, the authored alphabet asset pack, validation scripts, and Python tests. It does **not** yet contain a Gradle root, Kotlin source sets, an Android application, or an Xcode host.
+At the start of this lesson, the repository contained product documents, the authored alphabet asset pack, validation scripts, and Python tests. It did **not** yet contain a Gradle root, Kotlin source sets, an Android application, or an Xcode host.
 
 That absence matters. A source-set lesson built around imaginary folders would teach names rather than structure. We will generate a compatible starter first, preserve the existing material, and then map the files that really exist.
 
@@ -50,7 +50,7 @@ These concepts answer different questions:
 | Concept | Question it answers | Example |
 |---|---|---|
 | Filesystem folder | Where is the file stored? | `shared/src/commonMain/kotlin/` |
-| Kotlin package | What namespace is the declaration in? | `com.alephbet.alphabet.domain` |
+| Kotlin package | What namespace is the declaration in? | `com.ylevanon.alephbet.alphabet.domain` |
 | Gradle module | What buildable/configurable unit owns it? | `:shared` or `:androidApp` |
 | Source set | Which compilations share this code? | `commonMain`, `androidMain`, `iosMain` |
 | Target | What platform output is Gradle compiling? | Android, iOS simulator ARM64 |
@@ -67,7 +67,9 @@ repository
 │       ├── commonMain/             shared production source set
 │       ├── commonTest/             shared test source set
 │       ├── androidMain/            Android implementation source set
-│       └── iosMain/                shared iOS-family source set
+│       ├── androidHostTest/        Android host-test source set
+│       ├── iosMain/                shared iOS-family source set
+│       └── iosTest/                iOS test source set
 ├── androidApp/                     Android application Gradle module
 └── iosApp/                         Xcode project and Swift entry point
 ```
@@ -138,7 +140,7 @@ Project-generation output is safe to copy; understanding its structure is the as
 3. Select Android and iOS.
 4. Select shared Compose UI for iOS.
 5. Keep the wizard's **Include tests** option enabled so `commonTest` and target test tasks are generated.
-6. Use the project ID/package root `com.alephbet` unless an existing signed bundle identifier requires a different value.
+6. Use the project ID/package root `com.ylevanon.alephbet`, which is now the confirmed application namespace.
 7. Do not add desktop, web, or server targets for V1.
 8. Let the wizard choose a compatible Kotlin, Compose, Android Gradle Plugin, and Gradle combination. Do not copy versions from an older tutorial.
 
@@ -164,20 +166,29 @@ Fill this table using exact generated names:
 
 | Role | Actual path/name | Evidence |
 |---|---|---|
-| Gradle root |  |  |
-| Shared Kotlin module |  |  |
-| Android application module |  |  |
-| iOS Xcode host |  |  |
-| Common production source set |  |  |
-| Common test source set |  |  |
-| Android-specific Kotlin source set |  |  |
-| iOS-family Kotlin source set(s) |  |  |
-| Shared UI root Composable |  |  |
-| Android entry point |  |  |
-| iOS entry point |  |  |
-| Kotlin package root |  |  |
+| Gradle root | Repository root | `settings.gradle.kts` declares `rootProject.name = "AlephBet"`. |
+| Shared Kotlin module | `:shared` | `settings.gradle.kts` contains `include(":shared")`. |
+| Android application module | `:androidApp` | Settings includes it; its build script uses `implementation(project(":shared"))`. |
+| iOS Xcode host | `iosApp/` | Contains `iosApp.xcodeproj`; it is intentionally absent from Gradle settings. |
+| Common production source set | `shared/src/commonMain` | Declared/configured by the shared KMP build and contains `App.kt`. |
+| Common test source set | `shared/src/commonTest` | Its dependency block uses `kotlin.test`. |
+| Android-specific Kotlin source set | `shared/src/androidMain` | Contains the generated Android `Platform` implementation. |
+| Platform test source sets | `androidHostTest`, `iosTest` | Generated under `shared/src`; each has a target-specific test compilation context. |
+| iOS-family production source set | `shared/src/iosMain` | Contains the iOS `Platform` implementation and `MainViewController`. |
+| Shared UI root Composable | `shared/.../App.kt` | Declares the common `App()` Composable. |
+| Android entry point | `androidApp/.../MainActivity.kt` | Android `Activity` calls `setContent { App() }`. |
+| iOS entry point | `iosApp/iosApp/iOSApp.swift` | Swift `@main` hosts `ContentView`, which imports the `Shared` framework. |
+| Kotlin package root | `com.ylevanon.alephbet` | Confirmed by generated package declarations and Android namespace/application ID. |
 
 “The folder looked right” is not sufficient evidence. Cite a settings entry, build-script declaration, package declaration, or entry-point call.
+
+### Actual generation and sync evidence — 2026-08-19
+
+- The current wizard generated `shared`, `androidApp`, and `iosApp`, plus `commonMain`, `commonTest`, `androidMain`, `androidHostTest`, `iosMain`, and `iosTest` source directories.
+- Generating under macOS `/tmp` exposed the same directory through `/tmp` and `/private/tmp`. IntelliJ attached its Gradle model to one path while analyzing scripts through the other, producing false unresolved-`libs` editor errors.
+- The Gradle wrapper independently reported `BUILD SUCCESSFUL`, disproving a build-script failure.
+- The clean scaffold was integrated at the permanent repository path without `.idea`, `.gradle`, `.kotlin`, `build`, `xcuserdata`, `local.properties`, or generated README state.
+- `./gradlew projects --stacktrace` succeeds from the permanent repository and resolves exactly `:shared` and `:androidApp`.
 
 ### Step 5 — Reconcile the architecture docs
 
