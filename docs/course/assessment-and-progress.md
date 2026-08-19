@@ -101,6 +101,8 @@ Current task-based evidence:
 - Room and relational modeling: level 2 — identifies individual attempts as durable facts and a future practice queue as a derived decision.
 - Product modeling: correctly notices that guided lessons and practice sessions have different resume and queue requirements.
 - Repository ownership: correctly assigns immutable letter facts to Alphabet and learner attempts to Progress.
+- Package ownership: explains that cross-feature reuse does not erase a product domain; Progress retains its models, rules, and repository contract rather than becoming generic `common` or `utils` code.
+- Package refinement: reserve an explicit design-system owner for truly reusable visual primitives, and avoid overloading KMP's technical `commonMain` vocabulary with a miscellaneous `common` package.
 - Compose state ownership: level 2 — distinguishes bundled content, temporary visual state, active-session state, and durable Room history; self-corrects when feedback behavior implies a longer-lived owner.
 - Next Compose refinement: collecting `StateFlow<UiState>` in a Composable does not make the collected value Compose-local; do not duplicate selected-answer truth with a separate `remember` value.
 - State-lifetime exercise: correctly assigns guided-lesson checkpoints and learner history to Room, preferences to DataStore, authored explanations to bundled content, and decorative state to Compose-local ownership.

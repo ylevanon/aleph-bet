@@ -161,6 +161,7 @@ The answer should mention recognition versus recall, gradual responsibility, and
 - [x] Transfer assumptions and task-based KMP calibration policy recorded.
 - [x] Product-action trace completed.
 - [x] State-lifetime reasoning reviewed.
+- [x] Architecture map and named ownership reasoning reviewed.
 - [ ] Coaching contract confirmed or revised.
 - [ ] Independent explanation completed.
 - [ ] Skill matrix baseline updated.
