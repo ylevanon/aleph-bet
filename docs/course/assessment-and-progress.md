@@ -1,6 +1,6 @@
 # Assessment and progress
 
-Status: Ready for baseline
+Status: Baseline in progress
 
 Last updated: 2026-08-18
 
@@ -70,7 +70,7 @@ Baseline levels are recorded during lesson 00.01. Target levels describe the exp
 
 | Module | Status | Passed lessons | Notes |
 |---|---|---:|---|
-| 00 Orientation and toolchain | Not started | 0/3 | Start with 00.01 |
+| 00 Orientation and toolchain | In progress | 0/3 | Lesson 00.01 active |
 | 01 Kotlin through the domain | Not started | 0/6 | — |
 | 02 Compose foundations | Not started | 0/6 | — |
 | 03 KMP boundaries and resources | Not started | 0/4 | — |
@@ -84,6 +84,15 @@ Baseline levels are recorded during lesson 00.01. Target levels describe the exp
 | 11 Release and defense | Not started | 0/4 | — |
 
 Current lesson: `00.01 — Baseline and course map`
+
+### Current lesson record
+
+```text
+Lesson ID: 00.01
+Status: In progress
+Date started: 2026-08-18
+Evidence: Opening diagnostic started; answers not yet recorded
+```
 
 ## Evidence recorded for each lesson
 

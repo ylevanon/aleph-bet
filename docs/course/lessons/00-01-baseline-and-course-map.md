@@ -1,6 +1,6 @@
 # Lesson 00.01 — Baseline and course map
 
-Status: Not started
+Status: In progress
 
 Module: 00 — Orientation and toolchain
 
