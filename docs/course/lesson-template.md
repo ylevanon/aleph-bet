@@ -6,6 +6,24 @@ Last updated: 2026-08-18
 
 Use this structure for full lesson pages. Omit sections that add no value, but preserve the learning sequence: retrieve, understand, predict, build, test, explain, review.
 
+## Example-style contract
+
+Build lessons should preserve the strongest qualities of the referenced notJust.dev written guide:
+
+- begin with what will be built and learned;
+- identify the exact files or project area being changed;
+- explain the concept before using it;
+- proceed through small, numbered implementation steps;
+- include focused code blocks that are complete enough to understand in context;
+- state what should compile, render, or pass after each meaningful checkpoint;
+- clearly mark when the learner should stop reading and attempt the next step;
+- place assignments before hints and complete solutions;
+- retain written troubleshooting material that can be revisited later.
+
+The personalized course adds one boundary: the worked example must not be the entire feature the learner is meant to implement. Prefer demonstrating one small case in the real Aleph Bet application, then require the learner to implement the next case or production variation. Use an unrelated toy example only when it isolates behavior that would otherwise be obscured by application code.
+
+Configuration boilerplate may be provided directly and labeled as safe to copy. Kotlin code that expresses the lesson's core concept should be typed, completed, or designed by the learner.
+
 ---
 
 # Lesson XX.XX — Title
@@ -68,9 +86,11 @@ Present a small snippet, state diagram, import, schema, or lifecycle scenario. R
 
 ## Minimal demonstration
 
-Show only enough unrelated or simplified code to reveal the new mechanism. Do not reveal the complete assignment solution.
+Prefer one small, runnable case in the real application. Show only enough code to reveal the new mechanism, state the expected result, and stop before revealing the production variation or complete assignment solution.
 
 ## Guided lab
+
+Name the file or source set for every step. Avoid hidden setup or unexplained jumps between code states.
 
 ### Step 1 — Intent
 
