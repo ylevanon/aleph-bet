@@ -1,6 +1,6 @@
 # Build Aleph Bet V1: a personalized KMP course
 
-Status: Course map ready; 1 of 59 full lesson pages published; lesson 00.01 in progress
+Status: Course map ready; 1 of 59 full lesson pages published; lesson 00.01 passed
 
 Last updated: 2026-08-18
 

@@ -1,6 +1,6 @@
 # Lesson 00.01 — Baseline and course map
 
-Status: In progress
+Status: Passed
 
 Module: 00 — Orientation and toolchain
 
@@ -164,8 +164,8 @@ The answer should mention recognition versus recall, gradual responsibility, and
 - [x] Architecture map and named ownership reasoning reviewed.
 - [x] Coaching contract confirmed or revised.
 - [x] Independent explanation completed.
-- [ ] Skill matrix baseline updated.
-- [ ] Lesson 00.01 marked passed or revision notes recorded.
+- [x] Skill matrix baseline and calibration priorities updated.
+- [x] Lesson 00.01 marked passed or revision notes recorded.
 
 ## Next lesson
 

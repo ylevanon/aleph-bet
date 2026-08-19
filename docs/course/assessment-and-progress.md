@@ -1,6 +1,6 @@
 # Assessment and progress
 
-Status: Baseline in progress
+Status: Baseline complete; lesson 00.02 next
 
 Last updated: 2026-08-18
 
@@ -70,7 +70,7 @@ Baseline levels are not assigned from language trivia or self-reported framework
 
 | Module | Status | Passed lessons | Notes |
 |---|---|---:|---|
-| 00 Orientation and toolchain | In progress | 0/3 | Lesson 00.01 active |
+| 00 Orientation and toolchain | In progress | 1/3 | Lesson 00.02 next |
 | 01 Kotlin through the domain | Not started | 0/6 | — |
 | 02 Compose foundations | Not started | 0/6 | — |
 | 03 KMP boundaries and resources | Not started | 0/4 | — |
@@ -83,15 +83,16 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | 10 Complete alphabet and quality | Not started | 0/5 | — |
 | 11 Release and defense | Not started | 0/4 | — |
 
-Current lesson: `00.01 — Baseline and course map`
+Current lesson: `00.02 — Repository, build, packages, and source sets`
 
 ### Current lesson record
 
 ```text
 Lesson ID: 00.01
-Status: In progress
+Status: Passed
 Date started: 2026-08-18
-Evidence: Architecture and state-ownership diagnostic in progress
+Date passed: 2026-08-18
+Evidence: Learning workflow, architecture ownership, state lifetimes, persistence boundaries, and coaching contract reviewed
 ```
 
 Current task-based evidence:
@@ -124,6 +125,14 @@ Current coaching calibration:
 - Use React Native comparisons to explain a delta, not to test dormant framework muscle memory.
 - Treat agentic engineering as established background, not curriculum; protect direct Kotlin implementation time.
 - Use teach-backs selectively for technical mental models; accept evidence already present in the conversation and avoid redundant meta-assignments.
+
+Current learning priorities:
+
+1. Build direct Kotlin implementation fluency rather than only code-reading familiarity.
+2. Make Gradle modules and KMP source sets concrete through the real repository.
+3. Introduce explicit ViewModel and unidirectional-flow responsibilities through product behavior.
+4. Treat coroutines, `Flow`, and `StateFlow` as high-attention topics with repeated practical use.
+5. Assume general Android/iOS application concepts transfer while teaching the KMP mechanisms that expose their boundaries.
 
 Current delivery constraint:
 
