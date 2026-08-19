@@ -113,6 +113,13 @@ Current delivery constraint:
 - Include a qualifying RevenueCat-powered purchase or ad path and the required submission assets.
 - Prioritize deep understanding of the code on the release path; schedule nonessential enrichment after V1 when necessary.
 
+Current release readiness:
+
+- Apple Developer and Google Play accounts have prior public-release experience.
+- Shipaton registration and an active RevenueCat account were verified read-only on 2026-08-18.
+- A separate React Native Shipaton submission is already in progress; it is not evidence of Aleph Bet KMP implementation progress.
+- Treat Aleph Bet as the KMP learning and Ship Kotlin Everywhere candidate unless the product goal changes explicitly.
+
 ## Evidence recorded for each lesson
 
 ```text
