@@ -164,26 +164,13 @@ During course mode:
 - exercise scaffolding or failing tests are added only when the learner explicitly starts that lab or requests the setup;
 - a request such as “take over and fix this” temporarily switches from teaching mode to implementation mode, and the coach explains what learning opportunity is being skipped.
 
-## Agentic engineering is a core skill
+## Agentic background and course boundary
 
-The learner's path spans two eras: applications learned and built directly before capable coding agents, followed by a sustained period of agent-assisted React Native development. The course does not treat the second period as fake development or ignore the muscle-memory changes it creates.
+The learner already uses agentic engineering extensively. That is relevant background, not a course objective and not a skill this curriculum will teach or assess.
 
-Agentic engineering is assessed as the ability to:
+The learner is deliberately using this project to regain direct implementation fluency and learn Kotlin, KMP, Compose, Room, and their surrounding mental models. During core labs, the learner writes the Kotlin code. The coach explains, demonstrates small isolated examples, asks questions, reviews attempts, runs checks, and helps debug. The coach does not turn the lesson into an exercise in prompting an agent to build the feature.
 
-- turn product intent into bounded, testable instructions;
-- provide the agent with the correct architectural and repository context;
-- choose when to request explanation, options, scaffolding, review, or implementation;
-- inspect a proposed plan and reject unsupported assumptions before code changes;
-- read and reason about the resulting diff rather than accepting a successful-looking screen;
-- verify behavior with tests, builds, runtime evidence, and cross-platform checks;
-- detect misplaced ownership, accidental complexity, weak abstractions, and invented APIs;
-- repair or simplify generated code directly;
-- explain the final implementation without relying on the generating conversation;
-- recognize when manual implementation is the faster or more educational path.
-
-The standard is not “never use AI.” The standard is that the learner remains the engineer who understands the system, makes the consequential decisions, and can recover when the agent is wrong.
-
-Some exercises will therefore include reviewing an agent proposal, predicting what a generated diff should contain, finding a planted flaw, or constraining a task before allowing implementation. Agentic fluency complements direct Kotlin practice; it does not replace it.
+If the learner explicitly requests implementation takeover, course mode can pause as described above. Otherwise, prior agentic experience changes the coaching context but does not enter the mastery matrix.
 
 ## The Room principle
 

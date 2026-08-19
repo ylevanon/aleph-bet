@@ -59,7 +59,6 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | Coroutines and Flow | TBD | 4 | ViewModel and Room flow integration |
 | ViewModels and UDF | TBD | 5 | Lesson/practice presentation and teach-back |
 | Architecture and package ownership | TBD | 5 | Placement exercises and final defense |
-| Agentic engineering and verification | TBD | 5 | Task framing, diff review, evidence, repair, and teach-back |
 | Testing | TBD | 5 | Domain TDD, database, UI, and migration tests |
 | Room and relational modeling | TBD | 4 | Schema, transactions, resume, and migration |
 | Koin and constructor injection | TBD | 4 | Production graph and direct-construction tests |
@@ -113,6 +112,7 @@ Current coaching calibration:
 - Divide work into resumable batches because session length will vary around a full-time job.
 - Do not inventory React Native, Java, Python, or API recall; assume concepts transfer and calibrate through authentic Kotlin work.
 - Use React Native comparisons to explain a delta, not to test dormant framework muscle memory.
+- Treat agentic engineering as established background, not curriculum; protect direct Kotlin implementation time.
 
 Current delivery constraint:
 
