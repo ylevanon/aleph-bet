@@ -140,6 +140,7 @@ Shipping the app is necessary but insufficient. The course is complete when the 
 - place new code in the correct package and source set;
 - model and migrate a Room schema safely;
 - diagnose common Compose, coroutine, DI, and KMP boundary failures;
+- direct, review, test, and repair agent-generated changes without surrendering architectural ownership;
 - run and validate both Android and iOS targets;
 - defend the V1 architecture and name evidence that would justify changing it;
 - produce a release candidate and a credible test report.

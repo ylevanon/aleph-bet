@@ -59,6 +59,7 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | Coroutines and Flow | TBD | 4 | ViewModel and Room flow integration |
 | ViewModels and UDF | TBD | 5 | Lesson/practice presentation and teach-back |
 | Architecture and package ownership | TBD | 5 | Placement exercises and final defense |
+| Agentic engineering and verification | TBD | 5 | Task framing, diff review, evidence, repair, and teach-back |
 | Testing | TBD | 5 | Domain TDD, database, UI, and migration tests |
 | Room and relational modeling | TBD | 4 | Schema, transactions, resume, and migration |
 | Koin and constructor injection | TBD | 4 | Production graph and direct-construction tests |
@@ -93,6 +94,12 @@ Status: In progress
 Date started: 2026-08-18
 Evidence: Learning-preference diagnostic in progress
 ```
+
+Current task-based evidence:
+
+- ViewModels and unidirectional flow: level 2 — explains UI rendering/events and a longer-lived state coordinator.
+- Architecture and ownership: level 2 — separates ephemeral UI, durable learner state, and UI-independent learning decisions.
+- Next refinement: distinguish a state-management mechanism such as a hook from an architectural layer, and distinguish ViewModel coordination from durable source-of-truth ownership.
 
 Current coaching calibration:
 
