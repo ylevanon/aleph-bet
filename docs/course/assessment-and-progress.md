@@ -100,7 +100,8 @@ Current task-based evidence:
 - Architecture and ownership: level 2 — separates ephemeral UI, durable learner state, and UI-independent learning decisions.
 - Room and relational modeling: level 2 — identifies individual attempts as durable facts and a future practice queue as a derived decision.
 - Product modeling: correctly notices that guided lessons and practice sessions have different resume and queue requirements.
-- Next refinement: distinguish a state-management mechanism such as a hook from an architectural layer, and distinguish ViewModel coordination from durable source-of-truth ownership.
+- Repository ownership: correctly assigns immutable letter facts to Alphabet and learner attempts to Progress.
+- Next refinement: distinguish a repository contract from its Room-backed implementation, and distinguish a ViewModel that coordinates a practice plan from the plain Kotlin policy that builds it.
 
 Current coaching calibration:
 

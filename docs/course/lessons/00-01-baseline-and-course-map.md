@@ -159,7 +159,7 @@ The answer should mention recognition versus recall, gradual responsibility, and
 
 - [x] Learning-preference answers recorded.
 - [x] Transfer assumptions and task-based KMP calibration policy recorded.
-- [ ] Product-action trace completed.
+- [x] Product-action trace completed.
 - [ ] State-lifetime reasoning reviewed.
 - [ ] Coaching contract confirmed or revised.
 - [ ] Independent explanation completed.
