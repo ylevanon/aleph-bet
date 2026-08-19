@@ -167,7 +167,7 @@ The answer should mention recognition versus recall, gradual responsibility, and
 
 ## Completion evidence
 
-- [ ] Learning-preference answers recorded.
+- [x] Learning-preference answers recorded.
 - [ ] RN and KMP baseline recorded.
 - [ ] Product-action trace completed.
 - [ ] State-lifetime reasoning reviewed.

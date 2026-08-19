@@ -101,6 +101,17 @@ Current coaching calibration:
 - Keep isolated experiments brief and connect them to a visible Aleph Bet product outcome.
 - Treat loss of visible progress as a signal to diagnose the missing mental model or reassess the task.
 - Use AI primarily as a teacher, reviewer, and debugging partner during core learning work.
+- Reveal help through learner-requested hint levels rather than an elapsed-time rule.
+- Ask for think-aloud reasoning freely; uncertainty does not need to be hidden.
+- Divide work into resumable batches because session length will vary around a full-time job.
+
+Current delivery constraint:
+
+- Target public iOS and Android releases for RevenueCat Shipaton 2026 and its Ship Kotlin Everywhere category.
+- Treat September 30, 2026 at 11:45 PM Pacific as the submission deadline, not the preferred store-release date.
+- Work toward being publicly live by September 23 to preserve review and submission buffer.
+- Include a qualifying RevenueCat-powered purchase or ad path and the required submission assets.
+- Prioritize deep understanding of the code on the release path; schedule nonessential enrichment after V1 when necessary.
 
 ## Evidence recorded for each lesson
 
