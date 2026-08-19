@@ -103,6 +103,8 @@ Current task-based evidence:
 - Repository ownership: correctly assigns immutable letter facts to Alphabet and learner attempts to Progress.
 - Compose state ownership: level 2 — distinguishes bundled content, temporary visual state, active-session state, and durable Room history; self-corrects when feedback behavior implies a longer-lived owner.
 - Next Compose refinement: collecting `StateFlow<UiState>` in a Composable does not make the collected value Compose-local; do not duplicate selected-answer truth with a separate `remember` value.
+- State-lifetime exercise: correctly assigns guided-lesson checkpoints and learner history to Room, preferences to DataStore, authored explanations to bundled content, and decorative state to Compose-local ownership.
+- Terminology refinement: DataStore is authoritative durable preference storage in this design, not a disposable cache.
 - Next refinement: distinguish a repository contract from its Room-backed implementation, and distinguish a ViewModel that coordinates a practice plan from the plain Kotlin policy that builds it.
 
 Current coaching calibration:
