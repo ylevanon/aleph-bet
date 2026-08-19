@@ -91,8 +91,16 @@ Current lesson: `00.01 — Baseline and course map`
 Lesson ID: 00.01
 Status: In progress
 Date started: 2026-08-18
-Evidence: Opening diagnostic started; answers not yet recorded
+Evidence: Learning-preference diagnostic in progress
 ```
+
+Current coaching calibration:
+
+- Lead with a concise explanation or worked example, then move immediately to a real attempt.
+- Prefer official documentation and written reasoning as the durable reference material.
+- Keep isolated experiments brief and connect them to a visible Aleph Bet product outcome.
+- Treat loss of visible progress as a signal to diagnose the missing mental model or reassess the task.
+- Use AI primarily as a teacher, reviewer, and debugging partner during core learning work.
 
 ## Evidence recorded for each lesson
 
