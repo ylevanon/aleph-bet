@@ -54,7 +54,7 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | Kotlin type modeling | TBD | 5 | Session model and architecture defense |
 | Collections and functional transformations | TBD | 4 | Alphabet mapping and queue building |
 | Compose mental model | TBD | 4 | UI implementation and recomposition diagnosis |
-| Compose state and effects | TBD | 5 | Session UI and lifecycle debugging |
+| Compose state and effects | 2 | 5 | Session UI and lifecycle debugging |
 | KMP source sets and boundaries | TBD | 5 | Platform placement challenge and audio integration |
 | Coroutines and Flow | TBD | 4 | ViewModel and Room flow integration |
 | ViewModels and UDF | 2 | 5 | Lesson/practice presentation and teach-back |
@@ -101,6 +101,8 @@ Current task-based evidence:
 - Room and relational modeling: level 2 — identifies individual attempts as durable facts and a future practice queue as a derived decision.
 - Product modeling: correctly notices that guided lessons and practice sessions have different resume and queue requirements.
 - Repository ownership: correctly assigns immutable letter facts to Alphabet and learner attempts to Progress.
+- Compose state ownership: level 2 — distinguishes bundled content, temporary visual state, active-session state, and durable Room history; self-corrects when feedback behavior implies a longer-lived owner.
+- Next Compose refinement: collecting `StateFlow<UiState>` in a Composable does not make the collected value Compose-local; do not duplicate selected-answer truth with a separate `remember` value.
 - Next refinement: distinguish a repository contract from its Room-backed implementation, and distinguish a ViewModel that coordinates a practice plan from the plain Kotlin policy that builds it.
 
 Current coaching calibration:
