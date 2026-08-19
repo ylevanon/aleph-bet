@@ -123,6 +123,7 @@ Current coaching calibration:
 - Do not inventory React Native, Java, Python, or API recall; assume concepts transfer and calibrate through authentic Kotlin work.
 - Use React Native comparisons to explain a delta, not to test dormant framework muscle memory.
 - Treat agentic engineering as established background, not curriculum; protect direct Kotlin implementation time.
+- Use teach-backs selectively for technical mental models; accept evidence already present in the conversation and avoid redundant meta-assignments.
 
 Current delivery constraint:
 

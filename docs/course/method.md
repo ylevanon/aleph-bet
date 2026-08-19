@@ -121,6 +121,8 @@ Run the smallest relevant checks. The learner reads the failure first and propos
 
 The learner explains the new concept as if onboarding a React Native developer. A working app with an incorrect mental model is not yet mastery.
 
+Use teach-backs when the explanation can expose a meaningful technical misconception. Do not require the learner to restate course philosophy, repeat reasoning already demonstrated in the conversation, or perform a ritual summary merely because the template contains this section.
+
 ### 10. Review and revision
 
 The coach reviews correctness, Kotlin idioms, state ownership, boundaries, tests, and unnecessary abstraction. The learner makes the revisions.

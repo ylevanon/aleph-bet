@@ -163,7 +163,7 @@ The answer should mention recognition versus recall, gradual responsibility, and
 - [x] State-lifetime reasoning reviewed.
 - [x] Architecture map and named ownership reasoning reviewed.
 - [x] Coaching contract confirmed or revised.
-- [ ] Independent explanation completed.
+- [x] Independent explanation completed.
 - [ ] Skill matrix baseline updated.
 - [ ] Lesson 00.01 marked passed or revision notes recorded.
 
