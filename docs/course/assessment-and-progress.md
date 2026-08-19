@@ -57,10 +57,10 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | Compose state and effects | TBD | 5 | Session UI and lifecycle debugging |
 | KMP source sets and boundaries | TBD | 5 | Platform placement challenge and audio integration |
 | Coroutines and Flow | TBD | 4 | ViewModel and Room flow integration |
-| ViewModels and UDF | TBD | 5 | Lesson/practice presentation and teach-back |
-| Architecture and package ownership | TBD | 5 | Placement exercises and final defense |
+| ViewModels and UDF | 2 | 5 | Lesson/practice presentation and teach-back |
+| Architecture and package ownership | 2 | 5 | Placement exercises and final defense |
 | Testing | TBD | 5 | Domain TDD, database, UI, and migration tests |
-| Room and relational modeling | TBD | 4 | Schema, transactions, resume, and migration |
+| Room and relational modeling | 2 | 4 | Schema, transactions, resume, and migration |
 | Koin and constructor injection | TBD | 4 | Production graph and direct-construction tests |
 | Android/iOS platform integration | TBD | 4 | Audio implementations and comparison |
 | Accessibility, RTL, and mobile quality | TBD | 4 | Quality-gate report |
@@ -91,13 +91,15 @@ Current lesson: `00.01 — Baseline and course map`
 Lesson ID: 00.01
 Status: In progress
 Date started: 2026-08-18
-Evidence: Learning-preference diagnostic in progress
+Evidence: Architecture and state-ownership diagnostic in progress
 ```
 
 Current task-based evidence:
 
 - ViewModels and unidirectional flow: level 2 — explains UI rendering/events and a longer-lived state coordinator.
 - Architecture and ownership: level 2 — separates ephemeral UI, durable learner state, and UI-independent learning decisions.
+- Room and relational modeling: level 2 — identifies individual attempts as durable facts and a future practice queue as a derived decision.
+- Product modeling: correctly notices that guided lessons and practice sessions have different resume and queue requirements.
 - Next refinement: distinguish a state-management mechanism such as a hook from an architectural layer, and distinguish ViewModel coordination from durable source-of-truth ownership.
 
 Current coaching calibration:
