@@ -44,7 +44,7 @@ These answers may change lesson size and hint timing without changing the produc
 
 ## Part 2 — React Native transfer inventory
 
-Rate each from 0–5 using the mastery scale in [Assessment and progress](../assessment-and-progress.md), then give one example from Bearywell or another project.
+Rate each from 0–5 using the mastery scale in [Assessment and progress](../assessment-and-progress.md), then give one example from Pocket Globe/Globe Game, the vocabulary app, or another project you implemented directly.
 
 | Skill | Self-rating | Evidence/example |
 |---|---:|---|

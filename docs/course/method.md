@@ -89,7 +89,7 @@ This prevents “learn StateFlow because StateFlow is on a checklist.”
 
 ### 3. Mental model and RN bridge
 
-Explain the concept in plain language, map it to the nearest Bearywell pattern, and identify where that comparison fails.
+Explain the concept in plain language, map it to the nearest relevant React Native pattern from Pocket Globe/Globe Game, the vocabulary app, or another familiar project, and identify where that comparison fails.
 
 ### 4. Prediction
 
@@ -151,6 +151,8 @@ The learner can request a level directly, for example:
 > Give me hint level 3, not the code.
 
 ## Default code-ownership rule
+
+The conversation, private application repository, and public documentation repository have different jobs. The complete interaction and publication workflow is in [How to take the course](how-to-take-the-course.md).
 
 During course mode:
 

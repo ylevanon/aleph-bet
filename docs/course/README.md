@@ -1,6 +1,6 @@
 # Build Aleph Bet V1: a personalized KMP course
 
-Status: Course design ready; instruction not started
+Status: Course map ready; 1 of 59 full lesson pages published; instruction not started
 
 Last updated: 2026-08-18
 
@@ -20,23 +20,26 @@ This is not a generic beginner programming course. It assumes the learner:
 - is new enough to Kotlin and KMP that language, tooling, lifecycle, and build-system assumptions must be made explicit;
 - wants active coaching and evaluation, not only generated code.
 
-Bearywell is the main bridge language. When a KMP concept is introduced, the lesson should identify the nearest Bearywell pattern, where the analogy holds, and where it breaks.
+Pocket Globe/Globe Game and the vocabulary app are the primary bridge projects because they best represent code the learner remembers building directly. Bearywell and WaveCall may still supply familiar examples, but they are not treated as evidence that a concept is already mastered. When a KMP concept is introduced, the lesson should identify the nearest React Native pattern, where the analogy holds, and where it breaks.
 
 ## Course documents
 
 Read these in order:
 
 1. [Teaching method and coaching contract](method.md)
-2. [Complete course syllabus](syllabus.md)
-3. [Assessment and progress system](assessment-and-progress.md)
-4. [Lesson-page template](lesson-template.md)
-5. [Lesson 00.01: Baseline and course map](lessons/00-01-baseline-and-course-map.md)
+2. [How to take the course](how-to-take-the-course.md)
+3. [Complete course syllabus](syllabus.md)
+4. [Assessment and progress system](assessment-and-progress.md)
+5. [Lesson-page template](lesson-template.md)
+6. [Lesson 00.01: Baseline and course map](lessons/00-01-baseline-and-course-map.md)
 
 Supporting product and technical decisions remain in the [product roadmap](../product/alphabet-v1-roadmap.md) and [architecture index](../architecture/README.md).
 
 ## Course structure
 
-The course contains 12 modules and 59 planned lessons. Most lessons should take 30–90 focused minutes, but progress is mastery-based rather than time-based. A realistic complete journey is roughly 55–80 hours of explanation, implementation, testing, debugging, review, and independent work.
+The course map contains 12 modules and 59 planned lessons. That does not mean 59 complete lesson pages already exist: the syllabus defines all 59 outcomes, while full lesson pages are published in rolling module-sized packs so they can respond to demonstrated strengths and gaps. The publication workflow and current inventory are explicit in [How to take the course](how-to-take-the-course.md).
+
+Most lessons should take 30–90 focused minutes, but progress is mastery-based rather than time-based. A realistic complete journey is roughly 55–80 hours of explanation, implementation, testing, debugging, review, and independent work.
 
 That estimate is intentionally longer than an eight-hour video. Video runtime excludes pauses, mistakes, independent assignments, cross-platform verification, retrieval practice, and the work required to demonstrate understanding.
 
@@ -143,4 +146,4 @@ Shipping the app is necessary but insufficient. The course is complete when the 
 
 ## Source inspiration
 
-The delivery format is inspired by—not copied from—Vadim Savin's [React Native and Supabase masterclass](https://www.youtube.com/watch?v=rIYzLhkG9TA), its [public project overview](https://www.notjust.dev/projects/food-ordering), and its public Notion lesson board. This is an independent curriculum for a different application, technology stack, and learner.
+The delivery format is inspired by—not copied from—Vadim Savin's [React Native and Supabase masterclass](https://www.youtube.com/watch?v=rIYzLhkG9TA), its [public project overview](https://www.notjust.dev/projects/food-ordering), and the exact [public Notion masterclass board](https://notjust.notion.site/React-Native-Supabase-Masterclass-47a69a60bc464c399b5a0df4d3c4a630). This is an independent curriculum for a different application, technology stack, and learner.
