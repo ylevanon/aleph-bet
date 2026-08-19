@@ -48,6 +48,28 @@ Lesson 00.01 is an original diagnostic and course-calibration lesson. It is not 
 
 Raw answers, uncertain first attempts, and private application code are not copied into the public documentation. A public progress update should record only a status and a short, non-sensitive evidence summary.
 
+## Which chat or session to use
+
+Use the same chat for all lessons in the current module. Do not create a new session for every lesson.
+
+The existing conversation contains useful teaching evidence: earlier answers, recurring misconceptions, preferred hint level, architecture decisions, and what has already been reviewed. Keeping a module together makes the coaching more coherent.
+
+A new chat is reasonable at a module boundary or when the current conversation becomes difficult to navigate. Before switching, the coach should update and push the public progress record with:
+
+- the last passed lesson;
+- current mastery evidence;
+- unresolved questions or concepts to revisit;
+- the next lesson to start;
+- links to the relevant course and architecture documents.
+
+The new chat can then begin with:
+
+> Continue the Aleph Bet KMP course. Read `docs/course/README.md`, `docs/course/how-to-take-the-course.md`, and `docs/course/assessment-and-progress.md`, then start lesson XX.XX.
+
+This makes the repository the durable handoff between sessions. A fresh chat should not be expected to reconstruct every nuance of the previous conversation without reading that handoff.
+
+Use a separate chat immediately when the task is genuinely unrelated to the course. For example, marketing work or an unrelated application should not interrupt the lesson thread.
+
 ## How full lessons are published
 
 The curriculum has two layers.
