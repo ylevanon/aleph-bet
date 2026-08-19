@@ -46,7 +46,7 @@ Course completion does not require level 5 in every library API. It does require
 
 ## Core skill matrix
 
-Baseline levels are recorded during lesson 00.01. Target levels describe the expected evidence by course completion.
+Baseline levels are not assigned from language trivia or self-reported framework fluency during lesson 00.01. Each value is recorded when the first authentic Kotlin task produces implementation, debugging, or explanation evidence. Target levels describe the expected evidence by course completion.
 
 | Skill | Baseline | Target | Evidence source |
 |---|---:|---:|---|
@@ -104,6 +104,8 @@ Current coaching calibration:
 - Reveal help through learner-requested hint levels rather than an elapsed-time rule.
 - Ask for think-aloud reasoning freely; uncertainty does not need to be hidden.
 - Divide work into resumable batches because session length will vary around a full-time job.
+- Do not inventory React Native, Java, Python, or API recall; assume concepts transfer and calibrate through authentic Kotlin work.
+- Use React Native comparisons to explain a delta, not to test dormant framework muscle memory.
 
 Current delivery constraint:
 

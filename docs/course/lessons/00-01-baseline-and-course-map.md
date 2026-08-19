@@ -19,7 +19,7 @@ By the end, the learner can:
 - explain the product-to-code sequence for Aleph Bet V1;
 - distinguish a screen, ViewModel, domain rule, repository contract, and data source at a high level;
 - classify representative state by owner and lifetime;
-- identify which React Native skills transfer and which Kotlin/KMP areas need deliberate practice;
+- explain how existing mobile and product knowledge transfers while Kotlin/KMP fluency is calibrated through real work;
 - state how help, solutions, review, and lesson completion will work.
 
 ## Prerequisites
@@ -42,44 +42,34 @@ Answer candidly:
 
 These answers may change lesson size and hint timing without changing the product milestone.
 
-## Part 2 — React Native transfer inventory
+## Part 2 — Transfer agreement
 
-Rate each from 0–5 using the mastery scale in [Assessment and progress](../assessment-and-progress.md), then give one example from Pocket Globe/Globe Game, the vocabulary app, or another project you implemented directly.
+There is no React Native, Java, or Python fluency inventory.
 
-| Skill | Self-rating | Evidence/example |
-|---|---:|---|
-| Component composition and props | TBD | TBD |
-| Local React state and effects | TBD | TBD |
-| Navigation and route parameters | TBD | TBD |
-| Shared state/context/providers | TBD | TBD |
-| Pure product logic outside UI | TBD | TBD |
-| Async work and error handling | TBD | TBD |
-| Local persistence or database modeling | TBD | TBD |
-| Native/platform integration | TBD | TBD |
-| Unit and component testing | TBD | TBD |
-| Release and store delivery | TBD | TBD |
+The working assumptions are:
 
-## Part 3 — Kotlin/KMP baseline
+- the learner has already built and shipped mobile applications;
+- React Native syntax may be rusty because it has not been typed regularly in the last year or two;
+- recent development has leaned heavily into agentic engineering;
+- occasional Java or Python algorithm practice does not need to become a course prerequisite;
+- application concepts and unfamiliar APIs will be understood when they are explained in context.
 
-Answer “know,” “rough idea,” or “new,” followed by any explanation you can give. Do not search.
+The course therefore will not spend time proving recall of props, effects, navigation calls, or syntax in unrelated languages. React Native examples are translation aids, not an entrance exam.
 
-1. What is the practical difference between `val` and `var`?
-2. What does `String?` communicate?
-3. What is a Kotlin `data class` useful for?
-4. When might a `sealed interface` be safer than a string status?
-5. What is the difference between a Kotlin package and a Gradle module?
-6. What does `commonMain` restrict?
-7. What does `@Composable` mean?
-8. What does `remember` survive, and what does it not survive?
-9. What problem does a ViewModel solve?
-10. What does `suspend` mean?
-11. How might `Flow<T>` differ from `List<T>`?
-12. What is constructor injection?
-13. What is a Room entity?
-14. Why might a Room entity and UI model be different classes?
-15. When would Android and iOS require separate implementations?
+What matters is demonstrated ability to reason about ownership and behavior, implement the Kotlin version, review generated suggestions, diagnose failures, and explain the result.
 
-Incorrect answers are useful course-design evidence.
+## Part 3 — Kotlin/KMP calibration policy
+
+There is no up-front Kotlin terminology quiz either. Knowing or guessing definitions for `val`, `Flow`, `commonMain`, `remember`, or Room entities would be weak evidence of the ability to build the application.
+
+Starting assumptions:
+
+- unfamiliar Kotlin syntax is taught when the product first needs it;
+- programming concepts transfer unless implementation evidence reveals a gap;
+- KMP, Compose, Room, coroutine, and DI mental models are explained before their first production use;
+- baseline mastery levels are recorded from prediction, implementation, debugging, and teach-back evidence in real Aleph Bet tasks.
+
+No learner response is required for Parts 2 or 3. The first authentic tasks will supply better calibration.
 
 ## Part 4 — Trace one product action
 
@@ -168,7 +158,7 @@ The answer should mention recognition versus recall, gradual responsibility, and
 ## Completion evidence
 
 - [x] Learning-preference answers recorded.
-- [ ] RN and KMP baseline recorded.
+- [x] Transfer assumptions and task-based KMP calibration policy recorded.
 - [ ] Product-action trace completed.
 - [ ] State-lifetime reasoning reviewed.
 - [ ] Coaching contract confirmed or revised.
