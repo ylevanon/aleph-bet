@@ -4,6 +4,7 @@ This repository currently contains the product research, V1 specification, and a
 
 ## Product and architecture roadmap
 
+- [Personalized Kotlin Multiplatform course](docs/course/README.md)
 - [Alphabet V1 roadmap](docs/product/alphabet-v1-roadmap.md)
 - [Aleph Bet Kotlin Multiplatform architecture](docs/architecture/README.md)
 - [React Native to KMP architecture guide](docs/architecture/react-native-to-kmp-architecture.md)

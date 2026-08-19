@@ -4,6 +4,7 @@ This directory contains the product, research, content-production, and architect
 
 ## Start here
 
+- [Personalized Kotlin Multiplatform course](course/README.md) — a 12-module, project-based path for learning Kotlin and KMP by building the alphabet V1 with live coaching, assignments, review, and mastery checks.
 - [Alphabet V1 roadmap](product/alphabet-v1-roadmap.md) — the minimum learning product, screen map, state model, persistence model, and delivery milestones.
 - [Aleph Bet architecture index](architecture/README.md) — focused documents covering project structure, feature and data boundaries, presentation and Koin, testing, delivery, and the learning sequence.
 - [Package map comparison](architecture/package-map-comparison.md) — what we retain from CMPMemeCreator, what differs for a learning app, and why.
