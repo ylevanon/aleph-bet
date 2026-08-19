@@ -2,3 +2,23 @@ __pycache__/
 *.py[cod]
 .DS_Store
 
+# Kotlin, Gradle, and IDE state
+*.iml
+.idea/
+.kotlin/
+.gradle/
+**/build/
+!src/**/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Xcode user and generated workspace state
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
