@@ -85,6 +85,8 @@ Baseline levels are not assigned from language trivia or self-reported framework
 
 Current lesson: `00.02 — Repository, build, packages, and source sets`
 
+Published inventory: 9/59 full lesson pages. The remainder of Module 00 and all of Module 01 are ready, so lesson publication is no longer blocking the current or next module.
+
 ### Current lesson record
 
 ```text

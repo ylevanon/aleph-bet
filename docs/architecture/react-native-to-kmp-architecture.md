@@ -331,7 +331,7 @@ This is a conceptual mapping, not a mechanical migration recipe:
 ### Aleph Bet architecture choices
 
 - shared Compose UI;
-- one `composeApp` module initially;
+- one `shared` KMP code/UI module plus thin Android and iOS application hosts initially;
 - ownership-first Kotlin packages;
 - ViewModels for behavior-rich destinations;
 - plain Kotlin session and progress rules;

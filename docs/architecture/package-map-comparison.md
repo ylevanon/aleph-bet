@@ -10,7 +10,7 @@ Aleph Bet should borrow CMPMemeCreator's broad shape, not copy its package tree.
 
 Both projects start well with:
 
-- one `composeApp` Gradle module;
+- one shared-code Gradle module rather than a Gradle module per feature;
 - shared Compose UI in `commonMain`;
 - small Android and iOS source sets;
 - packages grouped by clear ownership, with product features as the default;
@@ -25,14 +25,22 @@ This comparison references [CMPMemeCreator at commit `9c020a2`](https://github.c
 
 ### Gradle modules
 
-A Gradle module is a compilation and dependency boundary. Both projects initially use one shared application module:
+A Gradle module is a compilation and dependency boundary. The referenced CMPMemeCreator snapshot uses the older combined Android/shared module shape:
 
 ```text
 :composeApp
 iosApp/        native Xcode wrapper, not another shared Gradle feature module
 ```
 
-Aleph Bet packages such as `alphabet` and `learning` are not separate Gradle modules in V1. They are organization and dependency conventions inside `composeApp`.
+The current official starter shape we expect for Aleph Bet separates entry points:
+
+```text
+:shared        common UI/domain/data plus Kotlin platform implementations
+:androidApp    thin Android application entry module
+iosApp/        native Xcode wrapper
+```
+
+The exact generated names are confirmed in Lesson 00.02. Aleph Bet packages such as `alphabet` and `learning` are not separate Gradle modules in V1. They are organization and dependency conventions inside the shared-code module.
 
 ### Kotlin source sets
 
@@ -106,7 +114,7 @@ The intended improvement is not “Kotlin requires more folders.” It is that c
 
 | Concern | CMPMemeCreator | Aleph Bet | Why Aleph Bet differs |
 |---|---|---|---|
-| Gradle modules | One `composeApp` | One `composeApp` | We agree with the sample: extra modules would be premature. |
+| Gradle modules | One older combined `composeApp` module | One shared-code module plus thin `androidApp`; `iosApp` is the Xcode host | Current entry-point separation does not imply feature-module proliferation. |
 | Top-level features and capabilities | `meme_editor`, `meme_gallery` | `home`, `onboarding`, `alphabet`, `learning`, `practice`, `progress`, `settings` | Our product has several durable responsibilities rather than one dominant editor. |
 | Shared application code | `core/presentation`, `di`, root files | `app/navigation`, `app/di`, `design` | We name the reason for sharing and avoid an unrestricted `core` bucket. |
 | Domain layer | Export and storage contracts under `meme_editor/domain` | Letter models, session engine, progress rules, and repository contracts under their owning features | Learning behavior must remain independent of UI and persistence. |
@@ -151,7 +159,7 @@ The sample also demonstrates useful patterns we should retain: typed navigation,
 Our expected V1 destination is:
 
 ```text
-composeApp/src/commonMain/kotlin/.../
+shared/src/commonMain/kotlin/.../
   app/
     App.kt
     di/
@@ -433,7 +441,7 @@ Aleph Bet does not need meme export, cache storage, a share sheet, or pixel-conv
 
 ## When this map should evolve
 
-Keep the feature packages inside one `composeApp` through the three-letter vertical slice and the alphabet release. Consider extracting Gradle modules only when evidence appears:
+Keep the feature packages inside one shared-code module through the three-letter vertical slice and the alphabet release. Consider extracting feature Gradle modules only when evidence appears:
 
 - unrelated code repeatedly recompiles and profiling shows a useful module boundary;
 - developers repeatedly violate an important dependency rule;
@@ -447,7 +455,7 @@ The likely future module boundary is not automatically one module per current pa
 
 | React Native idea | KMP meaning here |
 |---|---|
-| One app workspace/package | One `composeApp` Gradle module |
+| One app workspace/package | One shared-code Gradle module plus thin native application hosts |
 | `src/features/alphabet` | `alphabet` Kotlin package in `commonMain` |
 | Native iOS/Android implementation | Matching code in `iosMain` and `androidMain` |
 | Zustand/Redux screen store | ViewModel exposing `StateFlow<UiState>` |

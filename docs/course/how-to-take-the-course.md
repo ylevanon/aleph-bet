@@ -6,7 +6,7 @@ Last updated: 2026-08-18
 
 ## The short answer
 
-The public repository currently contains a complete 59-lesson **map**, not 59 fully written lesson pages. Lesson 00.01 is the first and currently the only fully authored lesson page.
+The public repository contains a complete 59-lesson **map** and 9 fully written lesson pages. Lesson 00.01 is passed; Lessons 00.02–00.03 and the complete six-lesson Module 01 pack are ready.
 
 That is intentional, but it should have been stated more clearly. The course uses a rolling publication model so later explanations and exercises can respond to actual evidence instead of guessing the learner's Kotlin level months in advance.
 
@@ -35,7 +35,7 @@ They did not supply:
 - the first baseline lesson;
 - copied prose, source code, or exercises.
 
-Lesson 00.01 is an original diagnostic and course-calibration lesson. It is not a Kotlin rewrite of one of the food-ordering lessons.
+Lesson 00.01 is an original diagnostic and course-calibration lesson. The published Module 00 and Module 01 lessons are also application-specific KMP instruction, not Kotlin rewrites of food-ordering lessons.
 
 ## The three working surfaces
 

@@ -6,26 +6,27 @@ Last updated: 2026-08-18
 
 ## Initial module structure
 
-Start with one shared application module and the native iOS wrapper:
+Start from the current official Android-and-iOS shared-UI generator shape:
 
 ```text
-composeApp/
+shared/
   src/
     commonMain/
     commonTest/
     androidMain/
-    androidUnitTest/
     iosMain/
-    iosTest/
 
+androidApp/
 iosApp/
 ```
 
-This keeps the first project understandable while still teaching the defining KMP concept: shared source sets can only use APIs available to all their targets.
+`shared` contains common code/UI plus Kotlin platform implementations. `androidApp` contains the Android application entry point. `iosApp` is the native Xcode host. This current separation also avoids tying the project to the older layout where Android entry points lived inside a single `composeApp` module.
+
+The generator's actual names and source sets are authoritative. Lesson 00.02 records them before feature code begins; if the current compatible wizard produces a different valid name, the responsibility map survives and the docs are reconciled.
 
 ## Source-set responsibilities
 
-### `commonMain`
+### `shared/src/commonMain`
 
 Most of Aleph Bet belongs here:
 
@@ -38,16 +39,19 @@ Most of Aleph Bet belongs here:
 - Room declarations supported by Room KMP;
 - Koin annotations and common dependency wiring.
 
-### `androidMain`
+### `shared/src/androidMain`
 
 Keep only Android-specific work here:
 
-- Android application and activity entry points;
 - Android database path and builder details;
 - Android audio implementation;
 - Android lifecycle or permission integrations that cannot be shared.
 
-### `iosMain`
+### `androidApp`
+
+The Android application module owns the application plugin/configuration, manifest, and `Activity` that hosts the common root Composable. It depends on `shared`; feature/domain code does not depend on it.
+
+### `shared/src/iosMain`
 
 Keep only iOS-specific work here:
 
@@ -67,7 +71,7 @@ For a detailed comparison with the reference project, see [Package map: Aleph Be
 This is the expected destination, not a request to scaffold empty packages before they have responsibilities.
 
 ```text
-composeApp/src/commonMain/kotlin/.../
+shared/src/commonMain/kotlin/.../
   app/
     App.kt
     di/
@@ -111,9 +115,9 @@ composeApp/src/commonMain/kotlin/.../
 
 Platform implementations should use matching package names in `androidMain` and `iosMain` where practical, making a common contract and its target implementations easy to find together.
 
-## One module first
+## One shared-code module first
 
-Package boundaries are enough for the first vertical slice. Multiple Gradle feature modules would add KMP configuration and dependency management before the app has working behavior.
+The thin Android application entry module is a platform host, not a feature split. Package boundaries inside `shared` are enough for the first vertical slice. Additional Gradle feature modules would add KMP configuration and dependency management before the app has working behavior.
 
 Extract modules only when there is evidence that they help:
 
@@ -141,7 +145,7 @@ Avoid a generic `Platform` service containing unrelated operating-system behavio
 The shared resource tree will contain:
 
 ```text
-composeApp/src/commonMain/composeResources/
+shared/src/commonMain/composeResources/
   files/hebrew/
   files/audio/he/
   font/

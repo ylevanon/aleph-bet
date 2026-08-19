@@ -1,6 +1,6 @@
 # Build Aleph Bet V1: a personalized KMP course
 
-Status: Course map ready; 1 of 59 full lesson pages published; lesson 00.01 passed
+Status: Course map ready; 9 of 59 full lesson pages published; lesson 00.01 passed
 
 Last updated: 2026-08-18
 
@@ -31,7 +31,17 @@ Read these in order:
 3. [Complete course syllabus](syllabus.md)
 4. [Assessment and progress system](assessment-and-progress.md)
 5. [Lesson-page template](lesson-template.md)
-6. [Lesson 00.01: Baseline and course map](lessons/00-01-baseline-and-course-map.md)
+6. Module 00 lessons:
+   - [00.01: Baseline and course map](lessons/00-01-baseline-and-course-map.md)
+   - [00.02: Repository, Gradle, packages, and source sets](lessons/00-02-repository-build-packages-source-sets.md)
+   - [00.03: The build-run-debug loop](lessons/00-03-build-run-debug-loop.md)
+7. Module 01 lessons:
+   - [01.01: Values, variables, types, and expressions](lessons/01-01-values-variables-types-expressions.md)
+   - [01.02: Functions, named arguments, and null safety](lessons/01-02-functions-named-arguments-null-safety.md)
+   - [01.03: Data classes, value classes, enums, and sealed types](lessons/01-03-data-classes-value-classes-enums-sealed-types.md)
+   - [01.04: Collections and higher-order functions](lessons/01-04-collections-higher-order-functions.md)
+   - [01.05: Interfaces, mappings, and dependency direction](lessons/01-05-interfaces-mappings-dependency-direction.md)
+   - [01.06: `kotlin.test` and the Kotlin checkpoint](lessons/01-06-kotlin-test-checkpoint.md)
 
 Supporting product and technical decisions remain in the [product roadmap](../product/alphabet-v1-roadmap.md) and [architecture index](../architecture/README.md).
 
@@ -45,8 +55,8 @@ That estimate is intentionally longer than an eight-hour video. Video runtime ex
 
 | Module | Subject | Product milestone | Status |
 |---|---|---|---|
-| 00 | Orientation and toolchain | Shared starter runs; baseline recorded | Not started |
-| 01 | Kotlin through the alphabet domain | Valid three-letter domain model and tests | Not started |
+| 00 | Orientation and toolchain | Shared starter runs; baseline recorded | In progress — 1/3 passed |
+| 01 | Kotlin through the alphabet domain | Valid three-letter domain model and tests | Full lesson pack ready |
 | 02 | Compose foundations | Hard-coded accessible three-letter explorer | Not started |
 | 03 | KMP boundaries and resources | Real resources load on Android and iOS | Not started |
 | 04 | Alphabet vertical slice | Bundled repository, explorer, and letter detail | Not started |
