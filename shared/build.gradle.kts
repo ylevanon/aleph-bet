@@ -8,6 +8,13 @@ plugins {
 }
 
 kotlin {
+
+    jvm("desktop") {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
+        }
+    }
+
     listOf(
         iosArm64(),
         iosSimulatorArm64()
@@ -44,6 +51,11 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.compose.uiTooling)
         }
+        named("desktopMain") {
+            dependencies {
+                implementation(compose.desktop.currentOs)
+            }
+        }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
@@ -57,6 +69,12 @@ kotlin {
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
+    }
+}
+
+compose.desktop {
+    application {
+        mainClass = "com.ylevanon.alephbet.MainKt"
     }
 }
 

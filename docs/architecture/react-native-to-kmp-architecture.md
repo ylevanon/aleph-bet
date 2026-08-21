@@ -2,7 +2,7 @@
 
 Status: Learning and architecture guide
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 ## Purpose
 
@@ -270,10 +270,11 @@ Platform availability is expressed at compile time through source sets:
 commonMain   shared Compose, domain, ViewModels, repository contracts
 androidMain  Android entry point and platform implementations
 iosMain      iOS bridge and platform implementations
+desktopMain  JVM development host and substitutes for Hot Reload
 iosApp       Xcode host, signing, bundle configuration
 ```
 
-Code in `commonMain` cannot casually import an Android SDK or iOS framework type. A common `AudioPlayer` contract can be implemented with the appropriate APIs in each platform source set.
+Code in `commonMain` cannot casually import an Android SDK or iOS framework type. A common `AudioPlayer` contract can be implemented with the appropriate APIs in each platform source set. The desktop target exists to accelerate shared development; Android and iOS remain the V1 release targets.
 
 Prefer an ordinary common interface with injected implementations. Use `expect`/`actual` when the declaration itself truly needs target-specific compilation. We do not need one `expect`/`actual` pair per platform difference.
 

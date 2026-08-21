@@ -1,6 +1,6 @@
 # Assessment and progress
 
-Status: Lesson 00.02 in progress
+Status: Lesson 01.03 passed; Lesson 01.04 ready
 
 Last updated: 2026-08-19
 
@@ -50,12 +50,12 @@ Baseline levels are not assigned from language trivia or self-reported framework
 
 | Skill | Baseline | Target | Evidence source |
 |---|---:|---:|---|
-| Kotlin syntax and null safety | TBD | 4 | Domain and independent variation |
-| Kotlin type modeling | TBD | 5 | Session model and architecture defense |
+| Kotlin syntax and null safety | 3 | 4 | Visible value/expression implementation and later domain variation |
+| Kotlin type modeling | 3 | 5 | Letter/LetterId implementation, state-family reasoning, and later architecture defense |
 | Collections and functional transformations | TBD | 4 | Alphabet mapping and queue building |
-| Compose mental model | TBD | 4 | UI implementation and recomposition diagnosis |
+| Compose mental model | 2 | 4 | UI implementation and recomposition diagnosis |
 | Compose state and effects | 2 | 5 | Session UI and lifecycle debugging |
-| KMP source sets and boundaries | TBD | 5 | Platform placement challenge and audio integration |
+| KMP source sets and boundaries | 3 | 5 | Platform placement challenge, desktop target explanation, and audio integration |
 | Coroutines and Flow | TBD | 4 | ViewModel and Room flow integration |
 | ViewModels and UDF | 2 | 5 | Lesson/practice presentation and teach-back |
 | Architecture and package ownership | 2 | 5 | Placement exercises and final defense |
@@ -70,8 +70,8 @@ Baseline levels are not assigned from language trivia or self-reported framework
 
 | Module | Status | Passed lessons | Notes |
 |---|---|---:|---|
-| 00 Orientation and toolchain | In progress | 1/3 | KMP scaffold integrated; project-map work continues |
-| 01 Kotlin through the domain | Not started | 0/6 | — |
+| 00 Orientation and toolchain | Passed | 3/3 | Native hosts traced; Desktop Hot Reload established |
+| 01 Kotlin through the domain | In progress | 3/6 | Letter data/value types implemented; enum and sealed-family choices explained |
 | 02 Compose foundations | Not started | 0/6 | — |
 | 03 KMP boundaries and resources | Not started | 0/4 | — |
 | 04 Alphabet vertical slice | Not started | 0/5 | — |
@@ -83,29 +83,35 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | 10 Complete alphabet and quality | Not started | 0/5 | — |
 | 11 Release and defense | Not started | 0/4 | — |
 
-Current lesson: `00.02 — Repository, build, packages, and source sets`
+Current lesson: `01.04 — Collections and higher-order functions`
 
 Published inventory: 9/59 full lesson pages. The remainder of Module 00 and all of Module 01 are ready, so lesson publication is no longer blocking the current or next module.
 
 ### Current lesson record
 
 ```text
-Lesson ID: 00.02
-Status: In progress
-Date started: 2026-08-19
-Product artifact: Current KMP scaffold plus evidence-backed module/source-set map
-Checks run: Gradle sync succeeded; ./gradlew projects --stacktrace succeeded from the permanent repository
-Evidence: Correctly classified common, Android-only, Swift-host, and shared-test placement; distinguished iosApp from iosMain; generated the official starter
-Debugging evidence: Used Gradle output to disprove false IntelliJ unresolved-libs errors caused by the /tmp and /private/tmp path alias
-Private checkpoint commit: 6ec123a
+Lesson ID: 01.03
+Status: Passed
+Date started: 2026-08-20
+Date passed: 2026-08-20
+Product artifact: Shared starter represents Aleph and Bet as Letter data values with typed LetterId identity and read-only sound lists
+Checks run: Desktop Kotlin compilation succeeded after model and call-site changes
+Evidence: Implemented data/value classes, explained copy behavior, distinguished object/class payloads, and selected enum versus sealed families from product state shape
+Debugging evidence: Corrected mutable-list default and challenged an underspecified stateless Correct case when UI behavior required per-answer identity
+Application checkpoint: Local only; app source was not pushed because the configured GitHub remote remained public
 ```
 
-Most recent passed lesson: `00.01 — Baseline and course map` on 2026-08-18.
+Most recent passed lesson: `01.03 — Data classes, value classes, enums, and sealed types` on 2026-08-20.
 
 Current task-based evidence:
 
-- KMP source sets and boundaries: level 2 — distinguishes packages, modules, source sets, and native hosts; correctly places common domain, Android implementation, Swift entry-point, and shared-test code.
+- Functions and null safety: level 3 — extracts typed pure functions, calls with named arguments, uses a nullable default, and safely handles absent/empty content.
+- Kotlin type modeling: level 3 — implements a domain data class and typed value-class identity, reasons about immutable copying, and chooses enum/sealed/object/class shapes from required product state.
+- Kotlin declarations and expressions: level 3 — implements read-only local values, type inference, interpolation, and state-derived if expressions in the running application.
+- Recomposition reasoning: level 2 — explains that a derived val is initialized again from current observable state rather than reassigned.
+- KMP source sets and boundaries: level 3 — distinguishes packages, modules, source sets, and native hosts; correctly places common domain, Android implementation, Swift entry-point, shared-test, and desktop-development code.
 - Build/debugging: level 2 — separates an IDE analysis diagnostic from Gradle configuration evidence and uses the wrapper to identify the actual build result.
+- Development loop: level 3 — traces Android, iOS, and desktop hosts into shared Compose; distinguishes preview tooling from a real JVM host and from packaged phone targets.
 - ViewModels and unidirectional flow: level 2 — explains UI rendering/events and a longer-lived state coordinator.
 - Architecture and ownership: level 2 — separates ephemeral UI, durable learner state, and UI-independent learning decisions.
 - Room and relational modeling: level 2 — identifies individual attempts as durable facts and a future practice queue as a derived decision.
@@ -134,6 +140,8 @@ Current coaching calibration:
 - Use React Native comparisons to explain a delta, not to test dormant framework muscle memory.
 - Treat agentic engineering as established background, not curriculum; protect direct Kotlin implementation time.
 - Use teach-backs selectively for technical mental models; accept evidence already present in the conversation and avoid redundant meta-assignments.
+- Keep lessons product-first. Introduce Gradle and build configuration only when a dependency, target, or observed failure creates a concrete reason.
+- Use Desktop Hot Reload for the ordinary shared-UI loop and verify Android/iOS at meaningful checkpoints instead of after every edit.
 
 Current learning priorities:
 

@@ -1,261 +1,178 @@
 # Lesson 01.02 — Functions, named arguments, and null safety
 
-Status: Ready after Lesson 01.01
+Status: Passed
+
+Date passed: 2026-08-20
 
 Module: 01 — Kotlin through the alphabet domain
 
-Estimated focused time: 60–80 minutes
-
 ## Product outcome
 
-Shared Kotlin helpers describe letter sounds and optional related forms without unsafe null assertions. Tests cover both present and absent optional content.
+The shared starter now uses two plain Kotlin formatting functions:
 
-Use the Module 01 path convention established in Lesson 01.01.
+- alphabet progress is calculated outside Compose;
+- letter labels support optional sound hints without rendering `null` or using `!!`.
+
+The UI visibly renders Alef without a sound hint and Bet with `b or v`.
 
 ## Learning outcomes
 
-By the end, you can:
+By the end, the learner can:
 
-- write block-body and expression-body functions;
-- declare parameter and return types and call functions with named arguments;
-- use defaults when they express a stable API default;
-- model meaningful absence with nullable types;
-- use safe calls and the Elvis operator instead of `!!`;
-- distinguish “no related item” from “an empty collection of items.”
+- identify a function's inputs and output before writing it;
+- declare typed parameters and a return type;
+- distinguish a block body from an expression body;
+- call a function with named arguments;
+- use a default parameter;
+- distinguish `String` from `String?`;
+- handle null and empty strings without a forced non-null assertion;
+- explain why deterministic formatting logic does not belong to Compose.
 
-## Prerequisites
-
-- Lesson 01.01 passed.
-- `LetterBasicsTest` runs in `commonTest`.
-
-## Retrieval warm-up
-
-1. Why are pointed/display Hebrew forms represented as `String`?
-2. What is the result type of an `if` expression whose branches are strings?
-3. Which repeated code in your first three summaries suggests a function boundary?
-
-## Why the app needs this now
-
-The authored alphabet includes both repeated and optional shapes:
-
-- every letter can have zero or more sound descriptions;
-- Bet has multiple visual/sound forms;
-- final Kaf refers to a base letter, while Alef does not;
-- missing content must not become the string `"null"` or a crash.
-
-Functions let us name transformations. Nullability lets the type system distinguish a missing single relationship from a present value.
-
-## Mental model
+## Functions as boundaries
 
 A function is a typed contract:
 
 ```text
-parameters -> function body -> declared result
+inputs -> named behavior -> output
 ```
 
-Nullability adds a branch to the input space:
-
-```text
-String     = a string must exist
-String?    = a string may exist or may be null
-List<T>    = a list always exists and may be empty
-List<T>?   = the list itself may be absent (use only if that distinction matters)
-```
-
-For Aleph Bet:
-
-- an optional single `baseLetterId` can be `LetterId?` later;
-- sound descriptions should normally be `List<String>`, using an empty list when none are authored;
-- `!!` discards the compiler's safety and is not acceptable in this module.
-
-## React Native bridge
-
-| TypeScript | Kotlin | Difference that matters |
-|---|---|---|
-| optional parameter `name?: string` | `name: String? = null` | Kotlin requires explicit handling before using it as non-null. |
-| `value?.x ?? fallback` | `value?.x ?: fallback` | Kotlin's Elvis operator is `?:`; `null` is governed by the static type. |
-| object parameter for call-site labels | named arguments | Named arguments label ordinary parameters, but public API compatibility still depends on parameter names. |
-| non-null assertion `value!` | `value!!` | Both can hide bad assumptions; Kotlin throws if the value is null. |
-
-## Vocabulary
-
-| Term | Meaning in this lesson |
-|---|---|
-| Parameter | Named input declared by a function. |
-| Argument | Value supplied at a call site. |
-| Return type | Type a function promises to produce. |
-| Expression body | `fun name(...): Type = expression`. |
-| Block body | Function body inside braces; explicit `return` is required for returned values. |
-| Nullable type | A type marked `?` whose valid values include `null`. |
-| Safe call | `?.`, which continues only when the receiver is non-null. |
-| Elvis operator | `?:`, which supplies a value when the left side is null. |
-
-## Predict before running
-
-Predict all three results and explain the null path:
+The progress formatter receives two `Int` values and returns a `String`. It contains no Compose calls and no mutable state. Given the same values repeatedly, it produces the same result.
 
 ```kotlin
-fun relatedLabel(baseId: String?, fallback: String = "no base form"): String =
-    baseId?.let { "base: $it" } ?: fallback
-
-val alef = relatedLabel(baseId = null)
-val finalKaf = relatedLabel(baseId = "kaf")
-val custom = relatedLabel(baseId = null, fallback = "standalone")
+private fun formatAlphabetProgress(
+    introducedLetterCount: Int,
+    baseLetterCount: Int,
+): String {
+    return if (introducedLetterCount == baseLetterCount) {
+        "Alphabet complete"
+    } else {
+        "$introducedLetterCount of $baseLetterCount letters introduced"
+    }
+}
 ```
 
-Then predict whether this compiles:
+A block-body function uses braces and an explicit `return`. An expression-bodied function replaces the outer braces with `=`:
 
 ```kotlin
-val unsafeLength: Int = null.length
+private fun formatAlphabetProgress(
+    introducedLetterCount: Int,
+    baseLetterCount: Int,
+): String =
+    if (introducedLetterCount == baseLetterCount) {
+        "Alphabet complete"
+    } else {
+        "$introducedLetterCount of $baseLetterCount letters introduced"
+    }
 ```
 
-Do not run until you can name the type error.
+Both forms are valid. Short transformations often read well as expression bodies; blocks remain useful when a function needs several steps.
 
-## Minimal demonstration
+## Named arguments
 
-Create `LetterFunctionsTest.kt` in the Module 01 test-lab package. Type the `relatedLabel` function and assertions for its three calls.
+The call site uses labels:
 
-Change the expression body into a block body and make it pass again. Then return to the version you find clearest and explain why.
-
-Expected result: you have seen both body forms; no application model has been revealed.
-
-## Guided lab
-
-### Step 1 — Extract sound-count language
-
-Turn Lesson 01.01's sound-count `when` into a function.
-
-Requirements:
-
-- input is a count;
-- return type is explicit;
-- negative counts are rejected or deliberately classified—choose and defend one behavior;
-- branches produce the same three user-facing labels used previously.
-
-Write the function before its tests, then add tests for `0`, `1`, `2`, and the negative behavior.
-
-### Step 2 — Name a display helper
-
-Write a function that combines a glyph, Latin name, and sound-count label. Call it once with positional arguments and once with named arguments.
-
-Compare the call sites. Named arguments are most useful when adjacent parameters have similar types or unclear meaning; they are not required at every call.
-
-### Step 3 — Model one optional relationship
-
-Write a helper that accepts an optional base-letter ID and returns a readable relationship label. Cover:
-
-- a normal letter with no base ID;
-- `final_kaf` with base ID `kaf`.
-
-Use either an explicit null check, a safe-call chain, or Elvis based on clarity. Do not use `!!`.
-
-### Step 4 — Decide null versus empty
-
-For each concept, choose `T`, `T?`, `List<T>`, or `List<T>?` and explain the product meaning:
-
-1. Latin letter name.
-2. Sound descriptions.
-3. Base-letter ID for a final form.
-4. A loader result before content has been loaded—note that this may later be modeled as a state rather than null.
-
-The goal is not “avoid all null.” The goal is to make invalid ambiguity impossible or visible.
-
-### Step 5 — Remove accidental nullable propagation
-
-Write one version of a helper that returns `String?` unnecessarily, then inspect how every caller must handle it. Change the helper to return a non-null fallback `String` and compare the call sites.
-
-Explain where the absence was resolved.
-
-## Independent task
-
-Implement and test a helper for an optional explanatory note:
-
-```text
-Input:
-- letter Latin name
-- optional note
-- configurable fallback text
-
-Behavior:
-- a non-blank note produces "<name>: <note>"
-- null or blank note produces the fallback
+```kotlin
+val progressText = formatAlphabetProgress(
+    introducedLetterCount = introducedLetterCount,
+    baseLetterCount = baseLetterCount,
+)
 ```
 
-You choose the signature, body style, default value, and whether a small private helper improves clarity.
+Named arguments matter here because both arguments are `Int`. A reversed positional call would compile but express the wrong relationship. The labels expose the mapping at the call site.
 
-### Acceptance criteria
+Named arguments are not mandatory everywhere. Use them when they remove ambiguity or make a call scan more clearly.
 
-- Parameter and return types are explicit at the function boundary.
-- At least one call uses named arguments because it improves readability.
-- Null and blank are both tested.
-- A present note is tested.
-- No `!!` is used.
-- Collections are not made nullable when an empty list carries the full meaning.
-- The code remains in `commonTest` and has no platform/framework dependencies.
+## Nullability
 
-## Test and debugging plan
+Kotlin types are non-null by default:
 
-1. Run only `LetterFunctionsTest`.
-2. Cover every null/non-null branch before refactoring.
-3. For a compilation error, identify whether the receiver is nullable or the function return is nullable.
-4. For a failed expectation, state whether the contract or implementation is wrong before editing.
-5. Temporarily attempt a nullable operation without a safe call; explain the compiler's suggested alternatives, then remove it.
+```kotlin
+val hint: String = null // does not compile
+```
 
-## Hint ladder
+A question mark adds `null` to the type's valid values:
 
-<details>
-<summary>Hint 1 — Behavior</summary>
+```kotlin
+val hint: String? = null
+```
 
-Resolve absent or blank notes at the boundary so callers receive a definite display string.
+The letter-label formatter accepts an optional sound hint with a default:
 
-</details>
+```kotlin
+private fun formatLetterLabel(
+    glyph: String,
+    latinName: String,
+    soundHint: String? = null,
+): String {
+    if (soundHint.isNullOrEmpty()) {
+        return "$glyph — $latinName"
+    }
+    return "$glyph — $latinName ($soundHint)"
+}
+```
 
-<details>
-<summary>Hint 2 — Null and blank</summary>
+The default lets Alef omit the argument. Bet supplies a non-null value with a named argument.
 
-Kotlin provides operations that can treat a nullable string as absent when it is null or blank. You may also express the branches with a clear `if`.
+`isNullOrEmpty()` is defined for nullable strings and returns true for both `null` and `""`. It does not treat whitespace-only text as empty; `isNullOrBlank()` would.
 
-</details>
+No `!!` is needed. A forced assertion would turn missing content into a runtime crash instead of handling it in the function's contract.
 
-<details>
-<summary>Hint 3 — Signature shape</summary>
+## Defaults are separate from nullability
 
-Start with three parameters returning `String`. Give only the fallback parameter a default if the default is product-wide and unambiguous.
+This declaration is invalid:
 
-</details>
+```kotlin
+soundHint: String = null
+```
 
-No complete independent-task solution is published before an attempt.
+`String` cannot contain `null`.
 
-## Teach-back
+If the default is removed, callers must provide a non-null string. If a non-null default is provided, callers may still omit the argument:
 
-Explain why `baseLetterId` may be nullable while `sounds` should normally be a non-null list, and how the chosen helper prevents null handling from spreading into UI callers.
+```kotlin
+soundHint: String = "No sound hint"
+```
 
-## Exit ticket
+Whether absence and a fallback string mean the same product state is a modeling decision, not merely syntax.
 
-1. What is the difference between an expression-body and block-body function?
-2. When do named arguments improve a call site?
-3. What valid value does `String?` add to `String`?
-4. When should an absent collection be represented by `emptyList()`?
-5. What guarantee do you throw away with `!!`?
+## Actual implementation evidence
 
-## Review rubric
+The learner:
 
-This lesson assesses function design, null-safety reasoning, branch tests, and Kotlin clarity. Passing requires the independent optional-note behavior and a defensible null-versus-empty explanation.
+- identified two `Int` inputs and a `String` output before extraction;
+- explained that no mutable declarations were required;
+- extracted progress formatting from the Composable;
+- used named arguments after recognizing the risk of adjacent positional `Int` values;
+- designed a nullable sound-hint parameter with a null default;
+- independently found `isNullOrEmpty()`;
+- rendered Alef without a hint and Bet with `b or v`;
+- avoided `!!`;
+- asked how the formatter would look without `return`, leading to the expression-body comparison.
+
+The coach corrected only mechanical visibility, punctuation, spacing, and call formatting after the learner requested that level of review handling.
+
+## Review policy established
+
+- The learner revises mistakes in the concept currently being practiced.
+- The coach may repair mechanical visibility, spacing, formatting, or small typos and then report the change.
+- Architecture or behavior changes are discussed before implementation.
 
 ## Completion evidence
 
-- [ ] Function/null predictions are recorded.
-- [ ] Sound-count and relationship helpers pass their edge tests.
-- [ ] Null-versus-empty choices are explained.
-- [ ] Independent optional-note helper passes.
-- [ ] No unsafe null assertion remains.
-- [ ] Review findings are resolved.
-- [ ] Lesson commit exists in the private application history.
-- [ ] Progress record is updated.
+- [x] Function inputs and output are predicted correctly.
+- [x] Plain formatting logic is extracted from Compose.
+- [x] Named arguments clarify adjacent same-typed parameters.
+- [x] A nullable parameter and default are implemented.
+- [x] Null and empty strings produce a safe label.
+- [x] Present optional content renders visibly.
+- [x] No unsafe null assertion is used.
+- [x] Block and expression function bodies are distinguished.
+- [x] Desktop Kotlin compilation succeeds.
+- [x] Public progress record is updated.
 
 ## Next retrieval
 
-Lesson 01.03 replaces loose related values with types that encode valid letter states. Nullable relationships and non-null collections return in the content-mapping and Room modules.
+Lesson 01.03 replaces loose glyph, name, and hint parameters with Kotlin types that keep related letter facts together and represent valid variants explicitly.
 
 ## References
 

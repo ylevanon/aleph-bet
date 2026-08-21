@@ -18,12 +18,64 @@ import org.jetbrains.compose.resources.painterResource
 
 import alephbet.shared.generated.resources.Res
 import alephbet.shared.generated.resources.compose_multiplatform
+import com.ylevanon.alephbet.alphabet.domain.Letter
+import com.ylevanon.alephbet.alphabet.domain.LetterId
+
+
+private fun formatAlphabetProgress(introducedLetterCount: Int, baseLetterCount: Int): String {
+    if (introducedLetterCount == baseLetterCount) {
+       return "Alphabet complete"
+    } else {
+       return "$introducedLetterCount of $baseLetterCount letters introduced"
+    }
+}
+
+private fun formatLetterLabel(letter: Letter): String =
+    if (letter.sounds.isEmpty()) {
+        "${letter.glyph} — ${letter.latinName}"
+    } else {
+        "${letter.glyph} — ${letter.latinName} (${letter.sounds.joinToString(" or ")})"
+    }
 
 @Composable
 @Preview
 fun App() {
+    val screenTitle: String = "Learn the Hebrew alphabet"
+
+    val baseLetterCount = 22
+    val introducedLetterCount = 3
+    val progressText = formatAlphabetProgress(
+        introducedLetterCount = introducedLetterCount,
+        baseLetterCount = baseLetterCount,
+    )
+
+    val aleph = Letter(
+        id = LetterId("aleph"),
+        order = 1,
+        glyph = "א",
+        latinName = "Aleph",
+    )
+    val bet = Letter(
+        id = LetterId("bet"),
+        order = 2,
+        glyph = "ב",
+        latinName = "Bet",
+        sounds = listOf("b", "v"),
+    )
+
+    val gimel = Letter(
+        id = LetterId("gimel"),
+        order = 3,
+        glyph = "ג",
+        latinName = "Gimel",
+        sounds = listOf("g"),
+    )
+
+    val letters = listOf(aleph, gimel, bet).sortedBy { it.order }
+
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
+        val buttonLabel = if (showContent) "Hide greeting" else "Start learning"
         Column(
             modifier = Modifier
                 .background(MaterialTheme.colorScheme.primaryContainer)
@@ -31,8 +83,16 @@ fun App() {
                 .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
+            Text(screenTitle, color = MaterialTheme.colorScheme.onPrimaryContainer)
+            Text(progressText)
+            letters.forEach { letter ->
+                Text(
+                    text = formatLetterLabel(letter),
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                )
+            }
             Button(onClick = { showContent = !showContent }) {
-                Text("Click me!")
+                Text(buttonLabel)
             }
             AnimatedVisibility(showContent) {
                 val greeting = remember { Greeting().greet() }

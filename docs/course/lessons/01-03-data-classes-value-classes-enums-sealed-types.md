@@ -1,265 +1,238 @@
 # Lesson 01.03 — Data classes, value classes, enums, and sealed types
 
-Status: Ready after Lesson 01.02
+Status: Passed on 2026-08-20
 
 Module: 01 — Kotlin through the alphabet domain
 
-Estimated focused time: 75–100 minutes
-
 ## Product outcome
 
-Alef, Bet, and Gimel are represented by domain-shaped Kotlin types that prevent unrelated strings from being confused and make important letter-form cases explicit.
+The running shared application now represents Aleph and Bet as `Letter` values rather than unrelated glyph, name, and sound arguments. Letter identity is protected by a `LetterId` value class.
 
-Use the Module 01 path convention established in Lesson 01.01. Keep this lesson's first draft in the learning test package; promote reviewed declarations to `alphabet/domain` only in Lesson 01.06.
+Enums and sealed types were learned through product-state modeling, but were deliberately not made part of the accepted V1 domain merely to demonstrate syntax. They return when Progress and Practice create real requirements.
 
 ## Learning outcomes
 
-By the end, you can:
+By the end of this lesson, the learner can:
 
-- use a data class for immutable values whose properties define equality;
-- wrap a primitive in a value class to create a distinct domain type;
-- use an enum for a fixed set of singleton choices;
-- use a sealed interface when a closed family has cases with different data;
-- use exhaustive `when` expressions over enums and sealed types;
-- reject invalid states at construction boundaries;
-- compare type designs by the invalid states they permit.
+- explain why a data class fits an immutable domain value;
+- use generated data-class equality and `copy()` without mutating the original;
+- distinguish a read-only property from a mutable collection stored in that property;
+- use a value class to prevent unrelated strings from being interchangeable;
+- choose an enum for fixed, same-shaped singleton values;
+- choose a sealed family when cases require different data;
+- distinguish a singleton `object` from separately constructed class instances;
+- avoid introducing domain types before the product state they model exists.
 
-## Prerequisites
+## Starting problem
 
-- Lesson 01.02 passed.
-- You can write functions with explicit types and handle a nullable value without `!!`.
-
-## Retrieval warm-up
-
-1. Why is an optional base-letter relationship a better nullable candidate than a sounds list?
-2. If a helper always produces fallback text, should its return type remain `String?`?
-3. Name two different product values that might both be raw `String` but should not be interchangeable.
-
-## Why the app needs this now
-
-Loose primitives make invalid calls easy:
-
-```text
-loadLetter(glyph)       // compiles if both glyph and ID are String
-playSound(letterId)     // compiles if both sound ID and letter ID are String
-```
-
-They also allow invalid combinations, such as a final form without a base-letter relationship. Kotlin's type system can move those failures from a distant screen into compilation or construction.
-
-The goal is not to replace every string with a class. Add a type when it communicates a domain boundary or excludes a meaningful mistake.
-
-## Mental model
-
-Choose a type from the shape of valid values:
-
-| Need | Candidate | Reason |
-|---|---|---|
-| Several named properties define a value | `data class` | Generated equality, `copy`, destructuring, and readable output. |
-| One primitive needs a distinct domain identity | `value class` | `LetterId` cannot be passed where an arbitrary `String` is required without explicit conversion. |
-| Fixed singleton choices with the same shape | `enum class` | Every entry is one instance of the same type. |
-| Fixed cases carry different required data | `sealed interface`/class | Each subtype can require its own properties; `when` can be exhaustive. |
-
-### Model states, not database rows
-
-The content JSON is an authoring shape. A domain type should express what application behavior requires, even when that shape differs from JSON. DTO mapping arrives in Lesson 01.05 and serialization in Module 04.
-
-## React Native bridge
-
-| TypeScript pattern | Kotlin type | Where Kotlin is stricter |
-|---|---|---|
-| object type/interface | data class | Construction, equality, nullability, and copying are compiler-defined. |
-| branded string | value class | A real Kotlin type participates in overload/type checking. |
-| string union | enum or sealed hierarchy | `when` can be checked exhaustively; sealed cases may carry different data. |
-| discriminated union | sealed interface with data classes/objects | Implementations are constrained by package/module rules. |
-
-## Vocabulary
-
-| Term | Meaning in this lesson |
-|---|---|
-| Structural/value equality | Values compare by meaningful properties rather than object identity. |
-| Data class | Class intended primarily to hold data, with generated value-oriented members. |
-| Value class | A distinct type wrapping one underlying value. |
-| Invariant | Rule that must hold for every valid instance. |
-| Enum entry | One predefined singleton value in an enum. |
-| Sealed hierarchy | Closed family of known direct subtypes. |
-| Exhaustive `when` | A `when` that covers every possible case and needs no `else`. |
-
-## Predict before running
-
-Read this minimal, unrelated-to-production example:
+The previous formatter accepted separate values:
 
 ```kotlin
-data class DisplayName(val pointed: String, val latin: String)
-
-val first = DisplayName(pointed = "אָלֶף", latin = "alef")
-val second = DisplayName(pointed = "אָלֶף", latin = "alef")
-val renamed = first.copy(latin = "aleph")
+formatLetterLabel(
+    glyph = "ב",
+    latinName = "Bet",
+    soundHint = "b or v",
+)
 ```
 
-Predict:
+This lets a caller accidentally combine Bet's glyph with Aleph's name. The parameters are individually valid strings, but the combination is invalid.
 
-1. whether `first == second`;
-2. whether `first === second`;
-3. whether `first` changes when `renamed` is created;
-4. the Latin value in `renamed`.
+The product needs a value that keeps one letter's facts together.
 
-Then explain why value equality is useful in tests and immutable UI state.
+## Part 1 — Model a letter with a data class
 
-## Minimal demonstration
+The first domain model was created in `alphabet/domain`:
 
-In `LetterTypesTest.kt`, type `DisplayName` and its predictions as assertions. Then create an enum with two lesson-only choices, such as `ReadingDirection.LEFT_TO_RIGHT` and `RIGHT_TO_LEFT`, and write an exhaustive `when` that returns a label.
+```kotlin
+data class Letter(
+    val id: LetterId,
+    val order: Int,
+    val glyph: String,
+    val latinName: String,
+    val sounds: List<String> = emptyList(),
+)
+```
 
-This demonstration shows mechanics. It is not the Aleph Bet production model.
+Why a data class fits:
 
-Expected result: the compiler accepts the `when` without `else` because all enum entries are covered. Add a third entry briefly and observe the compile failure before adding its branch.
+- its properties describe the value;
+- two letters with equal properties compare structurally with `==`;
+- `copy()` can derive a changed value without mutating the original;
+- `toString()` is useful during tests and debugging.
 
-## Guided lab
+### `val` does not make every nested object immutable
 
-### Step 1 — Protect letter identity
+This draft was corrected:
 
-Design a `LetterId` value class wrapping `String`.
+```kotlin
+val sounds: List<String> = mutableListOf()
+```
 
-Constraints:
+`val` prevents replacing the `sounds` reference. It does not promise that a mutable collection stored behind that reference can never change. The model instead uses:
 
-- blank identifiers are invalid;
-- construction makes the validation boundary visible;
-- callers can deliberately access the underlying authored value when mapping or display requires it;
-- a `LetterId` cannot be passed as an arbitrary `String` accidentally.
+```kotlin
+val sounds: List<String> = emptyList()
+```
 
-Current Kotlin uses `@JvmInline value class` for value classes that include a JVM/Android compilation. Type the declaration yourself after reading the official value-class section.
+Authored sound values are supplied with read-only lists such as `listOf("b", "v")`.
 
-Test valid `alef` and invalid blank input. Read the failure produced by your chosen invariant mechanism.
+## Part 2 — Use the model at the UI boundary
 
-### Step 2 — Represent a sound value
+The shared application constructs Aleph and Bet as complete values:
 
-Design a data class for one authored letter sound. Decide which of these are required versus optional:
+```kotlin
+val aleph = Letter(
+    id = LetterId("aleph"),
+    order = 1,
+    glyph = "א",
+    latinName = "Aleph",
+)
 
-- stable sound ID such as `b`;
-- human description such as `b with dagesh`;
-- pointed sample such as `בָּ`;
-- future audio resource identity.
+val bet = Letter(
+    id = LetterId("bet"),
+    order = 2,
+    glyph = "ב",
+    latinName = "Bet",
+    sounds = listOf("b", "v"),
+)
+```
 
-For this lesson, do not invent an audio path that the reviewed content does not yet guarantee. Test value equality and one `copy` operation.
+The formatter now accepts one coherent value:
 
-### Step 3 — Compare enum and sealed form designs
+```kotlin
+private fun formatLetterLabel(letter: Letter): String
+```
 
-Consider these product constraints:
+This is more than shorter call-site syntax. It prevents glyph, name, and sound facts from different letters being mixed accidentally.
 
-- a standard form requires a glyph;
-- a final form requires a glyph **and** a base `LetterId`;
-- future pointed/alternate forms may require a sound reference;
-- callers should not ask a standard form for a fake base ID.
+`joinToString(" or ")` converts Bet's sound list into the display phrase `b or v`. Full collection practice follows in Lesson 01.04.
 
-First sketch an enum design. List the nullable properties or external maps it would need.
+## Part 3 — Understand generated data-class behavior
 
-Then sketch a sealed `LetterForm` family whose cases carry their required data. Choose the simpler valid model and explain the tradeoff. The expected direction is a sealed family if case-specific data is required, but your case names are not prescribed.
+Given:
 
-### Step 4 — Make behavior exhaustive
+```kotlin
+val anotherBet = bet.copy(sounds = listOf("v"))
+```
 
-Write a function that accepts your `LetterForm` type and returns a human-readable classification. Use `when` without `else`.
+The learner correctly predicted:
 
-Add a new form subtype temporarily. Observe what the compiler requires at the `when` call site, then implement the new branch or remove the experimental subtype.
+- `id`, `order`, `glyph`, and `latinName` remain the same;
+- only `sounds` changes in `anotherBet`;
+- the original `bet` does not change.
 
-### Step 5 — Assemble three letter values
+This immutable-update pattern becomes important when Compose and ViewModels expose UI state.
 
-Design a data class that can represent the reviewed facts needed for Alef, Bet, and Gimel:
+## Part 4 — Protect identity with a value class
 
-- stable ID;
-- order;
-- glyph/name information;
-- a non-empty or intentionally empty list of sound values;
-- form information.
+If letter IDs and lesson IDs are both plain strings, Kotlin allows them to be mixed up. A value class gives one primitive a distinct domain identity:
 
-State and test at least three invariants. Candidates include positive order, non-blank glyph/name, stable ID validation, and consistency between a primary glyph and form. Avoid invariants based on editorial claims we have not reviewed.
+```kotlin
+@JvmInline
+value class LetterId(val value: String)
+```
 
-Construct Alef, Bet, and Gimel. Bet must represent its distinct authored `b` and `v` sound samples without flattening them into one ambiguous string.
+Now a function expecting `LetterId` cannot accidentally receive an arbitrary `String` or a future `LessonId`.
 
-## Independent task
+### Data class versus value class
 
-Add one new case that forces a type-design choice: a final Kaf form with ID `final_kaf`, glyph `ך`, and base ID `kaf`.
+| Type | Use here |
+|---|---|
+| `data class Letter` | Groups several related properties that define a complete value. |
+| `value class LetterId` | Gives one underlying `String` a distinct compile-time identity. |
 
-Do not add all Kaf content. The task is to prove that your form model requires the base relationship for a final form and does not require it for a standard form.
+Validation such as rejecting blank IDs will be introduced with construction-boundary tests rather than added without a failing example.
 
-### Acceptance criteria
+## Part 5 — Enum versus sealed family
 
-- `LetterId` is a distinct validated type.
-- Data classes are used for values whose properties define equality.
-- An enum is used only for same-shaped singleton choices, or its omission is justified.
-- A sealed type represents at least one family with case-specific data.
-- `when` over that family is exhaustive without `else`.
-- A final form cannot be constructed without its base `LetterId`.
-- Standard forms do not carry a meaningless nullable base ID.
-- Alef, Bet, and Gimel values and the final-Kaf form test pass.
-- No framework, persistence, serialization, or platform annotations leak into the domain exercise.
+An enum is a good fit when all valid options are predefined singleton values with the same shape:
 
-## Test and debugging plan
+```kotlin
+enum class MasteryLevel {
+    NEW,
+    LEARNING,
+    MASTERED,
+}
+```
 
-1. Test each invariant at its construction boundary.
-2. Test data-class equality and `copy` separately from domain rules.
-3. Trigger one non-exhaustive `when` compile error and explain it.
-4. Attempt one invalid cross-type call using `LetterId` and `String`; interpret the compiler error, then remove it.
-5. Run the full Module 01 test package after the focused test passes.
+Whether those exact mastery categories belong in V1 remains a Progress-domain decision. The declaration is a syntax example, not yet an accepted product requirement.
 
-## Hint ladder
+A sealed family is useful when the valid cases form a closed set but require different information. The product discussion used temporary answer feedback:
 
-<details>
-<summary>Hint 1 — Choose by valid states</summary>
+- unanswered carries no values;
+- correct may carry the selected letter if the UI highlights it;
+- incorrect may carry both the selected and correct letter IDs.
 
-If two cases require different properties, ask whether one class with nullable fields permits combinations the product says are impossible.
+That could eventually have this shape:
 
-</details>
+```kotlin
+sealed interface AnswerFeedback {
+    data object Unanswered : AnswerFeedback
 
-<details>
-<summary>Hint 2 — Value class</summary>
+    data class Correct(
+        val letterId: LetterId,
+    ) : AnswerFeedback
 
-The wrapper has one primary constructor property. Put validation in initialization and expose the value intentionally.
+    data class Incorrect(
+        val selectedLetterId: LetterId,
+        val correctLetterId: LetterId,
+    ) : AnswerFeedback
+}
+```
 
-</details>
+This is intentionally a discussion model. The final type should be designed alongside `PracticeUiState`, because the current question may already own some of this information.
 
-<details>
-<summary>Hint 3 — Sealed shape</summary>
+### Object versus class
 
-Define a sealed interface with the properties common to all forms. Use a data class for each form whose additional fields are required by that case.
+- An `object` is one shared singleton. It cannot receive different constructor values for different occurrences.
+- A class creates separate instances. Each instance can carry its own constructor values.
+- A `data object` provides value-oriented generated behavior for a stateless singleton in a sealed family.
+- A `data class` provides value-oriented generated behavior for constructed instances with data.
 
-</details>
+## Architectural placement
 
-No complete domain model is published before your design attempt.
+- `Letter` and `LetterId` belong in `alphabet/domain` because they describe bundled alphabet content independently of UI and storage.
+- Answer feedback should eventually belong to Practice presentation/session ownership, not Alphabet merely because it references a letter ID.
+- Mastery terminology should eventually belong to Progress if the scheduling rules prove that V1 needs discrete mastery levels.
 
-## Teach-back
+Referencing a type from another domain does not transfer ownership of the behavior to that type's package.
 
-Defend one use each of data class, value class, enum, and sealed type—or explain why the domain did not need one of them. Focus on invalid states prevented, not syntax preference.
+## Evidence and review
 
-## Exit ticket
+The learner:
 
-1. Why is `LetterId` stronger than `typealias LetterId = String`?
-2. When does a data class use value equality?
-3. When is an enum less suitable than a sealed interface?
-4. What causes a `when` expression over a sealed type to lose exhaustiveness?
-5. Which invalid state does your final-form design prevent?
+- chose non-null letter facts and an empty list for absent sounds;
+- rejected putting an audio player service inside `Letter`;
+- created the `Letter` data class and `LetterId` value class;
+- instantiated Aleph and Bet in the running shared application;
+- explained what changes and what remains unchanged during `copy()`;
+- identified that answer-feedback cases may require different payloads;
+- challenged an underspecified `Correct` singleton and correctly concluded that it becomes a class if the UI needs a letter ID;
+- distinguished current screen feedback from the durable attempt later stored in Room.
 
-## Review rubric
+Desktop Kotlin compilation passed after the model and call-site changes.
 
-This lesson assesses Kotlin type modeling, invariants, exhaustiveness, and simplicity. More types are not automatically better; every wrapper or hierarchy must prevent a concrete mistake or clarify behavior.
+## Exit ticket answers
 
-## Completion evidence
+1. A data class groups the related properties of one letter and gives them structural equality.
+2. A value class prevents a letter ID from being confused with unrelated strings while normally retaining lightweight runtime representation.
+3. `copy()` returns a new value; it does not mutate the original data-class instance.
+4. An enum fits fixed same-shaped singleton choices; a sealed family fits a fixed set of cases with differing required data.
+5. A stateless case can be an object. A case that must carry per-occurrence values must be a class.
 
-- [ ] Equality predictions pass.
-- [ ] `LetterId` validation and cross-type behavior are tested.
-- [ ] Alef, Bet, and Gimel can be represented.
-- [ ] Final-Kaf independent case proves the base relationship.
-- [ ] Exhaustiveness failure is interpreted.
-- [ ] Type choices are defended in product terms.
-- [ ] Review findings are resolved.
-- [ ] Lesson commit exists in the private application history.
-- [ ] Progress record is updated.
+## Completion record
 
-## Next retrieval
+- [x] `Letter` is represented by an immutable data class.
+- [x] Missing sounds use an empty read-only list rather than null.
+- [x] The formatter accepts a coherent `Letter` value.
+- [x] Aleph and Bet render from domain values.
+- [x] `LetterId` prevents raw-string identity mixing.
+- [x] Data-class copy behavior is explained correctly.
+- [x] Enum and sealed-family selection is explained in product terms.
+- [x] Object versus class payload behavior is explained.
+- [x] Desktop Kotlin compilation succeeds.
+- [x] Product types without current requirements remain provisional.
 
-Lesson 01.04 places these values in collections and builds stable lookups and transformations. Sealed state modeling returns in the lesson engine and presentation modules.
+## Next lesson
 
-## References
-
-- [Kotlin data classes](https://kotlinlang.org/docs/data-classes.html)
-- [Kotlin inline value classes](https://kotlinlang.org/docs/inline-classes.html)
-- [Kotlin enum classes](https://kotlinlang.org/docs/enum-classes.html)
-- [Kotlin sealed classes and interfaces](https://kotlinlang.org/docs/sealed-classes.html)
+Lesson 01.04 replaces the two local letter variables with an authored collection and uses Kotlin collection operations to order, find, filter, and transform alphabet content.

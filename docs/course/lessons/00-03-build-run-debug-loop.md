@@ -1,261 +1,161 @@
-# Lesson 00.03 — The build-run-debug loop
+# Lesson 00.03 — The fast shared-UI development loop
 
-Status: Ready after Lesson 00.02
+Status: Passed
+
+Date passed: 2026-08-19
 
 Module: 00 — Orientation and toolchain
 
-Estimated focused time: 60–90 minutes; first iOS dependency resolution may add setup time
-
 ## Product outcome
 
-The generated shared starter renders on an Android emulator and an iOS simulator. You can run the smallest relevant build, read the first useful compiler error, and verify a fix without changing unrelated code.
+The generated shared starter runs on Android and iOS. A development-only desktop target renders the same shared `App()` with Compose Hot Reload, so ordinary shared-UI changes do not require rebuilding a phone target after every save.
+
+## Why this lesson changed
+
+The original lesson overemphasized Gradle stages, task discovery, deliberate compiler failures, and debugger mechanics before the learner had made a meaningful product change. That sequence produced configuration fatigue instead of useful Kotlin practice.
+
+Build internals remain relevant, but they will now be introduced just in time when a real dependency or failure requires them. This lesson establishes the feedback loop needed for product-first instruction.
 
 ## Learning outcomes
 
-By the end, you can:
+By the end, the learner can:
 
-- select the correct run configuration or Gradle task for a target;
-- distinguish Gradle sync, compilation, packaging, installation, and application runtime;
-- reduce a long failure report to the first relevant cause;
-- use logs, breakpoints, and a deliberately introduced compiler error as evidence;
-- maintain a short build ledger for asynchronous learning sessions.
+- trace Android and iOS from their native entry points into the shared `App()`;
+- explain the Swift-to-Kotlin Compose bridge at a useful level;
+- distinguish a Compose preview, Desktop Hot Reload, and a real platform run;
+- explain why one `commonMain` composable is compiled separately for Android, iOS, and desktop;
+- use desktop as the fast shared-UI host and Android/iOS as platform-verification targets.
 
-## Prerequisites
+## The three execution environments
 
-- Lesson 00.02 passed.
-- Its authoritative project map is available.
-- An Android virtual device and an iOS simulator are installed.
-
-## Retrieval warm-up
-
-1. Where do you verify which Gradle modules exist?
-2. What is the difference between `iosMain` and `iosApp`?
-3. Where would a pure `Letter` model and an Android-only audio implementation compile?
-
-## Why the app needs this now
-
-Every later lesson depends on a trustworthy feedback loop. If a test, preview, emulator, and simulator all fail for different reasons, adding application code only increases ambiguity. We first establish a known-good baseline and a repeatable way to isolate failures.
-
-## Mental model
-
-“Build the app” hides several stages:
-
-```text
-Gradle sync
-    -> resolve configuration and dependencies
-    -> compile Kotlin for a selected target
-    -> package/link the platform application
-    -> install and launch it
-    -> observe runtime behavior and logs
-```
-
-A failure belongs to one stage. Diagnose the stage before proposing the fix.
-
-Use this loop:
-
-```text
-Reproduce -> read first relevant cause -> form one hypothesis
-          -> run the smallest discriminating check -> change one thing
-          -> rerun the same check -> record the result
-```
-
-## React Native bridge
-
-| Familiar pattern | KMP equivalent | Important difference |
+| Environment | What runs | Primary purpose |
 |---|---|---|
-| Metro starts successfully | Gradle sync/configuration succeeds | Sync does not prove either native app compiles or launches. |
-| TypeScript/Babel compile error | Kotlin compiler error | The error may be specific to a target compilation or source set. |
-| Xcode/Gradle native build under RN | Xcode/Gradle native build here | Shared Kotlin is compiled into each native application's dependency graph. |
-| Fast Refresh and console logs | Compose/app rerun, debugger, platform logs | The exact iteration mechanism varies by target and IDE configuration. |
+| Compose Preview | One annotated Composable inside IDE preview tooling | Isolated components, screen states, themes, and layout variations |
+| Desktop Hot Reload | A real JVM Compose window running shared code | Rapid shared UI, navigation, state, and common-logic iteration |
+| Android/iOS run | The packaged platform application and its native host | Platform integration, fonts, safe areas, gestures, services, and release behavior |
 
-## Vocabulary
+A preview is not the complete application. Desktop is a real Compose application, but it is not an Android emulator or iOS simulator. Platform verification remains required.
 
-| Term | Meaning in this lesson |
-|---|---|
-| Sync | Gradle evaluates project configuration and resolves the model used by the IDE. |
-| Task | A named Gradle unit of work. |
-| Compilation | Turning source for a target into lower-level output. |
-| Packaging/linking | Producing the installable Android app or linked iOS application. |
-| Run configuration | IDE instructions selecting module, task/scheme, device, and launch behavior. |
-| Breakpoint | A source location where the debugger pauses execution. |
-| Stack trace | Ordered call/error context; useful only after locating the relevant cause. |
+## Entry-point trace
 
-## Predict before running
-
-Order these checks from narrowest to broadest and explain the tradeoff:
-
-- run one common test;
-- compile the shared module;
-- assemble the Android debug app;
-- launch Android;
-- launch iOS.
-
-Then predict: if a syntax error is placed in `commonMain`, which target launches should fail? What if it is placed only in `androidMain`?
-
-## Guided lab
-
-### Step 1 — Record the environment, not every installed tool
-
-Create a small session ledger:
+### Android
 
 ```text
-IDE and version:
-JDK selected by the IDE:
-Xcode version:
-Android device/API:
-iOS simulator/device:
-Generated project date:
+Android
+  -> MainActivity.onCreate()
+  -> setContent { App() }
+  -> shared App()
 ```
 
-Use the IDE's KMP environment/preflight checks if available. Record warnings; do not update unrelated tools merely because a newer version exists.
+`setContent` is the boundary where the Android Activity begins rendering Compose.
 
-### Step 2 — Discover tasks from the generated project
-
-Use the Gradle wrapper and the module names recorded in 00.02. List tasks before copying a command from the internet.
-
-Identify:
-
-- one verification task;
-- one shared compilation or test task;
-- the Android debug assembly task;
-- the generated Android and iOS run configurations.
-
-Exact task paths belong in your project map. This lesson intentionally does not guess whether your shared module is named `shared` or `composeApp`.
-
-### Step 3 — Establish the Android baseline
-
-1. Start an Android virtual device.
-2. Select the generated Android application run configuration.
-3. Run the untouched starter.
-4. Record whether the failure, if any, occurred during configuration, compilation, packaging, installation, or runtime.
-5. Capture the visible starter text and one relevant log line.
-
-Expected result: shared Compose UI is visible inside the Android application.
-
-### Step 4 — Establish the iOS baseline
-
-1. Ensure Xcode has finished its first-run setup and a simulator exists.
-2. Select the generated iOS run configuration and simulator.
-3. Run the untouched starter.
-4. If signing is requested for a simulator, verify the selected configuration before changing signing settings.
-5. Capture the same visible shared text and one relevant runtime observation.
-
-Expected result: the same shared Compose root is hosted by the iOS application. Native window chrome may differ; shared behavior should match.
-
-### Step 5 — Read a deliberate compiler error
-
-In the smallest generated shared Kotlin file, make one reversible syntax/type mistake—for example, assign a `String` to an explicitly declared `Int`. Type the line yourself.
-
-Before rebuilding, predict:
-
-- which compilation will report it;
-- the filename and line the compiler should identify;
-- whether either application can launch from a clean rebuild.
-
-Run the narrowest relevant check. Copy only:
+### iOS
 
 ```text
-Task/operation:
-First error that names our file:
-What the compiler expected:
-What it received:
-My proposed correction:
+SwiftUI iOSApp
+  -> ContentView
+  -> UIViewControllerRepresentable
+  -> MainViewControllerKt.MainViewController()
+  -> ComposeUIViewController { App() }
+  -> shared App()
 ```
 
-Correct the line manually and rerun the identical check. Do not “fix” it by discarding the whole file.
+`ContentView.swift` is the native side of the Swift/Kotlin call. `MainViewController.kt` is the Kotlin iOS adapter. It returns a normal `UIViewController` that hosts a Composable lambda.
 
-### Step 6 — Use a breakpoint once
+```kotlin
+fun MainViewController() = ComposeUIViewController { App() }
+```
 
-Place a breakpoint in code reached while creating the shared root UI. Launch one target in debug mode and confirm:
+`ComposeUIViewController` is a regular function returning `UIViewController`. Its `content` argument has the function type `@Composable () -> Unit`; `{ App() }` is the composable lambda supplied to it.
 
-- execution pauses in the expected file;
-- you can inspect at least one local value;
-- continuing execution renders the app.
+### Desktop development host
 
-This is a tool-orientation exercise, not a Compose lifecycle lesson. Do not infer recomposition rules from one breakpoint hit.
+```text
+JVM main()
+  -> application { ... }
+  -> Window { App() }
+  -> shared App()
+```
 
-## Independent task
+The desktop `Window` is itself part of Compose Desktop. It renders a third compilation of the shared UI rather than mirroring either phone application.
 
-Choose one generated common test or add the smallest possible `kotlin.test` smoke test. Introduce a failing expectation, predict the failure output, run only that test, correct it, and then rerun both platform applications.
+## Actual lab evidence
 
-### Acceptance criteria
+### Platform baselines
 
-- Android and iOS both render the shared starter after the correction.
-- The narrow test fails for the predicted reason before it passes.
-- The build ledger identifies the stage and first relevant cause rather than pasting an entire log.
-- No dependency versions are changed without evidence that compatibility is the failure.
-- Existing docs and assets remain intact.
+- The Android application launched and the generated button revealed its hidden content.
+- The iOS application launched and matched the shared behavior.
+- Editing `App.kt` did not mutate either already-running native binary; each target required another deployment or incremental-apply action.
+- The learner correctly predicted that a common text change affects both phone targets after they are rebuilt.
+- The learner correctly explained why Android-only APIs cannot be placed directly in `commonMain`.
 
-## Test and debugging plan
+### Development-loop correction
 
-Use this escalation order:
+The project was initially generated with Android and iOS only. Current Kotlin Multiplatform guidance recommends a desktop target even when desktop will not ship, because the JVM target supplies Compose Hot Reload.
 
-1. Reproduce the smallest known failure.
-2. Read the first error tied to project source or configuration.
-3. Verify filename, line, task, and target.
-4. State one falsifiable hypothesis.
-5. Rerun the narrowest check.
-6. Expand to the affected app.
-7. Verify both targets only after the narrow check passes.
+The development harness added:
 
-If an error contains dozens of later failures, explain why the first causal error is more useful than the final summary line.
+- a JVM target named `desktop`;
+- the current-OS Compose Desktop runtime;
+- `desktopMain` with a small `main()` window;
+- a desktop `actual` implementation for the starter's expected platform function;
+- compatible JetBrains Runtime provisioning for Hot Reload.
 
-## Hint ladder
+The desktop compilation and `:shared:hotRunDesktop` task were verified successfully.
 
-<details>
-<summary>Hint 1 — Find the stage</summary>
+## Working policy for later lessons
 
-Ask whether Gradle was configuring, Kotlin was compiling, the platform was packaging/installing, or the launched process crashed.
+```text
+Write shared UI or common behavior
+          -> save and observe through Desktop Hot Reload
+          -> use focused common tests for product rules
+          -> verify Android at a meaningful checkpoint
+          -> verify iOS at a meaningful checkpoint
+```
 
-</details>
+Use a phone target immediately when the work depends on its actual environment, including:
 
-<details>
-<summary>Hint 2 — Find our evidence</summary>
+- safe areas, system bars, fonts, and text rendering;
+- navigation gestures and lifecycle;
+- audio, permissions, database paths, and other platform services;
+- accessibility behavior;
+- release and store validation.
 
-Search upward from the final failure for the first message naming a project file, module, target, or unresolved dependency.
+The desktop harness is development tooling, not a promised V1 platform.
 
-</details>
+## React Native comparison
 
-<details>
-<summary>Hint 3 — Reduce the check</summary>
+React Native keeps a JavaScript runtime inside the native shell, so Metro can replace much application code without rebuilding the shell. KMP compiles shared Kotlin into each target's output. Desktop Hot Reload provides a fast JVM development host, while Android and especially Kotlin/Native iOS still have distinct build and deployment loops.
 
-If a common test fails, rerun that test or its source-set test task before rebuilding both applications.
+This is a real developer-experience tradeoff, not evidence that production KMP applications cannot exist.
 
-</details>
+## Teach-back evidence
 
-## Teach-back
+The learner explained:
 
-Take one failure from the lesson and explain its stage, evidence, rejected alternatives, smallest check, and proof of correction.
+> The window is a Composable itself. It is rendering the shared UI in a new target.
 
-## Exit ticket
-
-1. Why does a successful Gradle sync not prove the iOS app launches?
-2. What makes a compiler error “first relevant”?
-3. If only `androidMain` fails, what evidence would stop you from changing iOS code?
-4. Why should the verification command remain the same before and after a fix?
-5. What belongs in a build ledger for a session resumed tomorrow?
-
-## Review rubric
-
-This lesson assesses cross-platform verification, debugging discipline, source-set reasoning, and tool independence. Passing requires successful runs on both targets and a correctly diagnosed failure.
+That captures the durable model: shared source is not one remote process serving several platforms; it participates in separate platform compilations.
 
 ## Completion evidence
 
-- [ ] Android starter runs.
-- [ ] iOS starter runs.
-- [ ] Deliberate shared compiler failure is predicted, diagnosed, and fixed.
-- [ ] Independent test failure is predicted, diagnosed, and fixed.
-- [ ] One debugger breakpoint is used successfully.
-- [ ] Build ledger is complete.
-- [ ] Lesson commit exists in the private application history.
-- [ ] Progress record is updated and Module 00 gate is reviewed.
+- [x] Android starter runs.
+- [x] iOS starter runs.
+- [x] Both native entry paths are traced into shared `App()`.
+- [x] Preview, Hot Reload, and target runs are distinguished.
+- [x] Desktop development target compiles.
+- [x] Compose Hot Reload task configures successfully.
+- [x] Learner explains the desktop window as another target rendering shared UI.
+- [x] Application source remains unpushed while the configured GitHub remote is public.
+- [x] Public progress record is updated.
 
 ## Next retrieval
 
-Lesson 01.01 uses the working `commonTest` loop for direct Kotlin practice. Every later lesson should continue choosing the smallest useful check before launching both apps.
+Lesson 01.01 starts direct Kotlin practice through alphabet-domain examples. Gradle returns only when a real dependency or build problem creates a reason to learn it.
 
 ## References
 
-- [Kotlin Multiplatform quickstart and run configurations](https://kotlinlang.org/docs/multiplatform/quickstart.html)
-- [Create and run a mobile Multiplatform application](https://kotlinlang.org/docs/multiplatform/multiplatform-create-first-app.html)
-- [Gradle command-line basics](https://docs.gradle.org/current/userguide/command_line_interface_basics.html)
+- [Kotlin Multiplatform quickstart](https://kotlinlang.org/docs/multiplatform/quickstart.html)
+- [Compose Hot Reload](https://github.com/JetBrains/compose-hot-reload)
+- [Compose Multiplatform previews](https://kotlinlang.org/docs/multiplatform/compose-previews.html)
+- [Compose Multiplatform platform specifics](https://kotlinlang.org/docs/multiplatform/compose-platform-specifics.html)

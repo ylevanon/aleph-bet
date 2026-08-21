@@ -1,6 +1,8 @@
 # Lesson 00.02 — Repository, Gradle, packages, and source sets
 
-Status: In progress
+Status: Passed
+
+Date passed: 2026-08-19
 
 Module: 00 — Orientation and toolchain
 
@@ -137,12 +139,13 @@ Project-generation output is safe to copy; understanding its structure is the as
 
 1. Use the current Kotlin Multiplatform IDE wizard, or the official web wizard if the IDE plugin is unavailable.
 2. Generate into a new empty temporary folder—not directly over this non-empty repository.
-3. Select Android and iOS.
+3. Select Android and iOS as the shipping targets.
 4. Select shared Compose UI for iOS.
-5. Keep the wizard's **Include tests** option enabled so `commonTest` and target test tasks are generated.
-6. Use the project ID/package root `com.ylevanon.alephbet`, which is now the confirmed application namespace.
-7. Do not add desktop, web, or server targets for V1.
-8. Let the wizard choose a compatible Kotlin, Compose, Android Gradle Plugin, and Gradle combination. Do not copy versions from an older tutorial.
+5. Also select Desktop as a development target. It is not a promised V1 platform; its JVM host provides the fast Compose Hot Reload loop used while building shared UI.
+6. Keep the wizard's **Include tests** option enabled so `commonTest` and target test tasks are generated.
+7. Use the project ID/package root `com.ylevanon.alephbet`, which is now the confirmed application namespace.
+8. Do not add web or server targets for V1.
+9. Let the wizard choose a compatible Kotlin, Compose, Android Gradle Plugin, and Gradle combination. Do not copy versions from an older tutorial.
 
 Before moving anything, show the generated top-level tree to the coach. Together we will identify the exact generated files that can be added while preserving `.git`, `README.md`, `docs/`, `asset-pack/`, `scripts/`, and `tests/`.
 
@@ -189,6 +192,7 @@ Fill this table using exact generated names:
 - The Gradle wrapper independently reported `BUILD SUCCESSFUL`, disproving a build-script failure.
 - The clean scaffold was integrated at the permanent repository path without `.idea`, `.gradle`, `.kotlin`, `build`, `xcuserdata`, `local.properties`, or generated README state.
 - `./gradlew projects --stacktrace` succeeds from the permanent repository and resolves exactly `:shared` and `:androidApp`.
+- Desktop was omitted during initial generation and added during Lesson 00.03 as a development-only JVM target after the need for a competitive shared-UI loop became concrete.
 
 ### Step 5 — Reconcile the architecture docs
 
@@ -277,18 +281,18 @@ This lesson assesses KMP source-set boundaries, architecture ownership, debuggin
 
 ## Completion evidence
 
-- [ ] Current KMP starter is integrated without overwriting existing repository material.
-- [ ] Exact generated modules, source sets, packages, and entry points are mapped.
-- [ ] Independent placement task is correct.
-- [ ] Initial sync result is recorded.
-- [ ] Learner explains the shared-to-native path.
-- [ ] Review findings are resolved.
-- [ ] Lesson commit exists in the private application history.
-- [ ] Progress record is updated.
+- [x] Current KMP starter is integrated without overwriting existing repository material.
+- [x] Exact generated modules, source sets, packages, and entry points are mapped.
+- [x] Independent placement task is correct.
+- [x] Initial sync result is recorded.
+- [x] Learner explains the shared-to-native path.
+- [x] Review findings are resolved.
+- [x] Local application checkpoint exists; source remains unpushed while the configured remote is public.
+- [x] Progress record is updated.
 
 ## Next retrieval
 
-Lesson 00.03 uses the map to run each target and diagnose a deliberate compiler failure. Module 03 will revisit source-set dependency rules after real resources and platform services exist.
+Lesson 00.03 uses the map to trace each native host and establish Desktop Hot Reload as the primary shared-UI development loop. Module 03 will revisit source-set dependency rules after real resources and platform services exist.
 
 ## References
 

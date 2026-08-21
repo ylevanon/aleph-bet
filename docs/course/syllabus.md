@@ -2,7 +2,7 @@
 
 Status: Proposed sequence; adapts to learner evidence
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 ## How to read the syllabus
 
@@ -17,13 +17,13 @@ Testing is integrated throughout rather than saved for a final testing module.
 
 ## Module 00 — Orientation and toolchain
 
-Product gate: the project can be built, run, inspected, and debugged on Android and iOS; the learner's baseline is recorded.
+Product gate: the project runs on Android and iOS, shared UI has a fast desktop Hot Reload loop, and the learner's baseline is recorded.
 
 | ID | Lesson | Learning outcome | Product artifact |
 |---|---|---|---|
 | 00.01 | Baseline and course map | Explain current strengths, unknowns, and the product-to-code roadmap | Diagnostic record and learning contract |
 | 00.02 | Repository, Gradle, modules, packages, and source sets | Distinguish filesystem folders, Kotlin packages, source sets, Gradle modules, and the Xcode host | Annotated project map |
-| 00.03 | The build-run-debug loop | Run both targets, read a compiler error, use logs and debugger basics | Shared starter verified on Android and iOS |
+| 00.03 | The fast shared-UI development loop | Trace both native hosts, distinguish previews from real targets, and use Desktop Hot Reload | Shared starter verified on Android/iOS plus a desktop development host |
 
 Checkpoint questions:
 
@@ -37,8 +37,8 @@ Product gate: three letter forms are represented by valid domain models with com
 
 | ID | Lesson | Learning outcome | Product artifact |
 |---|---|---|---|
-| 01.01 | Values, variables, types, and expressions | Translate TypeScript instincts into Kotlin declarations and expression-oriented code | First `Letter` examples in a test lab |
-| 01.02 | Functions, named arguments, and null safety | Model optional content without unsafe null assertions | Valid sound and alternate-form helpers |
+| 01.01 | Values, variables, types, and expressions | Use scoped declarations, inference, interpolation, and value-producing `if` expressions | Visible alphabet progress and state-derived button labels |
+| 01.02 | Functions, named arguments, and null safety | Extract typed transformations and safely format optional content | Pure progress formatter and nullable Alef/Bet labels |
 | 01.03 | Data classes, value classes, enums, and sealed types | Choose a Kotlin type based on valid states rather than habit | `LetterId`, `LetterForm`, and sound variants |
 | 01.04 | Collections and higher-order functions | Use `map`, `filter`, `associate`, grouping, and lambdas idiomatically | Alphabet lookup and final-form transformations |
 | 01.05 | Interfaces, mappings, and dependency direction | Separate a domain contract from source-shaped content | Repository contract and DTO-to-domain mapper design |

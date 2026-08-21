@@ -2,7 +2,7 @@
 
 Status: Working architecture decisions
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 ## Goal
 
@@ -47,7 +47,7 @@ Android and iOS implementations sit behind small common interfaces when the oper
 ## Current decisions
 
 - Shared UI with Compose Multiplatform.
-- One confirmed `shared` KMP code/UI module, a thin `androidApp` entry module, and the native `iosApp` wrapper.
+- One confirmed `shared` KMP code/UI module, a thin `androidApp` entry module, the native `iosApp` wrapper, and a development-only desktop target for Compose Hot Reload.
 - Packages organized primarily by product feature.
 - Plain Kotlin lesson and progress rules.
 - Unidirectional screen state through ViewModels.

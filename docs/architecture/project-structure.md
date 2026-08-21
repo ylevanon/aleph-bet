@@ -17,12 +17,13 @@ shared/
     androidHostTest/
     iosMain/
     iosTest/
+    desktopMain/  development host only
 
 androidApp/
 iosApp/
 ```
 
-`shared` contains common code/UI plus Kotlin platform implementations. `androidApp` contains the Android application entry point. `iosApp` is the native Xcode host. This current separation also avoids tying the project to the older layout where Android entry points lived inside a single `composeApp` module.
+`shared` contains common code/UI plus Kotlin platform implementations. `androidApp` contains the Android application entry point. `iosApp` is the native Xcode host. `desktopMain` is a development-only JVM host for Compose Hot Reload; it is not a promised store platform. This current separation also avoids tying the project to the older layout where Android entry points lived inside a single `composeApp` module.
 
 The generated project confirmed these names on 2026-08-19. The Kotlin package root is `com.ylevanon.alephbet`, `settings.gradle.kts` includes `:shared` and `:androidApp`, and the Xcode host consumes a static framework named `Shared`.
 
@@ -61,6 +62,16 @@ Keep only iOS-specific work here:
 - iOS database path and builder details;
 - AVFoundation-backed audio implementation;
 - iOS lifecycle integrations that cannot be shared.
+
+### `shared/src/desktopMain`
+
+Keep this as a thin development harness:
+
+- a desktop `main()` and Compose `Window` that render the shared root;
+- desktop implementations required by common `expect` declarations;
+- development-only substitutes for platform services when a shared flow needs them.
+
+Do not treat desktop behavior as proof of Android or iOS parity. Its purpose is fast shared-UI iteration through Compose Hot Reload.
 
 ### Test source sets
 

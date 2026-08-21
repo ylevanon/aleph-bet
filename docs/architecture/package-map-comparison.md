@@ -2,7 +2,7 @@
 
 Status: Working architecture explanation
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 
 ## Short answer
 
@@ -12,7 +12,7 @@ Both projects start well with:
 
 - one shared-code Gradle module rather than a Gradle module per feature;
 - shared Compose UI in `commonMain`;
-- small Android and iOS source sets;
+- small Android and iOS source sets plus a thin desktop development harness;
 - packages grouped by clear ownership, with product features as the default;
 - ViewModels exposing observable screen state;
 - common interfaces around platform-specific operations.
@@ -47,12 +47,13 @@ The exact generated names are confirmed in Lesson 00.02. Aleph Bet packages such
 Source sets answer **which platforms can compile this code?**
 
 ```text
-commonMain   Android and iOS shared code
+commonMain   code shared by every configured target
 androidMain  Android-only implementations and entry points
 iosMain      iOS-only implementations and entry points
+desktopMain  development-only JVM host and substitutes for Hot Reload
 ```
 
-The same logical feature can have files in several source sets. For example, the common `AudioPlayer` contract can live under `commonMain/audio`, while its Android and iOS implementations use matching `audio` packages in their platform source sets.
+The same logical feature can have files in several source sets. For example, the common `AudioPlayer` contract can live under `commonMain/audio`, while its Android and iOS implementations use matching `audio` packages in their platform source sets. A desktop implementation may exist only to support the development harness; it does not expand the V1 product platform list.
 
 ### Kotlin packages
 
