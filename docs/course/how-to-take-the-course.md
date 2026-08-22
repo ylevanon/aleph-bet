@@ -6,7 +6,7 @@ Last updated: 2026-08-19
 
 ## The short answer
 
-The public repository contains a complete 59-lesson **map** and 9 fully written lesson pages. Module 00 is passed, and the complete six-lesson Module 01 pack is ready.
+The public repository contains a complete 59-lesson **map** and 24 fully written lesson pages. Module 00 is passed, and complete lesson packs are available through Module 04.
 
 That is intentional, but it should have been stated more clearly. The course uses a rolling publication model so later explanations and exercises can respond to actual evidence instead of guessing the learner's Kotlin level months in advance.
 
@@ -91,6 +91,8 @@ The default publication policy is:
 5. Lesson outcomes remain stable, but examples, pacing, and optional remediation can change.
 
 The learner therefore does not have to pass every individual lesson before the next page exists. The first diagnostic is the special case. Nor is the learner locked out of the map: every planned lesson is already visible in the syllabus.
+
+Before a new module starts live, its complete lesson pack must be published. Pages may adapt later, but the coach should not invent the module's delivery sequence one chat message at a time while the learner is implementing it.
 
 If reading ahead is more useful than adaptation at any point, the learner can say:
 

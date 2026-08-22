@@ -46,6 +46,8 @@ Product gate: three letter forms are represented by valid domain models with com
 
 Checkpoint challenge: add a new letter form, one sound variant, and tests without copying an existing declaration line for line.
 
+Course adaptation recorded 2026-08-20: Lessons 01.05–01.06 are deferred until bundled content creates authentic repository, mapping, validation, and test boundaries. Module 02 begins after the learner demonstrated the current application needs from Lesson 01.04. The deferred outcomes remain required and will be retrieved in the vertical slice.
+
 ## Module 02 — Compose foundations
 
 Product gate: an accessible, hard-coded three-letter explorer renders predictably with stateless components and tested interactions.

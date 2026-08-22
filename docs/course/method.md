@@ -69,6 +69,31 @@ The masterclass optimizes for a complete guided build in a finite video. A live 
 
 Every full lesson follows the same rhythm.
 
+## Product advancement and concept budget
+
+The application is not merely an example placed beside a language curriculum. Product advancement is the curriculum.
+
+Every build lesson must leave behind a visible, testable, or architecturally necessary capability in the Aleph Bet vertical slice. A concept enters only when the next capability needs it. The course does not stop the product to exhaust an API family because it appears in a syllabus outcome.
+
+Use these rules:
+
+1. Name the next product behavior first.
+2. Introduce only the language or framework mechanism needed to implement that behavior safely.
+3. Demonstrate one small case, build the first product case together, then stop for an independent variation.
+4. If the learner already transfers a concept from Java, React Native, or prior mobile work, compress the explanation and schedule retrieval in the real feature instead of requiring drills.
+5. Defer adjacent APIs until a consumer exists. For example, teach `groupBy` when Progress groups concepts, not while the explorer merely renders an ordered list.
+6. Do not count configuration, vocabulary quizzes, or copied boilerplate as product progress.
+7. A lesson may be reordered when the original sequence would create an abstraction with no current consumer, but the deferred outcome must be recorded and retrieved later.
+
+The coach should be able to finish each lesson update with both statements:
+
+```text
+The app can now do ______.
+The learner can now explain or independently extend ______.
+```
+
+If the first blank is empty, the lesson is probably detached from the product. If the second is empty, the coach probably implemented too much.
+
 ### 1. Retrieval warm-up
 
 Two to five questions recall prior lessons without consulting notes. This makes forgetting visible and strengthens retrieval.

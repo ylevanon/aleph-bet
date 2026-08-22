@@ -1,6 +1,8 @@
 # Lesson 01.04 — Collections and higher-order functions
 
-Status: Ready after Lesson 01.03
+Status: Passed for progression on 2026-08-20; advanced operations deferred to their first product use
+
+Course adaptation: the learner demonstrated the collection distinctions needed for current work and already transfers Java collection knowledge. The application now uses an ordered read-only `List<Letter>`, sorting, iteration, and typed lookup reasoning. `mapNotNull`, grouping, duplicate-ID enforcement, missing-reference validation, and independent transformations will be retrieved when bundled content and session queues create real cases. The remaining drills on this page are reference material, not a gate before Compose.
 
 Module: 01 — Kotlin through the alphabet domain
 

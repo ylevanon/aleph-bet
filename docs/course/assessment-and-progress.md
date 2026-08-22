@@ -1,8 +1,8 @@
 # Assessment and progress
 
-Status: Lesson 01.03 passed; Lesson 01.04 ready
+Status: Lesson 02.05 in progress — lazy grids, stable keys, RTL, and semantics
 
-Last updated: 2026-08-19
+Last updated: 2026-08-22
 
 ## Why the course tracks evidence
 
@@ -71,8 +71,8 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | Module | Status | Passed lessons | Notes |
 |---|---|---:|---|
 | 00 Orientation and toolchain | Passed | 3/3 | Native hosts traced; Desktop Hot Reload established |
-| 01 Kotlin through the domain | In progress | 3/6 | Letter data/value types implemented; enum and sealed-family choices explained |
-| 02 Compose foundations | Not started | 0/6 | — |
+| 01 Kotlin through the domain | In progress | 4/6 | Collection foundations demonstrated; repository/mapping and test checkpoint deferred to authentic product boundaries |
+| 02 Compose foundations | In progress | 2/6 | Lessons 02.02 and 02.04 passed; Lessons 02.01 and 02.03 retain explicit evidence gaps; Lesson 02.05 is in progress |
 | 03 KMP boundaries and resources | Not started | 0/4 | — |
 | 04 Alphabet vertical slice | Not started | 0/5 | — |
 | 05 Session engine | Not started | 0/6 | — |
@@ -83,30 +83,109 @@ Baseline levels are not assigned from language trivia or self-reported framework
 | 10 Complete alphabet and quality | Not started | 0/5 | — |
 | 11 Release and defense | Not started | 0/4 | — |
 
-Current lesson: `01.04 — Collections and higher-order functions`
+Current lesson: `02.05 — Lazy grids, stable keys, RTL, and semantics`
 
-Published inventory: 9/59 full lesson pages. The remainder of Module 00 and all of Module 01 are ready, so lesson publication is no longer blocking the current or next module.
+Published inventory: 24/59 full lesson pages. Complete packs for Modules 02–04 are published so product implementation can continue without live lesson improvisation. Lessons 01.05–01.06 remain published reference material and their repository/mapping/testing outcomes are retrieved in Module 04 when real bundled content creates those boundaries.
+
+### Previous lesson record
+
+```text
+Lesson ID: 02.01
+Status: Needs revision
+Date started: 2026-08-20
+Date passed: —
+Guided product artifact: Feature-owned LetterCard renders Aleph, Bet, and Gimel; observable Compose state reveals and hides real letter content
+Checks run: Desktop Hot Reload verified the interaction; desktop Kotlin compilation succeeded
+Evidence so far: Extracted a composable with explicit domain input and replaced template behavior with real letter visibility
+Evidence still required: Independent component-boundary transfer and recomposition/ownership explanation
+Correction: The learner made a real AlphabetHeader attempt, then explicitly requested coach takeover for integration and skipped the teach-back. The lesson remains unpassed while progression continues.
+Application checkpoint: Local only; app source was not pushed because the configured GitHub remote remained public
+```
 
 ### Current lesson record
 
 ```text
-Lesson ID: 01.03
+Lesson ID: 02.02
 Status: Passed
 Date started: 2026-08-20
-Date passed: 2026-08-20
-Product artifact: Shared starter represents Aleph and Bet as Letter data values with typed LetterId identity and read-only sound lists
-Checks run: Desktop Kotlin compilation succeeded after model and call-site changes
-Evidence: Implemented data/value classes, explained copy behavior, distinguished object/class payloads, and selected enum versus sealed families from product state shape
-Debugging evidence: Corrected mutable-list default and challenged an underspecified stateless Correct case when UI behavior required per-answer identity
-Application checkpoint: Local only; app source was not pushed because the configured GitHub remote remained public
+Date passed: 2026-08-21
+Product artifact: Responsive Material LetterCard with caller modifier, internal spacing, theme shape, tonal elevation, and semantic typography
+Checks run: Modifier-order visual comparison, desktop Kotlin compilation, and formatting check
+Independent task: Styled header attempt reviewed; header inlined after the learner correctly challenged its unjustified one-use abstraction
+Understanding evidence: Correctly predicted modifier order, distinguished parent-owned inter-card spacing from component-owned padding, and selected a fresh internal modifier chain
+Review findings: Progress typography competed with title; redundant header boundary added ceremony
+Revisions: Header typography was calmed and inlined; desktop compilation passed
 ```
 
-Most recent passed lesson: `01.03 — Data classes, value classes, enums, and sealed types` on 2026-08-20.
+### Previous lesson record — deferred evidence
+
+```text
+Lesson ID: 02.03
+Status: Needs revision
+Date started: 2026-08-21
+Product artifact: Stateless interactive LetterCard with focused previews
+Evidence so far: Parent-owned card callback, independently designed audio callback, verified Aleph preview, function-value explanation, desktop and Android compilation
+Debugging evidence: Diagnosed a blank Run Preview as card content hidden beneath PreviewActivity's action bar using emulator process logs and accessibility hierarchy
+Evidence still required: Explicit runtime confirmation that nested card and audio clicks invoke only their respective callbacks; the Bet preview is waived because the running app already covers its two-sound branch
+```
+
+### Most recent passed lesson record
+
+```text
+Lesson ID: 02.04
+Status: Passed
+Date started: 2026-08-22
+Date passed: 2026-08-22
+Product artifact: Parent-owned selected-letter state rendered through stateless cards
+Checks run: Hide/show child lifetime check, desktop process restart boundary, desktop and Android compilation, formatting check
+Independent task: Clear-selection control returns the single nullable selected ID to its initial state
+Understanding evidence: Correctly predicted recomposition, child removal, parent removal, process relaunch, reinstall, and Room boundaries; identified effects as the Compose counterpart to lifecycle-controlled `useEffect` work and placed active practice-session state in a ViewModel
+Review findings: Clear label and formatting only
+Revisions: Mechanical cleanup completed; no state, effect, or persistence ownership changes required
+Exit ticket: Passed after a definition-first correction clarified effects as lifecycle-controlled bridges from composition to external or asynchronous work
+```
+
+Most recent passed lesson: `02.04 — Remembered state, saveable state, and effects` on 2026-08-22.
 
 Current task-based evidence:
 
 - Functions and null safety: level 3 — extracts typed pure functions, calls with named arguments, uses a nullable default, and safely handles absent/empty content.
 - Kotlin type modeling: level 3 — implements a domain data class and typed value-class identity, reasons about immutable copying, and chooses enum/sealed/object/class shapes from required product state.
+- Collections: level 3 — uses an ordered read-only letter list, sorting, iteration, and typed lookup reasoning; advanced transformations are deferred for retrieval in real features.
+- Compose layout and components: level 3 — implements a caller modifier contract, separates external placement from internal spacing, uses Material roles, predicts modifier order, and removes an unjustified component boundary after review.
+- Compose callbacks and previews: level 3 — passes function values through stateless components, independently adds a distinct audio event, keeps platform behavior outside presentation, and diagnoses preview-host layout; nested-click runtime confirmation remains deferred.
+- Compose state and effects: level 3 — independently owns nullable selection in the parent, derives card visuals without duplicated state, verifies composition/process lifetimes, clears synchronously without an effect, and rejects persistence for temporary UI selection.
+
+### Fresh-task handoff for Module 02
+
+Continue Module 02 from the recorded evidence rather than repeating completed layout, callback, or state work. Lessons 02.01 and 02.03 retain explicit evidence gaps; Lessons 02.02 and 02.04 passed through authentic implementation and review. Lesson 02.05 is in progress.
+
+Teaching cadence requirement: Walk through every published lesson section explicitly and in order. Do not silently compress or skip the product reason, mental model, retrieval warm-up, prediction, worked example, guided work, independent work, testing, teach-back, or exit ticket. Announce section transitions so the learner can verify the lesson plan is being followed.
+
+Current application state:
+
+- `Letter`, `LetterId`, Aleph, Bet, and Gimel exist locally.
+- `LetterCard` is a responsive Material `Surface` with a caller modifier, internal spacing, theme shape, tonal elevation, and semantic typography.
+- `LetterCard` emits separate parent-owned card and audio callbacks and remains stateless.
+- The Aleph preview renders after a preview-only centering workaround; a separate Bet preview is waived because the running app already covers its two-sound branch.
+- The one-use `AlphabetHeader` was removed after review; its styled content is inline in `App()`.
+- `App()` owns remembered nullable selected-letter state, derives each card's selected Boolean, and provides a clear-selection action.
+- Desktop Hot Reload works; desktop and Android Kotlin compilation pass.
+- Application source remains local and must not be pushed while its GitHub remote is public.
+
+Resume point:
+
+1. Read `method.md`, `lesson-template.md`, this assessment, and the complete `02-05` page.
+2. Do not repeat completed modifier, callback, preview, or state implementation work.
+3. Resume Lesson 02.05 at its product overview and retrieval warm-up before the stable-key prediction exercise.
+4. Give hints through the numbered assistance ladder; do not reveal the complete production implementation before a real attempt.
+5. Keep Lessons 02.01 and 02.03 recorded as needing revision unless their deferred evidence is later supplied explicitly.
+
+Recommended fresh-task prompt:
+
+```text
+Continue the Aleph Bet KMP course at Lesson 02.04. Read docs/course/method.md, docs/course/lesson-template.md, docs/course/how-to-take-the-course.md, docs/course/assessment-and-progress.md, and docs/course/lessons/02-04-remember-state-saveable-effects.md completely. The implementation is complete; resume at the exit ticket, then begin Lesson 02.05 with its overview and retrieval warm-up. Follow the assistance ladder and do not give me the complete production solution before my attempt.
+```
 - Kotlin declarations and expressions: level 3 — implements read-only local values, type inference, interpolation, and state-derived if expressions in the running application.
 - Recomposition reasoning: level 2 — explains that a derived val is initialized again from current observable state rather than reassigned.
 - KMP source sets and boundaries: level 3 — distinguishes packages, modules, source sets, and native hosts; correctly places common domain, Android implementation, Swift entry-point, shared-test, and desktop-development code.
