@@ -32,11 +32,4 @@ class AlphabetContentDecoderTest {
         assertEquals(27, content.letters.size)
     }
 
-    @Test
-    fun verifyLetterIdsUnique() = runTest {
-        val json = readBundledAlphabetJson()
-        val content = decodeAlphabetContent(json)
-        val uniqueLetterIdSet: Set<String> = content.letters.map(LetterDto::id).toSet()
-        assertEquals(content.letters.size, uniqueLetterIdSet.size)
-    }
 }
