@@ -1,8 +1,8 @@
 # Complete course syllabus
 
-Status: Proposed sequence; adapts to learner evidence
+Status: Active course map; adapts to learner evidence
 
-Last updated: 2026-08-19
+Last updated: 2026-08-22
 
 ## How to read the syllabus
 
@@ -14,6 +14,8 @@ Each lesson produces two outcomes:
 Lesson pages are expanded just before their module begins. Writing all 59 full solutions now would make the course generic, reveal assignments prematurely, and lock decisions before the vertical slice provides evidence. This syllabus fixes the learning sequence and acceptance gates while allowing individual lessons to adapt.
 
 Testing is integrated throughout rather than saved for a final testing module.
+
+The [V1 completion matrix](v1-completion-matrix.md) maps the product promise to these modules and defines the verification gates. Lesson artifacts do not imply that the learner types every production line: the [teaching method](method.md#own-the-decisions-not-every-keystroke) separates mastery-critical implementation from paired or coach-completed repetition.
 
 ## Module 00 — Orientation and toolchain
 
@@ -157,7 +159,7 @@ Product gate: the complete three-letter vertical slice teaches, remembers, revie
 | 09.02 | Practice queue construction | Reuse session machinery without creating a second engine | Deterministic practice-plan builder |
 | 09.03 | Practice presentation | Coordinate plan, engine, attempts, progress, and audio | Practice ViewModel and screen |
 | 09.04 | Home aggregation and resume | Combine flows into defensible summary UI | Home state, continue action, and progress summary |
-| 09.05 | Settings, DataStore, reset, and vertical-slice defense | Separate preferences from relational history and verify the end-to-end architecture | Complete three-letter slice and review report |
+| 09.05 | First run, settings, DataStore, reset, and vertical-slice defense | Separate one-time/preferences state from relational history and verify the end-to-end architecture | First-run orientation, settings/reset, complete three-letter slice, and review report |
 
 Checkpoint challenge: trace one wrong answer from tap through persisted evidence, changed practice priority, and recomposed UI.
 
@@ -181,9 +183,9 @@ Product gate: a store-ready release candidate exists and the learner can defend,
 
 | ID | Lesson | Learning outcome | Product artifact |
 |---|---|---|---|
-| 11.01 | Privacy, attribution, versioning, and release configuration | Identify store obligations for an offline learning app | Release settings and compliance checklist |
+| 11.01 | Privacy, attribution, versioning, and release configuration | Identify store obligations for an offline learning app and any active competition overlay | Release settings, compliance checklist, and conditional RevenueCat integration plan |
 | 11.02 | App icon, screenshots, metadata, and device matrix | Present the product accurately and test release surfaces | Store asset and metadata package |
-| 11.03 | Signed builds and internal testing | Produce, distribute, and evaluate release candidates | Android internal build and iOS TestFlight candidate |
+| 11.03 | Signed builds and internal testing | Produce, distribute, and evaluate release candidates | Android internal build, iOS TestFlight candidate, and conditional Shipaton-path verification |
 | 11.04 | Final architecture defense and retrospective | Explain tradeoffs, diagnose a change request, and design V1.1 without tutorial support | Final defense, gap assessment, and next roadmap |
 
 Final challenge: receive a new requirement, propose its screen/state/domain/data impact, and implement a bounded portion without a prepared walkthrough.
@@ -192,13 +194,15 @@ Final challenge: receive a new requirement, propose its screen/state/domain/data
 
 - backend, accounts, and cloud sync;
 - vocabulary and niqqud curriculum;
-- purchase implementation;
+- general subscriptions, paywalls, and payments curriculum;
 - automated pronunciation analysis;
 - generic enterprise architecture;
 - multiple feature Gradle modules without measured need;
 - Android-only or iOS-only UI rewrites.
 
 These may become later courses or app iterations. Their absence keeps the first course deep and shippable rather than broad and unfinished.
+
+The active RevenueCat Shipaton goal is a conditional release overlay, not a new core product module. Its bounded qualification path is mapped in Lessons 11.01 and 11.03 and in the [completion matrix](v1-completion-matrix.md#conditional-shipaton-release-overlay). If that competition goal is removed, the alphabet V1 remains complete without monetization.
 
 ## Technical references by phase
 

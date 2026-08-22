@@ -2,7 +2,7 @@
 
 Status: Course authoring template
 
-Last updated: 2026-08-18
+Last updated: 2026-08-22
 
 Use this structure for full lesson pages. Omit sections that add no value, but preserve the learning sequence: retrieve, understand, predict, build, test, explain, review.
 
@@ -22,7 +22,7 @@ Build lessons should preserve the strongest qualities of the referenced notJust.
 
 The personalized course adds one boundary: the worked example must not be the entire feature the learner is meant to implement. Prefer demonstrating one small case in the real Aleph Bet application, then require the learner to implement the next case or production variation. Use an unrelated toy example only when it isolates behavior that would otherwise be obscured by application code.
 
-Configuration boilerplate may be provided directly and labeled as safe to copy. Kotlin code that expresses the lesson's core concept should be typed, completed, or designed by the learner.
+Configuration boilerplate may be provided directly and labeled as safe to copy. Kotlin code that expresses a new core concept should be typed, completed, or designed by the learner in one representative product case. Repeated applications may move to Pair or Ship mode under the [proof-once rule](method.md#proof-once-and-retrieval-rule).
 
 ---
 
@@ -44,13 +44,23 @@ By the end, the learner can:
 
 - use an observable verb;
 - explain an ownership or lifecycle decision;
-- complete an independent variation.
+- demonstrate meaningful transfer when the skill still needs it.
 
 ## Prerequisites
 
 - prior lesson or skill;
 - required product state;
 - narrow reading, if any.
+
+## Work split
+
+State the expected mode and ownership before implementation begins.
+
+- **Learner owns:** the new decision, representative implementation, or debugging evidence required for mastery.
+- **Coach may supply:** configuration, scaffolding, fixtures, repeated cases, resource wiring, or mechanical production work.
+- **Proof required:** the smallest observable evidence that distinguishes understanding from recognition.
+
+Do not assign a second from-scratch component, modifier chain, or equivalent test merely because the template has an independent-task section.
 
 ## Retrieval warm-up
 
@@ -104,21 +114,23 @@ Ask the learner to choose a type, owner, API, or dependency.
 
 Run or inspect the smallest evidence.
 
-## Independent task
+## Independent task, when needed
 
-Give a bounded product task that requires transfer beyond the demonstration.
+Give a bounded product task only when transfer evidence is still needed. Otherwise replace this section with a review, prediction, debugging task, or a note that the production repetition may use Pair/Ship mode.
 
 ### Acceptance criteria
 
 - observable behavior;
 - edge behavior;
-- required tests;
+- required risk-based tests;
 - target platforms;
 - constraints such as forbidden dependencies.
 
 ## Test and debugging plan
 
-List checks in risk order. Include at least one question requiring the learner to interpret a failure before receiving the cause.
+List checks in risk order. Identify which representative test the learner authors and which harness, fixture, or repetitive cases the coach may supply. Include at least one question requiring the learner to interpret a meaningful failure before receiving the cause.
+
+Do not require tests of implementation details or individual modifiers. Test observable behavior, semantics, boundaries, state transitions, persistence, and failure handling in proportion to risk.
 
 ## Hint ladder
 
@@ -149,7 +161,7 @@ Do not publish the complete solution until the learner has made a real attempt. 
 
 ## Teach-back
 
-Ask the learner to explain:
+Use only when the explanation could expose a meaningful misconception not already resolved in the lesson. Ask the learner to explain relevant items from:
 
 1. what problem the concept solves;
 2. who owns it;
@@ -157,9 +169,9 @@ Ask the learner to explain:
 4. what it may depend on;
 5. how it differs from the nearest React Native pattern.
 
-## Exit ticket
+## Exit ticket, when needed
 
-Three to five short questions that can be answered without code or notes.
+One to three short questions that target unresolved mental-model risk. Omit or reduce the ticket when the same reasoning is already evidenced in the implementation, debugging, or review conversation.
 
 ## Review rubric
 
@@ -168,7 +180,8 @@ Identify the dimensions from [Assessment and progress](assessment-and-progress.m
 ## Completion evidence
 
 - [ ] Guided behavior works.
-- [ ] Independent variation works.
+- [ ] Required mastery proof exists here or is explicitly scheduled for later retrieval.
+- [ ] Independent variation works, if it supplies new evidence.
 - [ ] Relevant tests pass.
 - [ ] Learner explains the design.
 - [ ] Review findings are resolved.

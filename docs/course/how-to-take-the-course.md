@@ -2,7 +2,7 @@
 
 Status: Active operating agreement
 
-Last updated: 2026-08-19
+Last updated: 2026-08-22
 
 ## The short answer
 
@@ -11,6 +11,10 @@ The public repository contains a complete 59-lesson **map** and 24 fully written
 That is intentional, but it should have been stated more clearly. The course uses a rolling publication model so later explanations and exercises can respond to actual evidence instead of guessing the learner's Kotlin level months in advance.
 
 The learner does **not** need to edit the public Markdown files or paste every answer into a worksheet. The normal classroom is the conversation. The normal lab is the private application repository. The public documentation is the textbook, roadmap, and sanitized progress record.
+
+The learner also does **not** need to type every production line. The course requires direct implementation when the work supplies new mastery evidence. Repetition, configuration, bulk content, exhaustive test expansion, and routine polish may move to paired or coach implementation after the pattern is understood. See [Teaching method and coaching contract](method.md#own-the-decisions-not-every-keystroke).
+
+All published lesson pages inherit this operating agreement. If an older page says “independent task” or lists a broad completion checklist without an explicit work split, the coach must first decide whether the item supplies new mastery evidence. The governing method overrides repetitive template ceremony.
 
 ## What came from the referenced masterclass
 
@@ -42,7 +46,7 @@ Lesson 00.01 is an original diagnostic and course-calibration lesson. The publis
 | Surface | Purpose | Normal editor | Public? |
 |---|---|---|---|
 | This conversation | Questions, predictions, explanations, hints, teach-backs, and review | Learner and coach | No |
-| Aleph Bet application repository | Kotlin source, tests, experiments, and lesson commits | Primarily the learner during course mode | No |
+| Aleph Bet application repository | Kotlin source, tests, experiments, and lesson commits | Learner for mastery-critical work; learner and coach for production completion | No |
 | `aleph-bet-docs` | Lesson text, syllabus, architecture decisions, and sanitized status | Coach | Yes |
 | Optional personal notes | Scratch explanations or a learning journal | Learner | Learner's choice |
 
@@ -106,10 +110,12 @@ Starting a lesson does not mean silently completing the whole Markdown page.
 2. The coach asks the first small group of questions from the lesson.
 3. The learner answers naturally in the conversation. Short, uncertain, or partial answers are valid starting points.
 4. The coach responds to the reasoning, teaches the next idea, and continues one section at a time.
-5. When a coding lab begins, the learner edits the private application files and says when the attempt is ready for review.
-6. The coach inspects the relevant diff, runs appropriate checks, and explains findings without silently replacing the solution.
-7. The learner revises, completes the independent variation, and gives the teach-back.
-8. When the evidence meets the lesson criteria, the lesson is marked passed and the public progress record is updated, committed, and pushed.
+5. When a coding lab begins, the coach identifies whether the task is in Learn, Pair, or Ship mode.
+6. In Learn mode, the learner edits the private application files and says when the representative attempt is ready for review.
+7. The coach inspects the relevant diff, runs appropriate checks, and explains findings without silently replacing mastery-critical work.
+8. Independent variation and teach-back are used only when they provide evidence not already demonstrated.
+9. Repetitive or mechanical completion may then move to Pair or Ship mode, with the learner reviewing the result.
+10. When the applicable product and learning evidence meets the lesson criteria, the lesson is marked passed and the public progress record is updated, committed, and pushed.
 
 The learner can paste an error, describe an idea, attach a screenshot, point to a file, or simply say “I am stuck.” There is no required answer syntax.
 
@@ -130,10 +136,28 @@ The learner controls how much help is revealed.
 - `Hint level 3` points to the relevant mental model or reference.
 - `Give me a skeleton` supplies structure with meaningful gaps.
 - `Pair with me` works through decisions one at a time.
-- `Show me the solution` is available after a real attempt, followed by explanation and an independent variation.
-- `Take over and implement this` temporarily leaves course mode; the coach will state what learning step is being skipped.
+- `Show me the solution` is available after a real attempt. A follow-up explanation or transfer task is required only if mastery evidence is still missing.
+- `Pair with me on the integration` keeps the learner responsible for decisions while the coach supplies structure or glue code.
+- `Ship this part` asks the coach to implement repetitive or production-focused work. This does not invalidate skills already demonstrated.
+- `Take over and implement this` is also available. The coach records a deferred learning step only when the task was the remaining evidence for a new core skill.
 
 Compiler errors and failing tests are lesson material, not evidence that the learner has failed.
+
+## How much code and testing the learner owns
+
+Use this default split:
+
+| Work | Default mode |
+|---|---|
+| First real use of a new Kotlin/KMP/Compose concept | Learn |
+| Domain rules, state transitions, state ownership, schema, migrations | Learn or Pair |
+| First representative test for an important risk | Learn |
+| Test harnesses, fixtures, configuration, and equivalent test rows | Pair or Ship |
+| Repeated modifier/component patterns | Ship after proof |
+| Bulk reviewed content and resource wiring | Pair or Ship |
+| Mechanical refactors, formatting, store metadata, and routine polish | Ship |
+
+The learner must remain able to review and modify shipped work on the release path. The goal is ownership of behavior and architecture, not ownership of every keystroke.
 
 ## What to do while reading at work
 

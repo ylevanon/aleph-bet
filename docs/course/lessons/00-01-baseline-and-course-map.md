@@ -131,11 +131,12 @@ Then answer:
 
 Confirm or revise these defaults:
 
-- You write core application code.
-- I maintain course docs, teach, review, run checks, and debug with you.
+- You own new core decisions and representative application implementations.
+- I maintain course docs, teach, review, run checks, debug, and may complete proven repetition or mechanical production work.
 - I show a minimal example before your real implementation.
 - You request hints by level before requesting a complete solution.
-- Important lessons include an independent variation and teach-back.
+- Core skills receive meaningful transfer evidence, but not every lesson requires a separate variation or ritual teach-back.
+- Product evidence and mastery evidence are recorded separately when work uses Pair or Ship mode.
 - We do not mark a lesson passed until review findings are resolved.
 - We commit small lesson changes privately and publish course/documentation changes publicly.
 
@@ -143,9 +144,9 @@ Confirm or revise these defaults:
 
 Write a short explanation for a React Native developer:
 
-> Why will this course not simply give me finished Kotlin classes to type?
+> Why will this course neither give me every new core class to copy nor require me to type every repetitive production line?
 
-The answer should mention recognition versus recall, gradual responsibility, and the real Aleph Bet product.
+The answer should mention recognition versus recall, gradual responsibility, proof once, and the real Aleph Bet product.
 
 ## Exit ticket
 

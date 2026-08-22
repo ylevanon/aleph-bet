@@ -23,6 +23,12 @@ By the end, you can:
 - use a fake implementation in a test without dependency injection tooling;
 - decide whether validation belongs to DTO parsing, mapping, or domain construction.
 
+## Work split
+
+- **Learner owns:** the consumer-facing contract, DTO/domain dependency direction, and one representative mapping decision.
+- **Coach may supply:** fixtures, repetitive field mappings, and implementation plumbing after the boundary is demonstrated.
+- **Proof required:** the learner can explain what crosses the boundary and why presentation never receives source-shaped DTOs.
+
 ## Prerequisites
 
 - Lesson 01.04 passed.

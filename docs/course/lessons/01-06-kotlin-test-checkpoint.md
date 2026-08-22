@@ -22,6 +22,12 @@ By the end, you can:
 - implement a fourth-letter case from requirements rather than transcription;
 - explain the Module 01 domain design without framework vocabulary.
 
+## Work split
+
+- **Learner owns:** one behavior-oriented test shape, interpretation of a real failure, and representative edge-case selection.
+- **Coach may supply:** test-source configuration, fixtures, assertion boilerplate, and equivalent table cases after the pattern is understood.
+- **Proof required:** the learner can state which regression each test protects; exhaustive learner-authored cases are not required.
+
 ## Prerequisites
 
 - Lessons 01.01–01.05 passed or submitted for checkpoint review.
@@ -263,13 +269,13 @@ Answer without code visible:
 2. Why should `assertEquals` receive expected before actual?
 3. When should invalid input be tested with `assertFailsWith`?
 4. Which Module 01 declarations belong in `commonMain`, and which remain test/data details?
-5. What evidence proves the fourth letter was a transfer task rather than transcription?
+5. What evidence shows that a domain/test decision transferred beyond the visible demonstration?
 
 ## Review rubric
 
 Module 01 is evaluated across correctness, Kotlin fluency, type modeling, dependency direction, test quality, compiler/debugging fluency, and simplicity.
 
-The module passes only if the learner can implement and explain the Dalet variation. Green tests alone are insufficient if the design cannot be explained; explanation alone is insufficient without working Kotlin.
+The module passes only when the learner can implement and explain one bounded domain/test variation beyond the demonstration. Dalet is the default vehicle, but later authentic content/mapping work may supply the same deferred evidence. Green tests alone are insufficient if the design cannot be explained; personally retyping an equivalent content row is unnecessary after the skill is proven.
 
 ## Completion evidence
 
@@ -277,7 +283,7 @@ The module passes only if the learner can implement and explain the Dalet variat
 - [ ] Demonstration-only code is removed or remains isolated from production.
 - [ ] Behavior-oriented common tests pass.
 - [ ] Deliberate compiler failure is predicted and explained.
-- [ ] Independent Dalet task passes all acceptance criteria.
+- [ ] Required domain/test transfer evidence is recorded here or in the scheduled Module 04 retrieval.
 - [ ] Architecture defense is completed.
 - [ ] Review findings are resolved.
 - [ ] Checkpoint commit exists in the private application history.

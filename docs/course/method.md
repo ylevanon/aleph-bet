@@ -1,8 +1,8 @@
 # Teaching method and coaching contract
 
-Status: Working course method
+Status: Active course method
 
-Last updated: 2026-08-18
+Last updated: 2026-08-22
 
 ## The answer to “should I type the classes you give me?”
 
@@ -30,7 +30,53 @@ Approximate responsibility shift:
 | Modules 07–09 | 10% | 30% | 60% |
 | Modules 10–11 | 5% | 20% | 75% |
 
-These are teaching ratios, not timers.
+These are teaching ratios, not timers or percentages of source lines. Later independence means that the learner makes more of the important design and debugging decisions. It does not mean the learner must type 75% of repetitive production code.
+
+## Own the decisions, not every keystroke
+
+The course separates two kinds of work.
+
+**Mastery-critical work** provides new evidence about Kotlin, KMP, Compose, architecture, persistence, testing, or platform behavior. The learner should make the important decision and implement a representative real case.
+
+**Production-completion work** applies an already demonstrated pattern, expands content, supplies configuration, or finishes mechanical polish. The coach may implement or scaffold this work while the learner reviews the result and remains able to explain or change it.
+
+Typical mastery-critical work includes:
+
+- the first authentic use of a new language or framework mechanism;
+- domain models, state transitions, persistence rules, and dependency boundaries;
+- state ownership and lifecycle decisions;
+- one representative test for each important behavior or failure category;
+- debugging evidence that reveals the learner's mental model;
+- architecture choices that affect later features.
+
+Typical production-completion work includes:
+
+- repeated modifier chains or components after the pattern is understood;
+- configuration coordinates, generated code, resource paths, and fixture setup;
+- bulk content entry and structurally equivalent cases;
+- additional test rows that repeat an established test shape;
+- formatting, naming cleanup, asset wiring, and store-package mechanics;
+- deadline-driven polish that introduces no new course concept.
+
+Some tasks contain both kinds of work. In those cases, split the task: the learner owns the decision or first case, and the coach may complete the repetition.
+
+## Proof-once and retrieval rule
+
+The learner does not need to re-prove the same skill in every lesson. Once a representative implementation and explanation establish the skill at the required level, later uses may be handled through a prediction, review, debugging task, or bounded modification instead of another from-scratch implementation.
+
+Use a later independent task only when it tests meaningful transfer. Do not create a second component, modifier exercise, test case, or abstraction solely to satisfy a template. If later evidence reveals a genuine gap, mark the skill for retrieval and revisit the smallest task that exposes it.
+
+## Three working modes
+
+Each implementation task can use one of three modes. The lesson or live coach should state the mode when it matters.
+
+| Mode | Normal use | Learner responsibility | Coach responsibility |
+|---|---|---|---|
+| Learn | First real use of a new core concept | Predict, decide, implement the representative case, explain | Teach, constrain, hint, review, and debug |
+| Pair | A concept is partly familiar or the integration is complex | Make decisions and complete meaningful portions | Scaffold and work through integration jointly |
+| Ship | The pattern is proven or the work is mechanical/deadline-critical | Review, verify, and remain able to modify it | Implement or automate the production work |
+
+Moving a task to Ship mode does not erase mastery already demonstrated elsewhere. If the task itself was the only planned evidence for a new core skill, record that evidence as deferred and retrieve it in a later authentic task.
 
 ## What works in the referenced masterclass
 
@@ -59,7 +105,7 @@ The masterclass optimizes for a complete guided build in a finite video. A live 
 - test-first work for learning and progress rules;
 - compiler-error reading rather than immediate correction;
 - graduated hints;
-- independent variations not shown in the demonstration;
+- meaningful transfer tasks not shown in the demonstration when evidence is still needed;
 - architecture teach-backs;
 - cross-platform lifecycle checks;
 - adaptive pacing based on observed gaps;
@@ -67,7 +113,7 @@ The masterclass optimizes for a complete guided build in a finite video. A live 
 
 ## The lesson protocol
 
-Every full lesson follows the same rhythm.
+Every full lesson draws from the same rhythm. Sections may be combined or omitted explicitly when prior evidence makes them redundant; the sequence is a teaching tool, not a ceremony checklist.
 
 ## Product advancement and concept budget
 
@@ -79,11 +125,12 @@ Use these rules:
 
 1. Name the next product behavior first.
 2. Introduce only the language or framework mechanism needed to implement that behavior safely.
-3. Demonstrate one small case, build the first product case together, then stop for an independent variation.
+3. Demonstrate one small case, build the first product case together, then use an independent variation only when it supplies new transfer evidence.
 4. If the learner already transfers a concept from Java, React Native, or prior mobile work, compress the explanation and schedule retrieval in the real feature instead of requiring drills.
 5. Defer adjacent APIs until a consumer exists. For example, teach `groupBy` when Progress groups concepts, not while the explorer merely renders an ordered list.
 6. Do not count configuration, vocabulary quizzes, or copied boilerplate as product progress.
 7. A lesson may be reordered when the original sequence would create an abstraction with no current consumer, but the deferred outcome must be recorded and retrieved later.
+8. Once a skill has sufficient evidence, move structurally equivalent repetition into Pair or Ship mode.
 
 The coach should be able to finish each lesson update with both statements:
 
@@ -136,11 +183,21 @@ Coach and learner implement the first case together. The coach asks questions an
 
 ### 7. Independent build
 
-The learner implements a variation or the production version from acceptance criteria. The lesson page does not reveal the full solution above the task.
+When independent evidence is still needed, the learner implements a bounded variation or the production version from acceptance criteria. The lesson page does not reveal the full solution above the task.
+
+An independent build is not mandatory ceremony. It may be waived, reduced, or replaced by later authentic evidence when the same skill has already been demonstrated. Record the reason so adaptation remains visible.
 
 ### 8. Test and debug
 
 Run the smallest relevant checks. The learner reads the failure first and proposes a cause before the coach explains it.
+
+Testing is risk-based:
+
+- the learner authors representative tests for new domain rules, state transitions, mappings, persistence behavior, and other core logic;
+- the coach may supply harness configuration, fixtures, platform setup, and repetitive cases after the test shape is understood;
+- UI tests cover meaningful content, semantics, and interaction contracts rather than individual modifiers or composable internals;
+- Android/iOS smoke checks provide platform evidence where shared tests cannot;
+- a test is added because a behavior could regress, not because every branch or declaration must have a learner-written test.
 
 ### 9. Teach-back
 
@@ -171,7 +228,7 @@ When blocked, use the least revealing intervention that restores progress:
 5. Give pseudocode or a type signature.
 6. Provide a partial skeleton with meaningful blanks.
 7. Pair line by line while the learner makes each decision.
-8. Show a complete solution only after a real attempt, then require an explanation and independent variation.
+8. Show a complete solution after a real attempt when the task is still in Learn mode. Follow with explanation or a small transfer check only if mastery evidence is still missing.
 
 The learner can request a level directly, for example:
 
@@ -183,21 +240,22 @@ The conversation, private application repository, and public documentation repos
 
 During course mode:
 
-- the learner writes feature, domain, presentation, and persistence behavior;
+- the learner owns new feature rules, domain decisions, state ownership, persistence behavior, and representative tests;
 - the coach writes and publishes course documentation;
 - the coach may inspect files, run read-only diagnostics, run tests, and review diffs;
 - the coach does not silently implement the assignment;
-- configuration boilerplate can be supplied directly after its purpose is explained;
+- configuration boilerplate, scaffolding, and repeated production work can be supplied directly after their purpose is explained;
 - exercise scaffolding or failing tests are added only when the learner explicitly starts that lab or requests the setup;
-- a request such as “take over and fix this” temporarily switches from teaching mode to implementation mode, and the coach explains what learning opportunity is being skipped.
+- a task may explicitly move among Learn, Pair, and Ship modes;
+- when the coach implements work, the progress record distinguishes completed product work from learner mastery evidence.
 
 ## Agentic background and course boundary
 
 The learner already uses agentic engineering extensively. That is relevant background, not a course objective and not a skill this curriculum will teach or assess.
 
-The learner is deliberately using this project to regain direct implementation fluency and learn Kotlin, KMP, Compose, Room, and their surrounding mental models. During core labs, the learner writes the Kotlin code. The coach explains, demonstrates small isolated examples, asks questions, reviews attempts, runs checks, and helps debug. The coach does not turn the lesson into an exercise in prompting an agent to build the feature.
+The learner is deliberately using this project to regain direct implementation fluency and learn Kotlin, KMP, Compose, Room, and their surrounding mental models. During mastery-critical labs, the learner writes the representative Kotlin code. The coach explains, demonstrates small isolated examples, asks questions, reviews attempts, runs checks, and helps debug. Repetitive production completion can still use the coach's implementation ability without turning mastery-critical work into an exercise in prompting an agent.
 
-If the learner explicitly requests implementation takeover, course mode can pause as described above. Otherwise, prior agentic experience changes the coaching context but does not enter the mastery matrix.
+Prior agentic experience changes the coaching context but does not enter the mastery matrix. Ship-mode assistance is recorded only when it replaces evidence that has not yet been demonstrated.
 
 ## The Room principle
 
@@ -255,14 +313,14 @@ The syllabus is a map, not a rigid script.
 
 ## Definition of a passed lesson
 
-A lesson passes only when its stated evidence exists. Depending on the lesson, that may include:
+A lesson passes when its applicable product and learning evidence exists. Not every item below applies to every lesson, and previously established proof should not be demanded again. Depending on the lesson, evidence may include:
 
 - behavior works on the required target or targets;
-- tests pass and test intent is explained;
-- the learner completes the independent variation;
+- relevant tests pass and their intent is understood;
+- the learner completes an independent variation when it supplies required new evidence;
 - the learner answers the exit ticket;
 - review findings are resolved;
 - the learner can name ownership, lifetime, and dependency direction;
 - the change is committed with a meaningful message.
 
-“I followed the code and it runs” is progress, but it is not the final standard.
+“I followed the code and it runs” is progress, but it is not sufficient evidence for a new core skill. Conversely, personally typing every production line is not required once the important skill has been demonstrated.

@@ -1,7 +1,7 @@
 # Alphabet V1 roadmap
 
-Status: Proposal for discussion  
-Last updated: 2026-08-18
+Status: Approved alphabet-only V1 scope; listed product rules remain open until their owning lesson
+Last updated: 2026-08-22
 
 ## Release goal
 
@@ -12,6 +12,8 @@ Its promise is:
 > Learn to recognize all printed Hebrew block letters, recall their names and common Modern Hebrew sounds, understand the five final forms, and follow Hebrew's right-to-left reading direction.
 
 This scope deliberately excludes niqqud instruction, vocabulary, handwriting, pronunciation recording, accounts, cloud sync, streaks, and payments.
+
+The [course completion matrix](../course/v1-completion-matrix.md) is the authoritative mapping from this product scope to lessons, work ownership, and verification gates.
 
 The repository already contains the content foundation for this release:
 
@@ -318,9 +320,11 @@ The session should persist progress at meaningful boundaries. It does not need t
 - Accounts and cloud sync
 - Achievements and social features
 - Handwriting and tracing
-- Subscription or one-time-purchase implementation
+- General subscriptions, paywalls, and one-time-purchase system
 
 Words may later become a one-time purchase. The alphabet release needs only a clean module or entitlement boundary in the product model; it does not need payment infrastructure.
+
+Competition exception: while the RevenueCat Shipaton goal remains active, the release track includes one bounded qualifying RevenueCat-powered purchase or ad path. That path is a conditional release overlay, not a general monetization feature or payments curriculum. It must not paywall alphabet reference content or expand the core V1 scope. If the competition goal is removed, this exception disappears.
 
 ## Delivery roadmap
 
@@ -363,12 +367,13 @@ This milestone validates the complete user and data flow; it does not optimize f
 
 ### Milestone 5: store readiness
 
-- First-run experience.
+- First-run orientation.
 - Settings and reset.
 - Privacy and attribution.
 - Audio interruption handling.
 - App icon and store screenshots.
 - Release and device testing.
+- Conditional Shipaton qualification path and submission evidence while that goal is active.
 
 ## Open decisions
 

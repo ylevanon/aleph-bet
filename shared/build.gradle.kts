@@ -36,7 +36,9 @@ kotlin {
         androidResources {
             enable = true
         }
-        withHostTest {
+        withHostTestBuilder {
+            sourceSetTreeName = "hostTest"
+        }.configure {
             isIncludeAndroidResources = true
         }
         withDeviceTestBuilder {
@@ -51,7 +53,17 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.compose.uiTooling)
         }
+        named("androidHostTest") {
+            dependencies {
+                implementation(libs.kotlin.test)
+            }
+        }
         named("desktopMain") {
+            dependencies {
+                implementation(compose.desktop.currentOs)
+            }
+        }
+        named("desktopTest") {
             dependencies {
                 implementation(compose.desktop.currentOs)
             }
@@ -68,6 +80,7 @@ kotlin {
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+            implementation(libs.compose.uiTest)
         }
     }
 }

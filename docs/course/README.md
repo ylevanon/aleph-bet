@@ -1,8 +1,8 @@
 # Build Aleph Bet V1: a personalized KMP course
 
-Status: Lesson 02.01 in progress; 24 of 59 full lesson pages published; complete Modules 02–04 ready
+Status: Lesson 02.06 in progress; 24 of 59 full lesson pages published; complete Modules 02–04 ready
 
-Last updated: 2026-08-20
+Last updated: 2026-08-22
 
 ## Course promise
 
@@ -28,33 +28,34 @@ Read these in order:
 
 1. [Teaching method and coaching contract](method.md)
 2. [How to take the course](how-to-take-the-course.md)
-3. [Complete course syllabus](syllabus.md)
-4. [Assessment and progress system](assessment-and-progress.md)
-5. [Lesson-page template](lesson-template.md)
-6. Module 00 lessons:
+3. [V1 completion matrix](v1-completion-matrix.md)
+4. [Complete course syllabus](syllabus.md)
+5. [Assessment and progress system](assessment-and-progress.md)
+6. [Lesson-page template](lesson-template.md)
+7. Module 00 lessons:
    - [00.01: Baseline and course map](lessons/00-01-baseline-and-course-map.md)
    - [00.02: Repository, Gradle, packages, and source sets](lessons/00-02-repository-build-packages-source-sets.md)
    - [00.03: The fast shared-UI development loop](lessons/00-03-build-run-debug-loop.md)
-7. Module 01 lessons:
+8. Module 01 lessons:
    - [01.01: Values, variables, types, and expressions](lessons/01-01-values-variables-types-expressions.md)
    - [01.02: Functions, named arguments, and null safety](lessons/01-02-functions-named-arguments-null-safety.md)
    - [01.03: Data classes, value classes, enums, and sealed types](lessons/01-03-data-classes-value-classes-enums-sealed-types.md)
    - [01.04: Collections and higher-order functions](lessons/01-04-collections-higher-order-functions.md)
    - [01.05: Interfaces, mappings, and dependency direction](lessons/01-05-interfaces-mappings-dependency-direction.md)
    - [01.06: `kotlin.test` and the Kotlin checkpoint](lessons/01-06-kotlin-test-checkpoint.md)
-8. Module 02 lessons:
+9. Module 02 lessons:
    - [02.01: Composables and recomposition](lessons/02-01-composables-and-recomposition.md)
    - [02.02: Layout, Modifier, theme, and modifier order](lessons/02-02-layout-modifier-theme-order.md)
    - [02.03: Parameters, callbacks, components, and previews](lessons/02-03-parameters-callbacks-components-previews.md)
    - [02.04: Remembered state, saveable state, and effects](lessons/02-04-remember-state-saveable-effects.md)
    - [02.05: Lazy grids, stable keys, RTL, and semantics](lessons/02-05-lazy-grids-keys-rtl-semantics.md)
    - [02.06: Compose UI checkpoint](lessons/02-06-compose-ui-checkpoint.md)
-9. Module 03 lessons:
+10. Module 03 lessons:
    - [03.01: Targets, source sets, and dependency reach](lessons/03-01-targets-source-sets-dependencies.md)
    - [03.02: Compose resources, fonts, JSON, and audio assets](lessons/03-02-compose-resources-fonts-json-audio.md)
    - [03.03: Common interfaces versus expect/actual](lessons/03-03-interfaces-expect-actual.md)
    - [03.04: Cross-platform resource checkpoint](lessons/03-04-cross-platform-resource-checkpoint.md)
-10. Module 04 lessons:
+11. Module 04 lessons:
    - [04.01: Content schema, DTOs, and domain invariants](lessons/04-01-content-schema-dtos-domain-invariants.md)
    - [04.02: Serialization, validation, and mapping](lessons/04-02-serialization-validation-mapping.md)
    - [04.03: Repository contracts, fakes, and implementations](lessons/04-03-repository-contracts-fakes-implementations.md)
@@ -67,7 +68,7 @@ Supporting product and technical decisions remain in the [product roadmap](../pr
 
 The course map contains 12 modules and 59 planned lessons. That does not mean 59 complete lesson pages already exist: the syllabus defines all 59 outcomes, while full lesson pages are published in rolling module-sized packs so they can respond to demonstrated strengths and gaps. The publication workflow and current inventory are explicit in [How to take the course](how-to-take-the-course.md).
 
-Most lessons should take 30–90 focused minutes, but progress is mastery-based rather than time-based. A realistic complete journey is roughly 55–80 hours of explanation, implementation, testing, debugging, review, and independent work.
+Most lessons should take 30–90 focused minutes, but progress is mastery-based rather than time-based. A realistic complete journey is roughly 55–80 hours if most production work remains hands-on. Explicit Pair/Ship work can reduce learner implementation time without removing required mastery gates.
 
 That estimate is intentionally longer than an eight-hour video. Video runtime excludes pauses, mistakes, independent assignments, cross-platform verification, retrieval practice, and the work required to demonstrate understanding.
 
@@ -75,7 +76,7 @@ That estimate is intentionally longer than an eight-hour video. Video runtime ex
 |---|---|---|---|
 | 00 | Orientation and toolchain | Native apps run; Desktop Hot Reload established | Passed — 3/3 |
 | 01 | Kotlin through the alphabet domain | Valid three-letter domain model and tests | In progress — 4/6 passed; repository/tests deferred to real content |
-| 02 | Compose foundations | Hard-coded accessible three-letter explorer | In progress — 02.01 guided work complete, independent task pending |
+| 02 | Compose foundations | Hard-coded accessible four-letter explorer | In progress — 02.06 tests/checkpoint active; native smoke checks remain |
 | 03 | KMP boundaries and resources | Real resources load on Android and iOS | Not started |
 | 04 | Alphabet vertical slice | Bundled repository, explorer, and letter detail | Not started |
 | 05 | Learning session engine | Tested lesson queue and exercise transitions | Not started |
@@ -95,15 +96,16 @@ Retrieve prior knowledge
         -> learn one mental model
         -> predict behavior
         -> guided implementation
-        -> independent variation
+        -> independent transfer when evidence is needed
         -> tests and debugging
-        -> teach it back
+        -> explain unresolved decisions
         -> code review
+        -> paired or shipped repetition
         -> commit
         -> revisit later
 ```
 
-The learner writes the core application code. The coach supplies the lesson, the mental model, carefully sized examples, acceptance criteria, hints, review, tests or test plans, and debugging support.
+The learner owns the important application decisions and representative core implementations. The coach supplies instruction, review, debugging support, configuration, and production-completion work after a pattern is understood. The governing rule is: **own the decisions, not every keystroke**.
 
 ## What the coach does
 
@@ -114,17 +116,18 @@ The learner writes the core application code. The coach supplies the lesson, the
 - Gives tasks and acceptance criteria before showing a solution.
 - Reviews the learner's implementation and asks for reasoning.
 - Runs or helps run relevant tests and interprets compiler errors.
+- Implements or automates repeated, mechanical, or deadline-critical work in explicit Ship mode.
 - Records mastery evidence and adapts later lessons.
 - Introduces production concerns throughout the build.
 
 ## What the learner does
 
 - Predicts before running code.
-- Types and designs the core Kotlin implementation rather than transcribing a finished class.
+- Types and designs representative mastery-critical Kotlin implementation rather than only transcribing finished classes.
 - Explains important choices in plain language.
-- Attempts assignments before requesting a solution.
+- Attempts new mastery-critical work before requesting a solution.
 - Uses the hint ladder instead of jumping immediately to complete code.
-- Writes or completes tests for important behavior.
+- Writes representative tests for important behavior and reviews supplied test expansion.
 - Fixes review findings and compiler errors.
 - Maintains the private application history through small lesson commits.
 
@@ -132,7 +135,7 @@ The learner writes the core application code. The coach supplies the lesson, the
 
 Typing is valuable when the code expresses the concept being learned. Copying is acceptable when transcription adds no useful understanding.
 
-Usually type or design yourself:
+Usually type or design yourself when the concept is new:
 
 - domain models;
 - state transitions;
@@ -140,7 +143,7 @@ Usually type or design yourself:
 - repository contracts;
 - ViewModel actions;
 - DAO queries after their behavior is understood;
-- tests and fixes.
+- representative tests and meaningful fixes.
 
 Usually safe to copy with explanation:
 
@@ -149,6 +152,9 @@ Usually safe to copy with explanation:
 - long resource paths;
 - store metadata templates;
 - boilerplate supplied by official project generators.
+- repeated modifier/component patterns after proof;
+- fixtures and equivalent test cases after the test shape is understood;
+- bulk reviewed content, mechanical refactors, and routine production polish.
 
 ## How to start a lesson
 
@@ -160,7 +166,7 @@ The coach will use that lesson page as the agenda, ask the opening diagnostic qu
 
 ## Course completion standard
 
-Shipping the app is necessary but insufficient. The course is complete when the learner can:
+The [V1 completion matrix](v1-completion-matrix.md) defines when the product is complete. Shipping the app is necessary but insufficient for course completion. The course is complete when the learner can:
 
 - trace a user action from Composable to durable state and back;
 - explain why each important state value has its owner and lifetime;
