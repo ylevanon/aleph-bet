@@ -38,8 +38,15 @@ internal fun LetterDetailScreen(
             ),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        TextButton(onClick = onBackClick) {
+        Column(
+            horizontalAlignment = Alignment.Start,
+        ) {
+        TextButton(
+            onClick = onBackClick,
+            modifier = Modifier.align(Alignment.Start),
+        ) {
             Text(text = "←")
+        }
         }
 
         Spacer(modifier = Modifier.height(spacing.lg))
