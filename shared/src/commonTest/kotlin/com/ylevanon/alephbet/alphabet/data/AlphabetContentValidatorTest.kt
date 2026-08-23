@@ -28,4 +28,27 @@ class AlphabetContentValidatorTest {
 
         assertContains(failure.message.orEmpty(), "alef")
     }
+
+    @Test
+    fun rejectsMissingFinalFormBaseLetter() = runTest {
+        val json = readBundledAlphabetJson()
+        val content = decodeAlphabetContent(json)
+        val missingBaseId = "missing_kaf"
+        val invalidContent = content.copy(
+            letters = content.letters.map { letter ->
+                if (letter.id != "final_kaf") {
+                    letter
+                } else {
+                    letter.copy(baseLetterId = missingBaseId)
+                }
+            },
+        )
+
+        val failure = assertFailsWith<AlphabetContentValidationException> {
+            validateAlphabetContent(invalidContent)
+        }
+
+        assertContains(failure.message.orEmpty(), "final_kaf")
+        assertContains(failure.message.orEmpty(), missingBaseId)
+    }
 }
