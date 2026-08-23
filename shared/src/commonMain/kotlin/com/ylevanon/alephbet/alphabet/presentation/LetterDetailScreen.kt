@@ -4,10 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.HorizontalDivider
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Alignment
@@ -25,18 +22,16 @@ import com.ylevanon.alephbet.design.theme.alephBetSpacing
 
 @Composable
 internal fun LetterDetailScreen(
-    letter: Letter,
+    state: LetterDetailUiState,
     onBackClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val spacing = MaterialTheme.alephBetSpacing
-    val hebrewFontFamily = alephBetHebrewFontFamily()
 
     Column(
         modifier = modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
-            .verticalScroll(rememberScrollState())
             .padding(
                 horizontal = spacing.md,
                 vertical = spacing.sm,
@@ -48,7 +43,58 @@ internal fun LetterDetailScreen(
         }
 
         Spacer(modifier = Modifier.height(spacing.lg))
+        when (state) {
+            LetterDetailUiState.Loading -> {
+                CenteredStateContent(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .weight(1f),
+                ) {
+                    CircularProgressIndicator()
+                }
+            }
 
+            is LetterDetailUiState.Content -> {
+                LetterDetailContent(
+                    letter = state.letter,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .weight(1f),
+                )
+            }
+
+            is LetterDetailUiState.Error -> {
+                CenteredStateContent(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .weight(1f)
+                        .padding(MaterialTheme.alephBetSpacing.md),
+                ) {
+                    Text(
+                        text = state.message,
+                        color = MaterialTheme.colorScheme.error,
+                        textAlign = TextAlign.Center,
+                        style = MaterialTheme.typography.bodyLarge,
+                    )
+                }
+            }
+        }
+
+    }
+}
+
+@Composable
+private fun LetterDetailContent(
+    letter: Letter,
+    modifier: Modifier = Modifier,
+) {
+    val spacing = MaterialTheme.alephBetSpacing
+    val hebrewFontFamily = alephBetHebrewFontFamily()
+
+    Column(
+        modifier = modifier.verticalScroll(rememberScrollState()),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
         Column(
             modifier = Modifier.fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -163,24 +209,39 @@ private fun DetailSection(
     }
 }
 
+@Composable
+private fun CenteredStateContent(
+    modifier: Modifier = Modifier,
+    content: @Composable () -> Unit,
+) {
+    Box(
+        modifier = modifier,
+        contentAlignment = Alignment.Center,
+    ) {
+        content()
+    }
+}
+
 @Preview
 @Composable
 private fun LetterDetailScreenPreview() {
     AlephBetTheme {
         LetterDetailScreen(
-            letter = Letter(
-                id = LetterId("bet"),
-                order = 2,
-                glyph = "ב",
-                pointedName = "בֵּית",
-                latinName = "bet",
-                sounds = listOf(
-                    "b with dagesh",
-                    "v without dagesh",
-                ),
-                forms = listOf("בּ", "ב"),
-            ),
             onBackClick = {},
+            state = LetterDetailUiState.Content(
+                letter = Letter(
+                    id = LetterId("bet"),
+                    order = 2,
+                    glyph = "ב",
+                    pointedName = "בֵּית",
+                    latinName = "bet",
+                    sounds = listOf(
+                        "b with dagesh",
+                        "v without dagesh",
+                    ),
+                    forms = listOf("בּ", "ב"),
+                )
+            )
         )
     }
 }
