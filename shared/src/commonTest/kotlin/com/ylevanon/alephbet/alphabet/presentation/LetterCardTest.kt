@@ -2,7 +2,9 @@ package com.ylevanon.alephbet.alphabet.presentation
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.test.ExperimentalTestApi
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertTextEquals
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.v2.runComposeUiTest
@@ -17,15 +19,9 @@ class LetterCardTest {
         id = LetterId("bet-test"),
         order = 2,
         glyph = "ב",
+        pointedName = "בֵּית",
         latinName = "Bet",
         sounds = listOf("b", "v"),
-    )
-
-    private val aleph = Letter(
-        id = LetterId("aleph-test"),
-        order = 1,
-        glyph = "א",
-        latinName = "Aleph",
     )
 
     @OptIn(ExperimentalTestApi::class)
@@ -35,9 +31,7 @@ class LetterCardTest {
             MaterialTheme {
                 LetterCard(
                     letter = bet,
-                    isSelected = false,
                     onClick = {},
-                    onPlayAudio = {},
                 )
             }
         }
@@ -52,28 +46,22 @@ class LetterCardTest {
             useUnmergedTree = true,
         ).assertTextEquals("ב")
 
-        onNodeWithText(
-            "b or v",
-            useUnmergedTree = true,
-        ).assertTextEquals("b or v")
     }
 
     @OptIn(ExperimentalTestApi::class)
     @Test
-    fun verifyLetterCardWithoutSoundsRenders() = runComposeUiTest {
+    fun soundDescriptionsAreNotShown() = runComposeUiTest {
         setContent {
             MaterialTheme {
                 LetterCard(
-                    letter = aleph,
-                    isSelected = false,
+                    letter = bet,
                     onClick = {},
-                    onPlayAudio = {},
                 )
             }
         }
 
-        onNodeWithText("Aleph")
-            .assertTextEquals("א", "Aleph")
+        onAllNodesWithText("b or v")
+            .assertCountEquals(0)
     }
 
     @OptIn(ExperimentalTestApi::class)
@@ -85,11 +73,9 @@ class LetterCardTest {
             MaterialTheme {
                 LetterCard(
                     letter = bet,
-                    isSelected = false,
                     onClick = {
                         wasClicked = true
                     },
-                    onPlayAudio = {},
                 )
             }
         }
